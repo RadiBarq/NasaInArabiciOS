@@ -1,0 +1,7 @@
+version: "Apple Swift version 4.2 (swiftlang-1000.0.36 clang-1000.10.44)"
+options: "121f9546cb8ef049b9361a328a10ed99"
+build_time: [1536067120, 728098000]
+inputs:
+  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/SecondViewController.swift": [1536035852, 0]
+  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/AppDelegate.swift": [1536035852, 0]
+  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/FirstViewController.swift": [1536035852, 0]

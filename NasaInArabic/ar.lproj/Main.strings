@@ -1,0 +1,27 @@
+
+/* Class = "UINavigationItem"; title = "من نحن"; ObjectID = "2hD-Z6-M5y"; */
+"2hD-Z6-M5y.title" = "من نحن";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "GJh-lq-jun"; */
+"GJh-lq-jun.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UITabBarItem"; title = "التصنيفات"; ObjectID = "f54-ae-xSP"; */
+"f54-ae-xSP.title" = "التصنيفات";
+
+/* Class = "UINavigationItem"; title = "المزيد"; ObjectID = "fPu-EF-mgp"; */
+"fPu-EF-mgp.title" = "المزيد";
+
+/* Class = "UITabBarItem"; title = "مقالات"; ObjectID = "jnM-CQ-x0Y"; */
+"jnM-CQ-x0Y.title" = "مقالات";
+
+/* Class = "UITabBarItem"; title = "الفيديوهات"; ObjectID = "liH-sO-yse"; */
+"liH-sO-yse.title" = "الفيديوهات";
+
+/* Class = "UITabBarItem"; title = "الصور"; ObjectID = "oz2-m6-7QN"; */
+"oz2-m6-7QN.title" = "الصور";
+
+/* Class = "UITabBarItem"; title = "المزيد"; ObjectID = "sfq-cn-9MV"; */
+"sfq-cn-9MV.title" = "المزيد";
+
+/* Class = "UINavigationItem"; title = "التصنيفات"; ObjectID = "uhd-Bx-oOF"; */
+"uhd-Bx-oOF.title" = "التصنيفات";

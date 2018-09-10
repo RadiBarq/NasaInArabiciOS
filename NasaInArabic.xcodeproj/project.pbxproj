@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD3BB646213EC5D500C84B64 /* ArticlesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3BB645213EC5D500C84B64 /* ArticlesCollectionViewController.swift */; };
+		CD71A10121407E13000CDE4F /* MoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD71A10021407E13000CDE4F /* MoreTableViewController.swift */; };
+		CD92B60D2143F0340088F1D3 /* CategoriesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD92B60C2143F0340088F1D3 /* CategoriesCollectionViewController.swift */; };
+		CD92B60F214439500088F1D3 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD92B60E214439500088F1D3 /* AboutUsViewController.swift */; };
 		CDC47F0E213E438C001716FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC47F0D213E438C001716FC /* AppDelegate.swift */; };
-		CDC47F10213E438C001716FC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC47F0F213E438C001716FC /* FirstViewController.swift */; };
-		CDC47F12213E438C001716FC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC47F11213E438C001716FC /* SecondViewController.swift */; };
 		CDC47F15213E438C001716FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC47F13213E438C001716FC /* Main.storyboard */; };
 		CDC47F17213E438D001716FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC47F16213E438D001716FC /* Assets.xcassets */; };
 		CDC47F1A213E438D001716FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC47F18213E438D001716FC /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD3BB645213EC5D500C84B64 /* ArticlesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesCollectionViewController.swift; sourceTree = "<group>"; };
+		CD71A10021407E13000CDE4F /* MoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTableViewController.swift; sourceTree = "<group>"; };
+		CD92B60C2143F0340088F1D3 /* CategoriesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionViewController.swift; sourceTree = "<group>"; };
+		CD92B60E214439500088F1D3 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		CD92B610214452EA0088F1D3 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		CD92B611214452EA0088F1D3 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		CDC47F0A213E438C001716FC /* NasaInArabic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NasaInArabic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC47F0D213E438C001716FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CDC47F0F213E438C001716FC /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		CDC47F11213E438C001716FC /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		CDC47F14213E438C001716FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDC47F16213E438D001716FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDC47F19213E438D001716FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,13 +62,15 @@
 		CDC47F0C213E438C001716FC /* NasaInArabic */ = {
 			isa = PBXGroup;
 			children = (
+				CD3BB645213EC5D500C84B64 /* ArticlesCollectionViewController.swift */,
 				CDC47F0D213E438C001716FC /* AppDelegate.swift */,
-				CDC47F0F213E438C001716FC /* FirstViewController.swift */,
-				CDC47F11213E438C001716FC /* SecondViewController.swift */,
 				CDC47F13213E438C001716FC /* Main.storyboard */,
 				CDC47F16213E438D001716FC /* Assets.xcassets */,
 				CDC47F18213E438D001716FC /* LaunchScreen.storyboard */,
 				CDC47F1B213E438D001716FC /* Info.plist */,
+				CD71A10021407E13000CDE4F /* MoreTableViewController.swift */,
+				CD92B60C2143F0340088F1D3 /* CategoriesCollectionViewController.swift */,
+				CD92B60E214439500088F1D3 /* AboutUsViewController.swift */,
 			);
 			path = NasaInArabic;
 			sourceTree = "<group>";
@@ -138,9 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDC47F12213E438C001716FC /* SecondViewController.swift in Sources */,
+				CD92B60F214439500088F1D3 /* AboutUsViewController.swift in Sources */,
+				CD92B60D2143F0340088F1D3 /* CategoriesCollectionViewController.swift in Sources */,
 				CDC47F0E213E438C001716FC /* AppDelegate.swift in Sources */,
-				CDC47F10213E438C001716FC /* FirstViewController.swift in Sources */,
+				CD71A10121407E13000CDE4F /* MoreTableViewController.swift in Sources */,
+				CD3BB646213EC5D500C84B64 /* ArticlesCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +161,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				CDC47F14213E438C001716FC /* Base */,
+				CD92B610214452EA0088F1D3 /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -159,6 +170,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				CDC47F19213E438D001716FC /* Base */,
+				CD92B611214452EA0088F1D3 /* ar */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -170,6 +182,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -231,6 +244,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

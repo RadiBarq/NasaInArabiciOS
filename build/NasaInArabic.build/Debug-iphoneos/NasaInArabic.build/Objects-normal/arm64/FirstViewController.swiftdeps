@@ -1,16 +1,18 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "FirstViewController"
+- "ArticlesViewController"
 provides-nominal:
-- "12NasaInArabic19FirstViewControllerC"
+- "12NasaInArabic22ArticlesViewControllerC"
 provides-member:
-- ["12NasaInArabic19FirstViewControllerC", ""]
+- ["12NasaInArabic22ArticlesViewControllerC", ""]
 provides-dynamic-lookup:
 - "viewDidLoad"
 depends-top-level:
-- "FirstViewController"
+- "ArticlesViewController"
 - "UIViewController"
 depends-member:
+- ["12NasaInArabic22ArticlesViewControllerC", "init"]
+- ["12NasaInArabic22ArticlesViewControllerC", "viewDidLoad"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
@@ -27,8 +29,6 @@ depends-member:
 - !private ["SQ", "init"]
 - !private ["SQ", "init"]
 - !private ["SQ", "viewDidLoad"]
-- ["12NasaInArabic19FirstViewControllerC", "init"]
-- ["12NasaInArabic19FirstViewControllerC", "viewDidLoad"]
 - ["SH", ""]
 - !private ["SH", "init"]
 - !private ["SH", "init"]
@@ -92,11 +92,11 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 depends-nominal:
+- "12NasaInArabic22ArticlesViewControllerC"
 - "s7CVarArgP"
 - "s28CustomDebugStringConvertibleP"
 - "s23CustomStringConvertibleP"
 - "SQ"
-- "12NasaInArabic19FirstViewControllerC"
 - "SH"
 - "So8NSCodingP"
 - "So26NSExtensionRequestHandlingP"
@@ -139,4 +139,4 @@ depends-external:
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "41249b559e975f2533a6b6de02aa98df"
+interface-hash: "57598db84244490f1b232fc8ed3fc83f"

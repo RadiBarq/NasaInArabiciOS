@@ -16,7 +16,7 @@ class CategoriesCollectionViewController: UICollectionViewController {
 var categoriesString = ["انفوغراف", "الارض", "الذاكرة", "الفضاء الخارجي", "تكنولوجيا", "رواد العمل العرب", "رواد العمل التطوعي", "طاقة وبيئة", "طب", "فيزياء", "منح دراسية", "مواضيع علمية متنوعة", "ناسا بالعربي على الارض"]
     
     
-var categoriesImages = [""]
+var categoryImages = ["category-info-graph", "category-earth", "category-memory", "category-outer-space", "category-tech", "category-arab-payoneers", "category-volunteers", "category-nature", "category-medicine", "category-physics", "category-scholarship", "category-science-topic", "category-nasa-on-earth"]
     
     
     override func viewDidLoad() {
@@ -58,10 +58,9 @@ var categoriesImages = [""]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CategoriesCollectionViewCell
         
         cell.categoryLabel.text = categoriesString[indexPath.row]
-    
-        // Configure the cell
-    
+        cell.imageView.image = UIImage(named: categoryImages[indexPath.row])
         return cell
+            
     }
 
     // MARK: UICollectionViewDelegate
@@ -102,6 +101,7 @@ class CategoriesCollectionViewCell: UICollectionViewCell{
     var imageView:UIImageView = {
        
         var imgView = UIImageView()
+        imgView.contentMode = .scaleAspectFill
         imgView.image = UIImage(named: "test_image")
         imgView.layer.masksToBounds = true
         imgView.layer.cornerRadius = 5
@@ -125,7 +125,6 @@ class CategoriesCollectionViewCell: UICollectionViewCell{
         super.init(frame: frame)
         setupComponents()
         
-
     }
     
     required init?(coder aDecoder: NSCoder) {

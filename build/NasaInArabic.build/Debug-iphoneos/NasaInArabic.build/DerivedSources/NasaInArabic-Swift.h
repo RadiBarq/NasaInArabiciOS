@@ -183,6 +183,16 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC12NasaInArabic21AboutUsViewController")
+@interface AboutUsViewController : UIViewController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIWindow;
 @class UIApplication;
 
@@ -201,8 +211,6 @@ SWIFT_CLASS("_TtC12NasaInArabic11AppDelegate")
 @class UICollectionView;
 @class UICollectionViewCell;
 @class UICollectionViewLayout;
-@class NSBundle;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC12NasaInArabic32ArticlesCollectionViewController")
 @interface ArticlesCollectionViewController : UICollectionViewController
@@ -254,6 +262,11 @@ SWIFT_CLASS("_TtC12NasaInArabic34CategoriesCollectionViewController")
 @end
 
 
+@interface CategoriesCollectionViewController (SWIFT_EXTENSION(NasaInArabic)) <UICollectionViewDelegateFlowLayout>
+- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 SWIFT_CLASS("_TtC12NasaInArabic17MoreTableViewCell")
 @interface MoreTableViewCell : UITableViewCell
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
@@ -265,7 +278,7 @@ SWIFT_CLASS("_TtC12NasaInArabic17MoreTableViewCell")
 SWIFT_CLASS("_TtC12NasaInArabic23MoreTableViewController")
 @interface MoreTableViewController : UITableViewController
 - (void)viewDidLoad;
-- (BOOL)tableView:(UITableView * _Nonnull)tableView shouldHighlightRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)viewWillAppear:(BOOL)animated;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;

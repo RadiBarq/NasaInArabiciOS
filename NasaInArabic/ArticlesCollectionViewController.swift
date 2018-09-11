@@ -9,14 +9,14 @@
 import UIKit
 
 
+import Cards
+
 
 class ArticlesCollectionViewController: UICollectionViewController  {
     
     private let titleCellReuseIdentifier = "titleCell"
     private let normalCellReuseIdentifier = "normalCell"
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,8 +27,6 @@ class ArticlesCollectionViewController: UICollectionViewController  {
         self.collectionView!.register(ArticlesTitleCell.self, forCellWithReuseIdentifier: titleCellReuseIdentifier)
         
         self.collectionView!.register(ArticlesNormalCell.self, forCellWithReuseIdentifier: normalCellReuseIdentifier)
-        
-        
     }
 
     /*
@@ -48,20 +46,30 @@ class ArticlesCollectionViewController: UICollectionViewController  {
         return 1
     }
     
-
-
-
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 1
+        return 10
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
         IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: titleCellReuseIdentifier, for: indexPath)
-        return cell
+        if (indexPath.row == 0)
+        {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier:  titleCellReuseIdentifier, for: indexPath) as! ArticlesTitleCell
+            return cell
+            
+        }
         
+        else
+        {
+            
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier:  normalCellReuseIdentifier, for: indexPath) as! ArticlesNormalCell
+            return cell
+            
+            
+        }
     }
 
  
@@ -116,15 +124,13 @@ class ArticlesTitleCell: UICollectionViewCell
         var titleImg = UIImageView()
         titleImg.image = UIImage(named: "main_logo")
         return  titleImg
-
         
     }()
     
     override init(frame: CGRect) {
-    
+        
         super.init(frame: frame)
         setupComponents()
-        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -150,10 +156,38 @@ class ArticlesTitleCell: UICollectionViewCell
 }
 
 class ArticlesNormalCell: UICollectionViewCell{
+
     
     override init(frame: CGRect) {
         
         super.init(frame: frame)
+        setupComponents()
+    }
+    
+    
+    func setupComponents()
+    {
+
+        // Aspect Ratio of 5:6 is preferred
+        let card = CardArticle(frame: CGRect(x: 10, y: 30, width: self.bounds.width - 20 , height: 500))
+        addSubview(card)
+        
+        let imageView = UIImageView()
+        card.addSubview(imageView)
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.centerXAnchor.constraint(equalTo: card.centerXAnchor).isActive = true
+        imageView.centerYAnchor.constraint(equalTo: card.centerYAnchor).isActive = true
+        imageView.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        imageView.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        imageView.image = UIImage(named: "category-earth")
+        
+        card.title = "Big Buck Bunny"
+        card.subtitle = "Inside the extraordinary world of Buck Bunny"
+        card.category = "today's movie"
+        card.textColor = UIColor.black
+        card.hasParallax = true
+    
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -164,6 +198,7 @@ class ArticlesNormalCell: UICollectionViewCell{
 
 extension ArticlesCollectionViewController: UICollectionViewDelegateFlowLayout
 {
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         if (indexPath.row == 0)
@@ -176,7 +211,7 @@ extension ArticlesCollectionViewController: UICollectionViewDelegateFlowLayout
         // should changed
         else
         {
-            return CGSize(width: collectionView.bounds.size.width / 2 , height: 10)
+            return CGSize(width: collectionView.bounds.size.width - 20 , height: 500)
             
         }
     

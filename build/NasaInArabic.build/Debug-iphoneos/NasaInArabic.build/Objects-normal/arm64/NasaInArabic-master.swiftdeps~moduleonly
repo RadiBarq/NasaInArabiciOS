@@ -1,9 +1,10 @@
 version: "Apple Swift version 4.2 (swiftlang-1000.0.36 clang-1000.10.44)"
 options: "2cf0c4ac8af8096c691ef65b6f1d4c39"
-build_time: [1536623902, 123025000]
+build_time: [1536665728, 215267000]
 inputs:
   "/Users/radibarq/developer/NasaInArabic/NasaInArabic/AboutUsViewController.swift": [1536428846, 0]
   "/Users/radibarq/developer/NasaInArabic/NasaInArabic/CategoriesCollectionViewController.swift": [1536622435, 0]
   "/Users/radibarq/developer/NasaInArabic/NasaInArabic/AppDelegate.swift": [1536597477, 0]
   "/Users/radibarq/developer/NasaInArabic/NasaInArabic/MoreTableViewController.swift": [1536431838, 0]
-  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/ArticlesCollectionViewController.swift": [1536623901, 0]
+  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/TabBarViewController.swift": !dirty [1536665727, 0]
+  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/ArticlesCollectionViewController.swift": [1536664450, 0]

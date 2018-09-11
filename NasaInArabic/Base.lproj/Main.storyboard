@@ -24,7 +24,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" id="ORj-0b-xQw">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ORj-0b-xQw">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -61,7 +61,7 @@
                             <inset key="sectionInset" minX="12.5" minY="0.0" maxX="12.5" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hj2-Iq-dKM">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" id="hj2-Iq-dKM">
                                 <rect key="frame" x="20.5" y="8" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -139,7 +139,7 @@
                                 <rect key="frame" x="16" y="20" width="343" height="496"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">ناسا بالعربي هي مبادرة  تطوعية، موجهة الى الناطقين بالغة العربية، تأسست بتاريخ ١ يناير/كانون الثاني 2013، ثم اتسع نطاقها بجهود مجموعة من المتطوعين الذين يجمعهم إيمان عميق بأهمية العلم والعمل التطوعي ودورهما في تمكين المجتمعات و النهوض بها وتطويرها. يبلغ عدد مبادرات ناسا بالعربي 5 مبادرات، ترجمت ونشرت حوالي 4000 مقال في مجالات علمية مختلفة، أسهم فيها ما يزيد عن 250 متطوعا ومتطوعة للقيام بالادوار الموكلة إليهم في المبادرة كل حسب موقعه و تخصصه.</mutableString>
+                                <string key="text">ناسا بالعربي هي مبادرة  تطوعية، موجهة الى الناطقين بالغة العربية، تأسست بتاريخ ١ يناير/كانون الثاني 2013، ثم اتسع نطاقها بجهود مجموعة من المتطوعين الذين يجمعهم إيمان عميق بأهمية العلم والعمل التطوعي ودورهما في تمكين المجتمعات و النهوض بها وتطويرها. يبلغ عدد مبادرات ناسا بالعربي 5 مبادرات، ترجمت ونشرت حوالي 4000 مقال في مجالات علمية مختلفة، أسهم فيها ما يزيد عن 250 متطوعا ومتطوعة للقيام بالادوار الموكلة إليهم في المبادرة كل حسب موقعه و تخصصه.</string>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -172,7 +172,7 @@
         <scene sceneID="QTl-MJ-s59">
             <objects>
                 <collectionViewController id="BIe-C8-0nI" customClass="ArticlesCollectionViewController" customModule="NasaInArabic" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Ao4-tL-GdE">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="Ao4-tL-GdE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -183,7 +183,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" id="GCL-iV-agI">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="GCL-iV-agI">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -218,7 +218,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" id="ko4-Bl-9nF">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ko4-Bl-9nF">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -238,10 +238,10 @@
             </objects>
             <point key="canvasLocation" x="1001" y="379"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController id="49e-Tb-3d3" customClass="TabBarViewController" customModule="NasaInArabic" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -266,7 +266,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vkb-W9-xZK" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="التصنيفات" image="categories_logo" id="f54-ae-xSP"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="right" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" largeTitles="YES" id="EMl-3c-FuG">
+                    <navigationBar key="navigationBar" contentMode="right" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" largeTitles="YES" id="EMl-3c-FuG">
                         <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -292,7 +292,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e8Z-G1-ekO" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="المزيد" image="menu" id="sfq-cn-9MV"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" largeTitles="YES" id="g4M-mE-oOg">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" largeTitles="YES" id="g4M-mE-oOg">
                         <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

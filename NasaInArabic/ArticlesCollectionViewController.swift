@@ -27,6 +27,7 @@ class ArticlesCollectionViewController: UICollectionViewController  {
         self.collectionView!.register(ArticlesTitleCell.self, forCellWithReuseIdentifier: titleCellReuseIdentifier)
         
         self.collectionView!.register(ArticlesNormalCell.self, forCellWithReuseIdentifier: normalCellReuseIdentifier)
+        
     }
 
     /*
@@ -52,6 +53,12 @@ class ArticlesCollectionViewController: UICollectionViewController  {
         return 10
     }
 
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        
+        return 30
+    }
+    
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
         IndexPath) -> UICollectionViewCell {
         
@@ -113,7 +120,7 @@ class ArticlesTitleCell: UICollectionViewCell
         
         var titleLbl = UILabel()
         titleLbl.text = "اخر المقالات"
-        titleLbl.font = UIFont.boldSystemFont(ofSize: 30)
+        titleLbl.font = UIFont.boldSystemFont(ofSize: 34)
         titleLbl.textAlignment = .right
         return titleLbl
         
@@ -156,7 +163,39 @@ class ArticlesTitleCell: UICollectionViewCell
 }
 
 class ArticlesNormalCell: UICollectionViewCell{
-
+    
+    var imageView: UIImageView = {
+        
+        var imgView = UIImageView()
+        imgView.roundTop(radius: 20)
+        imgView.image = UIImage(named: "category-earth")
+        return imgView
+        
+    }()
+    
+    var articleDescription: UILabel = {
+        
+        var desc = UILabel()
+        desc.textColor = UIColor.darkGray
+        desc.textAlignment = .right
+        desc.font = UIFont.systemFont(ofSize: 15)
+        desc.text = "الخلاصة: وجدت دراسة جديد رابطًا بين التشوهات العصبية الولادية لدى رُضّع النساء الحوامل المصابات بالسكري والعديد من الأمراض العصبية التنكسية مثل داء آلزهايمر Alzheimer's، داء باركنسون Parkinson's، وداء هنتنغتون Huntington's. وهذه أول مرة يحدّد فيها هذا الارتباط الذي قد يشير إلى طريقة جديدة لفهم وحتى علاج عيوب الأنبوب العصبي وهذه الأمراض أيضًا"
+        return desc
+        
+    }()
+    
+    var articleTitle: UILabel = {
+        
+        var lbl = UILabel()
+        lbl.textColor = UIColor.black
+        lbl.textAlignment = .right
+        lbl.numberOfLines = 2
+        lbl.adjustsFontSizeToFitWidth = true
+        lbl.font = UIFont.boldSystemFont(ofSize: 21)
+        lbl.text = "ظهور نجم نيوتروني وحيد بشكل خرافي في هاذه الصورة المقربة الجديدة "
+        return lbl
+        
+    }()
     
     override init(frame: CGRect) {
         
@@ -164,30 +203,37 @@ class ArticlesNormalCell: UICollectionViewCell{
         setupComponents()
     }
     
-    
     func setupComponents()
     {
-
         // Aspect Ratio of 5:6 is preferred
-        let card = CardArticle(frame: CGRect(x: 10, y: 30, width: self.bounds.width - 20 , height: 500))
+        let card = Card(frame: CGRect(x: 10, y: 30, width: self.bounds.width - 20 , height: 500))
         addSubview(card)
         
-        let imageView = UIImageView()
         card.addSubview(imageView)
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.centerXAnchor.constraint(equalTo: card.centerXAnchor).isActive = true
-        imageView.centerYAnchor.constraint(equalTo: card.centerYAnchor).isActive = true
-        imageView.heightAnchor.constraint(equalToConstant: 200).isActive = true
-        imageView.widthAnchor.constraint(equalToConstant: 200).isActive = true
-        imageView.image = UIImage(named: "category-earth")
+        imageView.heightAnchor.constraint(equalToConstant: card.bounds.width).isActive = true
+        imageView.topAnchor.constraint(equalTo: card.topAnchor, constant: 0).isActive = true
+        imageView.widthAnchor.constraint(equalToConstant: card.bounds.width).isActive = true
         
-        card.title = "Big Buck Bunny"
-        card.subtitle = "Inside the extraordinary world of Buck Bunny"
-        card.category = "today's movie"
         card.textColor = UIColor.black
+        card.shadowOpacity = 0.6
+        card.shadowBlur = 15
         card.hasParallax = true
-    
         
+        card.addSubview(articleTitle)
+        articleTitle.translatesAutoresizingMaskIntoConstraints = false
+        articleTitle.rightAnchor.constraint(equalTo: card.rightAnchor, constant: -10).isActive = true
+        articleTitle.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 10).isActive = true
+        articleTitle.leftAnchor.constraint(equalTo: imageView.leftAnchor, constant: 10).isActive = true
+        
+        card.addSubview(articleDescription)
+        articleDescription.translatesAutoresizingMaskIntoConstraints = false
+        articleDescription.rightAnchor.constraint(equalTo: card.rightAnchor, constant: -10).isActive = true
+        articleDescription.topAnchor.constraint(equalTo: articleTitle.bottomAnchor, constant: 5).isActive = true
+        articleDescription.leftAnchor.constraint(equalTo: card.leftAnchor, constant: 10).isActive = true
+        articleDescription.numberOfLines = 4
+
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -198,7 +244,6 @@ class ArticlesNormalCell: UICollectionViewCell{
 
 extension ArticlesCollectionViewController: UICollectionViewDelegateFlowLayout
 {
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         if (indexPath.row == 0)
@@ -216,6 +261,31 @@ extension ArticlesCollectionViewController: UICollectionViewDelegateFlowLayout
         }
     
         
+    }
+    
+}
+
+
+extension UIView{
+    
+    func roundTop(radius:CGFloat){
+        self.clipsToBounds = true
+        self.layer.cornerRadius = radius
+        if #available(iOS 11.0, *) {
+            self.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
+        } else {
+            // Fallback on earlier versions
+        }
+    }
+    
+    func roundBottom(radius:CGFloat){
+        self.clipsToBounds = true
+        self.layer.cornerRadius = radius
+        if #available(iOS 11.0, *) {
+            self.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
+        } else {
+            // Fallback on earlier versions
+        }
     }
     
 }

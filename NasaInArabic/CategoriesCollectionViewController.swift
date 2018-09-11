@@ -26,7 +26,9 @@ var categoryImages = ["category-info-graph", "category-earth", "category-memory"
 
         // Register cell classes
         self.collectionView!.register(CategoriesCollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-     
+        
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.backIndicatorImage = UIImage()
 
         // Do any additional setup after loading the view.
     }

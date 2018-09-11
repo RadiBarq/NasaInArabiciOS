@@ -30,6 +30,9 @@ class MoreTableViewController: UITableViewController {
         
             tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         
+            self.navigationController?.navigationBar.shadowImage = UIImage()
+            self.navigationController?.navigationBar.backIndicatorImage = UIImage()
+        
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

@@ -17,6 +17,8 @@
 		CDC47F17213E438D001716FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC47F16213E438D001716FC /* Assets.xcassets */; };
 		CDC47F1A213E438D001716FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC47F18213E438D001716FC /* LaunchScreen.storyboard */; };
 		CDD281ED2147DD0B00018C93 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD281EC2147DD0B00018C93 /* TabBarViewController.swift */; };
+		CDD281EF2147F78100018C93 /* AlbumsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD281EE2147F78100018C93 /* AlbumsCollectionViewController.swift */; };
+		CDD281F12148009000018C93 /* VideosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD281F02148009000018C93 /* VideosCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		CDC47F19213E438D001716FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDC47F1B213E438D001716FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDD281EC2147DD0B00018C93 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		CDD281EE2147F78100018C93 /* AlbumsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsCollectionViewController.swift; sourceTree = "<group>"; };
+		CDD281F02148009000018C93 /* VideosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 				CD92B60C2143F0340088F1D3 /* CategoriesCollectionViewController.swift */,
 				CD92B60E214439500088F1D3 /* AboutUsViewController.swift */,
 				CDD281EC2147DD0B00018C93 /* TabBarViewController.swift */,
+				CDD281EE2147F78100018C93 /* AlbumsCollectionViewController.swift */,
+				CDD281F02148009000018C93 /* VideosCollectionViewController.swift */,
 			);
 			path = NasaInArabic;
 			sourceTree = "<group>";
@@ -240,8 +246,10 @@
 				CD92B60D2143F0340088F1D3 /* CategoriesCollectionViewController.swift in Sources */,
 				CDC47F0E213E438C001716FC /* AppDelegate.swift in Sources */,
 				CD71A10121407E13000CDE4F /* MoreTableViewController.swift in Sources */,
+				CDD281F12148009000018C93 /* VideosCollectionViewController.swift in Sources */,
 				CDD281ED2147DD0B00018C93 /* TabBarViewController.swift in Sources */,
 				CD3BB646213EC5D500C84B64 /* ArticlesCollectionViewController.swift in Sources */,
+				CDD281EF2147F78100018C93 /* AlbumsCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,10 +1,12 @@
 version: "Apple Swift version 4.2 (swiftlang-1000.0.36 clang-1000.10.44)"
 options: "1ce31877f8be240a007bc40e7ac9860d"
-build_time: [1536667394, 899425000]
+build_time: [1536677658, 331988000]
 inputs:
   "/Users/radibarq/developer/NasaInArabic/NasaInArabic/AboutUsViewController.swift": [1536428846, 0]
   "/Users/radibarq/developer/NasaInArabic/NasaInArabic/CategoriesCollectionViewController.swift": [1536667394, 0]
   "/Users/radibarq/developer/NasaInArabic/NasaInArabic/AppDelegate.swift": [1536667249, 0]
-  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/MoreTableViewController.swift": [1536431838, 0]
+  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/MoreTableViewController.swift": [1536667756, 0]
+  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/VideosCollectionViewController.swift": [1536676008, 0]
   "/Users/radibarq/developer/NasaInArabic/NasaInArabic/TabBarViewController.swift": [1536666147, 0]
-  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/ArticlesCollectionViewController.swift": [1536666428, 0]
+  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/ArticlesCollectionViewController.swift": [1536677657, 0]
+  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/AlbumsCollectionViewController.swift": [1536677020, 0]

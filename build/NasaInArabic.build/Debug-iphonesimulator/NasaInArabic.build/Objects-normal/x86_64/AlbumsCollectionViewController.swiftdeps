@@ -1,0 +1,794 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AlbumsCollectionViewController"
+provides-nominal:
+- "12NasaInArabic30AlbumsCollectionViewControllerC"
+provides-member:
+- ["12NasaInArabic30AlbumsCollectionViewControllerC", ""]
+provides-dynamic-lookup:
+- "collectionView"
+- "numberOfSections"
+- "viewDidLoad"
+depends-top-level:
+- !private "-"
+- !private "=="
+- "AlbumsCollectionViewController"
+- !private "ArticlesNormalCell"
+- !private "ArticlesTitleCell"
+- "AssignmentPrecedence"
+- "CGFloat"
+- "CGSize"
+- "CastingPrecedence"
+- !private "FloatLiteralType"
+- "IndexPath"
+- "Int"
+- !private "IntegerLiteralType"
+- "StringLiteralType"
+- "UICollectionView"
+- "UICollectionViewCell"
+- "UICollectionViewController"
+- "UICollectionViewDelegateFlowLayout"
+- "UICollectionViewLayout"
+- !private "UIEdgeInsets"
+depends-member:
+- !private ["12NasaInArabic30AlbumsCollectionViewControllerC", "ArticlesNormalCell"]
+- !private ["12NasaInArabic30AlbumsCollectionViewControllerC", "ArticlesTitleCell"]
+- ["12NasaInArabic30AlbumsCollectionViewControllerC", "CGFloat"]
+- ["12NasaInArabic30AlbumsCollectionViewControllerC", "CGSize"]
+- ["12NasaInArabic30AlbumsCollectionViewControllerC", "IndexPath"]
+- ["12NasaInArabic30AlbumsCollectionViewControllerC", "Int"]
+- ["12NasaInArabic30AlbumsCollectionViewControllerC", "UICollectionView"]
+- ["12NasaInArabic30AlbumsCollectionViewControllerC", "UICollectionViewCell"]
+- ["12NasaInArabic30AlbumsCollectionViewControllerC", "UICollectionViewLayout"]
+- !private ["12NasaInArabic30AlbumsCollectionViewControllerC", "UIEdgeInsets"]
+- ["12NasaInArabic30AlbumsCollectionViewControllerC", "collectionView"]
+- ["12NasaInArabic30AlbumsCollectionViewControllerC", "deinit"]
+- ["12NasaInArabic30AlbumsCollectionViewControllerC", "init"]
+- !private ["12NasaInArabic30AlbumsCollectionViewControllerC", "normalCellReuseIdentifier"]
+- ["12NasaInArabic30AlbumsCollectionViewControllerC", "numberOfSections"]
+- !private ["12NasaInArabic30AlbumsCollectionViewControllerC", "tabBarController"]
+- !private ["12NasaInArabic30AlbumsCollectionViewControllerC", "titleCellReuseIdentifier"]
+- ["12NasaInArabic30AlbumsCollectionViewControllerC", "viewDidLoad"]
+- ["SK", "init"]
+- ["SK", "init"]
+- !private ["SK", "row"]
+- !private ["SB", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So15CALayerDelegateP", "bounds"]
+- !private ["So15CALayerDelegateP", "contentInset"]
+- !private ["So15CALayerDelegateP", "dequeueReusableCell"]
+- !private ["So15CALayerDelegateP", "register"]
+- !private ["12CoreGraphics7CGFloatV", "init"]
+- !private ["So6CGRectV", "height"]
+- !private ["So6CGRectV", "size"]
+- !private ["So6CGSizeV", "init"]
+- !private ["So6CGSizeV", "width"]
+- !private ["s7CVarArgP", "ArticlesNormalCell"]
+- !private ["s7CVarArgP", "ArticlesTitleCell"]
+- !private ["s7CVarArgP", "CGFloat"]
+- !private ["s7CVarArgP", "CGSize"]
+- !private ["s7CVarArgP", "UIEdgeInsets"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "bounds"]
+- ["s7CVarArgP", "collectionView"]
+- !private ["s7CVarArgP", "contentInset"]
+- !private ["s7CVarArgP", "dequeueReusableCell"]
+- ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "normalCellReuseIdentifier"]
+- !private ["s7CVarArgP", "register"]
+- !private ["s7CVarArgP", "tabBar"]
+- !private ["s7CVarArgP", "tabBarController"]
+- !private ["s7CVarArgP", "titleCellReuseIdentifier"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- ["Sl", "init"]
+- ["Sl", "init"]
+- !private ["Sl", "row"]
+- ["SL", "init"]
+- ["SL", "init"]
+- !private ["SL", "row"]
+- !private ["s28CustomDebugStringConvertibleP", "ArticlesNormalCell"]
+- !private ["s28CustomDebugStringConvertibleP", "ArticlesTitleCell"]
+- !private ["s28CustomDebugStringConvertibleP", "CGFloat"]
+- !private ["s28CustomDebugStringConvertibleP", "CGSize"]
+- !private ["s28CustomDebugStringConvertibleP", "UIEdgeInsets"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "bounds"]
+- ["s28CustomDebugStringConvertibleP", "collectionView"]
+- !private ["s28CustomDebugStringConvertibleP", "contentInset"]
+- !private ["s28CustomDebugStringConvertibleP", "dequeueReusableCell"]
+- !private ["s28CustomDebugStringConvertibleP", "height"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "normalCellReuseIdentifier"]
+- !private ["s28CustomDebugStringConvertibleP", "register"]
+- !private ["s28CustomDebugStringConvertibleP", "row"]
+- !private ["s28CustomDebugStringConvertibleP", "size"]
+- !private ["s28CustomDebugStringConvertibleP", "tabBar"]
+- !private ["s28CustomDebugStringConvertibleP", "tabBarController"]
+- !private ["s28CustomDebugStringConvertibleP", "titleCellReuseIdentifier"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s28CustomDebugStringConvertibleP", "width"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "height"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "size"]
+- !private ["s29CustomPlaygroundQuickLookableP", "width"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "contentInset"]
+- !private ["s17CustomReflectableP", "height"]
+- ["s17CustomReflectableP", "init"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "row"]
+- !private ["s17CustomReflectableP", "size"]
+- !private ["s17CustomReflectableP", "width"]
+- !private ["s23CustomStringConvertibleP", "ArticlesNormalCell"]
+- !private ["s23CustomStringConvertibleP", "ArticlesTitleCell"]
+- !private ["s23CustomStringConvertibleP", "CGFloat"]
+- !private ["s23CustomStringConvertibleP", "CGSize"]
+- !private ["s23CustomStringConvertibleP", "UIEdgeInsets"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "bounds"]
+- ["s23CustomStringConvertibleP", "collectionView"]
+- !private ["s23CustomStringConvertibleP", "contentInset"]
+- !private ["s23CustomStringConvertibleP", "dequeueReusableCell"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "normalCellReuseIdentifier"]
+- !private ["s23CustomStringConvertibleP", "register"]
+- !private ["s23CustomStringConvertibleP", "row"]
+- !private ["s23CustomStringConvertibleP", "tabBar"]
+- !private ["s23CustomStringConvertibleP", "tabBarController"]
+- !private ["s23CustomStringConvertibleP", "titleCellReuseIdentifier"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "contentInset"]
+- !private ["Se", "height"]
+- ["Se", "init"]
+- ["Se", "init"]
+- !private ["Se", "row"]
+- !private ["Se", "size"]
+- !private ["Se", "width"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "contentInset"]
+- !private ["SE", "height"]
+- ["SE", "init"]
+- ["SE", "init"]
+- !private ["SE", "row"]
+- !private ["SE", "size"]
+- !private ["SE", "width"]
+- !private ["SQ", "ArticlesNormalCell"]
+- !private ["SQ", "ArticlesTitleCell"]
+- !private ["SQ", "CGFloat"]
+- !private ["SQ", "CGSize"]
+- !private ["SQ", "UIEdgeInsets"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "bounds"]
+- ["SQ", "collectionView"]
+- !private ["SQ", "contentInset"]
+- !private ["SQ", "dequeueReusableCell"]
+- !private ["SQ", "height"]
+- ["SQ", "init"]
+- ["SQ", "init"]
+- !private ["SQ", "normalCellReuseIdentifier"]
+- !private ["SQ", "register"]
+- !private ["SQ", "row"]
+- !private ["SQ", "size"]
+- !private ["SQ", "tabBar"]
+- !private ["SQ", "tabBarController"]
+- !private ["SQ", "titleCellReuseIdentifier"]
+- !private ["SQ", "viewDidLoad"]
+- !private ["SQ", "width"]
+- !private ["s25ExpressibleByArrayLiteralP", "row"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "contentInset"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SF", "init"]
+- !private ["SH", "ArticlesNormalCell"]
+- !private ["SH", "ArticlesTitleCell"]
+- !private ["SH", "CGFloat"]
+- !private ["SH", "CGSize"]
+- !private ["SH", "UIEdgeInsets"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "bounds"]
+- ["SH", "collectionView"]
+- !private ["SH", "contentInset"]
+- !private ["SH", "dequeueReusableCell"]
+- ["SH", "init"]
+- ["SH", "init"]
+- !private ["SH", "normalCellReuseIdentifier"]
+- !private ["SH", "register"]
+- !private ["SH", "row"]
+- !private ["SH", "tabBar"]
+- !private ["SH", "tabBarController"]
+- !private ["SH", "titleCellReuseIdentifier"]
+- !private ["SH", "viewDidLoad"]
+- !private ["10Foundation9IndexPathV", "row"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s10MirrorPathP", "init"]
+- ["s10MirrorPathP", "init"]
+- !private ["SM", "row"]
+- !private ["So8NSCodingP", "ArticlesNormalCell"]
+- !private ["So8NSCodingP", "ArticlesTitleCell"]
+- !private ["So8NSCodingP", "CGFloat"]
+- !private ["So8NSCodingP", "CGSize"]
+- !private ["So8NSCodingP", "UIEdgeInsets"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "bounds"]
+- ["So8NSCodingP", "collectionView"]
+- !private ["So8NSCodingP", "contentInset"]
+- !private ["So8NSCodingP", "dequeueReusableCell"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "normalCellReuseIdentifier"]
+- !private ["So8NSCodingP", "register"]
+- !private ["So8NSCodingP", "tabBar"]
+- !private ["So8NSCodingP", "tabBarController"]
+- !private ["So8NSCodingP", "titleCellReuseIdentifier"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- !private ["So26NSExtensionRequestHandlingP", "ArticlesNormalCell"]
+- !private ["So26NSExtensionRequestHandlingP", "ArticlesTitleCell"]
+- !private ["So26NSExtensionRequestHandlingP", "CGFloat"]
+- !private ["So26NSExtensionRequestHandlingP", "CGSize"]
+- !private ["So26NSExtensionRequestHandlingP", "UIEdgeInsets"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- ["So26NSExtensionRequestHandlingP", "collectionView"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "normalCellReuseIdentifier"]
+- !private ["So26NSExtensionRequestHandlingP", "tabBar"]
+- !private ["So26NSExtensionRequestHandlingP", "tabBarController"]
+- !private ["So26NSExtensionRequestHandlingP", "titleCellReuseIdentifier"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- !private ["So8NSObjectC", "ArticlesNormalCell"]
+- !private ["So8NSObjectC", "ArticlesTitleCell"]
+- ["So8NSObjectC", "CGFloat"]
+- ["So8NSObjectC", "CGSize"]
+- ["So8NSObjectC", "IndexPath"]
+- ["So8NSObjectC", "Int"]
+- ["So8NSObjectC", "UICollectionView"]
+- ["So8NSObjectC", "UICollectionViewCell"]
+- ["So8NSObjectC", "UICollectionViewLayout"]
+- !private ["So8NSObjectC", "UIEdgeInsets"]
+- !private ["So8NSObjectC", "bounds"]
+- ["So8NSObjectC", "collectionView"]
+- !private ["So8NSObjectC", "contentInset"]
+- !private ["So8NSObjectC", "dequeueReusableCell"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "normalCellReuseIdentifier"]
+- ["So8NSObjectC", "numberOfSections"]
+- !private ["So8NSObjectC", "register"]
+- !private ["So8NSObjectC", "tabBar"]
+- !private ["So8NSObjectC", "tabBarController"]
+- ["So8NSObjectC", "titleCellReuseIdentifier"]
+- ["So8NSObjectC", "viewDidLoad"]
+- !private ["So8NSObjectP", "ArticlesNormalCell"]
+- !private ["So8NSObjectP", "ArticlesTitleCell"]
+- !private ["So8NSObjectP", "CGFloat"]
+- !private ["So8NSObjectP", "CGSize"]
+- !private ["So8NSObjectP", "UIEdgeInsets"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "bounds"]
+- ["So8NSObjectP", "collectionView"]
+- !private ["So8NSObjectP", "contentInset"]
+- !private ["So8NSObjectP", "dequeueReusableCell"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "normalCellReuseIdentifier"]
+- !private ["So8NSObjectP", "register"]
+- !private ["So8NSObjectP", "tabBar"]
+- !private ["So8NSObjectP", "tabBarController"]
+- !private ["So8NSObjectP", "titleCellReuseIdentifier"]
+- !private ["So8NSObjectP", "viewDidLoad"]
+- !private ["Sj", "init"]
+- !private ["Sq", "contentInset"]
+- !private ["Sk", "row"]
+- ["Sm", "init"]
+- ["Sm", "init"]
+- !private ["10Foundation20ReferenceConvertibleP", "row"]
+- ["ST", "init"]
+- ["ST", "init"]
+- !private ["ST", "row"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["Sx", "init"]
+- ["SS", "init"]
+- ["SS", "init"]
+- ["Sy", "init"]
+- ["Sy", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "bounds"]
+- !private ["So29UIAccessibilityIdentificationP", "contentInset"]
+- !private ["So29UIAccessibilityIdentificationP", "dequeueReusableCell"]
+- !private ["So29UIAccessibilityIdentificationP", "register"]
+- !private ["So12UIAppearanceP", "bounds"]
+- !private ["So12UIAppearanceP", "contentInset"]
+- !private ["So12UIAppearanceP", "dequeueReusableCell"]
+- !private ["So12UIAppearanceP", "register"]
+- !private ["So21UIAppearanceContainerP", "ArticlesNormalCell"]
+- !private ["So21UIAppearanceContainerP", "ArticlesTitleCell"]
+- !private ["So21UIAppearanceContainerP", "CGFloat"]
+- !private ["So21UIAppearanceContainerP", "CGSize"]
+- !private ["So21UIAppearanceContainerP", "UIEdgeInsets"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "bounds"]
+- ["So21UIAppearanceContainerP", "collectionView"]
+- !private ["So21UIAppearanceContainerP", "contentInset"]
+- !private ["So21UIAppearanceContainerP", "dequeueReusableCell"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "normalCellReuseIdentifier"]
+- !private ["So21UIAppearanceContainerP", "register"]
+- !private ["So21UIAppearanceContainerP", "tabBar"]
+- !private ["So21UIAppearanceContainerP", "tabBarController"]
+- !private ["So21UIAppearanceContainerP", "titleCellReuseIdentifier"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- !private ["So16UICollectionViewC", "bounds"]
+- !private ["So16UICollectionViewC", "contentInset"]
+- !private ["So16UICollectionViewC", "dequeueReusableCell"]
+- !private ["So16UICollectionViewC", "register"]
+- !private ["So26UICollectionViewControllerC", "ArticlesNormalCell"]
+- !private ["So26UICollectionViewControllerC", "ArticlesTitleCell"]
+- ["So26UICollectionViewControllerC", "CGFloat"]
+- ["So26UICollectionViewControllerC", "CGSize"]
+- ["So26UICollectionViewControllerC", "IndexPath"]
+- ["So26UICollectionViewControllerC", "Int"]
+- ["So26UICollectionViewControllerC", "UICollectionView"]
+- ["So26UICollectionViewControllerC", "UICollectionViewCell"]
+- ["So26UICollectionViewControllerC", "UICollectionViewLayout"]
+- !private ["So26UICollectionViewControllerC", "UIEdgeInsets"]
+- ["So26UICollectionViewControllerC", ""]
+- ["So26UICollectionViewControllerC", "collectionView"]
+- ["So26UICollectionViewControllerC", "init"]
+- !private ["So26UICollectionViewControllerC", "init"]
+- ["So26UICollectionViewControllerC", "normalCellReuseIdentifier"]
+- ["So26UICollectionViewControllerC", "numberOfSections"]
+- !private ["So26UICollectionViewControllerC", "tabBarController"]
+- ["So26UICollectionViewControllerC", "titleCellReuseIdentifier"]
+- ["So26UICollectionViewControllerC", "viewDidLoad"]
+- !private ["So26UICollectionViewDataSourceP", "ArticlesNormalCell"]
+- !private ["So26UICollectionViewDataSourceP", "ArticlesTitleCell"]
+- !private ["So26UICollectionViewDataSourceP", "CGFloat"]
+- !private ["So26UICollectionViewDataSourceP", "CGSize"]
+- !private ["So26UICollectionViewDataSourceP", "UIEdgeInsets"]
+- ["So26UICollectionViewDataSourceP", ""]
+- ["So26UICollectionViewDataSourceP", "collectionView"]
+- !private ["So26UICollectionViewDataSourceP", "init"]
+- !private ["So26UICollectionViewDataSourceP", "init"]
+- !private ["So26UICollectionViewDataSourceP", "normalCellReuseIdentifier"]
+- !private ["So26UICollectionViewDataSourceP", "tabBarController"]
+- !private ["So26UICollectionViewDataSourceP", "titleCellReuseIdentifier"]
+- !private ["So26UICollectionViewDataSourceP", "viewDidLoad"]
+- !private ["So24UICollectionViewDelegateP", "ArticlesNormalCell"]
+- !private ["So24UICollectionViewDelegateP", "ArticlesTitleCell"]
+- !private ["So24UICollectionViewDelegateP", "CGFloat"]
+- !private ["So24UICollectionViewDelegateP", "CGSize"]
+- !private ["So24UICollectionViewDelegateP", "UIEdgeInsets"]
+- ["So24UICollectionViewDelegateP", ""]
+- ["So24UICollectionViewDelegateP", "collectionView"]
+- !private ["So24UICollectionViewDelegateP", "init"]
+- !private ["So24UICollectionViewDelegateP", "init"]
+- !private ["So24UICollectionViewDelegateP", "normalCellReuseIdentifier"]
+- !private ["So24UICollectionViewDelegateP", "tabBarController"]
+- !private ["So24UICollectionViewDelegateP", "titleCellReuseIdentifier"]
+- !private ["So24UICollectionViewDelegateP", "viewDidLoad"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "ArticlesNormalCell"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "ArticlesTitleCell"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "CGFloat"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "CGSize"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "UIEdgeInsets"]
+- ["So34UICollectionViewDelegateFlowLayoutP", ""]
+- ["So34UICollectionViewDelegateFlowLayoutP", "collectionView"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "normalCellReuseIdentifier"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "tabBarController"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "titleCellReuseIdentifier"]
+- !private ["So18UIContentContainerP", "ArticlesNormalCell"]
+- !private ["So18UIContentContainerP", "ArticlesTitleCell"]
+- !private ["So18UIContentContainerP", "CGFloat"]
+- !private ["So18UIContentContainerP", "CGSize"]
+- !private ["So18UIContentContainerP", "UIEdgeInsets"]
+- ["So18UIContentContainerP", ""]
+- ["So18UIContentContainerP", "collectionView"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "normalCellReuseIdentifier"]
+- !private ["So18UIContentContainerP", "tabBar"]
+- !private ["So18UIContentContainerP", "tabBarController"]
+- !private ["So18UIContentContainerP", "titleCellReuseIdentifier"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- !private ["So17UICoordinateSpaceP", "bounds"]
+- !private ["So17UICoordinateSpaceP", "contentInset"]
+- !private ["So17UICoordinateSpaceP", "dequeueReusableCell"]
+- !private ["So17UICoordinateSpaceP", "register"]
+- !private ["So23UIDataSourceTranslatingP", "bounds"]
+- !private ["So23UIDataSourceTranslatingP", "contentInset"]
+- !private ["So23UIDataSourceTranslatingP", "dequeueReusableCell"]
+- !private ["So23UIDataSourceTranslatingP", "register"]
+- !private ["So13UIDynamicItemP", "bounds"]
+- !private ["So13UIDynamicItemP", "contentInset"]
+- !private ["So13UIDynamicItemP", "dequeueReusableCell"]
+- !private ["So13UIDynamicItemP", "register"]
+- !private ["So12UIEdgeInsetsV", "init"]
+- !private ["So18UIFocusEnvironmentP", "ArticlesNormalCell"]
+- !private ["So18UIFocusEnvironmentP", "ArticlesTitleCell"]
+- !private ["So18UIFocusEnvironmentP", "CGFloat"]
+- !private ["So18UIFocusEnvironmentP", "CGSize"]
+- !private ["So18UIFocusEnvironmentP", "UIEdgeInsets"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "bounds"]
+- ["So18UIFocusEnvironmentP", "collectionView"]
+- !private ["So18UIFocusEnvironmentP", "contentInset"]
+- !private ["So18UIFocusEnvironmentP", "dequeueReusableCell"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "normalCellReuseIdentifier"]
+- !private ["So18UIFocusEnvironmentP", "register"]
+- !private ["So18UIFocusEnvironmentP", "tabBar"]
+- !private ["So18UIFocusEnvironmentP", "tabBarController"]
+- !private ["So18UIFocusEnvironmentP", "titleCellReuseIdentifier"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- !private ["So11UIFocusItemP", "bounds"]
+- !private ["So11UIFocusItemP", "contentInset"]
+- !private ["So11UIFocusItemP", "dequeueReusableCell"]
+- !private ["So11UIFocusItemP", "register"]
+- !private ["So20UIFocusItemContainerP", "bounds"]
+- !private ["So20UIFocusItemContainerP", "contentInset"]
+- !private ["So20UIFocusItemContainerP", "dequeueReusableCell"]
+- !private ["So20UIFocusItemContainerP", "register"]
+- !private ["So30UIFocusItemScrollableContainerP", "bounds"]
+- !private ["So30UIFocusItemScrollableContainerP", "contentInset"]
+- !private ["So30UIFocusItemScrollableContainerP", "dequeueReusableCell"]
+- !private ["So30UIFocusItemScrollableContainerP", "register"]
+- !private ["So30UIPasteConfigurationSupportingP", "ArticlesNormalCell"]
+- !private ["So30UIPasteConfigurationSupportingP", "ArticlesTitleCell"]
+- !private ["So30UIPasteConfigurationSupportingP", "CGFloat"]
+- !private ["So30UIPasteConfigurationSupportingP", "CGSize"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIEdgeInsets"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "bounds"]
+- ["So30UIPasteConfigurationSupportingP", "collectionView"]
+- !private ["So30UIPasteConfigurationSupportingP", "contentInset"]
+- !private ["So30UIPasteConfigurationSupportingP", "dequeueReusableCell"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "normalCellReuseIdentifier"]
+- !private ["So30UIPasteConfigurationSupportingP", "register"]
+- !private ["So30UIPasteConfigurationSupportingP", "tabBar"]
+- !private ["So30UIPasteConfigurationSupportingP", "tabBarController"]
+- !private ["So30UIPasteConfigurationSupportingP", "titleCellReuseIdentifier"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- !private ["So11UIResponderC", "ArticlesNormalCell"]
+- !private ["So11UIResponderC", "ArticlesTitleCell"]
+- ["So11UIResponderC", "CGFloat"]
+- ["So11UIResponderC", "CGSize"]
+- ["So11UIResponderC", "IndexPath"]
+- ["So11UIResponderC", "Int"]
+- ["So11UIResponderC", "UICollectionView"]
+- ["So11UIResponderC", "UICollectionViewCell"]
+- ["So11UIResponderC", "UICollectionViewLayout"]
+- !private ["So11UIResponderC", "UIEdgeInsets"]
+- !private ["So11UIResponderC", "bounds"]
+- ["So11UIResponderC", "collectionView"]
+- !private ["So11UIResponderC", "contentInset"]
+- !private ["So11UIResponderC", "dequeueReusableCell"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "normalCellReuseIdentifier"]
+- ["So11UIResponderC", "numberOfSections"]
+- !private ["So11UIResponderC", "register"]
+- !private ["So11UIResponderC", "tabBar"]
+- !private ["So11UIResponderC", "tabBarController"]
+- ["So11UIResponderC", "titleCellReuseIdentifier"]
+- ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "ArticlesNormalCell"]
+- !private ["So30UIResponderStandardEditActionsP", "ArticlesTitleCell"]
+- !private ["So30UIResponderStandardEditActionsP", "CGFloat"]
+- !private ["So30UIResponderStandardEditActionsP", "CGSize"]
+- !private ["So30UIResponderStandardEditActionsP", "UIEdgeInsets"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "bounds"]
+- ["So30UIResponderStandardEditActionsP", "collectionView"]
+- !private ["So30UIResponderStandardEditActionsP", "contentInset"]
+- !private ["So30UIResponderStandardEditActionsP", "dequeueReusableCell"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "normalCellReuseIdentifier"]
+- !private ["So30UIResponderStandardEditActionsP", "register"]
+- !private ["So30UIResponderStandardEditActionsP", "tabBar"]
+- !private ["So30UIResponderStandardEditActionsP", "tabBarController"]
+- !private ["So30UIResponderStandardEditActionsP", "titleCellReuseIdentifier"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So12UIScrollViewC", "bounds"]
+- !private ["So12UIScrollViewC", "contentInset"]
+- !private ["So12UIScrollViewC", "dequeueReusableCell"]
+- !private ["So12UIScrollViewC", "register"]
+- !private ["So20UIScrollViewDelegateP", "ArticlesNormalCell"]
+- !private ["So20UIScrollViewDelegateP", "ArticlesTitleCell"]
+- !private ["So20UIScrollViewDelegateP", "CGFloat"]
+- !private ["So20UIScrollViewDelegateP", "CGSize"]
+- !private ["So20UIScrollViewDelegateP", "UIEdgeInsets"]
+- ["So20UIScrollViewDelegateP", ""]
+- ["So20UIScrollViewDelegateP", "collectionView"]
+- !private ["So20UIScrollViewDelegateP", "init"]
+- !private ["So20UIScrollViewDelegateP", "init"]
+- !private ["So20UIScrollViewDelegateP", "normalCellReuseIdentifier"]
+- !private ["So20UIScrollViewDelegateP", "tabBarController"]
+- !private ["So20UIScrollViewDelegateP", "titleCellReuseIdentifier"]
+- !private ["So20UIScrollViewDelegateP", "viewDidLoad"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "bounds"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "contentInset"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "dequeueReusableCell"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "register"]
+- !private ["So16UIStateRestoringP", "ArticlesNormalCell"]
+- !private ["So16UIStateRestoringP", "ArticlesTitleCell"]
+- !private ["So16UIStateRestoringP", "CGFloat"]
+- !private ["So16UIStateRestoringP", "CGSize"]
+- !private ["So16UIStateRestoringP", "UIEdgeInsets"]
+- ["So16UIStateRestoringP", ""]
+- ["So16UIStateRestoringP", "collectionView"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "normalCellReuseIdentifier"]
+- !private ["So16UIStateRestoringP", "tabBar"]
+- !private ["So16UIStateRestoringP", "tabBarController"]
+- !private ["So16UIStateRestoringP", "titleCellReuseIdentifier"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- !private ["So8UITabBarC", "bounds"]
+- !private ["So18UITabBarControllerC", "tabBar"]
+- !private ["So16UITabBarDelegateP", "tabBar"]
+- !private ["So18UITraitEnvironmentP", "ArticlesNormalCell"]
+- !private ["So18UITraitEnvironmentP", "ArticlesTitleCell"]
+- !private ["So18UITraitEnvironmentP", "CGFloat"]
+- !private ["So18UITraitEnvironmentP", "CGSize"]
+- !private ["So18UITraitEnvironmentP", "UIEdgeInsets"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "bounds"]
+- ["So18UITraitEnvironmentP", "collectionView"]
+- !private ["So18UITraitEnvironmentP", "contentInset"]
+- !private ["So18UITraitEnvironmentP", "dequeueReusableCell"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "normalCellReuseIdentifier"]
+- !private ["So18UITraitEnvironmentP", "register"]
+- !private ["So18UITraitEnvironmentP", "tabBar"]
+- !private ["So18UITraitEnvironmentP", "tabBarController"]
+- !private ["So18UITraitEnvironmentP", "titleCellReuseIdentifier"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- !private ["So23UIUserActivityRestoringP", "ArticlesNormalCell"]
+- !private ["So23UIUserActivityRestoringP", "ArticlesTitleCell"]
+- !private ["So23UIUserActivityRestoringP", "CGFloat"]
+- !private ["So23UIUserActivityRestoringP", "CGSize"]
+- !private ["So23UIUserActivityRestoringP", "UIEdgeInsets"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "bounds"]
+- ["So23UIUserActivityRestoringP", "collectionView"]
+- !private ["So23UIUserActivityRestoringP", "contentInset"]
+- !private ["So23UIUserActivityRestoringP", "dequeueReusableCell"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "normalCellReuseIdentifier"]
+- !private ["So23UIUserActivityRestoringP", "register"]
+- !private ["So23UIUserActivityRestoringP", "tabBar"]
+- !private ["So23UIUserActivityRestoringP", "tabBarController"]
+- !private ["So23UIUserActivityRestoringP", "titleCellReuseIdentifier"]
+- !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
+- !private ["So6UIViewC", "bounds"]
+- !private ["So6UIViewC", "contentInset"]
+- !private ["So6UIViewC", "dequeueReusableCell"]
+- !private ["So6UIViewC", "register"]
+- !private ["So16UIViewControllerC", "ArticlesNormalCell"]
+- !private ["So16UIViewControllerC", "ArticlesTitleCell"]
+- ["So16UIViewControllerC", "CGFloat"]
+- ["So16UIViewControllerC", "CGSize"]
+- ["So16UIViewControllerC", "IndexPath"]
+- ["So16UIViewControllerC", "Int"]
+- ["So16UIViewControllerC", "UICollectionView"]
+- ["So16UIViewControllerC", "UICollectionViewCell"]
+- ["So16UIViewControllerC", "UICollectionViewLayout"]
+- !private ["So16UIViewControllerC", "UIEdgeInsets"]
+- ["So16UIViewControllerC", "collectionView"]
+- ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "normalCellReuseIdentifier"]
+- ["So16UIViewControllerC", "numberOfSections"]
+- !private ["So16UIViewControllerC", "tabBar"]
+- !private ["So16UIViewControllerC", "tabBarController"]
+- ["So16UIViewControllerC", "titleCellReuseIdentifier"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- !private ["s15_CVarArgAlignedP", "init"]
+- !private ["s22_CVarArgPassedAsDoubleP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "bounds"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "contentInset"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "dequeueReusableCell"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "register"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ArticlesNormalCell"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ArticlesTitleCell"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CGFloat"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CGSize"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIEdgeInsets"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "collectionView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "contentInset"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dequeueReusableCell"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "normalCellReuseIdentifier"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "register"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tabBar"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tabBarController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "titleCellReuseIdentifier"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "contentInset"]
+- !private ["s21_ObjectiveCBridgeableP", "height"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "row"]
+- !private ["s21_ObjectiveCBridgeableP", "size"]
+- !private ["s21_ObjectiveCBridgeableP", "width"]
+- ["s16_SwiftStringViewP", "init"]
+- ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- "12NasaInArabic30AlbumsCollectionViewControllerC"
+- "SK"
+- !private "SB"
+- !private "Sb"
+- !private "So15CALayerDelegateP"
+- !private "12CoreGraphics7CGFloatV"
+- !private "So6CGRectV"
+- !private "So6CGSizeV"
+- "s7CVarArgP"
+- "Sl"
+- "SL"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "Se"
+- "SE"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "SF"
+- "SH"
+- !private "10Foundation9IndexPathV"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- !private "SM"
+- "So8NSCodingP"
+- "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "Sj"
+- !private "Sq"
+- !private "Sk"
+- "Sm"
+- !private "10Foundation20ReferenceConvertibleP"
+- "ST"
+- !private "s13SignedNumericP"
+- !private "Sx"
+- "SS"
+- "Sy"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- !private "So16UICollectionViewC"
+- "So26UICollectionViewControllerC"
+- "So26UICollectionViewDataSourceP"
+- "So24UICollectionViewDelegateP"
+- "So34UICollectionViewDelegateFlowLayoutP"
+- "So18UIContentContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So23UIDataSourceTranslatingP"
+- !private "So13UIDynamicItemP"
+- !private "So12UIEdgeInsetsV"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- !private "So30UIFocusItemScrollableContainerP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "So12UIScrollViewC"
+- "So20UIScrollViewDelegateP"
+- !private "So35UISpringLoadedInteractionSupportingP"
+- "So16UIStateRestoringP"
+- !private "So8UITabBarC"
+- !private "So18UITabBarControllerC"
+- !private "So16UITabBarDelegateP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
+- "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/Player/Player.framework/Modules/Player.swiftmodule/x86_64.swiftmodule"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/Cards/Cards.framework/Modules/Cards.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/Player/Player.framework/Headers/Player-umbrella.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/Cards/Cards.framework/Headers/Cards-umbrella.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/Player/Player.framework/Headers/Player-Swift.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/Cards/Cards.framework/Headers/Cards-Swift.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/Player/Player.framework/Modules/module.modulemap"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/Cards/Cards.framework/Modules/module.modulemap"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "d3f3cb8dcac61943683ebdab5f8e67f6"

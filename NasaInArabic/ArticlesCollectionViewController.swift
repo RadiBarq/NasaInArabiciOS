@@ -25,9 +25,13 @@ class ArticlesCollectionViewController: UICollectionViewController  {
 
         // Register cell classes
         self.collectionView!.register(ArticlesTitleCell.self, forCellWithReuseIdentifier: titleCellReuseIdentifier)
-        
         self.collectionView!.register(ArticlesNormalCell.self, forCellWithReuseIdentifier: normalCellReuseIdentifier)
         
+        if let tabBarController = tabBarController {
+            self.collectionView.contentInset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: tabBarController.tabBar.bounds.height, right: 0.0);
+        }
+
+
     }
 
     /*
@@ -75,47 +79,12 @@ class ArticlesCollectionViewController: UICollectionViewController  {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier:  normalCellReuseIdentifier, for: indexPath) as! ArticlesNormalCell
             return cell
             
-            
         }
     }
-
- 
-    // MARK: UICollectionViewDelegate
-
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
-     
-    }
-    */
-    
 }
 
 class ArticlesTitleCell: UICollectionViewCell
 {
-    
     var titleLabel: UILabel = {
         
         var titleLbl = UILabel()
@@ -123,6 +92,7 @@ class ArticlesTitleCell: UICollectionViewCell
         titleLbl.font = UIFont.boldSystemFont(ofSize: 34)
         titleLbl.textAlignment = .right
         return titleLbl
+        
         
     }()
     
@@ -133,6 +103,7 @@ class ArticlesTitleCell: UICollectionViewCell
         return  titleImg
         
     }()
+
     
     override init(frame: CGRect) {
         
@@ -146,18 +117,17 @@ class ArticlesTitleCell: UICollectionViewCell
     
     func setupComponents()
     {
-        
         self.addSubview(titleLabel)
+         self.addSubview(titleImage)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: 50).isActive = true
+        titleLabel.topAnchor.constraint(equalTo: titleImage.bottomAnchor, constant: 5).isActive = true
         titleLabel.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -15).isActive = true
         
-        self.addSubview(titleImage)
         titleImage.translatesAutoresizingMaskIntoConstraints = false
         titleImage.widthAnchor.constraint(equalToConstant: 100).isActive = true
         titleImage.heightAnchor.constraint(equalToConstant: 43.52).isActive = true
         titleImage.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -30).isActive = true
-        titleImage.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+        titleImage.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: 20).isActive = true
         
     }
 }

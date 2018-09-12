@@ -9,11 +9,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--الصور-->
+        <!--الألبومات-->
         <scene sceneID="VZK-5p-VOG">
             <objects>
-                <collectionViewController id="nBQ-Ep-yBF" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="hV2-MY-tZ5">
+                <collectionViewController id="nBQ-Ep-yBF" customClass="AlbumsCollectionViewController" customModule="NasaInArabic" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="hV2-MY-tZ5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -38,7 +38,7 @@
                             <outlet property="delegate" destination="nBQ-Ep-yBF" id="0nf-LO-gXX"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="الصور" image="picture_logo" selectedImage="picture_logo" id="oz2-m6-7QN">
+                    <tabBarItem key="tabBarItem" title="الألبومات" image="picture_logo" selectedImage="picture_logo" id="oz2-m6-7QN">
                         <color key="badgeColor" red="0.19215686269999999" green="0.49431372550000002" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
                 </collectionViewController>
@@ -79,7 +79,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0AL-A1-uvH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1940" y="1253.5232383808097"/>
+            <point key="canvasLocation" x="1876" y="1207"/>
         </scene>
         <!--المزيد-->
         <scene sceneID="i5y-mz-KYR">
@@ -125,7 +125,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7vN-mH-RYs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1996" y="2722"/>
+            <point key="canvasLocation" x="1876" y="2284"/>
         </scene>
         <!--من نحن-->
         <scene sceneID="GU9-0e-sCy">
@@ -172,7 +172,7 @@
         <scene sceneID="QTl-MJ-s59">
             <objects>
                 <collectionViewController id="BIe-C8-0nI" customClass="ArticlesCollectionViewController" customModule="NasaInArabic" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="Ao4-tL-GdE">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="Ao4-tL-GdE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -206,8 +206,8 @@
         <!--الفيديوهات-->
         <scene sceneID="m2q-DL-bQN">
             <objects>
-                <collectionViewController id="kqx-2Z-f5o" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="aEh-zL-qdH">
+                <collectionViewController id="kqx-2Z-f5o" customClass="VideosCollectionViewController" customModule="NasaInArabic" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="aEh-zL-qdH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -284,7 +284,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Meh-UQ-vqz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1000.8" y="1253.5232383808097"/>
+            <point key="canvasLocation" x="1001" y="1207"/>
         </scene>
         <!--المزيد-->
         <scene sceneID="P9M-2p-Alx">
@@ -310,7 +310,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AKP-Me-Wx0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1001" y="2722"/>
+            <point key="canvasLocation" x="1001" y="2284"/>
         </scene>
     </scenes>
     <resources>

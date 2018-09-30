@@ -1,10 +1,20 @@
 version: "Apple Swift version 4.2 (swiftlang-1000.0.36 clang-1000.10.44)"
-options: "2cf0c4ac8af8096c691ef65b6f1d4c39"
-build_time: [1536665728, 215267000]
+options: "cc63285a572ace5992c96ea6a667d6a4"
+build_time: [1537996137, 433045000]
 inputs:
   "/Users/radibarq/developer/NasaInArabic/NasaInArabic/AboutUsViewController.swift": [1536428846, 0]
-  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/CategoriesCollectionViewController.swift": [1536622435, 0]
-  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/AppDelegate.swift": [1536597477, 0]
-  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/MoreTableViewController.swift": [1536431838, 0]
-  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/TabBarViewController.swift": !dirty [1536665727, 0]
-  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/ArticlesCollectionViewController.swift": [1536664450, 0]
+  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/ Article.swift": [1536951023, 0]
+  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/Tag.swift": [1536945944, 0]
+  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/CategoriesCollectionViewController.swift": [1536667394, 0]
+  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/Contributor.swift": [1536950983, 0]
+  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/Source.swift": [1536946143, 0]
+  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/AppStoreViewController1.swift": [1537985693, 0]
+  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/AppDelegate.swift": [1537165808, 0]
+  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/MoreTableViewController.swift": [1537549254, 0]
+  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/Contributors.swift": [1536946360, 0]
+  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/ArticleViewController.swift": [1537996137, 0]
+  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/ArticleTableViewController.swift": [1537686623, 0]
+  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/VideosCollectionViewController.swift": [1537540499, 0]
+  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/TabBarViewController.swift": [1536666147, 0]
+  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/ArticlesCollectionViewController.swift": [1537986086, 0]
+  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/AlbumsCollectionViewController.swift": [1537537864, 0]

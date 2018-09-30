@@ -1,13 +1,13 @@
 version: "Apple Swift version 4.2 (swiftlang-1000.0.36 clang-1000.10.44)"
 options: "5d0f2e4e773904b374f2f8eb005f2ab2"
-build_time: [1536622757, 356401000]
+build_time: [1537986396, 42499000]
 inputs:
-  "/Users/radibarq/developer/NasaInArabic/Pods/Cards/Cards/Sources/Animator.swift": [1536621497, 0]
-  "/Users/radibarq/developer/NasaInArabic/Pods/Cards/Cards/Sources/Card.swift": [1536621497, 0]
-  "/Users/radibarq/developer/NasaInArabic/Pods/Cards/Cards/Sources/CardArticle.swift": [1536620315, 0]
-  "/Users/radibarq/developer/NasaInArabic/Pods/Cards/Cards/Sources/CardGroup.swift": [1536621497, 0]
-  "/Users/radibarq/developer/NasaInArabic/Pods/Cards/Cards/Sources/CardGroupSliding.swift": [1536620315, 0]
-  "/Users/radibarq/developer/NasaInArabic/Pods/Cards/Cards/Sources/CardHighlight.swift": [1536621497, 0]
-  "/Users/radibarq/developer/NasaInArabic/Pods/Cards/Cards/Sources/CardPlayer.swift": [1536621508, 0]
-  "/Users/radibarq/developer/NasaInArabic/Pods/Cards/Cards/Sources/DetailViewController.swift": [1536620315, 0]
-  "/Users/radibarq/developer/NasaInArabic/Pods/Cards/Cards/Sources/LayoutHelper.swift": [1536620315, 0]
+  "/Users/radibarq/developer/NasaInArabic/Pods/Cards/Cards/Sources/Animator.swift": [1537554151, 0]
+  "/Users/radibarq/developer/NasaInArabic/Pods/Cards/Cards/Sources/Card.swift": [1537554151, 0]
+  "/Users/radibarq/developer/NasaInArabic/Pods/Cards/Cards/Sources/CardArticle.swift": [1537554004, 0]
+  "/Users/radibarq/developer/NasaInArabic/Pods/Cards/Cards/Sources/CardGroup.swift": [1537554151, 0]
+  "/Users/radibarq/developer/NasaInArabic/Pods/Cards/Cards/Sources/CardGroupSliding.swift": [1537554004, 0]
+  "/Users/radibarq/developer/NasaInArabic/Pods/Cards/Cards/Sources/CardHighlight.swift": [1537554151, 0]
+  "/Users/radibarq/developer/NasaInArabic/Pods/Cards/Cards/Sources/CardPlayer.swift": [1537555459, 0]
+  "/Users/radibarq/developer/NasaInArabic/Pods/Cards/Cards/Sources/DetailViewController.swift": [1537554004, 0]
+  "/Users/radibarq/developer/NasaInArabic/Pods/Cards/Cards/Sources/LayoutHelper.swift": [1537554004, 0]

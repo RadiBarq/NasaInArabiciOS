@@ -15,20 +15,15 @@ provides-dynamic-lookup:
 - "window"
 depends-top-level:
 - "AppDelegate"
-- "AssignmentPrecedence"
 - "Bool"
 - !private "BooleanLiteralType"
 - "UIApplication"
 - "UIApplicationDelegate"
-- !private "UIImage"
-- !private "UINavigationBar"
 - "UIResponder"
 - "UIWindow"
 depends-member:
 - ["12NasaInArabic11AppDelegateC", "Bool"]
 - ["12NasaInArabic11AppDelegateC", "UIApplication"]
-- !private ["12NasaInArabic11AppDelegateC", "UIImage"]
-- !private ["12NasaInArabic11AppDelegateC", "UINavigationBar"]
 - ["12NasaInArabic11AppDelegateC", "UIWindow"]
 - ["12NasaInArabic11AppDelegateC", "application"]
 - ["12NasaInArabic11AppDelegateC", "applicationDidBecomeActive"]
@@ -45,14 +40,8 @@ depends-member:
 - ["12NasaInArabic11AppDelegateC", "deinit"]
 - ["12NasaInArabic11AppDelegateC", "init"]
 - ["12NasaInArabic11AppDelegateC", "window"]
-- !private ["So15CALayerDelegateP", "appearance"]
-- !private ["So15CALayerDelegateP", "setBackgroundImage"]
-- !private ["So15CALayerDelegateP", "shadowImage"]
 - ["s7CVarArgP", "LaunchOptionsKey"]
-- !private ["s7CVarArgP", "UIImage"]
-- !private ["s7CVarArgP", "UINavigationBar"]
 - ["s7CVarArgP", ""]
-- !private ["s7CVarArgP", "appearance"]
 - ["s7CVarArgP", "application"]
 - ["s7CVarArgP", "applicationDidBecomeActive"]
 - ["s7CVarArgP", "applicationDidEnterBackground"]
@@ -67,14 +56,9 @@ depends-member:
 - ["s7CVarArgP", "applicationWillTerminate"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
-- !private ["s7CVarArgP", "setBackgroundImage"]
-- !private ["s7CVarArgP", "shadowImage"]
 - ["s7CVarArgP", "window"]
 - ["s28CustomDebugStringConvertibleP", "LaunchOptionsKey"]
-- !private ["s28CustomDebugStringConvertibleP", "UIImage"]
-- !private ["s28CustomDebugStringConvertibleP", "UINavigationBar"]
 - ["s28CustomDebugStringConvertibleP", ""]
-- !private ["s28CustomDebugStringConvertibleP", "appearance"]
 - ["s28CustomDebugStringConvertibleP", "application"]
 - ["s28CustomDebugStringConvertibleP", "applicationDidBecomeActive"]
 - ["s28CustomDebugStringConvertibleP", "applicationDidEnterBackground"]
@@ -89,14 +73,9 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "applicationWillTerminate"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
-- !private ["s28CustomDebugStringConvertibleP", "setBackgroundImage"]
-- !private ["s28CustomDebugStringConvertibleP", "shadowImage"]
 - ["s28CustomDebugStringConvertibleP", "window"]
 - ["s23CustomStringConvertibleP", "LaunchOptionsKey"]
-- !private ["s23CustomStringConvertibleP", "UIImage"]
-- !private ["s23CustomStringConvertibleP", "UINavigationBar"]
 - ["s23CustomStringConvertibleP", ""]
-- !private ["s23CustomStringConvertibleP", "appearance"]
 - ["s23CustomStringConvertibleP", "application"]
 - ["s23CustomStringConvertibleP", "applicationDidBecomeActive"]
 - ["s23CustomStringConvertibleP", "applicationDidEnterBackground"]
@@ -111,14 +90,9 @@ depends-member:
 - ["s23CustomStringConvertibleP", "applicationWillTerminate"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
-- !private ["s23CustomStringConvertibleP", "setBackgroundImage"]
-- !private ["s23CustomStringConvertibleP", "shadowImage"]
 - ["s23CustomStringConvertibleP", "window"]
 - ["SQ", "LaunchOptionsKey"]
-- !private ["SQ", "UIImage"]
-- !private ["SQ", "UINavigationBar"]
 - ["SQ", ""]
-- !private ["SQ", "appearance"]
 - ["SQ", "application"]
 - ["SQ", "applicationDidBecomeActive"]
 - ["SQ", "applicationDidEnterBackground"]
@@ -131,17 +105,11 @@ depends-member:
 - ["SQ", "applicationWillEnterForeground"]
 - ["SQ", "applicationWillResignActive"]
 - ["SQ", "applicationWillTerminate"]
-- !private ["SQ", "default"]
 - !private ["SQ", "init"]
 - !private ["SQ", "init"]
-- !private ["SQ", "setBackgroundImage"]
-- !private ["SQ", "shadowImage"]
 - ["SQ", "window"]
 - ["SH", "LaunchOptionsKey"]
-- !private ["SH", "UIImage"]
-- !private ["SH", "UINavigationBar"]
 - ["SH", ""]
-- !private ["SH", "appearance"]
 - ["SH", "application"]
 - ["SH", "applicationDidBecomeActive"]
 - ["SH", "applicationDidEnterBackground"]
@@ -154,25 +122,13 @@ depends-member:
 - ["SH", "applicationWillEnterForeground"]
 - ["SH", "applicationWillResignActive"]
 - ["SH", "applicationWillTerminate"]
-- !private ["SH", "default"]
 - !private ["SH", "init"]
 - !private ["SH", "init"]
-- !private ["SH", "setBackgroundImage"]
-- !private ["SH", "shadowImage"]
 - ["SH", "window"]
-- !private ["So8NSCodingP", "appearance"]
-- !private ["So8NSCodingP", "init"]
-- !private ["So8NSCodingP", "setBackgroundImage"]
-- !private ["So8NSCodingP", "shadowImage"]
-- !private ["So21NSItemProviderReadingP", "init"]
-- !private ["So21NSItemProviderWritingP", "init"]
 - ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "LaunchOptionsKey"]
 - ["So8NSObjectC", "UIApplication"]
-- !private ["So8NSObjectC", "UIImage"]
-- !private ["So8NSObjectC", "UINavigationBar"]
 - ["So8NSObjectC", "UIWindow"]
-- !private ["So8NSObjectC", "appearance"]
 - ["So8NSObjectC", "application"]
 - ["So8NSObjectC", "applicationDidBecomeActive"]
 - ["So8NSObjectC", "applicationDidEnterBackground"]
@@ -187,14 +143,9 @@ depends-member:
 - ["So8NSObjectC", "applicationWillTerminate"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "init"]
-- !private ["So8NSObjectC", "setBackgroundImage"]
-- !private ["So8NSObjectC", "shadowImage"]
 - ["So8NSObjectC", "window"]
 - ["So8NSObjectP", "LaunchOptionsKey"]
-- !private ["So8NSObjectP", "UIImage"]
-- !private ["So8NSObjectP", "UINavigationBar"]
 - ["So8NSObjectP", ""]
-- !private ["So8NSObjectP", "appearance"]
 - ["So8NSObjectP", "application"]
 - ["So8NSObjectP", "applicationDidBecomeActive"]
 - ["So8NSObjectP", "applicationDidEnterBackground"]
@@ -209,24 +160,8 @@ depends-member:
 - ["So8NSObjectP", "applicationWillTerminate"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "init"]
-- !private ["So8NSObjectP", "setBackgroundImage"]
-- !private ["So8NSObjectP", "shadowImage"]
 - ["So8NSObjectP", "window"]
-- !private ["So14NSSecureCodingP", "init"]
-- !private ["SY", "default"]
-- !private ["So29UIAccessibilityIdentificationP", "appearance"]
-- !private ["So29UIAccessibilityIdentificationP", "init"]
-- !private ["So29UIAccessibilityIdentificationP", "setBackgroundImage"]
-- !private ["So29UIAccessibilityIdentificationP", "shadowImage"]
-- !private ["So12UIAppearanceP", "appearance"]
-- !private ["So12UIAppearanceP", "setBackgroundImage"]
-- !private ["So12UIAppearanceP", "shadowImage"]
-- !private ["So21UIAppearanceContainerP", "appearance"]
-- !private ["So21UIAppearanceContainerP", "setBackgroundImage"]
-- !private ["So21UIAppearanceContainerP", "shadowImage"]
 - ["So13UIApplicationC", "LaunchOptionsKey"]
-- !private ["So21UIApplicationDelegateP", "UIImage"]
-- !private ["So21UIApplicationDelegateP", "UINavigationBar"]
 - ["So21UIApplicationDelegateP", ""]
 - ["So21UIApplicationDelegateP", "application"]
 - ["So21UIApplicationDelegateP", "applicationDidBecomeActive"]
@@ -241,35 +176,8 @@ depends-member:
 - ["So21UIApplicationDelegateP", "applicationWillResignActive"]
 - ["So21UIApplicationDelegateP", "applicationWillTerminate"]
 - ["So21UIApplicationDelegateP", "window"]
-- !private ["So12UIBarMetricsV", "default"]
-- !private ["So16UIBarPositioningP", "appearance"]
-- !private ["So16UIBarPositioningP", "setBackgroundImage"]
-- !private ["So16UIBarPositioningP", "shadowImage"]
-- !private ["So17UICoordinateSpaceP", "appearance"]
-- !private ["So17UICoordinateSpaceP", "setBackgroundImage"]
-- !private ["So17UICoordinateSpaceP", "shadowImage"]
-- !private ["So13UIDynamicItemP", "appearance"]
-- !private ["So13UIDynamicItemP", "setBackgroundImage"]
-- !private ["So13UIDynamicItemP", "shadowImage"]
-- !private ["So18UIFocusEnvironmentP", "appearance"]
-- !private ["So18UIFocusEnvironmentP", "setBackgroundImage"]
-- !private ["So18UIFocusEnvironmentP", "shadowImage"]
-- !private ["So11UIFocusItemP", "appearance"]
-- !private ["So11UIFocusItemP", "setBackgroundImage"]
-- !private ["So11UIFocusItemP", "shadowImage"]
-- !private ["So20UIFocusItemContainerP", "appearance"]
-- !private ["So20UIFocusItemContainerP", "setBackgroundImage"]
-- !private ["So20UIFocusItemContainerP", "shadowImage"]
-- !private ["So7UIImageC", "init"]
-- !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
-- !private ["So15UINavigationBarC", "appearance"]
-- !private ["So15UINavigationBarC", "setBackgroundImage"]
-- !private ["So15UINavigationBarC", "shadowImage"]
 - ["So30UIPasteConfigurationSupportingP", "LaunchOptionsKey"]
-- !private ["So30UIPasteConfigurationSupportingP", "UIImage"]
-- !private ["So30UIPasteConfigurationSupportingP", "UINavigationBar"]
 - ["So30UIPasteConfigurationSupportingP", ""]
-- !private ["So30UIPasteConfigurationSupportingP", "appearance"]
 - ["So30UIPasteConfigurationSupportingP", "application"]
 - ["So30UIPasteConfigurationSupportingP", "applicationDidBecomeActive"]
 - ["So30UIPasteConfigurationSupportingP", "applicationDidEnterBackground"]
@@ -284,17 +192,12 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "applicationWillTerminate"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
-- !private ["So30UIPasteConfigurationSupportingP", "setBackgroundImage"]
-- !private ["So30UIPasteConfigurationSupportingP", "shadowImage"]
 - ["So30UIPasteConfigurationSupportingP", "window"]
 - ["So11UIResponderC", "Bool"]
 - ["So11UIResponderC", "LaunchOptionsKey"]
 - ["So11UIResponderC", "UIApplication"]
-- !private ["So11UIResponderC", "UIImage"]
-- !private ["So11UIResponderC", "UINavigationBar"]
 - ["So11UIResponderC", "UIWindow"]
 - ["So11UIResponderC", ""]
-- !private ["So11UIResponderC", "appearance"]
 - ["So11UIResponderC", "application"]
 - ["So11UIResponderC", "applicationDidBecomeActive"]
 - ["So11UIResponderC", "applicationDidEnterBackground"]
@@ -309,14 +212,9 @@ depends-member:
 - ["So11UIResponderC", "applicationWillTerminate"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "init"]
-- !private ["So11UIResponderC", "setBackgroundImage"]
-- !private ["So11UIResponderC", "shadowImage"]
 - ["So11UIResponderC", "window"]
 - ["So30UIResponderStandardEditActionsP", "LaunchOptionsKey"]
-- !private ["So30UIResponderStandardEditActionsP", "UIImage"]
-- !private ["So30UIResponderStandardEditActionsP", "UINavigationBar"]
 - ["So30UIResponderStandardEditActionsP", ""]
-- !private ["So30UIResponderStandardEditActionsP", "appearance"]
 - ["So30UIResponderStandardEditActionsP", "application"]
 - ["So30UIResponderStandardEditActionsP", "applicationDidBecomeActive"]
 - ["So30UIResponderStandardEditActionsP", "applicationDidEnterBackground"]
@@ -331,17 +229,9 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "applicationWillTerminate"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
-- !private ["So30UIResponderStandardEditActionsP", "setBackgroundImage"]
-- !private ["So30UIResponderStandardEditActionsP", "shadowImage"]
 - ["So30UIResponderStandardEditActionsP", "window"]
-- !private ["So18UITraitEnvironmentP", "appearance"]
-- !private ["So18UITraitEnvironmentP", "setBackgroundImage"]
-- !private ["So18UITraitEnvironmentP", "shadowImage"]
 - ["So23UIUserActivityRestoringP", "LaunchOptionsKey"]
-- !private ["So23UIUserActivityRestoringP", "UIImage"]
-- !private ["So23UIUserActivityRestoringP", "UINavigationBar"]
 - ["So23UIUserActivityRestoringP", ""]
-- !private ["So23UIUserActivityRestoringP", "appearance"]
 - ["So23UIUserActivityRestoringP", "application"]
 - ["So23UIUserActivityRestoringP", "applicationDidBecomeActive"]
 - ["So23UIUserActivityRestoringP", "applicationDidEnterBackground"]
@@ -356,21 +246,9 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "applicationWillTerminate"]
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "init"]
-- !private ["So23UIUserActivityRestoringP", "setBackgroundImage"]
-- !private ["So23UIUserActivityRestoringP", "shadowImage"]
 - ["So23UIUserActivityRestoringP", "window"]
-- !private ["So6UIViewC", "appearance"]
-- !private ["So6UIViewC", "setBackgroundImage"]
-- !private ["So6UIViewC", "shadowImage"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "appearance"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setBackgroundImage"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "shadowImage"]
-- !private ["s26_ExpressibleByImageLiteralP", "init"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "LaunchOptionsKey"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "UINavigationBar"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "appearance"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "application"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidBecomeActive"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidEnterBackground"]
@@ -385,54 +263,32 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillTerminate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "setBackgroundImage"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowImage"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "window"]
 depends-nominal:
 - "12NasaInArabic11AppDelegateC"
-- !private "So15CALayerDelegateP"
 - "s7CVarArgP"
 - "s28CustomDebugStringConvertibleP"
 - "s23CustomStringConvertibleP"
 - "SQ"
 - "SH"
-- !private "So8NSCodingP"
-- !private "So21NSItemProviderReadingP"
-- !private "So21NSItemProviderWritingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
-- !private "So14NSSecureCodingP"
-- !private "SY"
-- !private "So29UIAccessibilityIdentificationP"
-- !private "So12UIAppearanceP"
-- !private "So21UIAppearanceContainerP"
 - "So13UIApplicationC"
 - "So21UIApplicationDelegateP"
-- !private "So12UIBarMetricsV"
-- !private "So16UIBarPositioningP"
-- !private "So17UICoordinateSpaceP"
-- !private "So13UIDynamicItemP"
-- !private "So18UIFocusEnvironmentP"
-- !private "So11UIFocusItemP"
-- !private "So20UIFocusItemContainerP"
-- !private "So7UIImageC"
-- !private "So39UIItemProviderPresentationSizeProvidingP"
-- !private "So15UINavigationBarC"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
-- !private "So18UITraitEnvironmentP"
 - "So23UIUserActivityRestoringP"
-- !private "So6UIViewC"
-- !private "s37_DefaultCustomPlaygroundQuickLookableP"
-- !private "s26_ExpressibleByImageLiteralP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/Hero/Hero.framework/Modules/Hero.swiftmodule/x86_64.swiftmodule"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/Player/Player.framework/Modules/Player.swiftmodule/x86_64.swiftmodule"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/Cards/Cards.framework/Modules/Cards.swiftmodule/x86_64.swiftmodule"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/CollectionKit/CollectionKit.framework/Modules/CollectionKit.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
@@ -447,14 +303,51 @@ depends-external:
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MetalKit.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+GIF.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/Hero/Hero.framework/Headers/Hero-umbrella.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/Player/Player.framework/Headers/Player-umbrella.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/Cards/Cards.framework/Headers/Cards-umbrella.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/CollectionKit/CollectionKit.framework/Headers/CollectionKit-umbrella.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+ForceDecode.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/NSImage+WebCache.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIButton+WebCache.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/NSButton+WebCache.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIView+WebCache.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImageView+WebCache.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImageView+HighlightedWebCache.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCache.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageFrame.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/NSData+ImageContentType.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCacheConfig.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageOperation.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIView+WebCacheOperation.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderOperation.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageTransition.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDAnimatedImageRep.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloader.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageGIFCoder.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageImageIOCoder.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageCoder.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageManager.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageCodersManager.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImagePrefetcher.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageCoderHelper.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageCompat.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/Hero/Hero.framework/Headers/Hero-Swift.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/Player/Player.framework/Headers/Player-Swift.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/Cards/Cards.framework/Headers/Cards-Swift.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/CollectionKit/CollectionKit.framework/Headers/CollectionKit-Swift.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/Hero/Hero.framework/Modules/module.modulemap"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/Player/Player.framework/Modules/module.modulemap"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/Cards/Cards.framework/Modules/module.modulemap"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/CollectionKit/CollectionKit.framework/Modules/module.modulemap"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
@@ -465,6 +358,8 @@ depends-external:
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"

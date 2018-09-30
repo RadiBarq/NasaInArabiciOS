@@ -13,7 +13,11 @@ class AlbumsCollectionViewController: UICollectionViewController {
     
     private let titleCellReuseIdentifier = "titleCell"
     private let normalCellReuseIdentifier = "normalCell"
-
+    var articles = [Articles]()
+    var articlesImageViews = [UIImageView?]()
+    var numberOfRows = 0
+    var currentPageNumber = 1
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,20 +36,66 @@ class AlbumsCollectionViewController: UICollectionViewController {
                 tabBarController.tabBar.bounds.height - 35, right: 0.0);
             
         }
-
+        
+        getData(pageNumber: currentPageNumber)
+        
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+    
+    func getPageNumber(rowNumber: Int) -> Int
+    {
+        
+        return Int(floor(Double(rowNumber / 9)))
+        
     }
-    */
-
-    // MARK: UICollectionViewDataSource
+    
+    func rowPerPage(rowNumber: Int, pageNumber: Int) ->Int{
+        
+        return rowNumber - 9 * pageNumber
+        
+    }
+    
+    func getData(pageNumber: Int)
+    {
+        let urlString = "https://api.nasainarabic.net/images/main/" + String(pageNumber)
+        guard let url = URL(string: urlString) else
+        {
+            return
+        }
+        
+        URLSession.shared.dataTask(with: url){ (data, repnose, error) in
+            DispatchQueue.main.async {
+                
+                guard let data = data else {return}
+                
+                do {
+                    
+                    let decoder = JSONDecoder()
+                    let onePageArticle = try decoder.decode(Articles.self, from: data)
+                    self.articles.append(onePageArticle)
+                    self.numberOfRows = self.numberOfRows + onePageArticle.data.count - 1
+                    self.collectionView.reloadData()
+                    
+                }
+                    
+                catch let jsonError {
+                    
+                    print("Failed to decode:", jsonError)
+                }
+            }
+            }.resume()
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
+        if (indexPath.row == numberOfRows - 1)
+        {
+            print("end of the list")
+            currentPageNumber = currentPageNumber + 1
+            getData(pageNumber: currentPageNumber)
+        }
+        
+    }
+    
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -55,7 +105,7 @@ class AlbumsCollectionViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 10
+           return numberOfRows
     }
     
     
@@ -66,26 +116,42 @@ class AlbumsCollectionViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
         IndexPath) -> UICollectionViewCell {
-        
+    
         if (indexPath.row == 0)
         {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier:  titleCellReuseIdentifier, for: indexPath) as! ArticlesTitleCell
             return cell
-            
         }
             
         else
         {
+            let pageNumber = getPageNumber(rowNumber: indexPath.row - 1)
+            let rowPerPage = self.rowPerPage(rowNumber: indexPath.row - 1, pageNumber: pageNumber)
             
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier:  normalCellReuseIdentifier, for: indexPath) as! ArticlesNormalCell
-            return cell
+            cell.articleTitle.text = articles[pageNumber].data[rowPerPage].headline
+            cell.articleDescription.text = articles[pageNumber].data[rowPerPage].excerpt + "..."
             
+            
+            if let url = URL(string: self.articles[pageNumber].data[rowPerPage].image)
+            {
+                cell.imageView.sd_setShowActivityIndicatorView(true)
+                cell.imageView.sd_setIndicatorStyle(.gray)
+                cell.imageView.sd_addActivityIndicator()
+                cell.imageView.sd_setImage(with: url,  placeholderImage: nil, completed:
+                    
+                    {  (image, error, cache, ref) in
+                        
+                        cell.imageView.sd_removeActivityIndicator()
+                        //  self.loadedImages[indexPath.item] = image
+                })
+                
+            }
+            
+            return cell
         }
     }
-
- 
 }
-
 
 extension AlbumsCollectionViewController: UICollectionViewDelegateFlowLayout
     {

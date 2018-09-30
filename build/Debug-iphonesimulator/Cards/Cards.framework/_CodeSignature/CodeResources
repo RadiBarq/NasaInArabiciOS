@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Cards-Swift.h</key>
 		<data>
-		oX0ni65CacNOmO4IUUqdCpo+etE=
+		1Ne/+SOalDOqksAsG9rYsKSMytg=
 		</data>
 		<key>Headers/Cards-umbrella.h</key>
 		<data>
@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		TYQpUOcL8KROIhFuqS5dhXxSd8M=
+		dedYg6Lv1IAplX1d0OQMwW0MCjE=
 		</data>
 		<key>Modules/Cards.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		xKIaL5Yd31vYYWky6BO6bt2KPDw=
+		AhkGZGLS7PjLaAEmLEmohCwUTHQ=
 		</data>
 		<key>Modules/Cards.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		D3V8EYel5bwQHbyJzHuJ/+PJFLM=
+		9ikUlxp1PzN4LoVexETBKNnZz98=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -35,11 +35,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oX0ni65CacNOmO4IUUqdCpo+etE=
+			1Ne/+SOalDOqksAsG9rYsKSMytg=
 			</data>
 			<key>hash2</key>
 			<data>
-			NGvCC2bbwVkE9t+l8fo4hUrVcDoY4Rk5/OvMHxguvbQ=
+			nfGhL2idI5V26KcAdeCH43BH9sQPeG7THw33nTiFMiU=
 			</data>
 		</dict>
 		<key>Headers/Cards-umbrella.h</key>
@@ -57,22 +57,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xKIaL5Yd31vYYWky6BO6bt2KPDw=
+			AhkGZGLS7PjLaAEmLEmohCwUTHQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			rmN1LbRTtKVEO2i/Vy746O9LNDx/fvFp5A9plu18LsE=
+			vOdMpvF6i5yGkyyXos+rMMa96pwccE9/vXLznmai23g=
 			</data>
 		</dict>
 		<key>Modules/Cards.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			D3V8EYel5bwQHbyJzHuJ/+PJFLM=
+			9ikUlxp1PzN4LoVexETBKNnZz98=
 			</data>
 			<key>hash2</key>
 			<data>
-			SSx9f0FAu8drOTKUxD983xq/ZTcAjXyR0713KuNgdGc=
+			v2VX9BD9Es6aT4XBCpDzg9yPhTwzvqWw8ABIuPl2Czs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -89,7 +89,7 @@
 	</dict>
 	<key>rules</key>
 	<dict>
-		<key>^</key>
+		<key>^.*</key>
 		<true/>
 		<key>^.*\.lproj/</key>
 		<dict>
@@ -120,24 +120,12 @@
 			<key>weight</key>
 			<real>11</real>
 		</dict>
-		<key>^</key>
-		<dict>
-			<key>weight</key>
-			<real>20</real>
-		</dict>
 		<key>^(.*/)?\.DS_Store$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
 			<key>weight</key>
 			<real>2000</real>
-		</dict>
-		<key>^(Frameworks|SharedFrameworks|PlugIns|Plug-ins|XPCServices|Helpers|MacOS|Library/(Automator|Spotlight|LoginItems))/</key>
-		<dict>
-			<key>nested</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
 		</dict>
 		<key>^.*</key>
 		<true/>
@@ -173,13 +161,6 @@
 			<true/>
 			<key>weight</key>
 			<real>20</real>
-		</dict>
-		<key>^[^/]+$</key>
-		<dict>
-			<key>nested</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
 		</dict>
 		<key>^embedded\.provisionprofile$</key>
 		<dict>

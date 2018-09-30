@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+
+struct Source{
+    
+    var id: String
+    var title: String
+    
+    
+}
+
+

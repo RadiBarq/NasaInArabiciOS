@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+
+struct Contributor {
+    
+    
+    var fullName: String
+    var userId:String
+    var image:String
+    var thumbnail: String
+    
+
+
+}

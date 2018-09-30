@@ -39,7 +39,7 @@ class MoreTableViewController: UITableViewController {
         
         if(indexPath.row == 0)
         {
-
+            
             let mainStroyBoard = UIStoryboard(name: "Main", bundle: nil)
             let aboutUsViewController = mainStroyBoard.instantiateViewController(withIdentifier: "aboutUsViewController") as! AboutUsViewController
             self.navigationController?.pushViewController(aboutUsViewController, animated: true)

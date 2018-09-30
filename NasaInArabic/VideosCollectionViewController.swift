@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SDWebImage
+
 
 private let reuseIdentifier = "Cell"
 
@@ -14,6 +16,11 @@ class VideosCollectionViewController: UICollectionViewController {
 
     private let titleCellReuseIdentifier = "titleCell"
     private let normalCellReuseIdentifier = "normalCell"
+    var articles = [Articles]()
+    var articlesImageViews = [UIImageView?]()
+    var numberOfRows = 0
+    var currentPageNumber = 1
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,14 +32,71 @@ class VideosCollectionViewController: UICollectionViewController {
         self.collectionView!.register(ArticlesTitleCell.self, forCellWithReuseIdentifier: titleCellReuseIdentifier)
         self.collectionView!.register(ArticlesNormalCell.self, forCellWithReuseIdentifier: normalCellReuseIdentifier)
         
-        
         if let tabBarController = tabBarController {
             self.collectionView.contentInset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: tabBarController.tabBar.bounds.height - 35, right: 0.0);
         }
-
+        
+        getData(pageNumber: currentPageNumber)
+        
         // Do any additional setup after loading the view.
     }
     
+    override func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
+        if (indexPath.row == numberOfRows - 1)
+        {
+            print("end of the list")
+            currentPageNumber = currentPageNumber + 1
+            getData(pageNumber: currentPageNumber)
+        }
+        
+    }
+ 
+    func getPageNumber(rowNumber: Int) -> Int
+    {
+        
+        return Int(floor(Double(rowNumber / 9)))
+        
+    }
+    
+    func rowPerPage(rowNumber: Int, pageNumber: Int) ->Int{
+        
+        return rowNumber - 9 * pageNumber
+        
+    }
+    
+    func getData(pageNumber: Int)
+    {
+        let urlString =  "https://api.nasainarabic.net/videos/main/" + String(pageNumber)
+        
+        guard let url = URL(string: urlString) else
+        {
+            return
+        }
+        
+        URLSession.shared.dataTask(with: url){ (data, repnose, error) in
+            DispatchQueue.main.async {
+                
+                guard let data = data else {return}
+                
+                do {
+                    
+                    let decoder = JSONDecoder()
+                    let onePageArticle = try decoder.decode(Articles.self, from: data)
+                    self.articles.append(onePageArticle)
+                    self.numberOfRows = self.numberOfRows + onePageArticle.data.count - 1
+                    self.collectionView.reloadData()
+                    
+                }
+                    
+                catch let jsonError {
+                    
+                    print("Failed to decode:", jsonError)
+                }
+            }
+            }.resume()
+        
+    }
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -42,7 +106,7 @@ class VideosCollectionViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 10
+        return numberOfRows
     }
     
     
@@ -62,12 +126,33 @@ class VideosCollectionViewController: UICollectionViewController {
             
         else
         {
+            let pageNumber = getPageNumber(rowNumber: indexPath.row - 1)
+             let rowPerPage = self.rowPerPage(rowNumber: indexPath.row - 1, pageNumber: pageNumber)
             
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier:  normalCellReuseIdentifier, for: indexPath) as! ArticlesNormalCell
-            return cell
+            cell.articleTitle.text = articles[pageNumber].data[rowPerPage].headline
+            cell.articleDescription.text = articles[pageNumber].data[rowPerPage].excerpt + "..."
             
+            
+            if let url = URL(string: self.articles[pageNumber].data[rowPerPage].image)
+            {
+                cell.imageView.sd_setShowActivityIndicatorView(true)
+                cell.imageView.sd_setIndicatorStyle(.gray)
+                cell.imageView.sd_addActivityIndicator()
+                cell.imageView.sd_setImage(with: url,  placeholderImage: nil, completed:
+                    
+                    {  (image, error, cache, ref) in
+                        
+                        cell.imageView.sd_removeActivityIndicator()
+                        //  self.loadedImages[indexPath.item] = image
+                })
+                
+            }
+            
+            return cell
         }
     }
+    
 }
 
 extension VideosCollectionViewController: UICollectionViewDelegateFlowLayout

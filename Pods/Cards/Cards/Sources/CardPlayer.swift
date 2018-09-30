@@ -84,10 +84,8 @@ import Player
             player.url = videoSource
         }
     }
-
-    /**
-     Required. View controller that should display the player.
-     */
+    
+    
     public func shouldDisplayPlayer( from vc: UIViewController ) {
         vc.addChild(player)
     }

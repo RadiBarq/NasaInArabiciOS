@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+
+struct Tag {
+    
+    var id: String
+    var tag: String
+    var url: String
+    
+    
+}

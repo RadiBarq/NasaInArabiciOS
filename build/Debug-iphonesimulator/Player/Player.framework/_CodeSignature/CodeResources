@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Player-Swift.h</key>
 		<data>
-		etL8UP2nQHEmttOrcncbFPdCbGA=
+		6nrw+nnOa+bTlkCvIlAvgl+1bZw=
 		</data>
 		<key>Headers/Player-umbrella.h</key>
 		<data>
@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		JKrbiis3Gbda/ZBy0in/2ac3mws=
+		xI4uZo2L79qN619wMjVWuxMn37I=
 		</data>
 		<key>Modules/Player.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		1s1dChxwyTodR07Vu9Be0Yub4PM=
+		6gPZ9m6QPipnKG5OYneM5EyyyR0=
 		</data>
 		<key>Modules/Player.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		BpwX+UCi/84dNH/7n97A2aEEeW0=
+		O+T54n6oRGLcpVSdUeTUAQNYUbY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -35,11 +35,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			etL8UP2nQHEmttOrcncbFPdCbGA=
+			6nrw+nnOa+bTlkCvIlAvgl+1bZw=
 			</data>
 			<key>hash2</key>
 			<data>
-			hlSW/tzZDGOA26aRHhKCd2P7V8fx6qxwpAQ0zuB6VXY=
+			d2REgP7K8pUgG2n/QL7XnssfJTV5GdxbsAGhjdg/QCA=
 			</data>
 		</dict>
 		<key>Headers/Player-umbrella.h</key>
@@ -57,22 +57,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1s1dChxwyTodR07Vu9Be0Yub4PM=
+			6gPZ9m6QPipnKG5OYneM5EyyyR0=
 			</data>
 			<key>hash2</key>
 			<data>
-			5kkWwCfOl86N57pyu6e8ZGNo6cmGUFj0IM5B41EiWGs=
+			UUnyFXGGEGD0JNIFHvUWBUXjymnMt8y95G7HC/wg5Ag=
 			</data>
 		</dict>
 		<key>Modules/Player.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BpwX+UCi/84dNH/7n97A2aEEeW0=
+			O+T54n6oRGLcpVSdUeTUAQNYUbY=
 			</data>
 			<key>hash2</key>
 			<data>
-			TTTiiJJ3dLHquwvAS8lIq/M2f1ru6curvhYKZ0wE5xg=
+			Ft6XqRfJy/HUivrVQIJI/G9B6z8rLlIrSonOOrflHx0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

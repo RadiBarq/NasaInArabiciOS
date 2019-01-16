@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>PSFCZBNLMD.RadiBaraq.NasaInArabic</string>
+	<string>5S7V735958.RadiBaraq.NasaInArabic.com</string>
 	<key>com.apple.developer.team-identifier</key>
-	<string>PSFCZBNLMD</string>
+	<string>5S7V735958</string>
 	<key>get-task-allow</key>
 	<true/>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>PSFCZBNLMD.RadiBaraq.NasaInArabic</string>
+		<string>5S7V735958.RadiBaraq.NasaInArabic.com</string>
 	</array>
 </dict>
 </plist>

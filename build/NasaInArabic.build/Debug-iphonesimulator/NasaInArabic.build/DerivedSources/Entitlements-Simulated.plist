@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>PSFCZBNLMD.RadiBaraq.NasaInArabic</string>
+	<string>5S7V735958.RadiBaraq.NasaInArabic.com</string>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>PSFCZBNLMD.RadiBaraq.NasaInArabic</string>
+		<string>5S7V735958.RadiBaraq.NasaInArabic.com</string>
 	</array>
 </dict>
 </plist>

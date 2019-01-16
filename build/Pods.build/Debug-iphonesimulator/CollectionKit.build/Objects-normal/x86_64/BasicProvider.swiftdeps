@@ -1,0 +1,287 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "BasicProvider"
+- "BasicProviderLayoutContext"
+provides-nominal:
+- "13CollectionKit13BasicProviderC"
+- "13CollectionKit13BasicProviderC10TapContextV"
+- "13CollectionKit26BasicProviderLayoutContextV"
+provides-member:
+- ["13CollectionKit13BasicProviderC", ""]
+- ["13CollectionKit13BasicProviderC10TapContextV", ""]
+- ["13CollectionKit26BasicProviderLayoutContextV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "==="
+- "Animator"
+- "AssignmentPrecedence"
+- "BasicProvider"
+- "BasicProviderLayoutContext"
+- "Bool"
+- "CGSize"
+- "CastingPrecedence"
+- "CollectionReloadable"
+- "DataSource"
+- !private "FlowLayout"
+- "Int"
+- "ItemProvider"
+- "Layout"
+- "LayoutContext"
+- "LayoutableProvider"
+- "SizeSource"
+- "String"
+- "UIView"
+- "ViewSource"
+- "Void"
+- !private "defaultSizeSource"
+- !private "||"
+depends-member:
+- !private ["13CollectionKit13AnyViewSourceP", "update"]
+- !private ["13CollectionKit13AnyViewSourceP", "view"]
+- ["13CollectionKit13BasicProviderC", "Animator"]
+- !private ["13CollectionKit13BasicProviderC", "BasicProviderLayoutContext"]
+- ["13CollectionKit13BasicProviderC", "Bool"]
+- ["13CollectionKit13BasicProviderC", "CGSize"]
+- ["13CollectionKit13BasicProviderC", "CollectionReloadable"]
+- ["13CollectionKit13BasicProviderC", "Data"]
+- ["13CollectionKit13BasicProviderC", "DataSource"]
+- !private ["13CollectionKit13BasicProviderC", "FlowLayout"]
+- ["13CollectionKit13BasicProviderC", "Int"]
+- ["13CollectionKit13BasicProviderC", "Layout"]
+- ["13CollectionKit13BasicProviderC", "LayoutContext"]
+- ["13CollectionKit13BasicProviderC", "SizeSource"]
+- ["13CollectionKit13BasicProviderC", "String"]
+- ["13CollectionKit13BasicProviderC", "TapContext"]
+- ["13CollectionKit13BasicProviderC", "TapHandler"]
+- ["13CollectionKit13BasicProviderC", "UIView"]
+- ["13CollectionKit13BasicProviderC", "View"]
+- ["13CollectionKit13BasicProviderC", "ViewSource"]
+- ["13CollectionKit13BasicProviderC", "Void"]
+- ["13CollectionKit13BasicProviderC", "animator"]
+- ["13CollectionKit13BasicProviderC", "collectionView"]
+- ["13CollectionKit13BasicProviderC", "contentSize"]
+- ["13CollectionKit13BasicProviderC", "dataSource"]
+- !private ["13CollectionKit13BasicProviderC", "defaultSizeSource"]
+- ["13CollectionKit13BasicProviderC", "deinit"]
+- ["13CollectionKit13BasicProviderC", "didReload"]
+- ["13CollectionKit13BasicProviderC", "didTap"]
+- ["13CollectionKit13BasicProviderC", "flattenedProvider"]
+- ["13CollectionKit13BasicProviderC", "frame"]
+- ["13CollectionKit13BasicProviderC", "hasReloadable"]
+- ["13CollectionKit13BasicProviderC", "identifier"]
+- ["13CollectionKit13BasicProviderC", "init"]
+- ["13CollectionKit13BasicProviderC", "internalLayout"]
+- ["13CollectionKit13BasicProviderC", "layout"]
+- ["13CollectionKit13BasicProviderC", "layoutContext"]
+- ["13CollectionKit13BasicProviderC", "numberOfItems"]
+- ["13CollectionKit13BasicProviderC", "reloadData"]
+- !private ["13CollectionKit13BasicProviderC", "setNeedsInvalidateLayout"]
+- ["13CollectionKit13BasicProviderC", "setNeedsReload"]
+- ["13CollectionKit13BasicProviderC", "sizeSource"]
+- ["13CollectionKit13BasicProviderC", "tapHandler"]
+- ["13CollectionKit13BasicProviderC", "update"]
+- ["13CollectionKit13BasicProviderC", "view"]
+- ["13CollectionKit13BasicProviderC", "viewSource"]
+- ["13CollectionKit13BasicProviderC", "visibleIndexes"]
+- ["13CollectionKit13BasicProviderC", "willReload"]
+- ["13CollectionKit26BasicProviderLayoutContextV", "CGSize"]
+- ["13CollectionKit26BasicProviderLayoutContextV", "Data"]
+- ["13CollectionKit26BasicProviderLayoutContextV", "DataSource"]
+- ["13CollectionKit26BasicProviderLayoutContextV", "Int"]
+- ["13CollectionKit26BasicProviderLayoutContextV", "SizeSource"]
+- ["13CollectionKit26BasicProviderLayoutContextV", "String"]
+- ["13CollectionKit26BasicProviderLayoutContextV", "collectionSize"]
+- ["13CollectionKit26BasicProviderLayoutContextV", "data"]
+- ["13CollectionKit26BasicProviderLayoutContextV", "dataSource"]
+- ["13CollectionKit26BasicProviderLayoutContextV", "deinit"]
+- ["13CollectionKit26BasicProviderLayoutContextV", "identifier"]
+- ["13CollectionKit26BasicProviderLayoutContextV", "init"]
+- ["13CollectionKit26BasicProviderLayoutContextV", "numberOfItems"]
+- ["13CollectionKit26BasicProviderLayoutContextV", "size"]
+- ["13CollectionKit26BasicProviderLayoutContextV", "sizeSource"]
+- !private ["13CollectionKit0A10ReloadableP", "BasicProviderLayoutContext"]
+- !private ["13CollectionKit0A10ReloadableP", "FlowLayout"]
+- !private ["13CollectionKit0A10ReloadableP", "TapContext"]
+- ["13CollectionKit0A10ReloadableP", ""]
+- ["13CollectionKit0A10ReloadableP", "animator"]
+- ["13CollectionKit0A10ReloadableP", "collectionView"]
+- ["13CollectionKit0A10ReloadableP", "contentSize"]
+- !private ["13CollectionKit0A10ReloadableP", "data"]
+- !private ["13CollectionKit0A10ReloadableP", "dataSource"]
+- !private ["13CollectionKit0A10ReloadableP", "defaultSizeSource"]
+- ["13CollectionKit0A10ReloadableP", "didReload"]
+- ["13CollectionKit0A10ReloadableP", "didTap"]
+- ["13CollectionKit0A10ReloadableP", "flattenedProvider"]
+- ["13CollectionKit0A10ReloadableP", "frame"]
+- ["13CollectionKit0A10ReloadableP", "hasReloadable"]
+- ["13CollectionKit0A10ReloadableP", "identifier"]
+- ["13CollectionKit0A10ReloadableP", "internalLayout"]
+- ["13CollectionKit0A10ReloadableP", "layout"]
+- ["13CollectionKit0A10ReloadableP", "layoutContext"]
+- ["13CollectionKit0A10ReloadableP", "numberOfItems"]
+- ["13CollectionKit0A10ReloadableP", "reloadData"]
+- !private ["13CollectionKit0A10ReloadableP", "setNeedsInvalidateLayout"]
+- ["13CollectionKit0A10ReloadableP", "setNeedsReload"]
+- !private ["13CollectionKit0A10ReloadableP", "sizeSource"]
+- !private ["13CollectionKit0A10ReloadableP", "tapHandler"]
+- ["13CollectionKit0A10ReloadableP", "update"]
+- ["13CollectionKit0A10ReloadableP", "view"]
+- !private ["13CollectionKit0A10ReloadableP", "viewSource"]
+- ["13CollectionKit0A10ReloadableP", "visibleIndexes"]
+- ["13CollectionKit0A10ReloadableP", "willReload"]
+- !private ["13CollectionKit10DataSourceC", "data"]
+- !private ["13CollectionKit10DataSourceC", "deinit"]
+- !private ["13CollectionKit10DataSourceC", "identifier"]
+- !private ["13CollectionKit10DataSourceC", "numberOfItems"]
+- !private ["13CollectionKit10DataSourceC", "setNeedsReload"]
+- !private ["13CollectionKit10FlowLayoutC", "init"]
+- !private ["13CollectionKit12ItemProviderP", "BasicProviderLayoutContext"]
+- !private ["13CollectionKit12ItemProviderP", "FlowLayout"]
+- !private ["13CollectionKit12ItemProviderP", "TapContext"]
+- ["13CollectionKit12ItemProviderP", ""]
+- ["13CollectionKit12ItemProviderP", "animator"]
+- ["13CollectionKit12ItemProviderP", "collectionView"]
+- ["13CollectionKit12ItemProviderP", "contentSize"]
+- !private ["13CollectionKit12ItemProviderP", "dataSource"]
+- !private ["13CollectionKit12ItemProviderP", "defaultSizeSource"]
+- ["13CollectionKit12ItemProviderP", "didReload"]
+- ["13CollectionKit12ItemProviderP", "didTap"]
+- ["13CollectionKit12ItemProviderP", "flattenedProvider"]
+- ["13CollectionKit12ItemProviderP", "frame"]
+- ["13CollectionKit12ItemProviderP", "hasReloadable"]
+- ["13CollectionKit12ItemProviderP", "identifier"]
+- ["13CollectionKit12ItemProviderP", "internalLayout"]
+- ["13CollectionKit12ItemProviderP", "layout"]
+- ["13CollectionKit12ItemProviderP", "layoutContext"]
+- ["13CollectionKit12ItemProviderP", "numberOfItems"]
+- ["13CollectionKit12ItemProviderP", "reloadData"]
+- !private ["13CollectionKit12ItemProviderP", "setNeedsInvalidateLayout"]
+- ["13CollectionKit12ItemProviderP", "setNeedsReload"]
+- !private ["13CollectionKit12ItemProviderP", "sizeSource"]
+- !private ["13CollectionKit12ItemProviderP", "tapHandler"]
+- ["13CollectionKit12ItemProviderP", "update"]
+- ["13CollectionKit12ItemProviderP", "view"]
+- !private ["13CollectionKit12ItemProviderP", "viewSource"]
+- ["13CollectionKit12ItemProviderP", "visibleIndexes"]
+- ["13CollectionKit12ItemProviderP", "willReload"]
+- ["13CollectionKit13LayoutContextP", ""]
+- ["13CollectionKit13LayoutContextP", "collectionSize"]
+- ["13CollectionKit13LayoutContextP", "data"]
+- !private ["13CollectionKit13LayoutContextP", "dataSource"]
+- ["13CollectionKit13LayoutContextP", "identifier"]
+- !private ["13CollectionKit13LayoutContextP", "init"]
+- ["13CollectionKit13LayoutContextP", "numberOfItems"]
+- ["13CollectionKit13LayoutContextP", "size"]
+- !private ["13CollectionKit13LayoutContextP", "sizeSource"]
+- !private ["13CollectionKit18LayoutableProviderP", "BasicProviderLayoutContext"]
+- !private ["13CollectionKit18LayoutableProviderP", "FlowLayout"]
+- !private ["13CollectionKit18LayoutableProviderP", "TapContext"]
+- ["13CollectionKit18LayoutableProviderP", ""]
+- ["13CollectionKit18LayoutableProviderP", "animator"]
+- ["13CollectionKit18LayoutableProviderP", "collectionView"]
+- ["13CollectionKit18LayoutableProviderP", "contentSize"]
+- !private ["13CollectionKit18LayoutableProviderP", "dataSource"]
+- !private ["13CollectionKit18LayoutableProviderP", "defaultSizeSource"]
+- ["13CollectionKit18LayoutableProviderP", "didReload"]
+- ["13CollectionKit18LayoutableProviderP", "didTap"]
+- ["13CollectionKit18LayoutableProviderP", "flattenedProvider"]
+- ["13CollectionKit18LayoutableProviderP", "frame"]
+- ["13CollectionKit18LayoutableProviderP", "hasReloadable"]
+- ["13CollectionKit18LayoutableProviderP", "identifier"]
+- ["13CollectionKit18LayoutableProviderP", "internalLayout"]
+- ["13CollectionKit18LayoutableProviderP", "layout"]
+- ["13CollectionKit18LayoutableProviderP", "layoutContext"]
+- ["13CollectionKit18LayoutableProviderP", "numberOfItems"]
+- ["13CollectionKit18LayoutableProviderP", "reloadData"]
+- !private ["13CollectionKit18LayoutableProviderP", "setNeedsInvalidateLayout"]
+- ["13CollectionKit18LayoutableProviderP", "setNeedsReload"]
+- !private ["13CollectionKit18LayoutableProviderP", "sizeSource"]
+- !private ["13CollectionKit18LayoutableProviderP", "tapHandler"]
+- ["13CollectionKit18LayoutableProviderP", "update"]
+- ["13CollectionKit18LayoutableProviderP", "view"]
+- !private ["13CollectionKit18LayoutableProviderP", "viewSource"]
+- ["13CollectionKit18LayoutableProviderP", "visibleIndexes"]
+- ["13CollectionKit18LayoutableProviderP", "willReload"]
+- !private ["13CollectionKit8ProviderP", "BasicProviderLayoutContext"]
+- !private ["13CollectionKit8ProviderP", "FlowLayout"]
+- !private ["13CollectionKit8ProviderP", "TapContext"]
+- ["13CollectionKit8ProviderP", ""]
+- ["13CollectionKit8ProviderP", "animator"]
+- ["13CollectionKit8ProviderP", "collectionView"]
+- ["13CollectionKit8ProviderP", "contentSize"]
+- !private ["13CollectionKit8ProviderP", "dataSource"]
+- !private ["13CollectionKit8ProviderP", "defaultSizeSource"]
+- ["13CollectionKit8ProviderP", "didReload"]
+- ["13CollectionKit8ProviderP", "didTap"]
+- ["13CollectionKit8ProviderP", "flattenedProvider"]
+- ["13CollectionKit8ProviderP", "frame"]
+- ["13CollectionKit8ProviderP", "hasReloadable"]
+- ["13CollectionKit8ProviderP", "identifier"]
+- ["13CollectionKit8ProviderP", "internalLayout"]
+- ["13CollectionKit8ProviderP", "layout"]
+- ["13CollectionKit8ProviderP", "layoutContext"]
+- ["13CollectionKit8ProviderP", "numberOfItems"]
+- ["13CollectionKit8ProviderP", "reloadData"]
+- !private ["13CollectionKit8ProviderP", "setNeedsInvalidateLayout"]
+- ["13CollectionKit8ProviderP", "setNeedsReload"]
+- !private ["13CollectionKit8ProviderP", "sizeSource"]
+- !private ["13CollectionKit8ProviderP", "tapHandler"]
+- ["13CollectionKit8ProviderP", "update"]
+- ["13CollectionKit8ProviderP", "view"]
+- !private ["13CollectionKit8ProviderP", "viewSource"]
+- ["13CollectionKit8ProviderP", "visibleIndexes"]
+- ["13CollectionKit8ProviderP", "willReload"]
+- ["13CollectionKit13BasicProviderC10TapContextV", "Data"]
+- ["13CollectionKit13BasicProviderC10TapContextV", "DataSource"]
+- ["13CollectionKit13BasicProviderC10TapContextV", "Int"]
+- ["13CollectionKit13BasicProviderC10TapContextV", "View"]
+- ["13CollectionKit13BasicProviderC10TapContextV", "data"]
+- ["13CollectionKit13BasicProviderC10TapContextV", "dataSource"]
+- ["13CollectionKit13BasicProviderC10TapContextV", "index"]
+- ["13CollectionKit13BasicProviderC10TapContextV", "init"]
+- ["13CollectionKit13BasicProviderC10TapContextV", "setNeedsReload"]
+- ["13CollectionKit13BasicProviderC10TapContextV", "view"]
+- !private ["13CollectionKit10ViewSourceC", "update"]
+- !private ["13CollectionKit10ViewSourceC", "view"]
+depends-nominal:
+- !private "13CollectionKit13AnyViewSourceP"
+- "13CollectionKit13BasicProviderC"
+- "13CollectionKit26BasicProviderLayoutContextV"
+- "13CollectionKit0A10ReloadableP"
+- !private "13CollectionKit10DataSourceC"
+- !private "13CollectionKit10FlowLayoutC"
+- "13CollectionKit12ItemProviderP"
+- "13CollectionKit13LayoutContextP"
+- "13CollectionKit18LayoutableProviderP"
+- "13CollectionKit8ProviderP"
+- "13CollectionKit13BasicProviderC10TapContextV"
+- !private "13CollectionKit10ViewSourceC"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/radibarq/developer/NasaInArabic/Pods/Target Support Files/CollectionKit/CollectionKit-umbrella.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Pods.build/Debug-iphonesimulator/CollectionKit.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "68f5a6e71a5a33b553f6bdda92db151d"

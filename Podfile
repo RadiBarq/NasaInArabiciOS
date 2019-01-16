@@ -9,5 +9,5 @@ target 'NasaInArabic' do
   pod 'CollectionKit' , :git => 'https://github.com/SoySauceLab/CollectionKit.git'
   pod 'Hero' , :git => 'https://github.com/HeroTransitions/Hero.git'
   # Pods for NasaInArabic
-  
+
 end

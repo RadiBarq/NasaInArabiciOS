@@ -1,0 +1,448 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SimpleAnimator"
+provides-nominal:
+- "13CollectionKit14SimpleAnimatorC"
+provides-member:
+- ["13CollectionKit14SimpleAnimatorC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!"
+- !private "!="
+- "Animator"
+- "Array"
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- "CGFloat"
+- "CGRect"
+- "CollectionView"
+- "FloatLiteralType"
+- "Int"
+- !private "IntegerLiteralType"
+- "SimpleAnimator"
+- "TimeInterval"
+- "UIView"
+- "Void"
+depends-member:
+- ["13CollectionKit8AnimatorC", "Bool"]
+- ["13CollectionKit8AnimatorC", "CGFloat"]
+- ["13CollectionKit8AnimatorC", "CGRect"]
+- ["13CollectionKit8AnimatorC", "CollectionView"]
+- ["13CollectionKit8AnimatorC", "Int"]
+- ["13CollectionKit8AnimatorC", "TimeInterval"]
+- ["13CollectionKit8AnimatorC", "UIView"]
+- ["13CollectionKit8AnimatorC", "Void"]
+- ["13CollectionKit8AnimatorC", ""]
+- ["13CollectionKit8AnimatorC", "animate"]
+- ["13CollectionKit8AnimatorC", "animationDuration"]
+- ["13CollectionKit8AnimatorC", "animationOptions"]
+- ["13CollectionKit8AnimatorC", "delete"]
+- ["13CollectionKit8AnimatorC", "hide"]
+- ["13CollectionKit8AnimatorC", "init"]
+- !private ["13CollectionKit8AnimatorC", "init"]
+- ["13CollectionKit8AnimatorC", "insert"]
+- ["13CollectionKit8AnimatorC", "show"]
+- ["13CollectionKit8AnimatorC", "springDamping"]
+- ["13CollectionKit8AnimatorC", "update"]
+- ["13CollectionKit8AnimatorC", "useSpringAnimation"]
+- !private ["Sa", "contains"]
+- !private ["s13ArrayProtocolP", "contains"]
+- !private ["SK", "contains"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["So15CALayerDelegateP", "AnimationOptions"]
+- !private ["So15CALayerDelegateP", "animate"]
+- !private ["So15CALayerDelegateP", "bounds"]
+- !private ["So15CALayerDelegateP", "center"]
+- !private ["So15CALayerDelegateP", "frame"]
+- !private ["So15CALayerDelegateP", "hasReloaded"]
+- !private ["So15CALayerDelegateP", "isReloading"]
+- !private ["So15CALayerDelegateP", "recycleForCollectionKitReuse"]
+- !private ["So15CALayerDelegateP", "visibleCells"]
+- !private ["So6CGRectV", "bounds"]
+- !private ["So6CGRectV", "center"]
+- !private ["So6CGRectV", "intersects"]
+- !private ["So6CGRectV", "size"]
+- ["s7CVarArgP", "AnimationOptions"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "animate"]
+- !private ["s7CVarArgP", "bounds"]
+- !private ["s7CVarArgP", "center"]
+- !private ["s7CVarArgP", "contains"]
+- !private ["s7CVarArgP", "frame"]
+- !private ["s7CVarArgP", "hasReloaded"]
+- !private ["s7CVarArgP", "isReloading"]
+- !private ["s7CVarArgP", "recycleForCollectionKitReuse"]
+- !private ["s7CVarArgP", "visibleCells"]
+- !private ["Sl", "contains"]
+- !private ["13CollectionKit0A4ViewC", "bounds"]
+- !private ["13CollectionKit0A4ViewC", "deinit"]
+- !private ["13CollectionKit0A4ViewC", "hasReloaded"]
+- !private ["13CollectionKit0A4ViewC", "isReloading"]
+- !private ["13CollectionKit0A4ViewC", "visibleCells"]
+- ["s28CustomDebugStringConvertibleP", "AnimationOptions"]
+- !private ["s28CustomDebugStringConvertibleP", "animate"]
+- !private ["s28CustomDebugStringConvertibleP", "bounds"]
+- !private ["s28CustomDebugStringConvertibleP", "center"]
+- !private ["s28CustomDebugStringConvertibleP", "contains"]
+- !private ["s28CustomDebugStringConvertibleP", "frame"]
+- !private ["s28CustomDebugStringConvertibleP", "hasReloaded"]
+- !private ["s28CustomDebugStringConvertibleP", "intersects"]
+- !private ["s28CustomDebugStringConvertibleP", "isReloading"]
+- !private ["s28CustomDebugStringConvertibleP", "recycleForCollectionKitReuse"]
+- !private ["s28CustomDebugStringConvertibleP", "size"]
+- !private ["s28CustomDebugStringConvertibleP", "visibleCells"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "bounds"]
+- !private ["s29CustomPlaygroundQuickLookableP", "center"]
+- !private ["s29CustomPlaygroundQuickLookableP", "intersects"]
+- !private ["s29CustomPlaygroundQuickLookableP", "size"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "bounds"]
+- !private ["s17CustomReflectableP", "center"]
+- !private ["s17CustomReflectableP", "contains"]
+- !private ["s17CustomReflectableP", "intersects"]
+- !private ["s17CustomReflectableP", "size"]
+- ["s23CustomStringConvertibleP", "AnimationOptions"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "animate"]
+- !private ["s23CustomStringConvertibleP", "bounds"]
+- !private ["s23CustomStringConvertibleP", "center"]
+- !private ["s23CustomStringConvertibleP", "contains"]
+- !private ["s23CustomStringConvertibleP", "frame"]
+- !private ["s23CustomStringConvertibleP", "hasReloaded"]
+- !private ["s23CustomStringConvertibleP", "isReloading"]
+- !private ["s23CustomStringConvertibleP", "recycleForCollectionKitReuse"]
+- !private ["s23CustomStringConvertibleP", "visibleCells"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "bounds"]
+- !private ["Se", "center"]
+- !private ["Se", "contains"]
+- !private ["Se", "intersects"]
+- !private ["Se", "size"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "bounds"]
+- !private ["SE", "center"]
+- !private ["SE", "contains"]
+- !private ["SE", "intersects"]
+- !private ["SE", "size"]
+- ["SQ", "AnimationOptions"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "animate"]
+- !private ["SQ", "bounds"]
+- !private ["SQ", "center"]
+- !private ["SQ", "contains"]
+- !private ["SQ", "frame"]
+- !private ["SQ", "hasReloaded"]
+- !private ["SQ", "intersects"]
+- !private ["SQ", "isReloading"]
+- !private ["SQ", "recycleForCollectionKitReuse"]
+- !private ["SQ", "size"]
+- !private ["SQ", "visibleCells"]
+- !private ["s25ExpressibleByArrayLiteralP", "contains"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["SH", "AnimationOptions"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "animate"]
+- !private ["SH", "bounds"]
+- !private ["SH", "center"]
+- !private ["SH", "contains"]
+- !private ["SH", "frame"]
+- !private ["SH", "hasReloaded"]
+- !private ["SH", "isReloading"]
+- !private ["SH", "recycleForCollectionKitReuse"]
+- !private ["SH", "visibleCells"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["SM", "contains"]
+- ["So8NSCodingP", "AnimationOptions"]
+- !private ["So8NSCodingP", "animate"]
+- !private ["So8NSCodingP", "bounds"]
+- !private ["So8NSCodingP", "center"]
+- !private ["So8NSCodingP", "frame"]
+- !private ["So8NSCodingP", "hasReloaded"]
+- !private ["So8NSCodingP", "isReloading"]
+- !private ["So8NSCodingP", "recycleForCollectionKitReuse"]
+- !private ["So8NSCodingP", "visibleCells"]
+- ["So8NSObjectC", "AnimationOptions"]
+- !private ["So8NSObjectC", "animate"]
+- !private ["So8NSObjectC", "bounds"]
+- !private ["So8NSObjectC", "center"]
+- !private ["So8NSObjectC", "frame"]
+- !private ["So8NSObjectC", "hasReloaded"]
+- !private ["So8NSObjectC", "isReloading"]
+- !private ["So8NSObjectC", "recycleForCollectionKitReuse"]
+- !private ["So8NSObjectC", "visibleCells"]
+- ["So8NSObjectP", "AnimationOptions"]
+- !private ["So8NSObjectP", "animate"]
+- !private ["So8NSObjectP", "bounds"]
+- !private ["So8NSObjectP", "center"]
+- !private ["So8NSObjectP", "frame"]
+- !private ["So8NSObjectP", "hasReloaded"]
+- !private ["So8NSObjectP", "isReloading"]
+- !private ["So8NSObjectP", "recycleForCollectionKitReuse"]
+- !private ["So8NSObjectP", "visibleCells"]
+- !private ["Sk", "contains"]
+- !private ["Sm", "contains"]
+- !private ["ST", "contains"]
+- ["13CollectionKit14SimpleAnimatorC", "Bool"]
+- ["13CollectionKit14SimpleAnimatorC", "CGFloat"]
+- ["13CollectionKit14SimpleAnimatorC", "CGRect"]
+- ["13CollectionKit14SimpleAnimatorC", "CollectionView"]
+- ["13CollectionKit14SimpleAnimatorC", "Int"]
+- ["13CollectionKit14SimpleAnimatorC", "TimeInterval"]
+- ["13CollectionKit14SimpleAnimatorC", "UIView"]
+- ["13CollectionKit14SimpleAnimatorC", "Void"]
+- ["13CollectionKit14SimpleAnimatorC", "animate"]
+- ["13CollectionKit14SimpleAnimatorC", "animationDuration"]
+- ["13CollectionKit14SimpleAnimatorC", "animationOptions"]
+- ["13CollectionKit14SimpleAnimatorC", "deinit"]
+- ["13CollectionKit14SimpleAnimatorC", "delete"]
+- ["13CollectionKit14SimpleAnimatorC", "hide"]
+- ["13CollectionKit14SimpleAnimatorC", "init"]
+- ["13CollectionKit14SimpleAnimatorC", "insert"]
+- ["13CollectionKit14SimpleAnimatorC", "show"]
+- ["13CollectionKit14SimpleAnimatorC", "springDamping"]
+- ["13CollectionKit14SimpleAnimatorC", "update"]
+- ["13CollectionKit14SimpleAnimatorC", "useSpringAnimation"]
+- ["So29UIAccessibilityIdentificationP", "AnimationOptions"]
+- !private ["So29UIAccessibilityIdentificationP", "animate"]
+- !private ["So29UIAccessibilityIdentificationP", "bounds"]
+- !private ["So29UIAccessibilityIdentificationP", "center"]
+- !private ["So29UIAccessibilityIdentificationP", "frame"]
+- !private ["So29UIAccessibilityIdentificationP", "hasReloaded"]
+- !private ["So29UIAccessibilityIdentificationP", "isReloading"]
+- !private ["So29UIAccessibilityIdentificationP", "recycleForCollectionKitReuse"]
+- !private ["So29UIAccessibilityIdentificationP", "visibleCells"]
+- ["So12UIAppearanceP", "AnimationOptions"]
+- !private ["So12UIAppearanceP", "animate"]
+- !private ["So12UIAppearanceP", "bounds"]
+- !private ["So12UIAppearanceP", "center"]
+- !private ["So12UIAppearanceP", "frame"]
+- !private ["So12UIAppearanceP", "hasReloaded"]
+- !private ["So12UIAppearanceP", "isReloading"]
+- !private ["So12UIAppearanceP", "recycleForCollectionKitReuse"]
+- !private ["So12UIAppearanceP", "visibleCells"]
+- ["So21UIAppearanceContainerP", "AnimationOptions"]
+- !private ["So21UIAppearanceContainerP", "animate"]
+- !private ["So21UIAppearanceContainerP", "bounds"]
+- !private ["So21UIAppearanceContainerP", "center"]
+- !private ["So21UIAppearanceContainerP", "frame"]
+- !private ["So21UIAppearanceContainerP", "hasReloaded"]
+- !private ["So21UIAppearanceContainerP", "isReloading"]
+- !private ["So21UIAppearanceContainerP", "recycleForCollectionKitReuse"]
+- !private ["So21UIAppearanceContainerP", "visibleCells"]
+- ["So17UICoordinateSpaceP", "AnimationOptions"]
+- !private ["So17UICoordinateSpaceP", "animate"]
+- !private ["So17UICoordinateSpaceP", "bounds"]
+- !private ["So17UICoordinateSpaceP", "center"]
+- !private ["So17UICoordinateSpaceP", "frame"]
+- !private ["So17UICoordinateSpaceP", "hasReloaded"]
+- !private ["So17UICoordinateSpaceP", "isReloading"]
+- !private ["So17UICoordinateSpaceP", "recycleForCollectionKitReuse"]
+- !private ["So17UICoordinateSpaceP", "visibleCells"]
+- ["So13UIDynamicItemP", "AnimationOptions"]
+- !private ["So13UIDynamicItemP", "animate"]
+- !private ["So13UIDynamicItemP", "bounds"]
+- !private ["So13UIDynamicItemP", "center"]
+- !private ["So13UIDynamicItemP", "frame"]
+- !private ["So13UIDynamicItemP", "hasReloaded"]
+- !private ["So13UIDynamicItemP", "isReloading"]
+- !private ["So13UIDynamicItemP", "recycleForCollectionKitReuse"]
+- !private ["So13UIDynamicItemP", "visibleCells"]
+- ["So18UIFocusEnvironmentP", "AnimationOptions"]
+- !private ["So18UIFocusEnvironmentP", "animate"]
+- !private ["So18UIFocusEnvironmentP", "bounds"]
+- !private ["So18UIFocusEnvironmentP", "center"]
+- !private ["So18UIFocusEnvironmentP", "frame"]
+- !private ["So18UIFocusEnvironmentP", "hasReloaded"]
+- !private ["So18UIFocusEnvironmentP", "isReloading"]
+- !private ["So18UIFocusEnvironmentP", "recycleForCollectionKitReuse"]
+- !private ["So18UIFocusEnvironmentP", "visibleCells"]
+- ["So11UIFocusItemP", "AnimationOptions"]
+- !private ["So11UIFocusItemP", "animate"]
+- !private ["So11UIFocusItemP", "bounds"]
+- !private ["So11UIFocusItemP", "center"]
+- !private ["So11UIFocusItemP", "frame"]
+- !private ["So11UIFocusItemP", "hasReloaded"]
+- !private ["So11UIFocusItemP", "isReloading"]
+- !private ["So11UIFocusItemP", "recycleForCollectionKitReuse"]
+- !private ["So11UIFocusItemP", "visibleCells"]
+- ["So20UIFocusItemContainerP", "AnimationOptions"]
+- !private ["So20UIFocusItemContainerP", "animate"]
+- !private ["So20UIFocusItemContainerP", "bounds"]
+- !private ["So20UIFocusItemContainerP", "center"]
+- !private ["So20UIFocusItemContainerP", "frame"]
+- !private ["So20UIFocusItemContainerP", "hasReloaded"]
+- !private ["So20UIFocusItemContainerP", "isReloading"]
+- !private ["So20UIFocusItemContainerP", "recycleForCollectionKitReuse"]
+- !private ["So20UIFocusItemContainerP", "visibleCells"]
+- !private ["So30UIFocusItemScrollableContainerP", "bounds"]
+- !private ["So30UIFocusItemScrollableContainerP", "hasReloaded"]
+- !private ["So30UIFocusItemScrollableContainerP", "isReloading"]
+- !private ["So30UIFocusItemScrollableContainerP", "visibleCells"]
+- ["So30UIPasteConfigurationSupportingP", "AnimationOptions"]
+- !private ["So30UIPasteConfigurationSupportingP", "animate"]
+- !private ["So30UIPasteConfigurationSupportingP", "bounds"]
+- !private ["So30UIPasteConfigurationSupportingP", "center"]
+- !private ["So30UIPasteConfigurationSupportingP", "frame"]
+- !private ["So30UIPasteConfigurationSupportingP", "hasReloaded"]
+- !private ["So30UIPasteConfigurationSupportingP", "isReloading"]
+- !private ["So30UIPasteConfigurationSupportingP", "recycleForCollectionKitReuse"]
+- !private ["So30UIPasteConfigurationSupportingP", "visibleCells"]
+- ["So11UIResponderC", "AnimationOptions"]
+- !private ["So11UIResponderC", "animate"]
+- !private ["So11UIResponderC", "bounds"]
+- !private ["So11UIResponderC", "center"]
+- !private ["So11UIResponderC", "frame"]
+- !private ["So11UIResponderC", "hasReloaded"]
+- !private ["So11UIResponderC", "isReloading"]
+- !private ["So11UIResponderC", "recycleForCollectionKitReuse"]
+- !private ["So11UIResponderC", "visibleCells"]
+- ["So30UIResponderStandardEditActionsP", "AnimationOptions"]
+- !private ["So30UIResponderStandardEditActionsP", "animate"]
+- !private ["So30UIResponderStandardEditActionsP", "bounds"]
+- !private ["So30UIResponderStandardEditActionsP", "center"]
+- !private ["So30UIResponderStandardEditActionsP", "frame"]
+- !private ["So30UIResponderStandardEditActionsP", "hasReloaded"]
+- !private ["So30UIResponderStandardEditActionsP", "isReloading"]
+- !private ["So30UIResponderStandardEditActionsP", "recycleForCollectionKitReuse"]
+- !private ["So30UIResponderStandardEditActionsP", "visibleCells"]
+- !private ["So12UIScrollViewC", "bounds"]
+- !private ["So12UIScrollViewC", "hasReloaded"]
+- !private ["So12UIScrollViewC", "isReloading"]
+- !private ["So12UIScrollViewC", "visibleCells"]
+- ["So18UITraitEnvironmentP", "AnimationOptions"]
+- !private ["So18UITraitEnvironmentP", "animate"]
+- !private ["So18UITraitEnvironmentP", "bounds"]
+- !private ["So18UITraitEnvironmentP", "center"]
+- !private ["So18UITraitEnvironmentP", "frame"]
+- !private ["So18UITraitEnvironmentP", "hasReloaded"]
+- !private ["So18UITraitEnvironmentP", "isReloading"]
+- !private ["So18UITraitEnvironmentP", "recycleForCollectionKitReuse"]
+- !private ["So18UITraitEnvironmentP", "visibleCells"]
+- ["So23UIUserActivityRestoringP", "AnimationOptions"]
+- !private ["So23UIUserActivityRestoringP", "animate"]
+- !private ["So23UIUserActivityRestoringP", "bounds"]
+- !private ["So23UIUserActivityRestoringP", "center"]
+- !private ["So23UIUserActivityRestoringP", "frame"]
+- !private ["So23UIUserActivityRestoringP", "hasReloaded"]
+- !private ["So23UIUserActivityRestoringP", "isReloading"]
+- !private ["So23UIUserActivityRestoringP", "recycleForCollectionKitReuse"]
+- !private ["So23UIUserActivityRestoringP", "visibleCells"]
+- ["So6UIViewC", "AnimationOptions"]
+- !private ["So6UIViewC", "animate"]
+- !private ["So6UIViewC", "bounds"]
+- !private ["So6UIViewC", "center"]
+- !private ["So6UIViewC", "frame"]
+- !private ["So6UIViewC", "hasReloaded"]
+- !private ["So6UIViewC", "isReloading"]
+- !private ["So6UIViewC", "recycleForCollectionKitReuse"]
+- !private ["So6UIViewC", "visibleCells"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "AnimationOptions"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "animate"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "bounds"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "center"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "frame"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "hasReloaded"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "isReloading"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "recycleForCollectionKitReuse"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "visibleCells"]
+- !private ["s24_DestructorSafeContainerP", "contains"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "contains"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "AnimationOptions"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "animate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "center"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "hasReloaded"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isReloading"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "recycleForCollectionKitReuse"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "visibleCells"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "bounds"]
+- !private ["s21_ObjectiveCBridgeableP", "center"]
+- !private ["s21_ObjectiveCBridgeableP", "contains"]
+- !private ["s21_ObjectiveCBridgeableP", "intersects"]
+- !private ["s21_ObjectiveCBridgeableP", "size"]
+depends-nominal:
+- "13CollectionKit8AnimatorC"
+- !private "Sa"
+- !private "s13ArrayProtocolP"
+- !private "SK"
+- !private "Sb"
+- "So15CALayerDelegateP"
+- !private "So6CGRectV"
+- "s7CVarArgP"
+- !private "Sl"
+- !private "13CollectionKit0A4ViewC"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- "SH"
+- !private "s25LosslessStringConvertibleP"
+- !private "SM"
+- "So8NSCodingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "Sk"
+- !private "Sm"
+- !private "ST"
+- "13CollectionKit14SimpleAnimatorC"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So17UICoordinateSpaceP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So20UIFocusItemContainerP"
+- !private "So30UIFocusItemScrollableContainerP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "So12UIScrollViewC"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- "So6UIViewC"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/radibarq/developer/NasaInArabic/Pods/Target Support Files/CollectionKit/CollectionKit-umbrella.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Pods.build/Debug-iphonesimulator/CollectionKit.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "09b09d09e27d36a5a4d43f06fc27964c"

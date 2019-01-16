@@ -11,18 +11,28 @@ import Cards
 import SDWebImage
 import Hero
 
-struct Articles: Decodable{
+public struct Articles: Decodable{
     
      public var data = [BrowsingArticle]()
 }
 
-struct BrowsingArticle: Decodable
+public struct BrowsingArticle: Decodable
 {
+    var id: String
+    var category_id: String
+    var category: String
     var headline:String
+    var slug: String
+    var description: String
     var excerpt:String
     var image: String
-    
+    var thumbnail: String
+    var publish_date: String
+
+
 }
+
+  
 
 class ArticlesCollectionViewController: UICollectionViewController  {
     
@@ -32,8 +42,12 @@ class ArticlesCollectionViewController: UICollectionViewController  {
     var articlesImageViews = [UIImageView?]()
     var numberOfRows = 0
     var currentPageNumber = 1
+      var علي = "ali mohammad"
+    
+    
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         self.collectionView!.register(ArticlesTitleCell.self, forCellWithReuseIdentifier: titleCellReuseIdentifier)
@@ -46,7 +60,6 @@ class ArticlesCollectionViewController: UICollectionViewController  {
         self.collectionView.dataSource = self
         self.collectionView.delegate = self
        
-    
         getData(pageNumber: currentPageNumber)
     }
     
@@ -94,13 +107,16 @@ class ArticlesCollectionViewController: UICollectionViewController  {
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
+        
         let cell = collectionView.cellForItem(at: indexPath) as! ArticlesNormalCell
         cell.hero.modifiers = [.useNoSnapshot, .spring(stiffness: 250, damping: 25)]
         cell.card.hero.id = "title"
+    
+        
 //
 //
 //        let vc = AppStoreViewController2()
-//        vc.hero.isEnabled = true
+  //      vc.hero.isEnabled = true
 //        vc.hero.modalAnimationType = .none
 //        vc.cardView.hero.id = "title"
 //        vc.cardView.hero.modifiers = [.useNoSnapshot, .spring(stiffness: 250, damping: 25)]
@@ -110,24 +126,26 @@ class ArticlesCollectionViewController: UICollectionViewController  {
 //        vc.visualEffectView.hero.modifiers = [.fade, .useNoSnapshot]
 //        present(vc, animated: true, completion: nil)
         
-        
+    
 //       let articleViewController = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "articleViewController") as? ArticleViewController
         
-     let articleViewController = ArticleViewController()
         
-       articleViewController.hero.isEnabled = true
-       articleViewController.hero.modalAnimationType = .none
-       articleViewController.view.hero.id = "title"
-        
-       articleViewController.imageView.hero.modifiers = [.useNoSnapshot, .spring(stiffness: 250, damping: 25)]
+          let pageNumber = getPageNumber(rowNumber: indexPath.row - 1)
+          let rowPerPage = self.rowPerPage(rowNumber: indexPath.row - 1, pageNumber: pageNumber)
+          var article = articles[pageNumber].data[rowPerPage]
     
-      articleViewController.scrollView.hero.modifiers = [.source(heroID:  "title"), .spring(stiffness: 250, damping: 25)]
-
-      articleViewController.articleTitle.hero.modifiers =  [.useNoSnapshot, .spring(stiffness: 250, damping: 25)]
- 
-     
-        articleViewController.visualEffectView.hero.modifiers = [.fade, .useNoSnapshot]
-        present(articleViewController, animated: true, completion: nil)
+          let articleViewController = ArticleViewController()
+         articleViewController.article = article
+     //  articleViewController.articleId = article.data.
+         articleViewController.hero.isEnabled = true
+         articleViewController.hero.modalAnimationType = .none
+         articleViewController.view.hero.id = "title"
+        
+          articleViewController.imageView.hero.modifiers = [.useNoSnapshot, .spring(stiffness: 250, damping: 25)]
+//         articleViewController.articleTitle.hero.modifiers = [.source(heroID:  "title"), .spring(stiffness: 250, damping: 25)]
+          articleViewController.articleTitle.hero.modifiers =  [.useNoSnapshot, .spring(stiffness: 250, damping: 25)]
+         // articleViewController.visualEffectView.hero.modifiers = [.fade, .useNoSnapshot]
+         present(articleViewController, animated: true, completion: nil)
         
     }
     
@@ -155,6 +173,7 @@ class ArticlesCollectionViewController: UICollectionViewController  {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
         IndexPath) -> UICollectionViewCell {
         
+        
         if (indexPath.row == 0)
         {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier:  titleCellReuseIdentifier, for: indexPath) as! ArticlesTitleCell
@@ -163,14 +182,13 @@ class ArticlesCollectionViewController: UICollectionViewController  {
             
         else
         {
+            
             let pageNumber = getPageNumber(rowNumber: indexPath.row - 1)
             let rowPerPage = self.rowPerPage(rowNumber: indexPath.row - 1, pageNumber: pageNumber)
-            
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier:  normalCellReuseIdentifier, for: indexPath) as! ArticlesNormalCell
-            
             cell.articleTitle.text = articles[pageNumber].data[rowPerPage].headline
-            cell.articleDescription.text = articles[pageNumber].data[rowPerPage].excerpt + "..."
-
+            cell.articleDescription.text = articles[pageNumber].data[rowPerPage].excerpt.htmlToString + "..."
+            
             
             if let url = URL(string: self.articles[pageNumber].data[rowPerPage].image)
             {
@@ -274,7 +292,8 @@ class ArticlesNormalCell: UICollectionViewCell{
         card.shadowOpacity = 0.6
         card.shadowBlur = 15
         card.hasParallax = true
-        
+    
+
         card.addSubview(articleTitle)
         articleTitle.translatesAutoresizingMaskIntoConstraints = false
         articleTitle.rightAnchor.constraint(equalTo: card.rightAnchor, constant: -10).isActive = true

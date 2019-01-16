@@ -4,7 +4,7 @@ PODS:
   - CollectionKit (2.1.0):
     - CollectionKit/Core (= 2.1.0)
   - CollectionKit/Core (2.1.0)
-  - Hero (1.3.1)
+  - Hero (1.4.0)
   - Player (0.8.4)
   - SDWebImage (4.3.3):
     - SDWebImage/Core (= 4.3.3)
@@ -27,16 +27,16 @@ CHECKOUT OPTIONS:
     :commit: cc63503804fe0a8fa6c552642d7938f4786c2634
     :git: https://github.com/SoySauceLab/CollectionKit.git
   Hero:
-    :commit: ebb8f6c60c03570f42b59e92050a470319a77b7e
+    :commit: 07ef8832ad72a60e44ea0aa4cf46c8f46c3f3539
     :git: https://github.com/HeroTransitions/Hero.git
 
 SPEC CHECKSUMS:
   Cards: c5023eb5dfa9d81478535fa255a8060f4e0737e3
   CollectionKit: 7fe4046ac74a9562c0296cadbfa35723924011d2
-  Hero: 1c3c625ba05856f305d29f5c270f8766c5ff2df7
+  Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
   Player: e45514e9e5fb8ff18f50eb2ba6f84dac9b6a0024
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
 
-PODFILE CHECKSUM: f6e818958b170c93a43a9a2d1369cc0c59f8d808
+PODFILE CHECKSUM: 2ce00bd72d60927bbcb91403036b97ccb10de4e3
 
 COCOAPODS: 1.2.0

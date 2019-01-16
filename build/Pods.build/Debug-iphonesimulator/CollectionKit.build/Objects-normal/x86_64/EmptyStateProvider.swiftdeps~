@@ -1,0 +1,294 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "EmptyStateProvider"
+provides-nominal:
+- "13CollectionKit18EmptyStateProviderC"
+provides-member:
+- ["13CollectionKit18EmptyStateProviderC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!="
+- !private "=="
+- !private ">"
+- !private "Array"
+- "AssignmentPrecedence"
+- "Bool"
+- "CollectionReloadable"
+- "ComposedProvider"
+- "EmptyStateProvider"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- "Provider"
+- !private "RowLayout"
+- !private "SimpleViewProvider"
+- "String"
+- "StringLiteralType"
+- "UIView"
+- !private "||"
+depends-member:
+- !private ["Sa", "first"]
+- !private ["s13ArrayProtocolP", "first"]
+- !private ["SK", "first"]
+- ["SK", "init"]
+- ["SK", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "first"]
+- ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "init"]
+- !private ["Sl", "first"]
+- ["Sl", "init"]
+- ["Sl", "init"]
+- !private ["13CollectionKit0A10ReloadableP", "RowLayout"]
+- !private ["13CollectionKit0A10ReloadableP", "SimpleViewProvider"]
+- ["13CollectionKit0A10ReloadableP", ""]
+- !private ["13CollectionKit0A10ReloadableP", "contentProvider"]
+- !private ["13CollectionKit0A10ReloadableP", "emptyStateView"]
+- !private ["13CollectionKit0A10ReloadableP", "emptyStateViewGetter"]
+- !private ["13CollectionKit0A10ReloadableP", "emptyStateViewSectionIdentifier"]
+- !private ["13CollectionKit0A10ReloadableP", "hasReloadable"]
+- !private ["13CollectionKit0A10ReloadableP", "init"]
+- !private ["13CollectionKit0A10ReloadableP", "sections"]
+- !private ["13CollectionKit0A10ReloadableP", "willReload"]
+- ["SL", "init"]
+- ["SL", "init"]
+- ["13CollectionKit16ComposedProviderC", "Bool"]
+- ["13CollectionKit16ComposedProviderC", "CollectionReloadable"]
+- ["13CollectionKit16ComposedProviderC", "Provider"]
+- !private ["13CollectionKit16ComposedProviderC", "RowLayout"]
+- !private ["13CollectionKit16ComposedProviderC", "SimpleViewProvider"]
+- ["13CollectionKit16ComposedProviderC", "String"]
+- ["13CollectionKit16ComposedProviderC", "UIView"]
+- ["13CollectionKit16ComposedProviderC", ""]
+- ["13CollectionKit16ComposedProviderC", "contentProvider"]
+- !private ["13CollectionKit16ComposedProviderC", "deinit"]
+- ["13CollectionKit16ComposedProviderC", "emptyStateView"]
+- ["13CollectionKit16ComposedProviderC", "emptyStateViewGetter"]
+- ["13CollectionKit16ComposedProviderC", "emptyStateViewSectionIdentifier"]
+- ["13CollectionKit16ComposedProviderC", "hasReloadable"]
+- ["13CollectionKit16ComposedProviderC", "init"]
+- !private ["13CollectionKit16ComposedProviderC", "sections"]
+- ["13CollectionKit16ComposedProviderC", "willReload"]
+- !private ["s28CustomDebugStringConvertibleP", "first"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "first"]
+- ["s17CustomReflectableP", "init"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "first"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "first"]
+- ["Se", "init"]
+- ["Se", "init"]
+- ["13CollectionKit18EmptyStateProviderC", "Bool"]
+- ["13CollectionKit18EmptyStateProviderC", "CollectionReloadable"]
+- ["13CollectionKit18EmptyStateProviderC", "Provider"]
+- !private ["13CollectionKit18EmptyStateProviderC", "RowLayout"]
+- !private ["13CollectionKit18EmptyStateProviderC", "SimpleViewProvider"]
+- ["13CollectionKit18EmptyStateProviderC", "String"]
+- ["13CollectionKit18EmptyStateProviderC", "UIView"]
+- ["13CollectionKit18EmptyStateProviderC", "contentProvider"]
+- ["13CollectionKit18EmptyStateProviderC", "emptyStateView"]
+- ["13CollectionKit18EmptyStateProviderC", "emptyStateViewGetter"]
+- ["13CollectionKit18EmptyStateProviderC", "emptyStateViewSectionIdentifier"]
+- ["13CollectionKit18EmptyStateProviderC", "hasReloadable"]
+- ["13CollectionKit18EmptyStateProviderC", "init"]
+- !private ["13CollectionKit18EmptyStateProviderC", "sections"]
+- ["13CollectionKit18EmptyStateProviderC", "willReload"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "first"]
+- ["SE", "init"]
+- ["SE", "init"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "first"]
+- ["SQ", "init"]
+- ["SQ", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "first"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "first"]
+- ["SH", "init"]
+- ["SH", "init"]
+- !private ["13CollectionKit22HorizontalSimpleLayoutC", "transposed"]
+- !private ["13CollectionKit12ItemProviderP", "init"]
+- !private ["13CollectionKit6LayoutC", "transposed"]
+- !private ["13CollectionKit18LayoutableProviderP", "RowLayout"]
+- !private ["13CollectionKit18LayoutableProviderP", "SimpleViewProvider"]
+- ["13CollectionKit18LayoutableProviderP", ""]
+- !private ["13CollectionKit18LayoutableProviderP", "contentProvider"]
+- !private ["13CollectionKit18LayoutableProviderP", "emptyStateView"]
+- !private ["13CollectionKit18LayoutableProviderP", "emptyStateViewGetter"]
+- !private ["13CollectionKit18LayoutableProviderP", "emptyStateViewSectionIdentifier"]
+- !private ["13CollectionKit18LayoutableProviderP", "hasReloadable"]
+- !private ["13CollectionKit18LayoutableProviderP", "init"]
+- !private ["13CollectionKit18LayoutableProviderP", "sections"]
+- !private ["13CollectionKit18LayoutableProviderP", "willReload"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s10MirrorPathP", "init"]
+- ["s10MirrorPathP", "init"]
+- !private ["SM", "first"]
+- !private ["13CollectionKit8ProviderP", "RowLayout"]
+- !private ["13CollectionKit8ProviderP", "SimpleViewProvider"]
+- ["13CollectionKit8ProviderP", ""]
+- !private ["13CollectionKit8ProviderP", "contentProvider"]
+- !private ["13CollectionKit8ProviderP", "emptyStateView"]
+- !private ["13CollectionKit8ProviderP", "emptyStateViewGetter"]
+- !private ["13CollectionKit8ProviderP", "emptyStateViewSectionIdentifier"]
+- !private ["13CollectionKit8ProviderP", "hasReloadable"]
+- !private ["13CollectionKit8ProviderP", "identifier"]
+- !private ["13CollectionKit8ProviderP", "init"]
+- !private ["13CollectionKit8ProviderP", "numberOfItems"]
+- !private ["13CollectionKit8ProviderP", "sections"]
+- !private ["13CollectionKit8ProviderP", "willReload"]
+- !private ["Sk", "first"]
+- !private ["Sm", "first"]
+- ["Sm", "init"]
+- ["Sm", "init"]
+- !private ["13CollectionKit9RowLayoutC", "init"]
+- !private ["13CollectionKit9RowLayoutC", "transposed"]
+- !private ["13CollectionKit15SectionProviderP", "RowLayout"]
+- !private ["13CollectionKit15SectionProviderP", "SimpleViewProvider"]
+- ["13CollectionKit15SectionProviderP", ""]
+- !private ["13CollectionKit15SectionProviderP", "contentProvider"]
+- !private ["13CollectionKit15SectionProviderP", "emptyStateView"]
+- !private ["13CollectionKit15SectionProviderP", "emptyStateViewGetter"]
+- !private ["13CollectionKit15SectionProviderP", "emptyStateViewSectionIdentifier"]
+- !private ["13CollectionKit15SectionProviderP", "hasReloadable"]
+- !private ["13CollectionKit15SectionProviderP", "init"]
+- !private ["13CollectionKit15SectionProviderP", "sections"]
+- !private ["13CollectionKit15SectionProviderP", "willReload"]
+- !private ["ST", "first"]
+- ["ST", "init"]
+- ["ST", "init"]
+- !private ["13CollectionKit12SimpleLayoutC", "transposed"]
+- !private ["13CollectionKit18SimpleViewProviderC", "deinit"]
+- !private ["13CollectionKit18SimpleViewProviderC", "init"]
+- !private ["s12StaticStringV", "init"]
+- !private ["s12StaticStringV", "init"]
+- ["SS", "init"]
+- ["SS", "init"]
+- ["Sy", "init"]
+- ["Sy", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- !private ["13CollectionKit18SimpleViewProviderC0D12SizeStrategyO", "fill"]
+- !private ["s24_DestructorSafeContainerP", "first"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "first"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "first"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s16_SwiftStringViewP", "init"]
+- ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "Sa"
+- !private "s13ArrayProtocolP"
+- "SK"
+- !private "Sb"
+- "s7CVarArgP"
+- "Sl"
+- "13CollectionKit0A10ReloadableP"
+- "SL"
+- "13CollectionKit16ComposedProviderC"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "Se"
+- "13CollectionKit18EmptyStateProviderC"
+- "SE"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "SH"
+- !private "13CollectionKit22HorizontalSimpleLayoutC"
+- !private "13CollectionKit12ItemProviderP"
+- !private "13CollectionKit6LayoutC"
+- "13CollectionKit18LayoutableProviderP"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- !private "SM"
+- "13CollectionKit8ProviderP"
+- !private "Sk"
+- "Sm"
+- !private "13CollectionKit9RowLayoutC"
+- "13CollectionKit15SectionProviderP"
+- "ST"
+- !private "13CollectionKit12SimpleLayoutC"
+- !private "13CollectionKit18SimpleViewProviderC"
+- !private "s12StaticStringV"
+- "SS"
+- "Sy"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- !private "13CollectionKit18SimpleViewProviderC0D12SizeStrategyO"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "s21_ObjectiveCBridgeableP"
+- "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/radibarq/developer/NasaInArabic/Pods/Target Support Files/CollectionKit/CollectionKit-umbrella.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Pods.build/Debug-iphonesimulator/CollectionKit.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "ed1cdc596f2b5798f916926903ae6875"

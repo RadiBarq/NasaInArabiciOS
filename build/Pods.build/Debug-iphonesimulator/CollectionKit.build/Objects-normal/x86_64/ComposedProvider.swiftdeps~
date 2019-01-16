@@ -1,0 +1,414 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ComposedProvider"
+- "CollectionComposerLayoutContext"
+provides-nominal:
+- "13CollectionKit16ComposedProviderC"
+- "13CollectionKit0A21ComposerLayoutContextV"
+provides-member:
+- ["13CollectionKit16ComposedProviderC", ""]
+- ["13CollectionKit0A21ComposerLayoutContextV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "==="
+- !private "??"
+- "Animator"
+- "AssignmentPrecedence"
+- "Bool"
+- "CGSize"
+- "CollectionComposerLayoutContext"
+- "CollectionReloadable"
+- "ComposedProvider"
+- !private "FlowLayout"
+- "Int"
+- "Layout"
+- "LayoutContext"
+- "LayoutableProvider"
+- "Provider"
+- "SectionProvider"
+- "String"
+- !private "StringLiteralType"
+- !private "||"
+depends-member:
+- !private ["Sa", "contains"]
+- !private ["Sa", "count"]
+- !private ["Sa", "subscript"]
+- !private ["s13ArrayProtocolP", "contains"]
+- !private ["s13ArrayProtocolP", "contentSize"]
+- !private ["s13ArrayProtocolP", "count"]
+- !private ["s13ArrayProtocolP", "identifier"]
+- !private ["s13ArrayProtocolP", "layout"]
+- !private ["s13ArrayProtocolP", "subscript"]
+- !private ["s10ArraySliceV", "contentSize"]
+- !private ["s10ArraySliceV", "identifier"]
+- !private ["s10ArraySliceV", "layout"]
+- !private ["SK", "contains"]
+- !private ["SK", "contentSize"]
+- !private ["SK", "count"]
+- !private ["SK", "identifier"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
+- !private ["SK", "layout"]
+- !private ["SK", "subscript"]
+- !private ["s7CVarArgP", "contains"]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["Sl", "contains"]
+- !private ["Sl", "contentSize"]
+- !private ["Sl", "count"]
+- !private ["Sl", "identifier"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["Sl", "layout"]
+- !private ["Sl", "subscript"]
+- ["13CollectionKit0A21ComposerLayoutContextV", "CGSize"]
+- ["13CollectionKit0A21ComposerLayoutContextV", "Int"]
+- ["13CollectionKit0A21ComposerLayoutContextV", "Provider"]
+- ["13CollectionKit0A21ComposerLayoutContextV", "String"]
+- ["13CollectionKit0A21ComposerLayoutContextV", "collectionSize"]
+- ["13CollectionKit0A21ComposerLayoutContextV", "data"]
+- ["13CollectionKit0A21ComposerLayoutContextV", "deinit"]
+- ["13CollectionKit0A21ComposerLayoutContextV", "identifier"]
+- ["13CollectionKit0A21ComposerLayoutContextV", "init"]
+- ["13CollectionKit0A21ComposerLayoutContextV", "numberOfItems"]
+- ["13CollectionKit0A21ComposerLayoutContextV", "sections"]
+- ["13CollectionKit0A21ComposerLayoutContextV", "size"]
+- !private ["13CollectionKit0A10ReloadableP", "CollectionComposerLayoutContext"]
+- !private ["13CollectionKit0A10ReloadableP", "FlowLayout"]
+- ["13CollectionKit0A10ReloadableP", ""]
+- ["13CollectionKit0A10ReloadableP", "animator"]
+- ["13CollectionKit0A10ReloadableP", "collectionView"]
+- ["13CollectionKit0A10ReloadableP", "contentSize"]
+- ["13CollectionKit0A10ReloadableP", "didReload"]
+- ["13CollectionKit0A10ReloadableP", "flattenedProvider"]
+- ["13CollectionKit0A10ReloadableP", "frame"]
+- ["13CollectionKit0A10ReloadableP", "hasReloadable"]
+- ["13CollectionKit0A10ReloadableP", "identifier"]
+- ["13CollectionKit0A10ReloadableP", "internalLayout"]
+- ["13CollectionKit0A10ReloadableP", "layout"]
+- ["13CollectionKit0A10ReloadableP", "layoutContext"]
+- ["13CollectionKit0A10ReloadableP", "numberOfItems"]
+- ["13CollectionKit0A10ReloadableP", "reloadData"]
+- ["13CollectionKit0A10ReloadableP", "section"]
+- !private ["13CollectionKit0A10ReloadableP", "sections"]
+- !private ["13CollectionKit0A10ReloadableP", "setNeedsInvalidateLayout"]
+- ["13CollectionKit0A10ReloadableP", "setNeedsReload"]
+- ["13CollectionKit0A10ReloadableP", "visibleIndexes"]
+- ["13CollectionKit0A10ReloadableP", "willReload"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
+- ["13CollectionKit16ComposedProviderC", "Animator"]
+- ["13CollectionKit16ComposedProviderC", "Bool"]
+- ["13CollectionKit16ComposedProviderC", "CGSize"]
+- !private ["13CollectionKit16ComposedProviderC", "CollectionComposerLayoutContext"]
+- ["13CollectionKit16ComposedProviderC", "CollectionReloadable"]
+- !private ["13CollectionKit16ComposedProviderC", "FlowLayout"]
+- ["13CollectionKit16ComposedProviderC", "Int"]
+- ["13CollectionKit16ComposedProviderC", "Layout"]
+- ["13CollectionKit16ComposedProviderC", "LayoutContext"]
+- ["13CollectionKit16ComposedProviderC", "Provider"]
+- ["13CollectionKit16ComposedProviderC", "String"]
+- ["13CollectionKit16ComposedProviderC", "animator"]
+- ["13CollectionKit16ComposedProviderC", "collectionView"]
+- ["13CollectionKit16ComposedProviderC", "contentSize"]
+- ["13CollectionKit16ComposedProviderC", "deinit"]
+- ["13CollectionKit16ComposedProviderC", "didReload"]
+- ["13CollectionKit16ComposedProviderC", "flattenedProvider"]
+- ["13CollectionKit16ComposedProviderC", "frame"]
+- ["13CollectionKit16ComposedProviderC", "hasReloadable"]
+- ["13CollectionKit16ComposedProviderC", "identifier"]
+- ["13CollectionKit16ComposedProviderC", "init"]
+- ["13CollectionKit16ComposedProviderC", "internalLayout"]
+- ["13CollectionKit16ComposedProviderC", "layout"]
+- ["13CollectionKit16ComposedProviderC", "layoutContext"]
+- ["13CollectionKit16ComposedProviderC", "numberOfItems"]
+- ["13CollectionKit16ComposedProviderC", "reloadData"]
+- ["13CollectionKit16ComposedProviderC", "section"]
+- ["13CollectionKit16ComposedProviderC", "sections"]
+- !private ["13CollectionKit16ComposedProviderC", "setNeedsInvalidateLayout"]
+- ["13CollectionKit16ComposedProviderC", "setNeedsReload"]
+- ["13CollectionKit16ComposedProviderC", "visibleIndexes"]
+- ["13CollectionKit16ComposedProviderC", "willReload"]
+- !private ["s28CustomDebugStringConvertibleP", "contains"]
+- !private ["s28CustomDebugStringConvertibleP", "contentSize"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "identifier"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "layout"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "contains"]
+- !private ["s17CustomReflectableP", "contentSize"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "identifier"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "layout"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "contains"]
+- !private ["s23CustomStringConvertibleP", "contentSize"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "identifier"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "layout"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["Se", "contains"]
+- !private ["Se", "count"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "subscript"]
+- !private ["SE", "contains"]
+- !private ["SE", "count"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "subscript"]
+- !private ["SQ", "contains"]
+- !private ["SQ", "contentSize"]
+- !private ["SQ", "count"]
+- !private ["SQ", "identifier"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "layout"]
+- !private ["SQ", "subscript"]
+- !private ["s25ExpressibleByArrayLiteralP", "contains"]
+- !private ["s25ExpressibleByArrayLiteralP", "contentSize"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "identifier"]
+- !private ["s25ExpressibleByArrayLiteralP", "layout"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["13CollectionKit10FlowLayoutC", "init"]
+- !private ["SH", "contains"]
+- !private ["SH", "contentSize"]
+- !private ["SH", "count"]
+- !private ["SH", "identifier"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "layout"]
+- !private ["SH", "subscript"]
+- ["13CollectionKit13LayoutContextP", ""]
+- ["13CollectionKit13LayoutContextP", "collectionSize"]
+- ["13CollectionKit13LayoutContextP", "data"]
+- ["13CollectionKit13LayoutContextP", "identifier"]
+- !private ["13CollectionKit13LayoutContextP", "init"]
+- ["13CollectionKit13LayoutContextP", "numberOfItems"]
+- !private ["13CollectionKit13LayoutContextP", "sections"]
+- ["13CollectionKit13LayoutContextP", "size"]
+- !private ["13CollectionKit18LayoutableProviderP", "CollectionComposerLayoutContext"]
+- !private ["13CollectionKit18LayoutableProviderP", "FlowLayout"]
+- ["13CollectionKit18LayoutableProviderP", ""]
+- ["13CollectionKit18LayoutableProviderP", "animator"]
+- ["13CollectionKit18LayoutableProviderP", "collectionView"]
+- ["13CollectionKit18LayoutableProviderP", "contentSize"]
+- ["13CollectionKit18LayoutableProviderP", "didReload"]
+- ["13CollectionKit18LayoutableProviderP", "flattenedProvider"]
+- ["13CollectionKit18LayoutableProviderP", "frame"]
+- ["13CollectionKit18LayoutableProviderP", "hasReloadable"]
+- ["13CollectionKit18LayoutableProviderP", "identifier"]
+- ["13CollectionKit18LayoutableProviderP", "internalLayout"]
+- ["13CollectionKit18LayoutableProviderP", "layout"]
+- ["13CollectionKit18LayoutableProviderP", "layoutContext"]
+- ["13CollectionKit18LayoutableProviderP", "numberOfItems"]
+- ["13CollectionKit18LayoutableProviderP", "reloadData"]
+- ["13CollectionKit18LayoutableProviderP", "section"]
+- !private ["13CollectionKit18LayoutableProviderP", "sections"]
+- !private ["13CollectionKit18LayoutableProviderP", "setNeedsInvalidateLayout"]
+- ["13CollectionKit18LayoutableProviderP", "setNeedsReload"]
+- ["13CollectionKit18LayoutableProviderP", "visibleIndexes"]
+- ["13CollectionKit18LayoutableProviderP", "willReload"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["SM", "contains"]
+- !private ["SM", "contentSize"]
+- !private ["SM", "count"]
+- !private ["SM", "identifier"]
+- !private ["SM", "layout"]
+- !private ["SM", "subscript"]
+- !private ["13CollectionKit8ProviderP", "CollectionComposerLayoutContext"]
+- !private ["13CollectionKit8ProviderP", "FlowLayout"]
+- ["13CollectionKit8ProviderP", ""]
+- ["13CollectionKit8ProviderP", "animator"]
+- ["13CollectionKit8ProviderP", "collectionView"]
+- ["13CollectionKit8ProviderP", "contentSize"]
+- ["13CollectionKit8ProviderP", "didReload"]
+- ["13CollectionKit8ProviderP", "flattenedProvider"]
+- ["13CollectionKit8ProviderP", "frame"]
+- ["13CollectionKit8ProviderP", "hasReloadable"]
+- ["13CollectionKit8ProviderP", "identifier"]
+- ["13CollectionKit8ProviderP", "internalLayout"]
+- ["13CollectionKit8ProviderP", "layout"]
+- ["13CollectionKit8ProviderP", "layoutContext"]
+- ["13CollectionKit8ProviderP", "numberOfItems"]
+- ["13CollectionKit8ProviderP", "reloadData"]
+- ["13CollectionKit8ProviderP", "section"]
+- !private ["13CollectionKit8ProviderP", "sections"]
+- !private ["13CollectionKit8ProviderP", "setNeedsInvalidateLayout"]
+- ["13CollectionKit8ProviderP", "setNeedsReload"]
+- ["13CollectionKit8ProviderP", "visibleIndexes"]
+- ["13CollectionKit8ProviderP", "willReload"]
+- !private ["Sk", "contains"]
+- !private ["Sk", "contentSize"]
+- !private ["Sk", "count"]
+- !private ["Sk", "identifier"]
+- !private ["Sk", "layout"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "contains"]
+- !private ["Sm", "contentSize"]
+- !private ["Sm", "count"]
+- !private ["Sm", "identifier"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["Sm", "layout"]
+- !private ["Sm", "subscript"]
+- !private ["13CollectionKit15SectionProviderP", "CollectionComposerLayoutContext"]
+- !private ["13CollectionKit15SectionProviderP", "FlowLayout"]
+- ["13CollectionKit15SectionProviderP", ""]
+- ["13CollectionKit15SectionProviderP", "animator"]
+- ["13CollectionKit15SectionProviderP", "collectionView"]
+- ["13CollectionKit15SectionProviderP", "contentSize"]
+- ["13CollectionKit15SectionProviderP", "didReload"]
+- ["13CollectionKit15SectionProviderP", "flattenedProvider"]
+- ["13CollectionKit15SectionProviderP", "frame"]
+- ["13CollectionKit15SectionProviderP", "hasReloadable"]
+- ["13CollectionKit15SectionProviderP", "identifier"]
+- ["13CollectionKit15SectionProviderP", "internalLayout"]
+- ["13CollectionKit15SectionProviderP", "layout"]
+- ["13CollectionKit15SectionProviderP", "layoutContext"]
+- ["13CollectionKit15SectionProviderP", "numberOfItems"]
+- ["13CollectionKit15SectionProviderP", "reloadData"]
+- ["13CollectionKit15SectionProviderP", "section"]
+- !private ["13CollectionKit15SectionProviderP", "sections"]
+- !private ["13CollectionKit15SectionProviderP", "setNeedsInvalidateLayout"]
+- ["13CollectionKit15SectionProviderP", "setNeedsReload"]
+- ["13CollectionKit15SectionProviderP", "visibleIndexes"]
+- ["13CollectionKit15SectionProviderP", "willReload"]
+- !private ["ST", "contains"]
+- !private ["ST", "contentSize"]
+- !private ["ST", "count"]
+- !private ["ST", "identifier"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["ST", "layout"]
+- !private ["ST", "subscript"]
+- !private ["SS", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s24_DestructorSafeContainerP", "contains"]
+- !private ["s24_DestructorSafeContainerP", "contentSize"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "identifier"]
+- !private ["s24_DestructorSafeContainerP", "layout"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "contains"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "contains"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "Sa"
+- !private "s13ArrayProtocolP"
+- !private "s10ArraySliceV"
+- !private "SK"
+- !private "s7CVarArgP"
+- !private "Sl"
+- "13CollectionKit0A21ComposerLayoutContextV"
+- "13CollectionKit0A10ReloadableP"
+- !private "SL"
+- "13CollectionKit16ComposedProviderC"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "13CollectionKit10FlowLayoutC"
+- !private "SH"
+- "13CollectionKit13LayoutContextP"
+- "13CollectionKit18LayoutableProviderP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "SM"
+- "13CollectionKit8ProviderP"
+- !private "Sk"
+- !private "Sm"
+- "13CollectionKit15SectionProviderP"
+- !private "ST"
+- !private "SS"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/radibarq/developer/NasaInArabic/Pods/Target Support Files/CollectionKit/CollectionKit-umbrella.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Pods.build/Debug-iphonesimulator/CollectionKit.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "676b2adca9d3e942420ce212cd0a6f9d"

@@ -1,0 +1,141 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "VisibleFrameInsetLayout"
+provides-nominal:
+- "13CollectionKit23VisibleFrameInsetLayoutC"
+provides-member:
+- ["13CollectionKit23VisibleFrameInsetLayoutC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "AssignmentPrecedence"
+- "CGRect"
+- "CGSize"
+- !private "FloatLiteralType"
+- "Int"
+- !private "IntegerLiteralType"
+- "Layout"
+- "LayoutContext"
+- !private "StringLiteralType"
+- "UIEdgeInsets"
+- "VisibleFrameInsetLayout"
+- "WrapperLayout"
+depends-member:
+- !private ["So6CGRectV", "inset"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "inset"]
+- !private ["s29CustomPlaygroundQuickLookableP", "inset"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "inset"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["Se", "inset"]
+- !private ["SE", "inset"]
+- !private ["SQ", "inset"]
+- !private ["SQ", "zero"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["13CollectionKit6LayoutC", "CGRect"]
+- ["13CollectionKit6LayoutC", "CGSize"]
+- ["13CollectionKit6LayoutC", "Int"]
+- ["13CollectionKit6LayoutC", "Layout"]
+- ["13CollectionKit6LayoutC", "LayoutContext"]
+- ["13CollectionKit6LayoutC", "UIEdgeInsets"]
+- ["13CollectionKit6LayoutC", "insetProvider"]
+- ["13CollectionKit6LayoutC", "insets"]
+- ["13CollectionKit6LayoutC", "layout"]
+- !private ["13CollectionKit6LayoutC", "rootLayout"]
+- ["13CollectionKit6LayoutC", "visibleIndexes"]
+- !private ["13CollectionKit13LayoutContextP", "collectionSize"]
+- !private ["s12StaticStringV", "init"]
+- !private ["s12StaticStringV", "init"]
+- !private ["So12UIEdgeInsetsV", "zero"]
+- ["13CollectionKit23VisibleFrameInsetLayoutC", "CGRect"]
+- ["13CollectionKit23VisibleFrameInsetLayoutC", "CGSize"]
+- ["13CollectionKit23VisibleFrameInsetLayoutC", "Int"]
+- ["13CollectionKit23VisibleFrameInsetLayoutC", "Layout"]
+- ["13CollectionKit23VisibleFrameInsetLayoutC", "LayoutContext"]
+- ["13CollectionKit23VisibleFrameInsetLayoutC", "UIEdgeInsets"]
+- ["13CollectionKit23VisibleFrameInsetLayoutC", "init"]
+- ["13CollectionKit23VisibleFrameInsetLayoutC", "insetProvider"]
+- ["13CollectionKit23VisibleFrameInsetLayoutC", "insets"]
+- ["13CollectionKit23VisibleFrameInsetLayoutC", "layout"]
+- !private ["13CollectionKit23VisibleFrameInsetLayoutC", "rootLayout"]
+- ["13CollectionKit23VisibleFrameInsetLayoutC", "visibleIndexes"]
+- ["13CollectionKit13WrapperLayoutC", "CGRect"]
+- ["13CollectionKit13WrapperLayoutC", "CGSize"]
+- ["13CollectionKit13WrapperLayoutC", "Int"]
+- ["13CollectionKit13WrapperLayoutC", "Layout"]
+- ["13CollectionKit13WrapperLayoutC", "LayoutContext"]
+- ["13CollectionKit13WrapperLayoutC", "UIEdgeInsets"]
+- ["13CollectionKit13WrapperLayoutC", ""]
+- ["13CollectionKit13WrapperLayoutC", "init"]
+- ["13CollectionKit13WrapperLayoutC", "insetProvider"]
+- ["13CollectionKit13WrapperLayoutC", "insets"]
+- ["13CollectionKit13WrapperLayoutC", "layout"]
+- !private ["13CollectionKit13WrapperLayoutC", "rootLayout"]
+- ["13CollectionKit13WrapperLayoutC", "visibleIndexes"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "inset"]
+- !private ["s21_ObjectiveCBridgeableP", "zero"]
+depends-nominal:
+- !private "So6CGRectV"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "13CollectionKit6LayoutC"
+- !private "13CollectionKit13LayoutContextP"
+- !private "s12StaticStringV"
+- !private "So12UIEdgeInsetsV"
+- "13CollectionKit23VisibleFrameInsetLayoutC"
+- "13CollectionKit13WrapperLayoutC"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/radibarq/developer/NasaInArabic/Pods/Target Support Files/CollectionKit/CollectionKit-umbrella.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Pods.build/Debug-iphonesimulator/CollectionKit.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "2661f8e59265ca24b9b7bc8567b3e4a2"

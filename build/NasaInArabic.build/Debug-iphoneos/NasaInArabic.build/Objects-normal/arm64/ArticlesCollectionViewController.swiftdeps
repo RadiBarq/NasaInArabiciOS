@@ -94,15 +94,15 @@ depends-member:
 - !private ["s10ArraySliceV", "excerpt"]
 - !private ["s10ArraySliceV", "headline"]
 - !private ["s10ArraySliceV", "image"]
+- !private ["12NasaInArabic21ArticleViewControllerC", "article"]
 - !private ["12NasaInArabic21ArticleViewControllerC", "articleTitle"]
 - !private ["12NasaInArabic21ArticleViewControllerC", "deinit"]
 - !private ["12NasaInArabic21ArticleViewControllerC", "hero"]
 - !private ["12NasaInArabic21ArticleViewControllerC", "imageView"]
 - !private ["12NasaInArabic21ArticleViewControllerC", "init"]
-- !private ["12NasaInArabic21ArticleViewControllerC", "scrollView"]
 - !private ["12NasaInArabic21ArticleViewControllerC", "view"]
-- !private ["12NasaInArabic21ArticleViewControllerC", "visualEffectView"]
 - ["12NasaInArabic8ArticlesV", "BrowsingArticle"]
+- !private ["12NasaInArabic8ArticlesV", "CodingKeys"]
 - ["12NasaInArabic8ArticlesV", "data"]
 - ["12NasaInArabic8ArticlesV", "deinit"]
 - ["12NasaInArabic8ArticlesV", "init"]
@@ -146,6 +146,7 @@ depends-member:
 - !private ["12NasaInArabic32ArticlesCollectionViewControllerC", "tabBarController"]
 - !private ["12NasaInArabic32ArticlesCollectionViewControllerC", "titleCellReuseIdentifier"]
 - ["12NasaInArabic32ArticlesCollectionViewControllerC", "viewDidLoad"]
+- ["12NasaInArabic32ArticlesCollectionViewControllerC", "\u0639\u0644\u064A"]
 - ["12NasaInArabic18ArticlesNormalCellC", "CGRect"]
 - ["12NasaInArabic18ArticlesNormalCellC", "Card"]
 - ["12NasaInArabic18ArticlesNormalCellC", "NSCoder"]
@@ -160,7 +161,7 @@ depends-member:
 - ["12NasaInArabic18ArticlesNormalCellC", "articleTitle"]
 - !private ["12NasaInArabic18ArticlesNormalCellC", "bounds"]
 - ["12NasaInArabic18ArticlesNormalCellC", "card"]
-- !private ["12NasaInArabic18ArticlesNormalCellC", "deinit"]
+- ["12NasaInArabic18ArticlesNormalCellC", "deinit"]
 - !private ["12NasaInArabic18ArticlesNormalCellC", "fatalError"]
 - !private ["12NasaInArabic18ArticlesNormalCellC", "hero"]
 - ["12NasaInArabic18ArticlesNormalCellC", "imageView"]
@@ -186,6 +187,7 @@ depends-member:
 - !private ["SK", "data"]
 - !private ["SK", "excerpt"]
 - !private ["SK", "headline"]
+- !private ["SK", "htmlToString"]
 - !private ["SK", "image"]
 - ["SK", "init"]
 - ["SK", "init"]
@@ -194,12 +196,20 @@ depends-member:
 - !private ["SB", "init"]
 - !private ["Sz", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["12NasaInArabic15BrowsingArticleV", "CodingKeys"]
 - ["12NasaInArabic15BrowsingArticleV", "String"]
+- ["12NasaInArabic15BrowsingArticleV", "category"]
+- ["12NasaInArabic15BrowsingArticleV", "category_id"]
 - ["12NasaInArabic15BrowsingArticleV", "deinit"]
+- ["12NasaInArabic15BrowsingArticleV", "description"]
 - ["12NasaInArabic15BrowsingArticleV", "excerpt"]
 - ["12NasaInArabic15BrowsingArticleV", "headline"]
+- ["12NasaInArabic15BrowsingArticleV", "id"]
 - ["12NasaInArabic15BrowsingArticleV", "image"]
 - ["12NasaInArabic15BrowsingArticleV", "init"]
+- ["12NasaInArabic15BrowsingArticleV", "publish_date"]
+- ["12NasaInArabic15BrowsingArticleV", "slug"]
+- ["12NasaInArabic15BrowsingArticleV", "thumbnail"]
 - !private ["So12CACornerMaskV", "layerMaxXMaxYCorner"]
 - !private ["So12CACornerMaskV", "layerMaxXMinYCorner"]
 - !private ["So12CACornerMaskV", "layerMinXMaxYCorner"]
@@ -297,6 +307,7 @@ depends-member:
 - !private ["s7CVarArgP", "addSubview"]
 - ["s7CVarArgP", "adjustsFontSizeToFitWidth"]
 - !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "article"]
 - !private ["s7CVarArgP", "articleDescription"]
 - !private ["s7CVarArgP", "articleTitle"]
 - !private ["s7CVarArgP", "articles"]
@@ -330,6 +341,7 @@ depends-member:
 - !private ["s7CVarArgP", "hasParallax"]
 - !private ["s7CVarArgP", "heightAnchor"]
 - !private ["s7CVarArgP", "hero"]
+- !private ["s7CVarArgP", "htmlToString"]
 - ["s7CVarArgP", "image"]
 - !private ["s7CVarArgP", "imageView"]
 - ["s7CVarArgP", "init"]
@@ -351,7 +363,6 @@ depends-member:
 - !private ["s7CVarArgP", "rightAnchor"]
 - ["s7CVarArgP", "roundTop"]
 - !private ["s7CVarArgP", "rowPerPage"]
-- !private ["s7CVarArgP", "scrollView"]
 - !private ["s7CVarArgP", "sd_addActivityIndicator"]
 - !private ["s7CVarArgP", "sd_removeActivityIndicator"]
 - !private ["s7CVarArgP", "sd_setImage"]
@@ -375,7 +386,6 @@ depends-member:
 - !private ["s7CVarArgP", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["s7CVarArgP", "view"]
 - !private ["s7CVarArgP", "viewDidLoad"]
-- !private ["s7CVarArgP", "visualEffectView"]
 - !private ["s7CVarArgP", "widthAnchor"]
 - !private ["5Cards4CardC", "addSubview"]
 - !private ["5Cards4CardC", "bounds"]
@@ -418,11 +428,13 @@ depends-member:
 - !private ["Sl", "data"]
 - !private ["Sl", "excerpt"]
 - !private ["Sl", "headline"]
+- !private ["Sl", "htmlToString"]
 - !private ["Sl", "image"]
 - ["Sl", "init"]
 - ["Sl", "init"]
 - !private ["Sl", "row"]
 - !private ["Sl", "subscript"]
+- !private ["SL", "htmlToString"]
 - ["SL", "init"]
 - ["SL", "init"]
 - !private ["SL", "row"]
@@ -451,6 +463,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "addSubview"]
 - ["s28CustomDebugStringConvertibleP", "adjustsFontSizeToFitWidth"]
 - !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "article"]
 - !private ["s28CustomDebugStringConvertibleP", "articleDescription"]
 - !private ["s28CustomDebugStringConvertibleP", "articleTitle"]
 - !private ["s28CustomDebugStringConvertibleP", "articles"]
@@ -492,6 +505,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "height"]
 - !private ["s28CustomDebugStringConvertibleP", "heightAnchor"]
 - !private ["s28CustomDebugStringConvertibleP", "hero"]
+- !private ["s28CustomDebugStringConvertibleP", "htmlToString"]
 - ["s28CustomDebugStringConvertibleP", "image"]
 - !private ["s28CustomDebugStringConvertibleP", "imageView"]
 - ["s28CustomDebugStringConvertibleP", "init"]
@@ -515,7 +529,6 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "roundTop"]
 - !private ["s28CustomDebugStringConvertibleP", "row"]
 - !private ["s28CustomDebugStringConvertibleP", "rowPerPage"]
-- !private ["s28CustomDebugStringConvertibleP", "scrollView"]
 - !private ["s28CustomDebugStringConvertibleP", "sd_addActivityIndicator"]
 - !private ["s28CustomDebugStringConvertibleP", "sd_removeActivityIndicator"]
 - !private ["s28CustomDebugStringConvertibleP", "sd_setImage"]
@@ -541,11 +554,11 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["s28CustomDebugStringConvertibleP", "view"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
-- !private ["s28CustomDebugStringConvertibleP", "visualEffectView"]
 - !private ["s28CustomDebugStringConvertibleP", "width"]
 - !private ["s28CustomDebugStringConvertibleP", "widthAnchor"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "height"]
+- !private ["s29CustomPlaygroundQuickLookableP", "htmlToString"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "size"]
@@ -561,6 +574,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "headline"]
 - !private ["s17CustomReflectableP", "height"]
 - !private ["s17CustomReflectableP", "hero"]
+- !private ["s17CustomReflectableP", "htmlToString"]
 - !private ["s17CustomReflectableP", "image"]
 - ["s17CustomReflectableP", "init"]
 - ["s17CustomReflectableP", "init"]
@@ -595,6 +609,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "addSubview"]
 - ["s23CustomStringConvertibleP", "adjustsFontSizeToFitWidth"]
 - !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "article"]
 - !private ["s23CustomStringConvertibleP", "articleDescription"]
 - !private ["s23CustomStringConvertibleP", "articleTitle"]
 - !private ["s23CustomStringConvertibleP", "articles"]
@@ -635,6 +650,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "headline"]
 - !private ["s23CustomStringConvertibleP", "heightAnchor"]
 - !private ["s23CustomStringConvertibleP", "hero"]
+- !private ["s23CustomStringConvertibleP", "htmlToString"]
 - ["s23CustomStringConvertibleP", "image"]
 - !private ["s23CustomStringConvertibleP", "imageView"]
 - ["s23CustomStringConvertibleP", "init"]
@@ -658,7 +674,6 @@ depends-member:
 - ["s23CustomStringConvertibleP", "roundTop"]
 - !private ["s23CustomStringConvertibleP", "row"]
 - !private ["s23CustomStringConvertibleP", "rowPerPage"]
-- !private ["s23CustomStringConvertibleP", "scrollView"]
 - !private ["s23CustomStringConvertibleP", "sd_addActivityIndicator"]
 - !private ["s23CustomStringConvertibleP", "sd_removeActivityIndicator"]
 - !private ["s23CustomStringConvertibleP", "sd_setImage"]
@@ -683,28 +698,35 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["s23CustomStringConvertibleP", "view"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
-- !private ["s23CustomStringConvertibleP", "visualEffectView"]
 - !private ["s23CustomStringConvertibleP", "widthAnchor"]
 - ["Se", "BrowsingArticle"]
 - ["Se", ""]
 - !private ["Se", "_getBuiltinLogicValue"]
 - !private ["Se", "append"]
+- !private ["Se", "category"]
+- !private ["Se", "category_id"]
 - !private ["Se", "contentInset"]
 - !private ["Se", "count"]
 - !private ["Se", "data"]
 - !private ["Se", "dataSource"]
 - !private ["Se", "delegate"]
+- !private ["Se", "description"]
 - !private ["Se", "excerpt"]
 - !private ["Se", "headline"]
 - !private ["Se", "height"]
 - !private ["Se", "hero"]
+- !private ["Se", "htmlToString"]
+- !private ["Se", "id"]
 - !private ["Se", "image"]
 - ["Se", "init"]
 - ["Se", "init"]
+- !private ["Se", "publish_date"]
 - !private ["Se", "reloadData"]
 - !private ["Se", "row"]
 - !private ["Se", "size"]
+- !private ["Se", "slug"]
 - !private ["Se", "subscript"]
+- !private ["Se", "thumbnail"]
 - !private ["Se", "width"]
 - !private ["s7DecoderP", "container"]
 - !private ["So18OS_dispatch_objectC", "async"]
@@ -720,6 +742,7 @@ depends-member:
 - !private ["SE", "delegate"]
 - !private ["SE", "height"]
 - !private ["SE", "hero"]
+- !private ["SE", "htmlToString"]
 - ["SE", "init"]
 - ["SE", "init"]
 - !private ["SE", "reloadData"]
@@ -753,6 +776,7 @@ depends-member:
 - !private ["SQ", "addSubview"]
 - ["SQ", "adjustsFontSizeToFitWidth"]
 - !private ["SQ", "append"]
+- !private ["SQ", "article"]
 - !private ["SQ", "articleDescription"]
 - !private ["SQ", "articleTitle"]
 - !private ["SQ", "articles"]
@@ -795,6 +819,7 @@ depends-member:
 - !private ["SQ", "height"]
 - !private ["SQ", "heightAnchor"]
 - !private ["SQ", "hero"]
+- !private ["SQ", "htmlToString"]
 - ["SQ", "image"]
 - !private ["SQ", "imageView"]
 - ["SQ", "init"]
@@ -823,7 +848,6 @@ depends-member:
 - ["SQ", "roundTop"]
 - !private ["SQ", "row"]
 - !private ["SQ", "rowPerPage"]
-- !private ["SQ", "scrollView"]
 - !private ["SQ", "sd_addActivityIndicator"]
 - !private ["SQ", "sd_removeActivityIndicator"]
 - !private ["SQ", "sd_setImage"]
@@ -849,7 +873,6 @@ depends-member:
 - !private ["SQ", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["SQ", "view"]
 - !private ["SQ", "viewDidLoad"]
-- !private ["SQ", "visualEffectView"]
 - !private ["SQ", "width"]
 - !private ["SQ", "widthAnchor"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
@@ -866,6 +889,7 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "row"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "htmlToString"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s25ExpressibleByFloatLiteralP", "init"]
@@ -875,8 +899,10 @@ depends-member:
 - !private ["s23ExpressibleByNilLiteralP", "delegate"]
 - !private ["s23ExpressibleByNilLiteralP", "hero"]
 - !private ["s23ExpressibleByNilLiteralP", "reloadData"]
+- !private ["s26ExpressibleByStringLiteralP", "htmlToString"]
 - ["s26ExpressibleByStringLiteralP", "init"]
 - ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "htmlToString"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s17FixedWidthIntegerP", "init"]
@@ -907,6 +933,7 @@ depends-member:
 - !private ["SH", "addSubview"]
 - ["SH", "adjustsFontSizeToFitWidth"]
 - !private ["SH", "append"]
+- !private ["SH", "article"]
 - !private ["SH", "articleDescription"]
 - !private ["SH", "articleTitle"]
 - !private ["SH", "articles"]
@@ -948,6 +975,7 @@ depends-member:
 - !private ["SH", "headline"]
 - !private ["SH", "heightAnchor"]
 - !private ["SH", "hero"]
+- !private ["SH", "htmlToString"]
 - ["SH", "image"]
 - !private ["SH", "imageView"]
 - ["SH", "init"]
@@ -972,7 +1000,6 @@ depends-member:
 - ["SH", "roundTop"]
 - !private ["SH", "row"]
 - !private ["SH", "rowPerPage"]
-- !private ["SH", "scrollView"]
 - !private ["SH", "sd_addActivityIndicator"]
 - !private ["SH", "sd_removeActivityIndicator"]
 - !private ["SH", "sd_setImage"]
@@ -997,7 +1024,6 @@ depends-member:
 - !private ["SH", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["SH", "view"]
 - !private ["SH", "viewDidLoad"]
-- !private ["SH", "visualEffectView"]
 - !private ["SH", "widthAnchor"]
 - !private ["s6HasherV", "combine"]
 - !private ["4Hero0A10CompatibleP", "ArticleViewController"]
@@ -1024,6 +1050,7 @@ depends-member:
 - ["4Hero0A10CompatibleP", ""]
 - !private ["4Hero0A10CompatibleP", "addSubview"]
 - ["4Hero0A10CompatibleP", "adjustsFontSizeToFitWidth"]
+- !private ["4Hero0A10CompatibleP", "article"]
 - !private ["4Hero0A10CompatibleP", "articleDescription"]
 - !private ["4Hero0A10CompatibleP", "articleTitle"]
 - !private ["4Hero0A10CompatibleP", "articles"]
@@ -1066,7 +1093,6 @@ depends-member:
 - !private ["4Hero0A10CompatibleP", "rightAnchor"]
 - ["4Hero0A10CompatibleP", "roundTop"]
 - !private ["4Hero0A10CompatibleP", "rowPerPage"]
-- !private ["4Hero0A10CompatibleP", "scrollView"]
 - !private ["4Hero0A10CompatibleP", "sd_addActivityIndicator"]
 - !private ["4Hero0A10CompatibleP", "sd_removeActivityIndicator"]
 - !private ["4Hero0A10CompatibleP", "sd_setImage"]
@@ -1087,20 +1113,15 @@ depends-member:
 - !private ["4Hero0A10CompatibleP", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["4Hero0A10CompatibleP", "view"]
 - !private ["4Hero0A10CompatibleP", "viewDidLoad"]
-- !private ["4Hero0A10CompatibleP", "visualEffectView"]
 - !private ["4Hero0A10CompatibleP", "widthAnchor"]
 - !private ["4Hero0A20DefaultAnimationTypeO", "none"]
 - !private ["4Hero0A9ExtensionC", "id"]
 - !private ["4Hero0A9ExtensionC", "isEnabled"]
 - !private ["4Hero0A9ExtensionC", "modalAnimationType"]
 - !private ["4Hero0A9ExtensionC", "modifiers"]
-- !private ["4Hero0A8ModifierC", "fade"]
-- !private ["4Hero0A8ModifierC", "source"]
 - !private ["4Hero0A8ModifierC", "spring"]
 - !private ["4Hero0A8ModifierC", "useNoSnapshot"]
-- !private ["4Hero0A17StringConvertibleP", "fade"]
 - !private ["4Hero0A17StringConvertibleP", "none"]
-- !private ["4Hero0A17StringConvertibleP", "source"]
 - !private ["4Hero0A17StringConvertibleP", "spring"]
 - !private ["4Hero0A17StringConvertibleP", "useNoSnapshot"]
 - !private ["10Foundation9IndexPathV", "row"]
@@ -1110,8 +1131,10 @@ depends-member:
 - !private ["s22KeyedDecodingContainerV", "decode"]
 - !private ["s30KeyedDecodingContainerProtocolP", "decode"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "htmlToString"]
 - ["s25LosslessStringConvertibleP", "init"]
 - ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "htmlToString"]
 - ["s10MirrorPathP", "init"]
 - ["s10MirrorPathP", "init"]
 - !private ["SM", "append"]
@@ -1147,6 +1170,7 @@ depends-member:
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "addSubview"]
 - ["So8NSCodingP", "adjustsFontSizeToFitWidth"]
+- !private ["So8NSCodingP", "article"]
 - !private ["So8NSCodingP", "articleDescription"]
 - !private ["So8NSCodingP", "articleTitle"]
 - !private ["So8NSCodingP", "articles"]
@@ -1175,6 +1199,7 @@ depends-member:
 - !private ["So8NSCodingP", "hasParallax"]
 - !private ["So8NSCodingP", "heightAnchor"]
 - !private ["So8NSCodingP", "hero"]
+- !private ["So8NSCodingP", "htmlToString"]
 - ["So8NSCodingP", "image"]
 - !private ["So8NSCodingP", "imageView"]
 - ["So8NSCodingP", "init"]
@@ -1193,7 +1218,6 @@ depends-member:
 - !private ["So8NSCodingP", "rightAnchor"]
 - ["So8NSCodingP", "roundTop"]
 - !private ["So8NSCodingP", "rowPerPage"]
-- !private ["So8NSCodingP", "scrollView"]
 - !private ["So8NSCodingP", "sd_addActivityIndicator"]
 - !private ["So8NSCodingP", "sd_removeActivityIndicator"]
 - !private ["So8NSCodingP", "sd_setImage"]
@@ -1214,11 +1238,11 @@ depends-member:
 - !private ["So8NSCodingP", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["So8NSCodingP", "view"]
 - !private ["So8NSCodingP", "viewDidLoad"]
-- !private ["So8NSCodingP", "visualEffectView"]
 - !private ["So8NSCodingP", "widthAnchor"]
 - ["So9NSCopyingP", "black"]
 - ["So9NSCopyingP", "boldSystemFont"]
 - ["So9NSCopyingP", "darkGray"]
+- !private ["So9NSCopyingP", "htmlToString"]
 - !private ["So9NSCopyingP", "resume"]
 - ["So9NSCopyingP", "systemFont"]
 - !private ["So26NSExtensionRequestHandlingP", "ArticleViewController"]
@@ -1237,6 +1261,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "URL"]
 - !private ["So26NSExtensionRequestHandlingP", "URLSession"]
 - ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "article"]
 - !private ["So26NSExtensionRequestHandlingP", "articleTitle"]
 - !private ["So26NSExtensionRequestHandlingP", "articles"]
 - ["So26NSExtensionRequestHandlingP", "collectionView"]
@@ -1253,24 +1278,25 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "present"]
 - !private ["So26NSExtensionRequestHandlingP", "print"]
 - !private ["So26NSExtensionRequestHandlingP", "rowPerPage"]
-- !private ["So26NSExtensionRequestHandlingP", "scrollView"]
 - !private ["So26NSExtensionRequestHandlingP", "tabBar"]
 - !private ["So26NSExtensionRequestHandlingP", "tabBarController"]
 - !private ["So26NSExtensionRequestHandlingP", "titleCellReuseIdentifier"]
 - !private ["So26NSExtensionRequestHandlingP", "view"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
-- !private ["So26NSExtensionRequestHandlingP", "visualEffectView"]
 - ["So21NSItemProviderReadingP", "black"]
 - ["So21NSItemProviderReadingP", "darkGray"]
+- !private ["So21NSItemProviderReadingP", "htmlToString"]
 - ["So21NSItemProviderReadingP", "init"]
 - ["So21NSItemProviderWritingP", "black"]
 - ["So21NSItemProviderWritingP", "darkGray"]
+- !private ["So21NSItemProviderWritingP", "htmlToString"]
 - ["So21NSItemProviderWritingP", "init"]
 - !private ["So14NSLayoutAnchorC", "constraint"]
 - !private ["So18NSLayoutConstraintC", "isActive"]
 - !private ["So17NSLayoutDimensionC", "constraint"]
 - !private ["So19NSLayoutXAxisAnchorC", "constraint"]
 - !private ["So19NSLayoutYAxisAnchorC", "constraint"]
+- !private ["So16NSMutableCopyingP", "htmlToString"]
 - !private ["So8NSObjectC", "ArticleViewController"]
 - ["So8NSObjectC", "Articles"]
 - !private ["So8NSObjectC", "ArticlesNormalCell"]
@@ -1303,6 +1329,7 @@ depends-member:
 - !private ["So8NSObjectC", "URLSession"]
 - !private ["So8NSObjectC", "addSubview"]
 - ["So8NSObjectC", "adjustsFontSizeToFitWidth"]
+- !private ["So8NSObjectC", "article"]
 - ["So8NSObjectC", "articleDescription"]
 - ["So8NSObjectC", "articleTitle"]
 - ["So8NSObjectC", "articles"]
@@ -1336,6 +1363,7 @@ depends-member:
 - !private ["So8NSObjectC", "hasParallax"]
 - !private ["So8NSObjectC", "heightAnchor"]
 - !private ["So8NSObjectC", "hero"]
+- !private ["So8NSObjectC", "htmlToString"]
 - ["So8NSObjectC", "image"]
 - ["So8NSObjectC", "imageView"]
 - ["So8NSObjectC", "init"]
@@ -1359,7 +1387,6 @@ depends-member:
 - ["So8NSObjectC", "roundBottom"]
 - ["So8NSObjectC", "roundTop"]
 - ["So8NSObjectC", "rowPerPage"]
-- !private ["So8NSObjectC", "scrollView"]
 - !private ["So8NSObjectC", "sd_addActivityIndicator"]
 - !private ["So8NSObjectC", "sd_removeActivityIndicator"]
 - !private ["So8NSObjectC", "sd_setImage"]
@@ -1383,8 +1410,8 @@ depends-member:
 - !private ["So8NSObjectC", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["So8NSObjectC", "view"]
 - ["So8NSObjectC", "viewDidLoad"]
-- !private ["So8NSObjectC", "visualEffectView"]
 - !private ["So8NSObjectC", "widthAnchor"]
+- ["So8NSObjectC", "\u0639\u0644\u064A"]
 - !private ["So8NSObjectP", "ArticleViewController"]
 - ["So8NSObjectP", "Articles"]
 - !private ["So8NSObjectP", "ArticlesNormalCell"]
@@ -1409,6 +1436,7 @@ depends-member:
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "addSubview"]
 - ["So8NSObjectP", "adjustsFontSizeToFitWidth"]
+- !private ["So8NSObjectP", "article"]
 - !private ["So8NSObjectP", "articleDescription"]
 - !private ["So8NSObjectP", "articleTitle"]
 - !private ["So8NSObjectP", "articles"]
@@ -1441,6 +1469,7 @@ depends-member:
 - !private ["So8NSObjectP", "hasParallax"]
 - !private ["So8NSObjectP", "heightAnchor"]
 - !private ["So8NSObjectP", "hero"]
+- !private ["So8NSObjectP", "htmlToString"]
 - ["So8NSObjectP", "image"]
 - !private ["So8NSObjectP", "imageView"]
 - ["So8NSObjectP", "init"]
@@ -1462,7 +1491,6 @@ depends-member:
 - !private ["So8NSObjectP", "rightAnchor"]
 - ["So8NSObjectP", "roundTop"]
 - !private ["So8NSObjectP", "rowPerPage"]
-- !private ["So8NSObjectP", "scrollView"]
 - !private ["So8NSObjectP", "sd_addActivityIndicator"]
 - !private ["So8NSObjectP", "sd_removeActivityIndicator"]
 - !private ["So8NSObjectP", "sd_setImage"]
@@ -1485,14 +1513,14 @@ depends-member:
 - !private ["So8NSObjectP", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["So8NSObjectP", "view"]
 - !private ["So8NSObjectP", "viewDidLoad"]
-- !private ["So8NSObjectP", "visualEffectView"]
 - !private ["So8NSObjectP", "widthAnchor"]
 - ["So14NSSecureCodingP", "black"]
 - !private ["So14NSSecureCodingP", "cornerRadius"]
 - ["So14NSSecureCodingP", "darkGray"]
-- !private ["So14NSSecureCodingP", "hero"]
+- !private ["So14NSSecureCodingP", "htmlToString"]
 - ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "maskedCorners"]
+- !private ["So8NSStringC", "htmlToString"]
 - ["So15NSTextAlignmentV", "right"]
 - !private ["Sj", "init"]
 - !private ["So9OS_objectC", "async"]
@@ -1521,6 +1549,7 @@ depends-member:
 - !private ["Sm", "data"]
 - !private ["Sm", "excerpt"]
 - !private ["Sm", "headline"]
+- !private ["Sm", "htmlToString"]
 - !private ["Sm", "image"]
 - ["Sm", "init"]
 - ["Sm", "init"]
@@ -1538,6 +1567,7 @@ depends-member:
 - !private ["ST", "data"]
 - !private ["ST", "excerpt"]
 - !private ["ST", "headline"]
+- !private ["ST", "htmlToString"]
 - !private ["ST", "image"]
 - ["ST", "init"]
 - ["ST", "init"]
@@ -1552,13 +1582,17 @@ depends-member:
 - !private ["s12StaticStringV", "init"]
 - !private ["s12StaticStringV", "init"]
 - !private ["Sx", "init"]
+- !private ["SS", "htmlToString"]
 - ["SS", "init"]
 - ["SS", "init"]
+- !private ["Sy", "htmlToString"]
 - ["Sy", "init"]
 - ["Sy", "init"]
 - !private ["So28UIActivityIndicatorViewStyleV", "gray"]
+- !private ["s16TextOutputStreamP", "htmlToString"]
 - ["s16TextOutputStreamP", "init"]
 - ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "htmlToString"]
 - ["s20TextOutputStreamableP", "init"]
 - ["s20TextOutputStreamableP", "init"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "bottomAnchor"]
@@ -1715,6 +1749,7 @@ depends-member:
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "addSubview"]
 - ["So21UIAppearanceContainerP", "adjustsFontSizeToFitWidth"]
+- !private ["So21UIAppearanceContainerP", "article"]
 - !private ["So21UIAppearanceContainerP", "articleDescription"]
 - !private ["So21UIAppearanceContainerP", "articleTitle"]
 - !private ["So21UIAppearanceContainerP", "articles"]
@@ -1757,7 +1792,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "rightAnchor"]
 - ["So21UIAppearanceContainerP", "roundTop"]
 - !private ["So21UIAppearanceContainerP", "rowPerPage"]
-- !private ["So21UIAppearanceContainerP", "scrollView"]
 - !private ["So21UIAppearanceContainerP", "sd_addActivityIndicator"]
 - !private ["So21UIAppearanceContainerP", "sd_removeActivityIndicator"]
 - !private ["So21UIAppearanceContainerP", "sd_setImage"]
@@ -1778,7 +1812,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["So21UIAppearanceContainerP", "view"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
-- !private ["So21UIAppearanceContainerP", "visualEffectView"]
 - !private ["So21UIAppearanceContainerP", "widthAnchor"]
 - ["So24UICollectionReusableViewC", "CGRect"]
 - ["So24UICollectionReusableViewC", "Card"]
@@ -1878,6 +1911,7 @@ depends-member:
 - !private ["So26UICollectionViewControllerC", "tabBarController"]
 - ["So26UICollectionViewControllerC", "titleCellReuseIdentifier"]
 - ["So26UICollectionViewControllerC", "viewDidLoad"]
+- ["So26UICollectionViewControllerC", "\u0639\u0644\u064A"]
 - !private ["So26UICollectionViewDataSourceP", "ArticleViewController"]
 - ["So26UICollectionViewDataSourceP", "Articles"]
 - !private ["So26UICollectionViewDataSourceP", "ArticlesNormalCell"]
@@ -1989,6 +2023,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "URL"]
 - !private ["So18UIContentContainerP", "URLSession"]
 - ["So18UIContentContainerP", ""]
+- !private ["So18UIContentContainerP", "article"]
 - !private ["So18UIContentContainerP", "articleTitle"]
 - !private ["So18UIContentContainerP", "articles"]
 - ["So18UIContentContainerP", "collectionView"]
@@ -2005,13 +2040,11 @@ depends-member:
 - !private ["So18UIContentContainerP", "present"]
 - !private ["So18UIContentContainerP", "print"]
 - !private ["So18UIContentContainerP", "rowPerPage"]
-- !private ["So18UIContentContainerP", "scrollView"]
 - !private ["So18UIContentContainerP", "tabBar"]
 - !private ["So18UIContentContainerP", "tabBarController"]
 - !private ["So18UIContentContainerP", "titleCellReuseIdentifier"]
 - !private ["So18UIContentContainerP", "view"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
-- !private ["So18UIContentContainerP", "visualEffectView"]
 - ["So30UIContentSizeCategoryAdjustingP", "adjustsFontSizeToFitWidth"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "bottomAnchor"]
 - ["So30UIContentSizeCategoryAdjustingP", "font"]
@@ -2170,6 +2203,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "addSubview"]
 - ["So18UIFocusEnvironmentP", "adjustsFontSizeToFitWidth"]
+- !private ["So18UIFocusEnvironmentP", "article"]
 - !private ["So18UIFocusEnvironmentP", "articleDescription"]
 - !private ["So18UIFocusEnvironmentP", "articleTitle"]
 - !private ["So18UIFocusEnvironmentP", "articles"]
@@ -2212,7 +2246,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "rightAnchor"]
 - ["So18UIFocusEnvironmentP", "roundTop"]
 - !private ["So18UIFocusEnvironmentP", "rowPerPage"]
-- !private ["So18UIFocusEnvironmentP", "scrollView"]
 - !private ["So18UIFocusEnvironmentP", "sd_addActivityIndicator"]
 - !private ["So18UIFocusEnvironmentP", "sd_removeActivityIndicator"]
 - !private ["So18UIFocusEnvironmentP", "sd_setImage"]
@@ -2233,7 +2266,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["So18UIFocusEnvironmentP", "view"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
-- !private ["So18UIFocusEnvironmentP", "visualEffectView"]
 - !private ["So18UIFocusEnvironmentP", "widthAnchor"]
 - !private ["So11UIFocusItemP", "CGRect"]
 - ["So11UIFocusItemP", "Card"]
@@ -2353,7 +2385,6 @@ depends-member:
 - !private ["So30UIFocusItemScrollableContainerP", "dataSource"]
 - !private ["So30UIFocusItemScrollableContainerP", "delegate"]
 - !private ["So30UIFocusItemScrollableContainerP", "dequeueReusableCell"]
-- !private ["So30UIFocusItemScrollableContainerP", "hero"]
 - !private ["So30UIFocusItemScrollableContainerP", "register"]
 - !private ["So30UIFocusItemScrollableContainerP", "reloadData"]
 - ["So6UIFontC", "boldSystemFont"]
@@ -2429,6 +2460,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "addSubview"]
 - ["So30UIPasteConfigurationSupportingP", "adjustsFontSizeToFitWidth"]
+- !private ["So30UIPasteConfigurationSupportingP", "article"]
 - !private ["So30UIPasteConfigurationSupportingP", "articleDescription"]
 - !private ["So30UIPasteConfigurationSupportingP", "articleTitle"]
 - !private ["So30UIPasteConfigurationSupportingP", "articles"]
@@ -2471,7 +2503,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "rightAnchor"]
 - ["So30UIPasteConfigurationSupportingP", "roundTop"]
 - !private ["So30UIPasteConfigurationSupportingP", "rowPerPage"]
-- !private ["So30UIPasteConfigurationSupportingP", "scrollView"]
 - !private ["So30UIPasteConfigurationSupportingP", "sd_addActivityIndicator"]
 - !private ["So30UIPasteConfigurationSupportingP", "sd_removeActivityIndicator"]
 - !private ["So30UIPasteConfigurationSupportingP", "sd_setImage"]
@@ -2492,7 +2523,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["So30UIPasteConfigurationSupportingP", "view"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
-- !private ["So30UIPasteConfigurationSupportingP", "visualEffectView"]
 - !private ["So30UIPasteConfigurationSupportingP", "widthAnchor"]
 - !private ["So11UIResponderC", "ArticleViewController"]
 - ["So11UIResponderC", "Articles"]
@@ -2526,6 +2556,7 @@ depends-member:
 - !private ["So11UIResponderC", "URLSession"]
 - !private ["So11UIResponderC", "addSubview"]
 - ["So11UIResponderC", "adjustsFontSizeToFitWidth"]
+- !private ["So11UIResponderC", "article"]
 - ["So11UIResponderC", "articleDescription"]
 - ["So11UIResponderC", "articleTitle"]
 - ["So11UIResponderC", "articles"]
@@ -2571,7 +2602,6 @@ depends-member:
 - ["So11UIResponderC", "roundBottom"]
 - ["So11UIResponderC", "roundTop"]
 - ["So11UIResponderC", "rowPerPage"]
-- !private ["So11UIResponderC", "scrollView"]
 - !private ["So11UIResponderC", "sd_addActivityIndicator"]
 - !private ["So11UIResponderC", "sd_removeActivityIndicator"]
 - !private ["So11UIResponderC", "sd_setImage"]
@@ -2593,8 +2623,8 @@ depends-member:
 - !private ["So11UIResponderC", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["So11UIResponderC", "view"]
 - ["So11UIResponderC", "viewDidLoad"]
-- !private ["So11UIResponderC", "visualEffectView"]
 - !private ["So11UIResponderC", "widthAnchor"]
+- ["So11UIResponderC", "\u0639\u0644\u064A"]
 - !private ["So30UIResponderStandardEditActionsP", "ArticleViewController"]
 - ["So30UIResponderStandardEditActionsP", "Articles"]
 - !private ["So30UIResponderStandardEditActionsP", "ArticlesNormalCell"]
@@ -2619,6 +2649,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "addSubview"]
 - ["So30UIResponderStandardEditActionsP", "adjustsFontSizeToFitWidth"]
+- !private ["So30UIResponderStandardEditActionsP", "article"]
 - !private ["So30UIResponderStandardEditActionsP", "articleDescription"]
 - !private ["So30UIResponderStandardEditActionsP", "articleTitle"]
 - !private ["So30UIResponderStandardEditActionsP", "articles"]
@@ -2661,7 +2692,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "rightAnchor"]
 - ["So30UIResponderStandardEditActionsP", "roundTop"]
 - !private ["So30UIResponderStandardEditActionsP", "rowPerPage"]
-- !private ["So30UIResponderStandardEditActionsP", "scrollView"]
 - !private ["So30UIResponderStandardEditActionsP", "sd_addActivityIndicator"]
 - !private ["So30UIResponderStandardEditActionsP", "sd_removeActivityIndicator"]
 - !private ["So30UIResponderStandardEditActionsP", "sd_setImage"]
@@ -2682,7 +2712,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["So30UIResponderStandardEditActionsP", "view"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
-- !private ["So30UIResponderStandardEditActionsP", "visualEffectView"]
 - !private ["So30UIResponderStandardEditActionsP", "widthAnchor"]
 - !private ["So12UIScrollViewC", "bounds"]
 - !private ["So12UIScrollViewC", "cellForItem"]
@@ -2690,7 +2719,6 @@ depends-member:
 - !private ["So12UIScrollViewC", "dataSource"]
 - !private ["So12UIScrollViewC", "delegate"]
 - !private ["So12UIScrollViewC", "dequeueReusableCell"]
-- !private ["So12UIScrollViewC", "hero"]
 - !private ["So12UIScrollViewC", "register"]
 - !private ["So12UIScrollViewC", "reloadData"]
 - !private ["So20UIScrollViewDelegateP", "ArticleViewController"]
@@ -2749,6 +2777,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "URL"]
 - !private ["So16UIStateRestoringP", "URLSession"]
 - ["So16UIStateRestoringP", ""]
+- !private ["So16UIStateRestoringP", "article"]
 - !private ["So16UIStateRestoringP", "articleTitle"]
 - !private ["So16UIStateRestoringP", "articles"]
 - ["So16UIStateRestoringP", "collectionView"]
@@ -2765,13 +2794,11 @@ depends-member:
 - !private ["So16UIStateRestoringP", "present"]
 - !private ["So16UIStateRestoringP", "print"]
 - !private ["So16UIStateRestoringP", "rowPerPage"]
-- !private ["So16UIStateRestoringP", "scrollView"]
 - !private ["So16UIStateRestoringP", "tabBar"]
 - !private ["So16UIStateRestoringP", "tabBarController"]
 - !private ["So16UIStateRestoringP", "titleCellReuseIdentifier"]
 - !private ["So16UIStateRestoringP", "view"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
-- !private ["So16UIStateRestoringP", "visualEffectView"]
 - !private ["So8UITabBarC", "bounds"]
 - !private ["So18UITabBarControllerC", "tabBar"]
 - !private ["So16UITabBarDelegateP", "tabBar"]
@@ -2799,6 +2826,7 @@ depends-member:
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "addSubview"]
 - ["So18UITraitEnvironmentP", "adjustsFontSizeToFitWidth"]
+- !private ["So18UITraitEnvironmentP", "article"]
 - !private ["So18UITraitEnvironmentP", "articleDescription"]
 - !private ["So18UITraitEnvironmentP", "articleTitle"]
 - !private ["So18UITraitEnvironmentP", "articles"]
@@ -2841,7 +2869,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "rightAnchor"]
 - ["So18UITraitEnvironmentP", "roundTop"]
 - !private ["So18UITraitEnvironmentP", "rowPerPage"]
-- !private ["So18UITraitEnvironmentP", "scrollView"]
 - !private ["So18UITraitEnvironmentP", "sd_addActivityIndicator"]
 - !private ["So18UITraitEnvironmentP", "sd_removeActivityIndicator"]
 - !private ["So18UITraitEnvironmentP", "sd_setImage"]
@@ -2862,7 +2889,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["So18UITraitEnvironmentP", "view"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
-- !private ["So18UITraitEnvironmentP", "visualEffectView"]
 - !private ["So18UITraitEnvironmentP", "widthAnchor"]
 - !private ["So23UIUserActivityRestoringP", "ArticleViewController"]
 - ["So23UIUserActivityRestoringP", "Articles"]
@@ -2888,6 +2914,7 @@ depends-member:
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "addSubview"]
 - ["So23UIUserActivityRestoringP", "adjustsFontSizeToFitWidth"]
+- !private ["So23UIUserActivityRestoringP", "article"]
 - !private ["So23UIUserActivityRestoringP", "articleDescription"]
 - !private ["So23UIUserActivityRestoringP", "articleTitle"]
 - !private ["So23UIUserActivityRestoringP", "articles"]
@@ -2930,7 +2957,6 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "rightAnchor"]
 - ["So23UIUserActivityRestoringP", "roundTop"]
 - !private ["So23UIUserActivityRestoringP", "rowPerPage"]
-- !private ["So23UIUserActivityRestoringP", "scrollView"]
 - !private ["So23UIUserActivityRestoringP", "sd_addActivityIndicator"]
 - !private ["So23UIUserActivityRestoringP", "sd_removeActivityIndicator"]
 - !private ["So23UIUserActivityRestoringP", "sd_setImage"]
@@ -2951,7 +2977,6 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["So23UIUserActivityRestoringP", "view"]
 - !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
-- !private ["So23UIUserActivityRestoringP", "visualEffectView"]
 - !private ["So23UIUserActivityRestoringP", "widthAnchor"]
 - ["So6UIViewC", "CGFloat"]
 - ["So6UIViewC", "CGRect"]
@@ -3035,6 +3060,7 @@ depends-member:
 - ["So16UIViewControllerC", "URL"]
 - ["So16UIViewControllerC", "URLResponse"]
 - !private ["So16UIViewControllerC", "URLSession"]
+- !private ["So16UIViewControllerC", "article"]
 - !private ["So16UIViewControllerC", "articleTitle"]
 - ["So16UIViewControllerC", "articles"]
 - ["So16UIViewControllerC", "articlesImageViews"]
@@ -3053,13 +3079,12 @@ depends-member:
 - !private ["So16UIViewControllerC", "present"]
 - !private ["So16UIViewControllerC", "print"]
 - ["So16UIViewControllerC", "rowPerPage"]
-- !private ["So16UIViewControllerC", "scrollView"]
 - !private ["So16UIViewControllerC", "tabBar"]
 - !private ["So16UIViewControllerC", "tabBarController"]
 - ["So16UIViewControllerC", "titleCellReuseIdentifier"]
 - !private ["So16UIViewControllerC", "view"]
 - ["So16UIViewControllerC", "viewDidLoad"]
-- !private ["So16UIViewControllerC", "visualEffectView"]
+- ["So16UIViewControllerC", "\u0639\u0644\u064A"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "addSubview"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "bounds"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "centerXAnchor"]
@@ -3074,19 +3099,17 @@ depends-member:
 - !private ["So37UIViewControllerTransitioningDelegateP", "shadowOpacity"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "textColor"]
 - !private ["So37UIViewControllerTransitioningDelegateP", "topAnchor"]
-- !private ["So18UIVisualEffectViewC", "hero"]
 - !private ["10Foundation3URLV", "init"]
 - !private ["So12NSURLSessionC", "dataTask"]
 - !private ["So12NSURLSessionC", "shared"]
 - !private ["So20NSURLSessionDataTaskC", "resume"]
 - !private ["So16NSURLSessionTaskC", "resume"]
+- !private ["So12WKUIDelegateP", "article"]
 - !private ["So12WKUIDelegateP", "articleTitle"]
 - !private ["So12WKUIDelegateP", "hero"]
 - !private ["So12WKUIDelegateP", "imageView"]
 - !private ["So12WKUIDelegateP", "init"]
-- !private ["So12WKUIDelegateP", "scrollView"]
 - !private ["So12WKUIDelegateP", "view"]
-- !private ["So12WKUIDelegateP", "visualEffectView"]
 - !private ["s18_BitwiseOperationsP", "init"]
 - !private ["s15_CVarArgAlignedP", "init"]
 - !private ["s22_CVarArgPassedAsDoubleP", "init"]
@@ -3155,24 +3178,30 @@ depends-member:
 - ["s24_DestructorSafeContainerP", "init"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "htmlToString"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "htmlToString"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "htmlToString"]
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "htmlToString"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - ["s26_ExpressibleByColorLiteralP", "black"]
 - ["s26_ExpressibleByColorLiteralP", "darkGray"]
 - !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
 - ["s26_ExpressibleByImageLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "htmlToString"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "htmlToString"]
 - ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ArticleViewController"]
@@ -3199,6 +3228,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addSubview"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "adjustsFontSizeToFitWidth"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "article"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "articleDescription"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "articleTitle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "articles"]
@@ -3231,6 +3261,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "hasParallax"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "heightAnchor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "hero"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "htmlToString"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "image"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "imageView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
@@ -3252,7 +3283,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "rightAnchor"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "roundTop"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "rowPerPage"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "scrollView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "sd_addActivityIndicator"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "sd_removeActivityIndicator"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "sd_setImage"]
@@ -3275,7 +3305,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "visualEffectView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "widthAnchor"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
@@ -3285,6 +3314,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "delegate"]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
 - !private ["s21_ObjectiveCBridgeableP", "hero"]
+- !private ["s21_ObjectiveCBridgeableP", "htmlToString"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "reloadData"]
@@ -3292,6 +3322,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "size"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "width"]
+- !private ["s16_SwiftStringViewP", "htmlToString"]
 - ["s16_SwiftStringViewP", "init"]
 - ["s16_SwiftStringViewP", "init"]
 depends-nominal:
@@ -3367,9 +3398,11 @@ depends-nominal:
 - !private "So17NSLayoutDimensionC"
 - !private "So19NSLayoutXAxisAnchorC"
 - !private "So19NSLayoutYAxisAnchorC"
+- !private "So16NSMutableCopyingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
 - "So14NSSecureCodingP"
+- !private "So8NSStringC"
 - "So15NSTextAlignmentV"
 - !private "Sj"
 - !private "So9OS_objectC"
@@ -3434,7 +3467,6 @@ depends-nominal:
 - "So6UIViewC"
 - "So16UIViewControllerC"
 - "So37UIViewControllerTransitioningDelegateP"
-- !private "So18UIVisualEffectViewC"
 - !private "10Foundation3URLV"
 - !private "So12NSURLSessionC"
 - !private "So20NSURLSessionDataTaskC"
@@ -3462,29 +3494,29 @@ depends-nominal:
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/Hero/Hero.framework/Modules/Hero.swiftmodule/arm64.swiftmodule"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/Player/Player.framework/Modules/Player.swiftmodule/arm64.swiftmodule"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/Cards/Cards.framework/Modules/Cards.swiftmodule/arm64.swiftmodule"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/CollectionKit/CollectionKit.framework/Modules/CollectionKit.swiftmodule/arm64.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ModelIO.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/simd.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MetalKit.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ModelIO.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MetalKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+GIF.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/Hero/Hero.framework/Headers/Hero-umbrella.h"
@@ -3526,22 +3558,22 @@ depends-external:
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/Player/Player.framework/Modules/module.modulemap"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/Cards/Cards.framework/Modules/module.modulemap"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/CollectionKit/CollectionKit.framework/Modules/module.modulemap"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "09acf375d6e248e39f00e3b6dcc48419"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "ca6b35b32a4fd2b29454426581004500"

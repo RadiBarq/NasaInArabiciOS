@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Cards-Swift.h</key>
 		<data>
-		1Ne/+SOalDOqksAsG9rYsKSMytg=
+		rC6ET5d+TviWSWgkWrl7YhOvq2o=
 		</data>
 		<key>Headers/Cards-umbrella.h</key>
 		<data>
@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		dedYg6Lv1IAplX1d0OQMwW0MCjE=
+		3RtYgcprEPpfFlVE8MXBlZMTH3c=
 		</data>
 		<key>Modules/Cards.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		AhkGZGLS7PjLaAEmLEmohCwUTHQ=
+		EdN0+nqpjpVJ9UyU0phJYMyus9w=
 		</data>
 		<key>Modules/Cards.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		9ikUlxp1PzN4LoVexETBKNnZz98=
+		9loJtTKhzz4R4dg8RaUuIyPRvLw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -35,11 +35,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1Ne/+SOalDOqksAsG9rYsKSMytg=
+			rC6ET5d+TviWSWgkWrl7YhOvq2o=
 			</data>
 			<key>hash2</key>
 			<data>
-			nfGhL2idI5V26KcAdeCH43BH9sQPeG7THw33nTiFMiU=
+			ZEVveX5DZfTPNP2Wmu8dcWtHitSgkR3X0wQAH0EvPgM=
 			</data>
 		</dict>
 		<key>Headers/Cards-umbrella.h</key>
@@ -57,22 +57,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AhkGZGLS7PjLaAEmLEmohCwUTHQ=
+			EdN0+nqpjpVJ9UyU0phJYMyus9w=
 			</data>
 			<key>hash2</key>
 			<data>
-			vOdMpvF6i5yGkyyXos+rMMa96pwccE9/vXLznmai23g=
+			xdmJaYC94okUCRg/ATIMniyxiSbbr15VHAfDkZwbIAU=
 			</data>
 		</dict>
 		<key>Modules/Cards.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9ikUlxp1PzN4LoVexETBKNnZz98=
+			9loJtTKhzz4R4dg8RaUuIyPRvLw=
 			</data>
 			<key>hash2</key>
 			<data>
-			v2VX9BD9Es6aT4XBCpDzg9yPhTwzvqWw8ABIuPl2Czs=
+			wua7b6z6dgl99awsBPkPBlrs8uLUBQaD3tWSfEE8nIo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

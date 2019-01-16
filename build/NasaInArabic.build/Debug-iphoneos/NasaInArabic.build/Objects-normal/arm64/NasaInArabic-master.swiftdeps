@@ -1,6 +1,6 @@
-version: "Apple Swift version 4.2 (swiftlang-1000.0.36 clang-1000.10.44)"
-options: "cc63285a572ace5992c96ea6a667d6a4"
-build_time: [1537996416, 553893000]
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "e974d6f79efb7edb8af92c0ea92bf4bf"
+build_time: [1547655823, 578373000]
 inputs:
   "/Users/radibarq/developer/NasaInArabic/NasaInArabic/AboutUsViewController.swift": [1536428846, 0]
   "/Users/radibarq/developer/NasaInArabic/NasaInArabic/ Article.swift": [1536951023, 0]
@@ -12,9 +12,9 @@ inputs:
   "/Users/radibarq/developer/NasaInArabic/NasaInArabic/AppDelegate.swift": [1537165808, 0]
   "/Users/radibarq/developer/NasaInArabic/NasaInArabic/MoreTableViewController.swift": [1537549254, 0]
   "/Users/radibarq/developer/NasaInArabic/NasaInArabic/Contributors.swift": [1536946360, 0]
-  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/ArticleViewController.swift": [1537996416, 0]
+  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/ArticleViewController.swift": [1547655026, 0]
   "/Users/radibarq/developer/NasaInArabic/NasaInArabic/ArticleTableViewController.swift": [1537686623, 0]
   "/Users/radibarq/developer/NasaInArabic/NasaInArabic/VideosCollectionViewController.swift": [1537540499, 0]
   "/Users/radibarq/developer/NasaInArabic/NasaInArabic/TabBarViewController.swift": [1536666147, 0]
-  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/ArticlesCollectionViewController.swift": [1537986086, 0]
+  "/Users/radibarq/developer/NasaInArabic/NasaInArabic/ArticlesCollectionViewController.swift": [1547651101, 0]
   "/Users/radibarq/developer/NasaInArabic/NasaInArabic/AlbumsCollectionViewController.swift": [1537537864, 0]

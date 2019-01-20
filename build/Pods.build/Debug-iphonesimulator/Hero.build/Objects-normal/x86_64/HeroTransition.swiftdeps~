@@ -208,6 +208,7 @@ depends-member:
 - ["SQ", "complete"]
 - !private ["SQ", "contains"]
 - !private ["SQ", "delegate"]
+- ["SQ", "forceLeftToRight"]
 - !private ["SQ", "fromViewController"]
 - !private ["SQ", "inContainerController"]
 - !private ["SQ", "inNavigationController"]
@@ -259,6 +260,7 @@ depends-member:
 - ["SH", "complete"]
 - !private ["SH", "contains"]
 - !private ["SH", "delegate"]
+- ["SH", "forceLeftToRight"]
 - !private ["SH", "fromViewController"]
 - !private ["SH", "inContainerController"]
 - !private ["SH", "inNavigationController"]
@@ -294,6 +296,7 @@ depends-member:
 - !private ["4Hero0A8AnimatorP", "seekTo"]
 - !private ["4Hero0A10CompatibleP", "modalPresentationStyle"]
 - !private ["4Hero0A10CompatibleP", "view"]
+- ["4Hero0A20DefaultAnimationTypeO", "Strategy"]
 - ["4Hero0A20DefaultAnimationTypeO", "auto"]
 - !private ["4Hero0A6PluginC", "deinit"]
 - !private ["4Hero0A6PluginC", "requirePerFrameCallback"]
@@ -331,6 +334,7 @@ depends-member:
 - !private ["4Hero0A22ProgressRunnerDelegateP", "transitionContext"]
 - ["4Hero0A22ProgressRunnerDelegateP", "updateProgress"]
 - !private ["4Hero0A22ProgressUpdateObserverP", "heroDidUpdateProgress"]
+- ["4Hero0A17StringConvertibleP", "Strategy"]
 - ["4Hero0A17StringConvertibleP", "auto"]
 - ["4Hero0A10TransitionC", "Bool"]
 - ["4Hero0A10TransitionC", "CGFloat"]
@@ -361,6 +365,7 @@ depends-member:
 - ["4Hero0A10TransitionC", "containerColor"]
 - ["4Hero0A10TransitionC", "context"]
 - ["4Hero0A10TransitionC", "defaultAnimation"]
+- ["4Hero0A10TransitionC", "defaultAnimationDirectionStrategy"]
 - ["4Hero0A10TransitionC", "deinit"]
 - ["4Hero0A10TransitionC", "delegate"]
 - ["4Hero0A10TransitionC", "enabledPlugins"]
@@ -451,6 +456,7 @@ depends-member:
 - ["So8NSObjectC", "containerColor"]
 - ["So8NSObjectC", "context"]
 - ["So8NSObjectC", "defaultAnimation"]
+- ["So8NSObjectC", "defaultAnimationDirectionStrategy"]
 - ["So8NSObjectC", "delegate"]
 - ["So8NSObjectC", "enabledPlugins"]
 - ["So8NSObjectC", "forceFinishing"]
@@ -544,6 +550,7 @@ depends-member:
 - !private ["ST", "append"]
 - !private ["ST", "contains"]
 - !private ["s13SignedNumericP", "init"]
+- ["4Hero0A20DefaultAnimationTypeO8StrategyO", "forceLeftToRight"]
 - !private ["Sx", "init"]
 - !private ["So21UIAppearanceContainerP", "modalPresentationStyle"]
 - !private ["So21UIAppearanceContainerP", "view"]
@@ -798,6 +805,7 @@ depends-nominal:
 - "SY"
 - !private "ST"
 - !private "s13SignedNumericP"
+- "4Hero0A20DefaultAnimationTypeO8StrategyO"
 - !private "Sx"
 - !private "So21UIAppearanceContainerP"
 - "So7UIColorC"
@@ -859,4 +867,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "b99e2fbf52ed4151e6992141782c7b2b"
+interface-hash: "3efb6b01d5edabfa2caf20cd764c606d"

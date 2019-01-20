@@ -230,6 +230,7 @@ depends-member:
 - !private ["s7CVarArgP", "black"]
 - !private ["s7CVarArgP", "boldSystemFont"]
 - !private ["s7CVarArgP", "bounds"]
+- !private ["s7CVarArgP", "cancel"]
 - !private ["s7CVarArgP", "cardView"]
 - !private ["s7CVarArgP", "cellTapped"]
 - !private ["s7CVarArgP", "center"]
@@ -247,6 +248,7 @@ depends-member:
 - !private ["s7CVarArgP", "dismiss"]
 - !private ["s7CVarArgP", "dismissButton"]
 - !private ["s7CVarArgP", "fatalError"]
+- !private ["s7CVarArgP", "finish"]
 - !private ["s7CVarArgP", "font"]
 - !private ["s7CVarArgP", "frame"]
 - !private ["s7CVarArgP", "handlePan"]
@@ -269,6 +271,7 @@ depends-member:
 - !private ["s7CVarArgP", "shadowOpacity"]
 - !private ["s7CVarArgP", "shadowPath"]
 - !private ["s7CVarArgP", "shadowRadius"]
+- !private ["s7CVarArgP", "shared"]
 - !private ["s7CVarArgP", "sizeToFit"]
 - !private ["s7CVarArgP", "state"]
 - !private ["s7CVarArgP", "subtitleLabel"]
@@ -281,6 +284,7 @@ depends-member:
 - !private ["s7CVarArgP", "touchesEnded"]
 - !private ["s7CVarArgP", "transform"]
 - !private ["s7CVarArgP", "translation"]
+- !private ["s7CVarArgP", "update"]
 - !private ["s7CVarArgP", "velocity"]
 - !private ["s7CVarArgP", "view"]
 - !private ["s7CVarArgP", "viewDidLayoutSubviews"]
@@ -357,6 +361,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "black"]
 - !private ["s28CustomDebugStringConvertibleP", "boldSystemFont"]
 - !private ["s28CustomDebugStringConvertibleP", "bounds"]
+- !private ["s28CustomDebugStringConvertibleP", "cancel"]
 - !private ["s28CustomDebugStringConvertibleP", "cardView"]
 - !private ["s28CustomDebugStringConvertibleP", "cellTapped"]
 - !private ["s28CustomDebugStringConvertibleP", "center"]
@@ -374,6 +379,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "dismiss"]
 - !private ["s28CustomDebugStringConvertibleP", "dismissButton"]
 - !private ["s28CustomDebugStringConvertibleP", "fatalError"]
+- !private ["s28CustomDebugStringConvertibleP", "finish"]
 - !private ["s28CustomDebugStringConvertibleP", "font"]
 - !private ["s28CustomDebugStringConvertibleP", "frame"]
 - !private ["s28CustomDebugStringConvertibleP", "handlePan"]
@@ -397,6 +403,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "shadowOpacity"]
 - !private ["s28CustomDebugStringConvertibleP", "shadowPath"]
 - !private ["s28CustomDebugStringConvertibleP", "shadowRadius"]
+- !private ["s28CustomDebugStringConvertibleP", "shared"]
 - !private ["s28CustomDebugStringConvertibleP", "sizeToFit"]
 - !private ["s28CustomDebugStringConvertibleP", "state"]
 - !private ["s28CustomDebugStringConvertibleP", "subtitleLabel"]
@@ -409,6 +416,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "touchesEnded"]
 - !private ["s28CustomDebugStringConvertibleP", "transform"]
 - !private ["s28CustomDebugStringConvertibleP", "translation"]
+- !private ["s28CustomDebugStringConvertibleP", "update"]
 - !private ["s28CustomDebugStringConvertibleP", "velocity"]
 - !private ["s28CustomDebugStringConvertibleP", "view"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLayoutSubviews"]
@@ -472,6 +480,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "black"]
 - !private ["s23CustomStringConvertibleP", "boldSystemFont"]
 - !private ["s23CustomStringConvertibleP", "bounds"]
+- !private ["s23CustomStringConvertibleP", "cancel"]
 - !private ["s23CustomStringConvertibleP", "cardView"]
 - !private ["s23CustomStringConvertibleP", "cellTapped"]
 - !private ["s23CustomStringConvertibleP", "center"]
@@ -489,6 +498,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "dismiss"]
 - !private ["s23CustomStringConvertibleP", "dismissButton"]
 - !private ["s23CustomStringConvertibleP", "fatalError"]
+- !private ["s23CustomStringConvertibleP", "finish"]
 - !private ["s23CustomStringConvertibleP", "font"]
 - !private ["s23CustomStringConvertibleP", "frame"]
 - !private ["s23CustomStringConvertibleP", "handlePan"]
@@ -511,6 +521,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "shadowOpacity"]
 - !private ["s23CustomStringConvertibleP", "shadowPath"]
 - !private ["s23CustomStringConvertibleP", "shadowRadius"]
+- !private ["s23CustomStringConvertibleP", "shared"]
 - !private ["s23CustomStringConvertibleP", "sizeToFit"]
 - !private ["s23CustomStringConvertibleP", "state"]
 - !private ["s23CustomStringConvertibleP", "subtitleLabel"]
@@ -523,6 +534,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "touchesEnded"]
 - !private ["s23CustomStringConvertibleP", "transform"]
 - !private ["s23CustomStringConvertibleP", "translation"]
+- !private ["s23CustomStringConvertibleP", "update"]
 - !private ["s23CustomStringConvertibleP", "velocity"]
 - !private ["s23CustomStringConvertibleP", "view"]
 - !private ["s23CustomStringConvertibleP", "viewDidLayoutSubviews"]
@@ -597,6 +609,7 @@ depends-member:
 - !private ["SQ", "black"]
 - !private ["SQ", "boldSystemFont"]
 - !private ["SQ", "bounds"]
+- !private ["SQ", "cancel"]
 - !private ["SQ", "cardView"]
 - !private ["SQ", "cellTapped"]
 - !private ["SQ", "center"]
@@ -615,6 +628,7 @@ depends-member:
 - !private ["SQ", "dismiss"]
 - !private ["SQ", "dismissButton"]
 - !private ["SQ", "fatalError"]
+- !private ["SQ", "finish"]
 - !private ["SQ", "font"]
 - !private ["SQ", "frame"]
 - !private ["SQ", "handlePan"]
@@ -643,6 +657,7 @@ depends-member:
 - !private ["SQ", "shadowOpacity"]
 - !private ["SQ", "shadowPath"]
 - !private ["SQ", "shadowRadius"]
+- !private ["SQ", "shared"]
 - !private ["SQ", "sizeToFit"]
 - !private ["SQ", "state"]
 - !private ["SQ", "subtitleLabel"]
@@ -657,6 +672,7 @@ depends-member:
 - !private ["SQ", "touchesEnded"]
 - !private ["SQ", "transform"]
 - !private ["SQ", "translation"]
+- !private ["SQ", "update"]
 - !private ["SQ", "velocity"]
 - !private ["SQ", "view"]
 - !private ["SQ", "viewDidLayoutSubviews"]
@@ -765,6 +781,7 @@ depends-member:
 - !private ["SH", "black"]
 - !private ["SH", "boldSystemFont"]
 - !private ["SH", "bounds"]
+- !private ["SH", "cancel"]
 - !private ["SH", "cardView"]
 - !private ["SH", "cellTapped"]
 - !private ["SH", "center"]
@@ -783,6 +800,7 @@ depends-member:
 - !private ["SH", "dismiss"]
 - !private ["SH", "dismissButton"]
 - !private ["SH", "fatalError"]
+- !private ["SH", "finish"]
 - !private ["SH", "font"]
 - !private ["SH", "frame"]
 - !private ["SH", "handlePan"]
@@ -807,6 +825,7 @@ depends-member:
 - !private ["SH", "shadowOpacity"]
 - !private ["SH", "shadowPath"]
 - !private ["SH", "shadowRadius"]
+- !private ["SH", "shared"]
 - !private ["SH", "sizeToFit"]
 - !private ["SH", "state"]
 - !private ["SH", "subtitleLabel"]
@@ -820,12 +839,112 @@ depends-member:
 - !private ["SH", "touchesEnded"]
 - !private ["SH", "transform"]
 - !private ["SH", "translation"]
+- !private ["SH", "update"]
 - !private ["SH", "velocity"]
 - !private ["SH", "view"]
 - !private ["SH", "viewDidLayoutSubviews"]
 - !private ["SH", "viewDidLoad"]
 - !private ["SH", "visualEffectView"]
 - !private ["SH", "white"]
+- !private ["4HeroAAC", "shared"]
+- !private ["4Hero0A10CompatibleP", "AppStoreViewController2"]
+- ["4Hero0A10CompatibleP", "Array"]
+- ["4Hero0A10CompatibleP", "ArrayDataProvider"]
+- !private ["4Hero0A10CompatibleP", "CGAffineTransform"]
+- !private ["4Hero0A10CompatibleP", "CGPoint"]
+- !private ["4Hero0A10CompatibleP", "CGRect"]
+- !private ["4Hero0A10CompatibleP", "CGSize"]
+- ["4Hero0A10CompatibleP", "CardView"]
+- !private ["4Hero0A10CompatibleP", "CollectionProvider"]
+- ["4Hero0A10CompatibleP", "CollectionView"]
+- !private ["4Hero0A10CompatibleP", "FlowLayout"]
+- !private ["4Hero0A10CompatibleP", "Hero"]
+- !private ["4Hero0A10CompatibleP", "UIBezierPath"]
+- ["4Hero0A10CompatibleP", "UIBlurEffect"]
+- ["4Hero0A10CompatibleP", "UIButton"]
+- !private ["4Hero0A10CompatibleP", "UIColor"]
+- !private ["4Hero0A10CompatibleP", "UIEdgeInsets"]
+- !private ["4Hero0A10CompatibleP", "UIFont"]
+- ["4Hero0A10CompatibleP", "UIImage"]
+- ["4Hero0A10CompatibleP", "UIImageView"]
+- ["4Hero0A10CompatibleP", "UILabel"]
+- !private ["4Hero0A10CompatibleP", "UIPanGestureRecognizer"]
+- !private ["4Hero0A10CompatibleP", "UITapGestureRecognizer"]
+- ["4Hero0A10CompatibleP", "UIView"]
+- ["4Hero0A10CompatibleP", "UIVisualEffectView"]
+- ["4Hero0A10CompatibleP", ""]
+- !private ["4Hero0A10CompatibleP", "addGestureRecognizer"]
+- !private ["4Hero0A10CompatibleP", "addSubview"]
+- !private ["4Hero0A10CompatibleP", "addTarget"]
+- !private ["4Hero0A10CompatibleP", "animate"]
+- !private ["4Hero0A10CompatibleP", "back"]
+- !private ["4Hero0A10CompatibleP", "backgroundColor"]
+- !private ["4Hero0A10CompatibleP", "bounds"]
+- !private ["4Hero0A10CompatibleP", "cardView"]
+- !private ["4Hero0A10CompatibleP", "cellTapped"]
+- !private ["4Hero0A10CompatibleP", "center"]
+- !private ["4Hero0A10CompatibleP", "clipsToBounds"]
+- !private ["4Hero0A10CompatibleP", "collectionView"]
+- !private ["4Hero0A10CompatibleP", "contentCard"]
+- !private ["4Hero0A10CompatibleP", "contentMode"]
+- !private ["4Hero0A10CompatibleP", "contentView"]
+- !private ["4Hero0A10CompatibleP", "dataProvider"]
+- !private ["4Hero0A10CompatibleP", "delaysContentTouches"]
+- !private ["4Hero0A10CompatibleP", "dismiss"]
+- !private ["4Hero0A10CompatibleP", "dismissButton"]
+- !private ["4Hero0A10CompatibleP", "fatalError"]
+- !private ["4Hero0A10CompatibleP", "font"]
+- !private ["4Hero0A10CompatibleP", "frame"]
+- !private ["4Hero0A10CompatibleP", "handlePan"]
+- !private ["4Hero0A10CompatibleP", "hero"]
+- !private ["4Hero0A10CompatibleP", "image"]
+- !private ["4Hero0A10CompatibleP", "imageView"]
+- ["4Hero0A10CompatibleP", "init"]
+- !private ["4Hero0A10CompatibleP", "init"]
+- !private ["4Hero0A10CompatibleP", "insertSubview"]
+- !private ["4Hero0A10CompatibleP", "isTouched"]
+- !private ["4Hero0A10CompatibleP", "layer"]
+- !private ["4Hero0A10CompatibleP", "layoutSubviews"]
+- !private ["4Hero0A10CompatibleP", "numberOfLines"]
+- !private ["4Hero0A10CompatibleP", "onTap"]
+- !private ["4Hero0A10CompatibleP", "present"]
+- !private ["4Hero0A10CompatibleP", "provider"]
+- !private ["4Hero0A10CompatibleP", "setTitle"]
+- !private ["4Hero0A10CompatibleP", "sizeToFit"]
+- !private ["4Hero0A10CompatibleP", "subtitleLabel"]
+- !private ["4Hero0A10CompatibleP", "superview"]
+- !private ["4Hero0A10CompatibleP", "text"]
+- !private ["4Hero0A10CompatibleP", "titleLabel"]
+- !private ["4Hero0A10CompatibleP", "touchesBegan"]
+- !private ["4Hero0A10CompatibleP", "touchesCancelled"]
+- !private ["4Hero0A10CompatibleP", "touchesEnded"]
+- !private ["4Hero0A10CompatibleP", "transform"]
+- !private ["4Hero0A10CompatibleP", "view"]
+- !private ["4Hero0A10CompatibleP", "viewDidLayoutSubviews"]
+- !private ["4Hero0A10CompatibleP", "viewDidLoad"]
+- !private ["4Hero0A10CompatibleP", "visualEffectView"]
+- !private ["4Hero0A20DefaultAnimationTypeO", "none"]
+- !private ["4Hero0A9ExtensionC", "id"]
+- !private ["4Hero0A9ExtensionC", "isEnabled"]
+- !private ["4Hero0A9ExtensionC", "modalAnimationType"]
+- !private ["4Hero0A9ExtensionC", "modifiers"]
+- !private ["4Hero0A8ModifierC", "fade"]
+- !private ["4Hero0A8ModifierC", "forceAnimate"]
+- !private ["4Hero0A8ModifierC", "source"]
+- !private ["4Hero0A8ModifierC", "spring"]
+- !private ["4Hero0A8ModifierC", "useNoSnapshot"]
+- !private ["4Hero0A22ProgressRunnerDelegateP", "cancel"]
+- !private ["4Hero0A22ProgressRunnerDelegateP", "finish"]
+- !private ["4Hero0A22ProgressRunnerDelegateP", "update"]
+- !private ["4Hero0A17StringConvertibleP", "fade"]
+- !private ["4Hero0A17StringConvertibleP", "forceAnimate"]
+- !private ["4Hero0A17StringConvertibleP", "none"]
+- !private ["4Hero0A17StringConvertibleP", "source"]
+- !private ["4Hero0A17StringConvertibleP", "spring"]
+- !private ["4Hero0A17StringConvertibleP", "useNoSnapshot"]
+- !private ["4Hero0A10TransitionC", "cancel"]
+- !private ["4Hero0A10TransitionC", "finish"]
+- !private ["4Hero0A10TransitionC", "update"]
 - !private ["13CollectionKit12ItemProviderP", "init"]
 - !private ["13CollectionKit6LayoutC", "inset"]
 - !private ["13CollectionKit18LayoutableProviderP", "init"]
@@ -1021,6 +1140,7 @@ depends-member:
 - !private ["So8NSObjectC", "black"]
 - !private ["So8NSObjectC", "boldSystemFont"]
 - !private ["So8NSObjectC", "bounds"]
+- !private ["So8NSObjectC", "cancel"]
 - ["So8NSObjectC", "cardView"]
 - ["So8NSObjectC", "cellTapped"]
 - !private ["So8NSObjectC", "center"]
@@ -1038,6 +1158,7 @@ depends-member:
 - !private ["So8NSObjectC", "dismiss"]
 - ["So8NSObjectC", "dismissButton"]
 - !private ["So8NSObjectC", "fatalError"]
+- !private ["So8NSObjectC", "finish"]
 - !private ["So8NSObjectC", "font"]
 - !private ["So8NSObjectC", "frame"]
 - ["So8NSObjectC", "handlePan"]
@@ -1060,6 +1181,7 @@ depends-member:
 - !private ["So8NSObjectC", "shadowOpacity"]
 - !private ["So8NSObjectC", "shadowPath"]
 - !private ["So8NSObjectC", "shadowRadius"]
+- !private ["So8NSObjectC", "shared"]
 - !private ["So8NSObjectC", "sizeToFit"]
 - !private ["So8NSObjectC", "state"]
 - ["So8NSObjectC", "subtitleLabel"]
@@ -1072,6 +1194,7 @@ depends-member:
 - ["So8NSObjectC", "touchesEnded"]
 - !private ["So8NSObjectC", "transform"]
 - !private ["So8NSObjectC", "translation"]
+- !private ["So8NSObjectC", "update"]
 - !private ["So8NSObjectC", "velocity"]
 - !private ["So8NSObjectC", "view"]
 - ["So8NSObjectC", "viewDidLayoutSubviews"]
@@ -1113,6 +1236,7 @@ depends-member:
 - !private ["So8NSObjectP", "black"]
 - !private ["So8NSObjectP", "boldSystemFont"]
 - !private ["So8NSObjectP", "bounds"]
+- !private ["So8NSObjectP", "cancel"]
 - !private ["So8NSObjectP", "cardView"]
 - !private ["So8NSObjectP", "cellTapped"]
 - !private ["So8NSObjectP", "center"]
@@ -1130,6 +1254,7 @@ depends-member:
 - !private ["So8NSObjectP", "dismiss"]
 - !private ["So8NSObjectP", "dismissButton"]
 - !private ["So8NSObjectP", "fatalError"]
+- !private ["So8NSObjectP", "finish"]
 - !private ["So8NSObjectP", "font"]
 - !private ["So8NSObjectP", "frame"]
 - !private ["So8NSObjectP", "handlePan"]
@@ -1152,6 +1277,7 @@ depends-member:
 - !private ["So8NSObjectP", "shadowOpacity"]
 - !private ["So8NSObjectP", "shadowPath"]
 - !private ["So8NSObjectP", "shadowRadius"]
+- !private ["So8NSObjectP", "shared"]
 - !private ["So8NSObjectP", "sizeToFit"]
 - !private ["So8NSObjectP", "state"]
 - !private ["So8NSObjectP", "subtitleLabel"]
@@ -1164,6 +1290,7 @@ depends-member:
 - !private ["So8NSObjectP", "touchesEnded"]
 - !private ["So8NSObjectP", "transform"]
 - !private ["So8NSObjectP", "translation"]
+- !private ["So8NSObjectP", "update"]
 - !private ["So8NSObjectP", "velocity"]
 - !private ["So8NSObjectP", "view"]
 - !private ["So8NSObjectP", "viewDidLayoutSubviews"]
@@ -1791,6 +1918,9 @@ depends-member:
 - ["So7UILabelC", "init"]
 - !private ["So7UILabelC", "numberOfLines"]
 - !private ["So7UILabelC", "text"]
+- !private ["So30UINavigationControllerDelegateP", "cancel"]
+- !private ["So30UINavigationControllerDelegateP", "finish"]
+- !private ["So30UINavigationControllerDelegateP", "update"]
 - !private ["So22UIPanGestureRecognizerC", "init"]
 - !private ["So22UIPanGestureRecognizerC", "state"]
 - !private ["So22UIPanGestureRecognizerC", "translation"]
@@ -2079,6 +2209,9 @@ depends-member:
 - !private ["So16UIStateRestoringP", "viewDidLayoutSubviews"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - !private ["So16UIStateRestoringP", "visualEffectView"]
+- !private ["So26UITabBarControllerDelegateP", "cancel"]
+- !private ["So26UITabBarControllerDelegateP", "finish"]
+- !private ["So26UITabBarControllerDelegateP", "update"]
 - !private ["So22UITapGestureRecognizerC", "init"]
 - !private ["So18UITraitEnvironmentP", "AppStoreViewController2"]
 - ["So18UITraitEnvironmentP", "Array"]
@@ -2328,6 +2461,15 @@ depends-member:
 - ["So16UIViewControllerC", "viewDidLayoutSubviews"]
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", "visualEffectView"]
+- !private ["So37UIViewControllerAnimatedTransitioningP", "cancel"]
+- !private ["So37UIViewControllerAnimatedTransitioningP", "finish"]
+- !private ["So37UIViewControllerAnimatedTransitioningP", "update"]
+- !private ["So40UIViewControllerInteractiveTransitioningP", "cancel"]
+- !private ["So40UIViewControllerInteractiveTransitioningP", "finish"]
+- !private ["So40UIViewControllerInteractiveTransitioningP", "update"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "cancel"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "finish"]
+- !private ["So37UIViewControllerTransitioningDelegateP", "update"]
 - ["So14UIVisualEffectC", "init"]
 - !private ["So18UIVisualEffectViewC", "frame"]
 - !private ["So18UIVisualEffectViewC", "hero"]
@@ -2435,6 +2577,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "black"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "boldSystemFont"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cancel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cardView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cellTapped"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "center"]
@@ -2452,6 +2595,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dismiss"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dismissButton"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fatalError"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "finish"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "font"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "handlePan"]
@@ -2474,6 +2618,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowOpacity"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowPath"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowRadius"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "sizeToFit"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "state"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "subtitleLabel"]
@@ -2486,6 +2631,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "touchesEnded"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "transform"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "translation"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "update"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "velocity"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLayoutSubviews"]
@@ -2551,6 +2697,14 @@ depends-nominal:
 - "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "13CollectionKit10FlowLayoutC"
 - "SH"
+- !private "4HeroAAC"
+- "4Hero0A10CompatibleP"
+- !private "4Hero0A20DefaultAnimationTypeO"
+- !private "4Hero0A9ExtensionC"
+- !private "4Hero0A8ModifierC"
+- !private "4Hero0A22ProgressRunnerDelegateP"
+- !private "4Hero0A17StringConvertibleP"
+- !private "4Hero0A10TransitionC"
 - !private "13CollectionKit12ItemProviderP"
 - !private "13CollectionKit6LayoutC"
 - !private "13CollectionKit18LayoutableProviderP"
@@ -2607,6 +2761,7 @@ depends-nominal:
 - "So11UIImageViewC"
 - "So39UIItemProviderPresentationSizeProvidingP"
 - "So7UILabelC"
+- !private "So30UINavigationControllerDelegateP"
 - !private "So22UIPanGestureRecognizerC"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
@@ -2614,11 +2769,15 @@ depends-nominal:
 - "So12UIScrollViewC"
 - "So35UISpringLoadedInteractionSupportingP"
 - "So16UIStateRestoringP"
+- !private "So26UITabBarControllerDelegateP"
 - !private "So22UITapGestureRecognizerC"
 - "So18UITraitEnvironmentP"
 - "So23UIUserActivityRestoringP"
 - "So6UIViewC"
 - "So16UIViewControllerC"
+- !private "So37UIViewControllerAnimatedTransitioningP"
+- !private "So40UIViewControllerInteractiveTransitioningP"
+- !private "So37UIViewControllerTransitioningDelegateP"
 - "So14UIVisualEffectC"
 - "So18UIVisualEffectViewC"
 - !private "13CollectionKit20VerticalSimpleLayoutC"
@@ -2639,10 +2798,12 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/Hero/Hero.framework/Modules/Hero.swiftmodule/arm64.swiftmodule"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/Player/Player.framework/Modules/Player.swiftmodule/arm64.swiftmodule"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/Cards/Cards.framework/Modules/Cards.swiftmodule/arm64.swiftmodule"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/CollectionKit/CollectionKit.framework/Modules/CollectionKit.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ModelIO.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/simd.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
@@ -2657,9 +2818,11 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MetalKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+GIF.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/Hero/Hero.framework/Headers/Hero-umbrella.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/Player/Player.framework/Headers/Player-umbrella.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/Cards/Cards.framework/Headers/Cards-umbrella.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/CollectionKit/CollectionKit.framework/Headers/CollectionKit-umbrella.h"
@@ -2689,14 +2852,17 @@ depends-external:
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageCoderHelper.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageCompat.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/Hero/Hero.framework/Headers/Hero-Swift.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/Player/Player.framework/Headers/Player-Swift.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/Cards/Cards.framework/Headers/Cards-Swift.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/CollectionKit/CollectionKit.framework/Headers/CollectionKit-Swift.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/Hero/Hero.framework/Modules/module.modulemap"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/Player/Player.framework/Modules/module.modulemap"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/Cards/Cards.framework/Modules/module.modulemap"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/CollectionKit/CollectionKit.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
@@ -2708,6 +2874,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"

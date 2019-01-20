@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
 options: "26c7274f99d8b3ca32ef951b9c08cb74"
-build_time: [1547655970, 741904000]
+build_time: [1547683642, 260308000]
 inputs:
   "/Users/radibarq/developer/NasaInArabic/Pods/Hero/Sources/Extensions/Array+HeroModifier.swift": [1547655806, 0]
   "/Users/radibarq/developer/NasaInArabic/Pods/Hero/Sources/Preprocessors/BasePreprocessor.swift": [1547655806, 0]
@@ -18,7 +18,7 @@ inputs:
   "/Users/radibarq/developer/NasaInArabic/Pods/Hero/Sources/Debug Plugin/HeroDebugPlugin.swift": [1547655806, 0]
   "/Users/radibarq/developer/NasaInArabic/Pods/Hero/Sources/Debug Plugin/HeroDebugView.swift": [1547655806, 0]
   "/Users/radibarq/developer/NasaInArabic/Pods/Hero/Sources/Animator/HeroDefaultAnimator.swift": [1547655806, 0]
-  "/Users/radibarq/developer/NasaInArabic/Pods/Hero/Sources/HeroModifier+Advanced.swift": [9223372036, 854775807]
+  "/Users/radibarq/developer/NasaInArabic/Pods/Hero/Sources/HeroModifier+Advanced.swift": [1547655806, 0]
   "/Users/radibarq/developer/NasaInArabic/Pods/Hero/Sources/HeroModifier+HeroStringConvertible.swift": [1547655806, 0]
   "/Users/radibarq/developer/NasaInArabic/Pods/Hero/Sources/HeroModifier.swift": [1547655806, 0]
   "/Users/radibarq/developer/NasaInArabic/Pods/Hero/Sources/HeroPlugin.swift": [1547655806, 0]
@@ -45,7 +45,7 @@ inputs:
   "/Users/radibarq/developer/NasaInArabic/Pods/Hero/Sources/Parser/Parser.swift": [1547655806, 0]
   "/Users/radibarq/developer/NasaInArabic/Pods/Hero/Sources/Parser/Regex.swift": [1547655806, 0]
   "/Users/radibarq/developer/NasaInArabic/Pods/Hero/Sources/Preprocessors/SourcePreprocessor.swift": [1547655806, 0]
-  "/Users/radibarq/developer/NasaInArabic/Pods/Hero/Sources/SwiftSupport.swift": [9223372036, 854775807]
+  "/Users/radibarq/developer/NasaInArabic/Pods/Hero/Sources/SwiftSupport.swift": [1547655806, 0]
   "/Users/radibarq/developer/NasaInArabic/Pods/Hero/Sources/Extensions/UIKit+Hero.swift": [1547655806, 0]
   "/Users/radibarq/developer/NasaInArabic/Pods/Hero/Sources/Extensions/UIView+Hero.swift": [1547655806, 0]
   "/Users/radibarq/developer/NasaInArabic/Pods/Hero/Sources/Extensions/UIViewController+Hero.swift": [1547655806, 0]

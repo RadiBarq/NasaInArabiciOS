@@ -20,6 +20,7 @@ class ArticleTableViewController: UITableViewController {
     var currentPageNumber = 1
     
     
+    
     struct Articles: Decodable{
         
         public var data = [BrowsingArticle]()
@@ -53,7 +54,6 @@ class ArticleTableViewController: UITableViewController {
     func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
         
         URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
-        
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {

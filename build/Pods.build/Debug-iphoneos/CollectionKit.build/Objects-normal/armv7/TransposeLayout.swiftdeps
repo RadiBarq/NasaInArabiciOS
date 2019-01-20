@@ -1,0 +1,130 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "TransposeLayout"
+provides-nominal:
+- "13CollectionKit15TransposeLayoutC"
+- "13CollectionKit15TransposeLayoutC0cD7ContextV"
+provides-member:
+- ["13CollectionKit15TransposeLayoutC", ""]
+- ["13CollectionKit15TransposeLayoutC0cD7ContextV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "CGRect"
+- "CGSize"
+- "Int"
+- "LayoutContext"
+- "String"
+- "TransposeLayout"
+- "WrapperLayout"
+depends-member:
+- !private ["So6CGRectV", "transposed"]
+- !private ["So6CGSizeV", "transposed"]
+- !private ["s28CustomDebugStringConvertibleP", "transposed"]
+- !private ["s29CustomPlaygroundQuickLookableP", "transposed"]
+- !private ["s17CustomReflectableP", "transposed"]
+- !private ["Se", "transposed"]
+- !private ["SE", "transposed"]
+- !private ["SQ", "transposed"]
+- ["13CollectionKit6LayoutC", "CGRect"]
+- ["13CollectionKit6LayoutC", "CGSize"]
+- ["13CollectionKit6LayoutC", "Int"]
+- ["13CollectionKit6LayoutC", "LayoutContext"]
+- ["13CollectionKit6LayoutC", "String"]
+- !private ["13CollectionKit6LayoutC", "TransposeLayoutContext"]
+- ["13CollectionKit6LayoutC", "contentSize"]
+- ["13CollectionKit6LayoutC", "frame"]
+- !private ["13CollectionKit6LayoutC", "init"]
+- ["13CollectionKit6LayoutC", "layout"]
+- !private ["13CollectionKit6LayoutC", "rootLayout"]
+- ["13CollectionKit6LayoutC", "visibleIndexes"]
+- ["13CollectionKit13LayoutContextP", ""]
+- ["13CollectionKit13LayoutContextP", "collectionSize"]
+- ["13CollectionKit13LayoutContextP", "data"]
+- ["13CollectionKit13LayoutContextP", "identifier"]
+- !private ["13CollectionKit13LayoutContextP", "init"]
+- ["13CollectionKit13LayoutContextP", "numberOfItems"]
+- !private ["13CollectionKit13LayoutContextP", "original"]
+- ["13CollectionKit13LayoutContextP", "size"]
+- ["13CollectionKit15TransposeLayoutC", "CGRect"]
+- ["13CollectionKit15TransposeLayoutC", "CGSize"]
+- ["13CollectionKit15TransposeLayoutC", "Int"]
+- ["13CollectionKit15TransposeLayoutC", "LayoutContext"]
+- ["13CollectionKit15TransposeLayoutC", "String"]
+- ["13CollectionKit15TransposeLayoutC", "TransposeLayoutContext"]
+- ["13CollectionKit15TransposeLayoutC", "contentSize"]
+- ["13CollectionKit15TransposeLayoutC", "frame"]
+- ["13CollectionKit15TransposeLayoutC", "init"]
+- ["13CollectionKit15TransposeLayoutC", "layout"]
+- !private ["13CollectionKit15TransposeLayoutC", "rootLayout"]
+- ["13CollectionKit15TransposeLayoutC", "visibleIndexes"]
+- ["13CollectionKit15TransposeLayoutC0cD7ContextV", "CGSize"]
+- ["13CollectionKit15TransposeLayoutC0cD7ContextV", "Int"]
+- ["13CollectionKit15TransposeLayoutC0cD7ContextV", "LayoutContext"]
+- ["13CollectionKit15TransposeLayoutC0cD7ContextV", "String"]
+- ["13CollectionKit15TransposeLayoutC0cD7ContextV", "collectionSize"]
+- ["13CollectionKit15TransposeLayoutC0cD7ContextV", "data"]
+- ["13CollectionKit15TransposeLayoutC0cD7ContextV", "deinit"]
+- ["13CollectionKit15TransposeLayoutC0cD7ContextV", "identifier"]
+- ["13CollectionKit15TransposeLayoutC0cD7ContextV", "init"]
+- ["13CollectionKit15TransposeLayoutC0cD7ContextV", "numberOfItems"]
+- ["13CollectionKit15TransposeLayoutC0cD7ContextV", "original"]
+- ["13CollectionKit15TransposeLayoutC0cD7ContextV", "size"]
+- ["13CollectionKit13WrapperLayoutC", "CGRect"]
+- ["13CollectionKit13WrapperLayoutC", "CGSize"]
+- ["13CollectionKit13WrapperLayoutC", "Int"]
+- ["13CollectionKit13WrapperLayoutC", "LayoutContext"]
+- ["13CollectionKit13WrapperLayoutC", "String"]
+- !private ["13CollectionKit13WrapperLayoutC", "TransposeLayoutContext"]
+- ["13CollectionKit13WrapperLayoutC", ""]
+- ["13CollectionKit13WrapperLayoutC", "contentSize"]
+- ["13CollectionKit13WrapperLayoutC", "frame"]
+- ["13CollectionKit13WrapperLayoutC", "init"]
+- !private ["13CollectionKit13WrapperLayoutC", "init"]
+- ["13CollectionKit13WrapperLayoutC", "layout"]
+- !private ["13CollectionKit13WrapperLayoutC", "rootLayout"]
+- ["13CollectionKit13WrapperLayoutC", "visibleIndexes"]
+- !private ["s21_ObjectiveCBridgeableP", "transposed"]
+depends-nominal:
+- !private "So6CGRectV"
+- !private "So6CGSizeV"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
+- "13CollectionKit6LayoutC"
+- "13CollectionKit13LayoutContextP"
+- "13CollectionKit15TransposeLayoutC"
+- "13CollectionKit15TransposeLayoutC0cD7ContextV"
+- "13CollectionKit13WrapperLayoutC"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
+- "/Users/radibarq/developer/NasaInArabic/Pods/Target Support Files/CollectionKit/CollectionKit-umbrella.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Pods.build/Debug-iphoneos/CollectionKit.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "26ba5f1b75c1cace46553957459290ad"

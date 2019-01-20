@@ -13,28 +13,33 @@ import SDWebImage
 private let reuseIdentifier = "Cell"
 
 class VideosCollectionViewController: UICollectionViewController {
-
+    
+ 
     private let titleCellReuseIdentifier = "titleCell"
     private let normalCellReuseIdentifier = "normalCell"
-    var articles = [Articles]()
+    var articles = [Videos]()
     var articlesImageViews = [UIImageView?]()
     var numberOfRows = 0
     var currentPageNumber = 1
 
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
+    override func viewDidLoad() {
+        
+        
+        super.viewDidLoad()
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
         // Register cell classes
         self.collectionView!.register(ArticlesTitleCell.self, forCellWithReuseIdentifier: titleCellReuseIdentifier)
         self.collectionView!.register(ArticlesNormalCell.self, forCellWithReuseIdentifier: normalCellReuseIdentifier)
         
+        
         if let tabBarController = tabBarController {
             self.collectionView.contentInset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: tabBarController.tabBar.bounds.height - 35, right: 0.0);
         }
+        
         
         getData(pageNumber: currentPageNumber)
         
@@ -61,6 +66,7 @@ class VideosCollectionViewController: UICollectionViewController {
     
     func rowPerPage(rowNumber: Int, pageNumber: Int) ->Int{
         
+        
         return rowNumber - 9 * pageNumber
         
     }
@@ -82,11 +88,10 @@ class VideosCollectionViewController: UICollectionViewController {
                 do {
                     
                     let decoder = JSONDecoder()
-                    let onePageArticle = try decoder.decode(Articles.self, from: data)
+                    let onePageArticle = try decoder.decode(Videos.self, from: data)
                     self.articles.append(onePageArticle)
                     self.numberOfRows = self.numberOfRows + onePageArticle.data.count - 1
                     self.collectionView.reloadData()
-                    
                 }
                     
                 catch let jsonError {
@@ -103,7 +108,27 @@ class VideosCollectionViewController: UICollectionViewController {
         return 1
     }
     
-    
+
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let cell = collectionView.cellForItem(at: indexPath) as! ArticlesNormalCell
+        cell.hero.modifiers = [.useNoSnapshot, .spring(stiffness: 250, damping: 25)]
+        cell.card.hero.id = "title"
+        let pageNumber = getPageNumber(rowNumber: indexPath.row - 1)
+        let rowPerPage = self.rowPerPage(rowNumber: indexPath.row - 1, pageNumber: pageNumber)
+        var article = articles[pageNumber].data[rowPerPage]
+
+        let videoArticleViewController = VideoViewController()
+        videoArticleViewController.article = article
+        videoArticleViewController.hero.isEnabled = true
+        videoArticleViewController.hero.modalAnimationType = .none
+        videoArticleViewController.view.hero.id = "title"
+        videoArticleViewController.videoWebView.hero.modifiers = [.useNoSnapshot, .spring(stiffness: 250, damping: 25)]
+        //         articleViewController.articleTitle.hero.modifiers = [.source(heroID:  "title"), .spring(stiffness: 250, damping: 25)]
+        present(videoArticleViewController, animated: true, completion: nil)
+        
+    }
+
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
         return numberOfRows
@@ -175,4 +200,28 @@ extension VideosCollectionViewController: UICollectionViewDelegateFlowLayout
         
     }
 }
+
+
+
+public struct Videos: Decodable{
+    
+    public var data = [BrowsingVideo]()
+}
+
+
+public struct BrowsingVideo: Decodable {
+    
+    var id:String
+    var headline:String
+    var description:String
+    var excerpt: String
+    var url:String
+    var image:String
+    var thumbnail:String
+    var publish_date:String
+    
+    
+}
+
+
 

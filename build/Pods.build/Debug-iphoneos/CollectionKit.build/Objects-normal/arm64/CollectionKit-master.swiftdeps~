@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
 options: "d23a499675a16067482880f4a12c4ea4"
-build_time: [1547655238, 887184000]
+build_time: [1547721461, 206431000]
 inputs:
   "/Users/radibarq/developer/NasaInArabic/Pods/CollectionKit/Sources/Animator/Animator.swift": [1537715112, 0]
   "/Users/radibarq/developer/NasaInArabic/Pods/CollectionKit/Sources/ViewSource/AnyViewSource.swift": [1537715112, 0]

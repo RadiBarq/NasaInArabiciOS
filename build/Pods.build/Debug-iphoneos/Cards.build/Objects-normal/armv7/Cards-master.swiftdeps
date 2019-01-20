@@ -1,0 +1,13 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "819d73290f1a3c981107d3a6ed964064"
+build_time: [1547804020, 634878000]
+inputs:
+  "/Users/radibarq/developer/NasaInArabic/Pods/Cards/Cards/Sources/Animator.swift": [1537554151, 0]
+  "/Users/radibarq/developer/NasaInArabic/Pods/Cards/Cards/Sources/Card.swift": [1537554151, 0]
+  "/Users/radibarq/developer/NasaInArabic/Pods/Cards/Cards/Sources/CardArticle.swift": [1537554004, 0]
+  "/Users/radibarq/developer/NasaInArabic/Pods/Cards/Cards/Sources/CardGroup.swift": [1537554151, 0]
+  "/Users/radibarq/developer/NasaInArabic/Pods/Cards/Cards/Sources/CardGroupSliding.swift": [1537554004, 0]
+  "/Users/radibarq/developer/NasaInArabic/Pods/Cards/Cards/Sources/CardHighlight.swift": [1537554151, 0]
+  "/Users/radibarq/developer/NasaInArabic/Pods/Cards/Cards/Sources/CardPlayer.swift": [1537555459, 0]
+  "/Users/radibarq/developer/NasaInArabic/Pods/Cards/Cards/Sources/DetailViewController.swift": [1537554004, 0]
+  "/Users/radibarq/developer/NasaInArabic/Pods/Cards/Cards/Sources/LayoutHelper.swift": [1537554004, 0]

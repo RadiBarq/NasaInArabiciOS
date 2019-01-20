@@ -134,7 +134,6 @@ depends-member:
 - !private ["13CollectionKit10FlowLayoutC", "LayoutHelper"]
 - ["13CollectionKit10FlowLayoutC", "alignContent"]
 - ["13CollectionKit10FlowLayoutC", "alignItems"]
-- ["13CollectionKit10FlowLayoutC", "deinit"]
 - ["13CollectionKit10FlowLayoutC", "distributeLines"]
 - ["13CollectionKit10FlowLayoutC", "init"]
 - ["13CollectionKit10FlowLayoutC", "interitemSpacing"]

@@ -13,6 +13,7 @@ depends-top-level:
 - !private "??"
 - "AssignmentPrecedence"
 - "BasePreprocessor"
+- !private "BooleanLiteralType"
 - !private "FloatLiteralType"
 - !private "HeroTargetState"
 - !private "IntegerLiteralType"

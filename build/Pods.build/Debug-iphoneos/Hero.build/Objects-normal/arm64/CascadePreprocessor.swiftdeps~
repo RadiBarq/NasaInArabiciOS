@@ -28,6 +28,7 @@ depends-top-level:
 - !private "StringLiteralType"
 - "TernaryPrecedence"
 - !private "TimeInterval"
+- !private "UIApplication"
 - !private "UITableView"
 - "UIView"
 - !private "~="
@@ -72,17 +73,22 @@ depends-member:
 - !private ["s7CVarArgP", "get"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "shared"]
 - !private ["s7CVarArgP", "sorted"]
 - !private ["s7CVarArgP", "subviews"]
+- !private ["s7CVarArgP", "userInterfaceLayoutDirection"]
 - ["4Hero16CascadeDirectionO", "Bool"]
 - ["4Hero16CascadeDirectionO", "CGPoint"]
+- ["4Hero16CascadeDirectionO", "CascadeDirection"]
 - ["4Hero16CascadeDirectionO", "String"]
+- !private ["4Hero16CascadeDirectionO", "UIApplication"]
 - ["4Hero16CascadeDirectionO", "UIView"]
 - ["4Hero16CascadeDirectionO", "bottomToTop"]
 - !private ["4Hero16CascadeDirectionO", "bottomToTopComperator"]
 - ["4Hero16CascadeDirectionO", "comparator"]
 - ["4Hero16CascadeDirectionO", "init"]
 - ["4Hero16CascadeDirectionO", "inverseRadial"]
+- ["4Hero16CascadeDirectionO", "leadingToTrailing"]
 - ["4Hero16CascadeDirectionO", "leftToRight"]
 - !private ["4Hero16CascadeDirectionO", "leftToRightComperator"]
 - ["4Hero16CascadeDirectionO", "radial"]
@@ -90,6 +96,7 @@ depends-member:
 - !private ["4Hero16CascadeDirectionO", "rightToLeftComperator"]
 - ["4Hero16CascadeDirectionO", "topToBottom"]
 - !private ["4Hero16CascadeDirectionO", "topToBottomComperator"]
+- ["4Hero16CascadeDirectionO", "trailingToLeading"]
 - !private ["4Hero19CascadePreprocessorC", "TimeInterval"]
 - !private ["4Hero19CascadePreprocessorC", "UITableView"]
 - ["4Hero19CascadePreprocessorC", "UIView"]
@@ -118,9 +125,11 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "minX"]
 - !private ["s28CustomDebugStringConvertibleP", "minY"]
 - !private ["s28CustomDebugStringConvertibleP", "pairedView"]
+- !private ["s28CustomDebugStringConvertibleP", "shared"]
 - !private ["s28CustomDebugStringConvertibleP", "sorted"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "subviews"]
+- !private ["s28CustomDebugStringConvertibleP", "userInterfaceLayoutDirection"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "distance"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
@@ -151,8 +160,10 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "get"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "shared"]
 - !private ["s23CustomStringConvertibleP", "sorted"]
 - !private ["s23CustomStringConvertibleP", "subviews"]
+- !private ["s23CustomStringConvertibleP", "userInterfaceLayoutDirection"]
 - !private ["Se", "_getBuiltinLogicValue"]
 - !private ["Se", "count"]
 - !private ["Se", "distance"]
@@ -191,14 +202,17 @@ depends-member:
 - !private ["SQ", "get"]
 - !private ["SQ", "init"]
 - !private ["SQ", "init"]
+- !private ["SQ", "leftToRight"]
 - !private ["SQ", "maxX"]
 - !private ["SQ", "maxY"]
 - !private ["SQ", "minX"]
 - !private ["SQ", "minY"]
 - !private ["SQ", "pairedView"]
+- !private ["SQ", "shared"]
 - !private ["SQ", "sorted"]
 - !private ["SQ", "subscript"]
 - !private ["SQ", "subviews"]
+- !private ["SQ", "userInterfaceLayoutDirection"]
 - !private ["s25ExpressibleByArrayLiteralP", "cascade"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - !private ["s25ExpressibleByArrayLiteralP", "delay"]
@@ -225,10 +239,13 @@ depends-member:
 - !private ["SH", "get"]
 - !private ["SH", "init"]
 - !private ["SH", "init"]
+- !private ["SH", "leftToRight"]
 - !private ["SH", "pairedView"]
+- !private ["SH", "shared"]
 - !private ["SH", "sorted"]
 - !private ["SH", "subscript"]
 - !private ["SH", "subviews"]
+- !private ["SH", "userInterfaceLayoutDirection"]
 - !private ["4Hero0A10CompatibleP", "center"]
 - !private ["4Hero0A10CompatibleP", "frame"]
 - !private ["4Hero0A10CompatibleP", "subviews"]
@@ -256,10 +273,14 @@ depends-member:
 - !private ["So8NSCodingP", "subviews"]
 - !private ["So8NSObjectC", "center"]
 - !private ["So8NSObjectC", "frame"]
+- !private ["So8NSObjectC", "shared"]
 - !private ["So8NSObjectC", "subviews"]
+- !private ["So8NSObjectC", "userInterfaceLayoutDirection"]
 - !private ["So8NSObjectP", "center"]
 - !private ["So8NSObjectP", "frame"]
+- !private ["So8NSObjectP", "shared"]
 - !private ["So8NSObjectP", "subviews"]
+- !private ["So8NSObjectP", "userInterfaceLayoutDirection"]
 - !private ["Sj", "init"]
 - !private ["Sq", "pairedView"]
 - !private ["Sq", "subscript"]
@@ -273,6 +294,7 @@ depends-member:
 - !private ["Sm", "init"]
 - !private ["Sm", "init"]
 - !private ["Sm", "sorted"]
+- !private ["SY", "leftToRight"]
 - !private ["ST", "count"]
 - !private ["ST", "enumerated"]
 - !private ["ST", "get"]
@@ -298,6 +320,8 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "center"]
 - !private ["So21UIAppearanceContainerP", "frame"]
 - !private ["So21UIAppearanceContainerP", "subviews"]
+- !private ["So13UIApplicationC", "shared"]
+- !private ["So13UIApplicationC", "userInterfaceLayoutDirection"]
 - !private ["So17UICoordinateSpaceP", "center"]
 - !private ["So17UICoordinateSpaceP", "frame"]
 - !private ["So17UICoordinateSpaceP", "subviews"]
@@ -315,19 +339,28 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "subviews"]
 - !private ["So30UIPasteConfigurationSupportingP", "center"]
 - !private ["So30UIPasteConfigurationSupportingP", "frame"]
+- !private ["So30UIPasteConfigurationSupportingP", "shared"]
 - !private ["So30UIPasteConfigurationSupportingP", "subviews"]
+- !private ["So30UIPasteConfigurationSupportingP", "userInterfaceLayoutDirection"]
 - !private ["So11UIResponderC", "center"]
 - !private ["So11UIResponderC", "frame"]
+- !private ["So11UIResponderC", "shared"]
 - !private ["So11UIResponderC", "subviews"]
+- !private ["So11UIResponderC", "userInterfaceLayoutDirection"]
 - !private ["So30UIResponderStandardEditActionsP", "center"]
 - !private ["So30UIResponderStandardEditActionsP", "frame"]
+- !private ["So30UIResponderStandardEditActionsP", "shared"]
 - !private ["So30UIResponderStandardEditActionsP", "subviews"]
+- !private ["So30UIResponderStandardEditActionsP", "userInterfaceLayoutDirection"]
 - !private ["So18UITraitEnvironmentP", "center"]
 - !private ["So18UITraitEnvironmentP", "frame"]
 - !private ["So18UITraitEnvironmentP", "subviews"]
 - !private ["So23UIUserActivityRestoringP", "center"]
 - !private ["So23UIUserActivityRestoringP", "frame"]
+- !private ["So23UIUserActivityRestoringP", "shared"]
 - !private ["So23UIUserActivityRestoringP", "subviews"]
+- !private ["So23UIUserActivityRestoringP", "userInterfaceLayoutDirection"]
+- !private ["So30UIUserInterfaceLayoutDirectionV", "leftToRight"]
 - !private ["So6UIViewC", "center"]
 - !private ["So6UIViewC", "frame"]
 - !private ["So6UIViewC", "subviews"]
@@ -360,7 +393,9 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "sorted"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "center"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "subviews"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "userInterfaceLayoutDirection"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
 - !private ["s21_ObjectiveCBridgeableP", "distance"]
@@ -424,6 +459,7 @@ depends-nominal:
 - !private "Sq"
 - !private "Sk"
 - !private "Sm"
+- !private "SY"
 - !private "ST"
 - !private "s13SignedNumericP"
 - !private "Sx"
@@ -434,6 +470,7 @@ depends-nominal:
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - !private "So21UIAppearanceContainerP"
+- !private "So13UIApplicationC"
 - !private "So17UICoordinateSpaceP"
 - !private "So13UIDynamicItemP"
 - !private "So18UIFocusEnvironmentP"
@@ -444,6 +481,7 @@ depends-nominal:
 - !private "So30UIResponderStandardEditActionsP"
 - !private "So18UITraitEnvironmentP"
 - !private "So23UIUserActivityRestoringP"
+- !private "So30UIUserInterfaceLayoutDirectionV"
 - !private "So6UIViewC"
 - !private "s15_CVarArgAlignedP"
 - !private "s22_CVarArgPassedAsDoubleP"
@@ -494,4 +532,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "6acaf73bd3cf183996ddd5768cdf65af"
+interface-hash: "4a32e5629acbc92ff5cb68105243c265"

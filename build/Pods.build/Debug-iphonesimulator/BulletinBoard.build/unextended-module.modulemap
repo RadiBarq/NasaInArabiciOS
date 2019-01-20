@@ -1,0 +1,10 @@
+framework module BLTNBoard {
+  umbrella header "BulletinBoard-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module BLTNBoard.__Swift {
+    exclude header "BLTNBoard-Swift.h"
+}

@@ -862,6 +862,88 @@ depends-member:
 - !private ["SH", "viewDidLoad"]
 - !private ["SH", "widthAnchor"]
 - !private ["s6HasherV", "combine"]
+- ["4Hero0A10CompatibleP", "Articles"]
+- !private ["4Hero0A10CompatibleP", "ArticlesNormalTableCell"]
+- !private ["4Hero0A10CompatibleP", "ArticlesTitleTableCell"]
+- ["4Hero0A10CompatibleP", "BrowsingArticle"]
+- !private ["4Hero0A10CompatibleP", "CGFloat"]
+- !private ["4Hero0A10CompatibleP", "CGRect"]
+- ["4Hero0A10CompatibleP", "Card"]
+- ["4Hero0A10CompatibleP", "CellStyle"]
+- !private ["4Hero0A10CompatibleP", "DispatchQueue"]
+- !private ["4Hero0A10CompatibleP", "Double"]
+- !private ["4Hero0A10CompatibleP", "Int"]
+- !private ["4Hero0A10CompatibleP", "JSONDecoder"]
+- !private ["4Hero0A10CompatibleP", "String"]
+- ["4Hero0A10CompatibleP", "UIColor"]
+- !private ["4Hero0A10CompatibleP", "UIEdgeInsets"]
+- ["4Hero0A10CompatibleP", "UIFont"]
+- ["4Hero0A10CompatibleP", "UIImage"]
+- ["4Hero0A10CompatibleP", "UIImageView"]
+- ["4Hero0A10CompatibleP", "UILabel"]
+- !private ["4Hero0A10CompatibleP", "UIStoryboard"]
+- !private ["4Hero0A10CompatibleP", "URL"]
+- !private ["4Hero0A10CompatibleP", "URLSession"]
+- ["4Hero0A10CompatibleP", ""]
+- !private ["4Hero0A10CompatibleP", "addSubview"]
+- ["4Hero0A10CompatibleP", "adjustsFontSizeToFitWidth"]
+- !private ["4Hero0A10CompatibleP", "articleDescription"]
+- !private ["4Hero0A10CompatibleP", "articleImageView"]
+- !private ["4Hero0A10CompatibleP", "articleTitle"]
+- !private ["4Hero0A10CompatibleP", "articles"]
+- !private ["4Hero0A10CompatibleP", "bottomAnchor"]
+- !private ["4Hero0A10CompatibleP", "bounds"]
+- !private ["4Hero0A10CompatibleP", "card"]
+- !private ["4Hero0A10CompatibleP", "centerXAnchor"]
+- !private ["4Hero0A10CompatibleP", "centerYAnchor"]
+- !private ["4Hero0A10CompatibleP", "contentInset"]
+- !private ["4Hero0A10CompatibleP", "currentPageNumber"]
+- !private ["4Hero0A10CompatibleP", "dequeueReusableCell"]
+- !private ["4Hero0A10CompatibleP", "fatalError"]
+- !private ["4Hero0A10CompatibleP", "floor"]
+- ["4Hero0A10CompatibleP", "font"]
+- !private ["4Hero0A10CompatibleP", "frame"]
+- !private ["4Hero0A10CompatibleP", "getData"]
+- !private ["4Hero0A10CompatibleP", "getPageNumber"]
+- !private ["4Hero0A10CompatibleP", "hasParallax"]
+- !private ["4Hero0A10CompatibleP", "heightAnchor"]
+- ["4Hero0A10CompatibleP", "image"]
+- ["4Hero0A10CompatibleP", "init"]
+- !private ["4Hero0A10CompatibleP", "init"]
+- !private ["4Hero0A10CompatibleP", "leftAnchor"]
+- !private ["4Hero0A10CompatibleP", "normalCellReuseIdentifier"]
+- ["4Hero0A10CompatibleP", "numberOfLines"]
+- !private ["4Hero0A10CompatibleP", "numberOfRows"]
+- !private ["4Hero0A10CompatibleP", "print"]
+- !private ["4Hero0A10CompatibleP", "register"]
+- !private ["4Hero0A10CompatibleP", "reloadData"]
+- !private ["4Hero0A10CompatibleP", "rightAnchor"]
+- ["4Hero0A10CompatibleP", "roundTop"]
+- !private ["4Hero0A10CompatibleP", "rowPerPage"]
+- !private ["4Hero0A10CompatibleP", "sd_addActivityIndicator"]
+- !private ["4Hero0A10CompatibleP", "sd_removeActivityIndicator"]
+- !private ["4Hero0A10CompatibleP", "sd_setImage"]
+- !private ["4Hero0A10CompatibleP", "sd_setIndicatorStyle"]
+- !private ["4Hero0A10CompatibleP", "sd_setShowActivityIndicatorView"]
+- !private ["4Hero0A10CompatibleP", "setSuperViewController"]
+- !private ["4Hero0A10CompatibleP", "setupComponents"]
+- !private ["4Hero0A10CompatibleP", "shadowBlur"]
+- !private ["4Hero0A10CompatibleP", "shadowOpacity"]
+- !private ["4Hero0A10CompatibleP", "shouldPresent"]
+- !private ["4Hero0A10CompatibleP", "superViewController"]
+- !private ["4Hero0A10CompatibleP", "tabBar"]
+- !private ["4Hero0A10CompatibleP", "tabBarController"]
+- !private ["4Hero0A10CompatibleP", "tableView"]
+- ["4Hero0A10CompatibleP", "text"]
+- ["4Hero0A10CompatibleP", "textAlignment"]
+- ["4Hero0A10CompatibleP", "textColor"]
+- !private ["4Hero0A10CompatibleP", "titleCellReuseIdentifier"]
+- !private ["4Hero0A10CompatibleP", "titleImage"]
+- !private ["4Hero0A10CompatibleP", "titleLabel"]
+- !private ["4Hero0A10CompatibleP", "topAnchor"]
+- !private ["4Hero0A10CompatibleP", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["4Hero0A10CompatibleP", "viewDidLoad"]
+- !private ["4Hero0A10CompatibleP", "widthAnchor"]
 - !private ["10Foundation9IndexPathV", "row"]
 - !private ["Si", "init"]
 - !private ["10Foundation11JSONDecoderC", "decode"]
@@ -2876,6 +2958,7 @@ depends-nominal:
 - !private "SF"
 - "SH"
 - !private "s6HasherV"
+- "4Hero0A10CompatibleP"
 - !private "10Foundation9IndexPathV"
 - !private "Si"
 - !private "10Foundation11JSONDecoderC"
@@ -2985,10 +3068,12 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/Hero/Hero.framework/Modules/Hero.swiftmodule/arm64.swiftmodule"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/Player/Player.framework/Modules/Player.swiftmodule/arm64.swiftmodule"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/Cards/Cards.framework/Modules/Cards.swiftmodule/arm64.swiftmodule"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/CollectionKit/CollectionKit.framework/Modules/CollectionKit.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ModelIO.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/simd.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
@@ -3003,9 +3088,11 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MetalKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+GIF.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/Hero/Hero.framework/Headers/Hero-umbrella.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/Player/Player.framework/Headers/Player-umbrella.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/Cards/Cards.framework/Headers/Cards-umbrella.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/CollectionKit/CollectionKit.framework/Headers/CollectionKit-umbrella.h"
@@ -3035,14 +3122,17 @@ depends-external:
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageCoderHelper.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageCompat.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/Hero/Hero.framework/Headers/Hero-Swift.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/Player/Player.framework/Headers/Player-Swift.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/Cards/Cards.framework/Headers/Cards-Swift.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/CollectionKit/CollectionKit.framework/Headers/CollectionKit-Swift.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/Hero/Hero.framework/Modules/module.modulemap"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/Player/Player.framework/Modules/module.modulemap"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/Cards/Cards.framework/Modules/module.modulemap"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/CollectionKit/CollectionKit.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
@@ -3054,6 +3144,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"

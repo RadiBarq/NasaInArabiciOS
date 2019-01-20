@@ -234,6 +234,7 @@ depends-member:
 - !private ["SH", "subscript"]
 - ["4Hero5LexerC", "String"]
 - ["4Hero5LexerC", "Token"]
+- ["4Hero5LexerC", "deinit"]
 - ["4Hero5LexerC", "init"]
 - ["4Hero5LexerC", "input"]
 - !private ["4Hero5LexerC", "tokenList"]

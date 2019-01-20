@@ -1,10 +1,13 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "HeroContext"
+- "HeroCustomSnapshotView"
 provides-nominal:
 - "4Hero0A7ContextC"
+- "4Hero0A18CustomSnapshotViewP"
 provides-member:
 - ["4Hero0A7ContextC", ""]
+- ["4Hero0A18CustomSnapshotViewP", ""]
 - ["4Hero0A7ContextC", "sourceView"]
 - ["4Hero0A7ContextC", "destinationView"]
 - ["4Hero0A7ContextC", "pairedView"]
@@ -37,6 +40,7 @@ depends-top-level:
 - !private "FloatLiteralType"
 - "HeroContext"
 - "HeroCoordinateSpace"
+- "HeroCustomSnapshotView"
 - !private "HeroSnapshotType"
 - "HeroTargetState"
 - "Int"
@@ -51,6 +55,7 @@ depends-top-level:
 depends-member:
 - !private ["Sa", "append"]
 - !private ["Sa", "count"]
+- !private ["Sa", "filter"]
 - !private ["Sa", "get"]
 - !private ["Sa", "index"]
 - !private ["Sa", "init"]
@@ -59,6 +64,7 @@ depends-member:
 - !private ["Sa", "subscript"]
 - !private ["s13ArrayProtocolP", "append"]
 - !private ["s13ArrayProtocolP", "count"]
+- !private ["s13ArrayProtocolP", "filter"]
 - !private ["s13ArrayProtocolP", "get"]
 - !private ["s13ArrayProtocolP", "index"]
 - !private ["s13ArrayProtocolP", "init"]
@@ -67,6 +73,7 @@ depends-member:
 - !private ["s13ArrayProtocolP", "subscript"]
 - !private ["SK", "append"]
 - !private ["SK", "count"]
+- !private ["SK", "filter"]
 - !private ["SK", "get"]
 - !private ["SK", "index"]
 - !private ["SK", "init"]
@@ -173,6 +180,7 @@ depends-member:
 - !private ["s7CVarArgP", "cornerRadius"]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "effect"]
+- !private ["s7CVarArgP", "filter"]
 - !private ["s7CVarArgP", "flatTransformTo"]
 - !private ["s7CVarArgP", "flattenedViewHierarchy"]
 - !private ["s7CVarArgP", "frame"]
@@ -214,6 +222,7 @@ depends-member:
 - !private ["s7CVarArgP", "zPosition"]
 - !private ["Sl", "append"]
 - !private ["Sl", "count"]
+- !private ["Sl", "filter"]
 - !private ["Sl", "get"]
 - !private ["Sl", "index"]
 - ["Sl", "init"]
@@ -242,6 +251,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "cornerRadius"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "effect"]
+- !private ["s28CustomDebugStringConvertibleP", "filter"]
 - !private ["s28CustomDebugStringConvertibleP", "flatTransformTo"]
 - !private ["s28CustomDebugStringConvertibleP", "flattenedViewHierarchy"]
 - !private ["s28CustomDebugStringConvertibleP", "frame"]
@@ -290,6 +300,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "filter"]
 - !private ["s17CustomReflectableP", "get"]
 - !private ["s17CustomReflectableP", "global"]
 - !private ["s17CustomReflectableP", "index"]
@@ -322,6 +333,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "cornerRadius"]
 - !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "effect"]
+- !private ["s23CustomStringConvertibleP", "filter"]
 - !private ["s23CustomStringConvertibleP", "flatTransformTo"]
 - !private ["s23CustomStringConvertibleP", "flattenedViewHierarchy"]
 - !private ["s23CustomStringConvertibleP", "frame"]
@@ -364,6 +376,7 @@ depends-member:
 - !private ["Se", "_getBuiltinLogicValue"]
 - !private ["Se", "append"]
 - !private ["Se", "count"]
+- !private ["Se", "filter"]
 - !private ["Se", "get"]
 - !private ["Se", "global"]
 - !private ["Se", "index"]
@@ -382,6 +395,7 @@ depends-member:
 - !private ["SE", "_getBuiltinLogicValue"]
 - !private ["SE", "append"]
 - !private ["SE", "count"]
+- !private ["SE", "filter"]
 - !private ["SE", "get"]
 - !private ["SE", "global"]
 - !private ["SE", "index"]
@@ -414,6 +428,7 @@ depends-member:
 - !private ["SQ", "cornerRadius"]
 - !private ["SQ", "count"]
 - !private ["SQ", "effect"]
+- !private ["SQ", "filter"]
 - !private ["SQ", "flatTransformTo"]
 - !private ["SQ", "flattenedViewHierarchy"]
 - !private ["SQ", "frame"]
@@ -465,6 +480,7 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "coordinateSpace"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - !private ["s25ExpressibleByArrayLiteralP", "displayShadow"]
+- !private ["s25ExpressibleByArrayLiteralP", "filter"]
 - !private ["s25ExpressibleByArrayLiteralP", "forceAnimate"]
 - !private ["s25ExpressibleByArrayLiteralP", "get"]
 - !private ["s25ExpressibleByArrayLiteralP", "index"]
@@ -500,6 +516,7 @@ depends-member:
 - !private ["SH", "cornerRadius"]
 - !private ["SH", "count"]
 - !private ["SH", "effect"]
+- !private ["SH", "filter"]
 - !private ["SH", "flatTransformTo"]
 - !private ["SH", "flattenedViewHierarchy"]
 - !private ["SH", "frame"]
@@ -573,6 +590,7 @@ depends-member:
 - !private ["4Hero0A10CompatibleP", "tintColor"]
 - ["4Hero0A7ContextC", "CGFloat"]
 - ["4Hero0A7ContextC", "HeroCoordinateSpace"]
+- !private ["4Hero0A7ContextC", "HeroCustomSnapshotView"]
 - !private ["4Hero0A7ContextC", "HeroSnapshotType"]
 - ["4Hero0A7ContextC", "HeroTargetState"]
 - ["4Hero0A7ContextC", "Int"]
@@ -615,6 +633,8 @@ depends-member:
 - !private ["4Hero0A15CoordinateSpaceO", "deinit"]
 - ["4Hero0A15CoordinateSpaceO", "global"]
 - ["4Hero0A15CoordinateSpaceO", "local"]
+- ["4Hero0A18CustomSnapshotViewP", "UIView"]
+- ["4Hero0A18CustomSnapshotViewP", "heroSnapshot"]
 - !private ["4Hero0A9ExtensionC", "id"]
 - !private ["4Hero0A9ExtensionC", "modifiers"]
 - !private ["4Hero0A9ExtensionC", "storedAlpha"]
@@ -632,6 +652,7 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["SM", "append"]
 - !private ["SM", "count"]
+- !private ["SM", "filter"]
 - !private ["SM", "get"]
 - !private ["SM", "index"]
 - !private ["SM", "init"]
@@ -819,6 +840,7 @@ depends-member:
 - !private ["Sq", "global"]
 - !private ["Sk", "append"]
 - !private ["Sk", "count"]
+- !private ["Sk", "filter"]
 - !private ["Sk", "get"]
 - !private ["Sk", "index"]
 - !private ["Sk", "init"]
@@ -827,6 +849,7 @@ depends-member:
 - !private ["Sk", "subscript"]
 - !private ["Sm", "append"]
 - !private ["Sm", "count"]
+- !private ["Sm", "filter"]
 - !private ["Sm", "get"]
 - !private ["Sm", "index"]
 - !private ["Sm", "init"]
@@ -835,6 +858,7 @@ depends-member:
 - !private ["Sm", "subscript"]
 - !private ["ST", "append"]
 - !private ["ST", "count"]
+- !private ["ST", "filter"]
 - !private ["ST", "get"]
 - !private ["ST", "index"]
 - ["ST", "init"]
@@ -1277,6 +1301,7 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "tintColor"]
 - !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "filter"]
 - !private ["s24_DestructorSafeContainerP", "get"]
 - !private ["s24_DestructorSafeContainerP", "index"]
 - !private ["s24_DestructorSafeContainerP", "init"]
@@ -1286,6 +1311,7 @@ depends-member:
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "filter"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "get"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "index"]
 - ["s35_HasCustomAnyHashableRepresentationP", "init"]
@@ -1347,6 +1373,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "filter"]
 - !private ["s21_ObjectiveCBridgeableP", "get"]
 - !private ["s21_ObjectiveCBridgeableP", "global"]
 - !private ["s21_ObjectiveCBridgeableP", "index"]
@@ -1387,6 +1414,7 @@ depends-nominal:
 - !private "4Hero0A10CompatibleP"
 - "4Hero0A7ContextC"
 - "4Hero0A15CoordinateSpaceO"
+- "4Hero0A18CustomSnapshotViewP"
 - !private "4Hero0A9ExtensionC"
 - "4Hero0A12SnapshotTypeO"
 - !private "4Hero0A11TargetStateV"
@@ -1460,4 +1488,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "87d3544df9dcd3314409126fd7b1d10d"
+interface-hash: "70c4955cca9f9488ccc926d7b19f907c"

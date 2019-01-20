@@ -7,13 +7,15 @@
 //
 
 import UIKit
+import Hero
+
 
 
 class AlbumsCollectionViewController: UICollectionViewController {
     
     private let titleCellReuseIdentifier = "titleCell"
     private let normalCellReuseIdentifier = "normalCell"
-    var articles = [Articles]()
+    var articles = [Images]()
     var articlesImageViews = [UIImageView?]()
     var numberOfRows = 0
     var currentPageNumber = 1
@@ -35,17 +37,16 @@ class AlbumsCollectionViewController: UICollectionViewController {
             self.collectionView.contentInset = UIEdgeInsets(top: 0.0, left: 0.0, bottom:
                 tabBarController.tabBar.bounds.height - 35, right: 0.0);
             
+            
         }
         
         getData(pageNumber: currentPageNumber)
-        
     }
+    
     
     func getPageNumber(rowNumber: Int) -> Int
     {
-        
         return Int(floor(Double(rowNumber / 9)))
-        
     }
     
     func rowPerPage(rowNumber: Int, pageNumber: Int) ->Int{
@@ -68,13 +69,12 @@ class AlbumsCollectionViewController: UICollectionViewController {
                 guard let data = data else {return}
                 
                 do {
-                    
+
                     let decoder = JSONDecoder()
-                    let onePageArticle = try decoder.decode(Articles.self, from: data)
+                    let onePageArticle = try decoder.decode(Images.self, from: data)
                     self.articles.append(onePageArticle)
                     self.numberOfRows = self.numberOfRows + onePageArticle.data.count - 1
                     self.collectionView.reloadData()
-                    
                 }
                     
                 catch let jsonError {
@@ -84,6 +84,35 @@ class AlbumsCollectionViewController: UICollectionViewController {
             }
             }.resume()
     }
+    
+    
+    
+    
+      override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+                let cell = collectionView.cellForItem(at: indexPath) as! ArticlesNormalCell
+                cell.hero.modifiers = [.useNoSnapshot, .spring(stiffness: 250, damping: 25)]
+                cell.card.hero.id = "title"
+        
+                let pageNumber = getPageNumber(rowNumber: indexPath.row - 1)
+                let rowPerPage = self.rowPerPage(rowNumber: indexPath.row - 1, pageNumber: pageNumber)
+        
+                var article = articles[pageNumber].data[rowPerPage]
+        
+        
+                let imageArticleViewController = ImageArticleViewController()
+                imageArticleViewController.article = article
+                imageArticleViewController.hero.isEnabled = true
+                imageArticleViewController.hero.modalAnimationType = .none
+                imageArticleViewController.view.hero.id = "title"
+                imageArticleViewController.imageView.hero.modifiers = [.useNoSnapshot, .spring(stiffness: 250, damping: 25)]
+        //         articleViewController.articleTitle.hero.modifiers = [.source(heroID:  "title"), .spring(stiffness: 250, damping: 25)]
+        
+                present(imageArticleViewController, animated: true, completion: nil)
+        
+    }
+    
+    
     
     override func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         
@@ -163,13 +192,33 @@ extension AlbumsCollectionViewController: UICollectionViewDelegateFlowLayout
                 return CGSize(width: collectionView.bounds.size.width, height: height)
             }
                 
-                
                 // should changed
             else
             {
                 return CGSize(width: collectionView.bounds.size.width - 20 , height: 500)
-                
             }
 
         }
 }
+public struct Images: Decodable{
+    
+    public var data = [BrowsingImage]()
+    
+}
+
+
+public struct BrowsingImage: Decodable {
+    
+    var id:String
+    var headline:String
+    var description:String
+    var excerpt: String
+    var image:String
+    var thumbnail:String
+    var infograph:String?
+    var publish_date:String
+    
+}
+
+
+

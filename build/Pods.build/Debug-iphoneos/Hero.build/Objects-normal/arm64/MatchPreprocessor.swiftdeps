@@ -13,6 +13,7 @@ depends-top-level:
 - !private "??"
 - "AssignmentPrecedence"
 - "BasePreprocessor"
+- !private "BooleanLiteralType"
 - !private "FloatLiteralType"
 - !private "HeroTargetState"
 - !private "IntegerLiteralType"
@@ -127,6 +128,7 @@ depends-member:
 - !private ["4Hero17MatchPreprocessorC", "HeroTargetState"]
 - ["4Hero17MatchPreprocessorC", "UIView"]
 - !private ["4Hero17MatchPreprocessorC", "context"]
+- ["4Hero17MatchPreprocessorC", "deinit"]
 - ["4Hero17MatchPreprocessorC", "init"]
 - ["4Hero17MatchPreprocessorC", "process"]
 - !private ["So8NSCodingP", "alpha"]

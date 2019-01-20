@@ -267,6 +267,7 @@ depends-member:
 - !private ["Sq", "subscript"]
 - ["4Hero18SourcePreprocessorC", "UIView"]
 - !private ["4Hero18SourcePreprocessorC", "context"]
+- ["4Hero18SourcePreprocessorC", "deinit"]
 - ["4Hero18SourcePreprocessorC", "init"]
 - ["4Hero18SourcePreprocessorC", "prepareFor"]
 - ["4Hero18SourcePreprocessorC", "process"]

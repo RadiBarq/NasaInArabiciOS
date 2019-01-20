@@ -12,15 +12,15 @@ import SDWebImage
 import Hero
 
 public struct Articles: Decodable{
-    
+
      public var data = [BrowsingArticle]()
 }
 
 public struct BrowsingArticle: Decodable
 {
     var id: String
-    var category_id: String
-    var category: String
+   // var category_id: String
+   // var category: String
     var headline:String
     var slug: String
     var description: String
@@ -28,13 +28,34 @@ public struct BrowsingArticle: Decodable
     var image: String
     var thumbnail: String
     var publish_date: String
-
-
+    
 }
 
-  
+
+//public struct CategoryArticles:Decodable{
+//
+//    public var data = [BrowsingCategoryArticle]
+//}
+//
+//
+//
+//public struct BrowsingCategoryArticle:Decodable{
+//
+//    var id: String
+//    var category_id: String
+//    var category: String
+//    var headline:String
+//    var slug: String
+//    var description: String
+//    var excerpt:String
+//    var image: String
+//    var thumbnail: String
+//    var publish_date: String
+//
+//}
 
 class ArticlesCollectionViewController: UICollectionViewController  {
+
     
     private let titleCellReuseIdentifier = "titleCell"
     private let normalCellReuseIdentifier = "normalCell"
@@ -42,8 +63,7 @@ class ArticlesCollectionViewController: UICollectionViewController  {
     var articlesImageViews = [UIImageView?]()
     var numberOfRows = 0
     var currentPageNumber = 1
-      var علي = "ali mohammad"
-    
+    var علي = "ali mohammad"
     
     
     override func viewDidLoad() {
@@ -63,6 +83,30 @@ class ArticlesCollectionViewController: UICollectionViewController  {
         getData(pageNumber: currentPageNumber)
     }
     
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        super.viewWillAppear(animated)
+        
+  
+        if (Global.categoryChanged == true)
+        {
+            
+            Global.categoryChanged == false
+            currentPageNumber = 1
+            numberOfRows = 0
+            articles = []
+            articlesImageViews = []
+            
+            getData(pageNumber: currentPageNumber)
+            
+            
+            
+        }
+        
+    }
+    
+    
     func getPageNumber(rowNumber: Int) -> Int
     {
         return Int(floor(Double(rowNumber / 9)))
@@ -75,7 +119,19 @@ class ArticlesCollectionViewController: UICollectionViewController  {
     
     func getData(pageNumber: Int)
     {
-          let urlString = "https://api.nasainarabic.net/articles/main/" + String(pageNumber)
+        var urlString = ""
+        
+            if (Global.categoryId == nil)
+            {
+                 urlString = "https://api.nasainarabic.net/articles/main/" + String(pageNumber)
+            }
+        
+         else
+            {
+                urlString = "https://api.nasainarabic.net/category/" + Global.categoryId! + "/" + String(pageNumber)
+            }
+        
+        
            guard let url = URL(string: urlString) else
            {
                 return
@@ -108,13 +164,16 @@ class ArticlesCollectionViewController: UICollectionViewController  {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         
+        if (indexPath.row != 0)
+        {
+    
         let cell = collectionView.cellForItem(at: indexPath) as! ArticlesNormalCell
         cell.hero.modifiers = [.useNoSnapshot, .spring(stiffness: 250, damping: 25)]
         cell.card.hero.id = "title"
-    
+
         
-//
-//
+        //
+        //
 //        let vc = AppStoreViewController2()
   //      vc.hero.isEnabled = true
 //        vc.hero.modalAnimationType = .none
@@ -129,11 +188,10 @@ class ArticlesCollectionViewController: UICollectionViewController  {
     
 //       let articleViewController = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "articleViewController") as? ArticleViewController
         
-        
           let pageNumber = getPageNumber(rowNumber: indexPath.row - 1)
           let rowPerPage = self.rowPerPage(rowNumber: indexPath.row - 1, pageNumber: pageNumber)
           var article = articles[pageNumber].data[rowPerPage]
-    
+        
           let articleViewController = ArticleViewController()
          articleViewController.article = article
      //  articleViewController.articleId = article.data.
@@ -145,14 +203,25 @@ class ArticlesCollectionViewController: UICollectionViewController  {
 //         articleViewController.articleTitle.hero.modifiers = [.source(heroID:  "title"), .spring(stiffness: 250, damping: 25)]
           articleViewController.articleTitle.hero.modifiers =  [.useNoSnapshot, .spring(stiffness: 250, damping: 25)]
          // articleViewController.visualEffectView.hero.modifiers = [.fade, .useNoSnapshot]
-         present(articleViewController, animated: true, completion: nil)
+          present(articleViewController, animated: true, completion: nil)
+        }
+        
         
     }
     
     func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
         
         URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
+    }
+    
+    @objc
+    func categoryButtonClicked()
+    {
+        var categoryVc = CategoriesViewController()
         
+        let navController = UINavigationController(rootViewController: categoryVc)
+        self.present(navController, animated: true, completion: nil)
+
     }
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -170,6 +239,7 @@ class ArticlesCollectionViewController: UICollectionViewController  {
         }
     }
     
+    
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
         IndexPath) -> UICollectionViewCell {
         
@@ -177,6 +247,7 @@ class ArticlesCollectionViewController: UICollectionViewController  {
         if (indexPath.row == 0)
         {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier:  titleCellReuseIdentifier, for: indexPath) as! ArticlesTitleCell
+            cell.categoryButton.addTarget(self, action: #selector(categoryButtonClicked), for: .touchUpInside)
             return cell
         }
             
@@ -332,7 +403,17 @@ class ArticlesTitleCell: UICollectionViewCell
         
         var titleImg = UIImageView()
         titleImg.image = UIImage(named: "main_logo")
-        return  titleImg
+        return titleImg
+
+    }()
+    
+    
+     public var categoryButton: UIButton = {
+        
+        var cateogryImage = UIButton()
+        cateogryImage.setImage(UIImage(named: "categories_logo"), for: .normal)
+        cateogryImage.translatesAutoresizingMaskIntoConstraints = false
+        return cateogryImage
         
     }()
     
@@ -344,6 +425,7 @@ class ArticlesTitleCell: UICollectionViewCell
     }
     
     required init?(coder aDecoder: NSCoder) {
+        
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -361,6 +443,11 @@ class ArticlesTitleCell: UICollectionViewCell
         titleImage.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -30).isActive = true
         titleImage.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: 20).isActive = true
         
+        self.addSubview(categoryButton)
+        categoryButton.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 30).isActive = true
+        categoryButton.centerYAnchor.constraint(equalTo: titleImage.centerYAnchor).isActive = true
+        categoryButton.widthAnchor.constraint(equalToConstant: 25).isActive = true
+        categoryButton.heightAnchor.constraint(equalToConstant: 25).isActive = true
     }
 }
 
@@ -408,6 +495,7 @@ extension ArticlesCollectionViewController: UICollectionViewDelegateFlowLayout
     
     }
 }
+
 
 // basically a view controller with a back button and a tap gesture configured
 

@@ -19,7 +19,7 @@
 <img src = "https://firebasestorage.googleapis.com/v0/b/chottky.appspot.com/o/App%20Screenshots%2FNasaInArabic%2F48357105_339501060196715_4791986726878838784_n.png?alt=media&token=9fe54a22-c8d8-4edf-b970-70c522c2fc83" />
 
 <h2>Start Using The App</h2>
-<p>The app is still under development a link of the app will be posted after the development completed</p>
+<p>https://apple.co/2UT7nKx</p>
 
 <h2>Contribute</h2>
 <p>If you want to help me complete the development of the app or improve it after it released feel free to contact me on grayllow@gmail.com</p>

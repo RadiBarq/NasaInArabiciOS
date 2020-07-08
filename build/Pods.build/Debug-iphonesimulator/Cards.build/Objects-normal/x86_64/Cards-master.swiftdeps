@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
 options: "53012e2c5af09ce7173b3c0149ac6ae4"
-build_time: [1547683646, 824870000]
+build_time: [1548793232, 338858000]
 inputs:
   "/Users/radibarq/developer/NasaInArabic/Pods/Cards/Cards/Sources/Animator.swift": [1537554151, 0]
   "/Users/radibarq/developer/NasaInArabic/Pods/Cards/Cards/Sources/Card.swift": [1537554151, 0]

@@ -220,6 +220,7 @@ depends-member:
 - ["4Hero0A8ModifierC", "contentsRect"]
 - ["4Hero0A8ModifierC", "contentsScale"]
 - ["4Hero0A8ModifierC", "cornerRadius"]
+- ["4Hero0A8ModifierC", "deinit"]
 - ["4Hero0A8ModifierC", "delay"]
 - ["4Hero0A8ModifierC", "duration"]
 - ["4Hero0A8ModifierC", "durationMatchLongest"]

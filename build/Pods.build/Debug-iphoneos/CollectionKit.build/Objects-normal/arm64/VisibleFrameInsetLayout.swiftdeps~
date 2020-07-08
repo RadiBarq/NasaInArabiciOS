@@ -61,7 +61,6 @@ depends-member:
 - ["13CollectionKit23VisibleFrameInsetLayoutC", "Layout"]
 - ["13CollectionKit23VisibleFrameInsetLayoutC", "LayoutContext"]
 - ["13CollectionKit23VisibleFrameInsetLayoutC", "UIEdgeInsets"]
-- ["13CollectionKit23VisibleFrameInsetLayoutC", "deinit"]
 - ["13CollectionKit23VisibleFrameInsetLayoutC", "init"]
 - ["13CollectionKit23VisibleFrameInsetLayoutC", "insetProvider"]
 - ["13CollectionKit23VisibleFrameInsetLayoutC", "insets"]

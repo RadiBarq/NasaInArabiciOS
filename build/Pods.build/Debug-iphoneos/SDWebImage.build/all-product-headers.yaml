@@ -298,6 +298,60 @@
           'external-contents': "/Users/radibarq/developer/NasaInArabic/build/Pods.build/Debug-iphoneos/SDWebImage.build/module.modulemap"
         }
       ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/YouTubePlayer/YouTubePlayer.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "YouTubePlayer-Swift.h",
+          'external-contents': "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/YouTubePlayer/YouTubePlayer.framework/Headers/YouTubePlayer-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "YouTubePlayer-umbrella.h",
+          'external-contents': "/Users/radibarq/developer/NasaInArabic/Pods/Target Support Files/YouTubePlayer/YouTubePlayer-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/YouTubePlayer/YouTubePlayer.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/radibarq/developer/NasaInArabic/build/Pods.build/Debug-iphoneos/YouTubePlayer.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/YoutubeKit/YoutubeKit.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "YoutubeKit-Swift.h",
+          'external-contents': "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/YoutubeKit/YoutubeKit.framework/Headers/YoutubeKit-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "YoutubeKit-umbrella.h",
+          'external-contents': "/Users/radibarq/developer/NasaInArabic/Pods/Target Support Files/YoutubeKit/YoutubeKit-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/radibarq/developer/NasaInArabic/build/Debug-iphoneos/YoutubeKit/YoutubeKit.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/radibarq/developer/NasaInArabic/build/Pods.build/Debug-iphoneos/YoutubeKit.build/module.modulemap"
+        }
+      ]
     }
   ]
 }

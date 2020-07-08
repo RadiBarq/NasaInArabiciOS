@@ -74,7 +74,7 @@ depends-member:
 - ["4Hero34IgnoreSubviewModifiersPreprocessorC", "UIView"]
 - !private ["4Hero34IgnoreSubviewModifiersPreprocessorC", "cleanSubviewModifiers"]
 - !private ["4Hero34IgnoreSubviewModifiersPreprocessorC", "context"]
-- ["4Hero34IgnoreSubviewModifiersPreprocessorC", "deinit"]
+- !private ["4Hero34IgnoreSubviewModifiersPreprocessorC", "deinit"]
 - ["4Hero34IgnoreSubviewModifiersPreprocessorC", "init"]
 - ["4Hero34IgnoreSubviewModifiersPreprocessorC", "process"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]

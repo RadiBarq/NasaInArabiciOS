@@ -166,7 +166,6 @@ depends-member:
 - ["4Hero6ParserC", "String"]
 - ["4Hero6ParserC", "Token"]
 - !private ["4Hero6ParserC", "VariableNode"]
-- ["4Hero6ParserC", "deinit"]
 - ["4Hero6ParserC", "getCurrentTokenPrecedence"]
 - ["4Hero6ParserC", "index"]
 - ["4Hero6ParserC", "init"]

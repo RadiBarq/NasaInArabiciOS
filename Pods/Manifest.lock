@@ -1,20 +1,32 @@
 PODS:
-  - Cards (1.3.1):
-    - Player
-  - CollectionKit (2.1.0):
-    - CollectionKit/Core (= 2.1.0)
-  - CollectionKit/Core (2.1.0)
-  - Hero (1.4.0)
-  - Player (0.8.4)
-  - SDWebImage (4.3.3):
-    - SDWebImage/Core (= 4.3.3)
-  - SDWebImage/Core (4.3.3)
+  - Cards (1.4.0):
+    - Player (= 0.13.0)
+  - CollectionKit (2.4.0):
+    - CollectionKit/Core (= 2.4.0)
+  - CollectionKit/Core (2.4.0)
+  - Hero (1.5.0)
+  - Player (0.13.0)
+  - SDWebImage (4.4.8):
+    - SDWebImage/Core (= 4.4.8)
+  - SDWebImage/Core (4.4.8)
+  - YoutubeKit (0.5.0)
+  - YouTubePlayer (0.7.0)
 
 DEPENDENCIES:
   - Cards
   - CollectionKit (from `https://github.com/SoySauceLab/CollectionKit.git`)
   - Hero (from `https://github.com/HeroTransitions/Hero.git`)
   - SDWebImage (~> 4.0)
+  - YoutubeKit
+  - YouTubePlayer
+
+SPEC REPOS:
+  trunk:
+    - Cards
+    - Player
+    - SDWebImage
+    - YoutubeKit
+    - YouTubePlayer
 
 EXTERNAL SOURCES:
   CollectionKit:
@@ -24,19 +36,21 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   CollectionKit:
-    :commit: cc63503804fe0a8fa6c552642d7938f4786c2634
+    :commit: daf0bc37651a9d335c1292390420f9bf4d8c1209
     :git: https://github.com/SoySauceLab/CollectionKit.git
   Hero:
-    :commit: 07ef8832ad72a60e44ea0aa4cf46c8f46c3f3539
+    :commit: c70b471eeb91c5ac72d9d8e99affb9fbe0748b81
     :git: https://github.com/HeroTransitions/Hero.git
 
 SPEC CHECKSUMS:
-  Cards: c5023eb5dfa9d81478535fa255a8060f4e0737e3
-  CollectionKit: 7fe4046ac74a9562c0296cadbfa35723924011d2
-  Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
-  Player: e45514e9e5fb8ff18f50eb2ba6f84dac9b6a0024
-  SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
+  Cards: 45ae6bd0eca7b5e8016d3b6cb30b60b04753f68f
+  CollectionKit: 8f01e7629185bb81072c4aa734d105df5c2d1c8b
+  Hero: b7385b75e7259da62f4f85462f59a5082d66b058
+  Player: 968d8d07d923bcdd6f7e4091c9e306eb44a5f7a4
+  SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
+  YoutubeKit: 9f66eba839211158f2aac7ad3833593bd56fa8f9
+  YouTubePlayer: d27e302eecbbd6b17c73d9788cb6d817a3815720
 
-PODFILE CHECKSUM: f03b8ad1dc519d24f9c4db17b13bfca3ccb019ab
+PODFILE CHECKSUM: e5985d33395c829981ca7d259c93172e77f86872
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.8.3

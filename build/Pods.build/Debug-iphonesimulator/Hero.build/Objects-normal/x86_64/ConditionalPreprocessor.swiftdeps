@@ -14,6 +14,7 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "BasePreprocessor"
 - "Bool"
+- !private "BooleanLiteralType"
 - "ConditionalPreprocessor"
 - "HeroConditionalContext"
 - "HeroTransition"

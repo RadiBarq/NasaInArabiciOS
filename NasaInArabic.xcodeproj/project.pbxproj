@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,13 +14,13 @@
 		CD2A8516214C275E00F77C5F /* Contributors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A8515214C275E00F77C5F /* Contributors.swift */; };
 		CD2A8518214C285C00F77C5F /* Contributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2A8517214C285C00F77C5F /* Contributor.swift */; };
 		CD3BB646213EC5D500C84B64 /* ArticlesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3BB645213EC5D500C84B64 /* ArticlesCollectionViewController.swift */; };
+		CD409DC721F7CCDD00726B29 /* CachingPlayerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD409DC621F7CCDD00726B29 /* CachingPlayerItem.swift */; };
 		CD415C7821EFFF1B00CA0656 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD415C7721EFFF1B00CA0656 /* ProfileViewController.swift */; };
 		CD432E0B21F2AC8C00FBAEB3 /* ImageArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD432E0A21F2AC8C00FBAEB3 /* ImageArticleViewController.swift */; };
 		CD432E0D21F357C000FBAEB3 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD432E0C21F357C000FBAEB3 /* VideoViewController.swift */; };
 		CD432E0F21F3CF9C00FBAEB3 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD432E0E21F3CF9C00FBAEB3 /* CategoriesViewController.swift */; };
 		CD5AFE2F2155391200362B74 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5AFE2E2155391200362B74 /* ArticleViewController.swift */; };
 		CD5AFE312155541D00362B74 /* ArticleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5AFE302155541D00362B74 /* ArticleTableViewController.swift */; };
-		CD5AFE332157794D00362B74 /* AppStoreViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5AFE322157794D00362B74 /* AppStoreViewController1.swift */; };
 		CD5BEA3321F49D190099C5D2 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5BEA3221F49D190099C5D2 /* Global.swift */; };
 		CD71A10121407E13000CDE4F /* MoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD71A10021407E13000CDE4F /* MoreTableViewController.swift */; };
 		CD92B60D2143F0340088F1D3 /* CategoriesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD92B60C2143F0340088F1D3 /* CategoriesCollectionViewController.swift */; };
@@ -32,6 +32,7 @@
 		CDD281ED2147DD0B00018C93 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD281EC2147DD0B00018C93 /* TabBarViewController.swift */; };
 		CDD281EF2147F78100018C93 /* AlbumsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD281EE2147F78100018C93 /* AlbumsCollectionViewController.swift */; };
 		CDD281F12148009000018C93 /* VideosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD281F02148009000018C93 /* VideosCollectionViewController.swift */; };
+		CDD98AA721F8EA4200D6938C /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD98AA621F8EA4200D6938C /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,13 +45,13 @@
 		CD2A8515214C275E00F77C5F /* Contributors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contributors.swift; sourceTree = "<group>"; };
 		CD2A8517214C285C00F77C5F /* Contributor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contributor.swift; sourceTree = "<group>"; };
 		CD3BB645213EC5D500C84B64 /* ArticlesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesCollectionViewController.swift; sourceTree = "<group>"; };
+		CD409DC621F7CCDD00726B29 /* CachingPlayerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachingPlayerItem.swift; sourceTree = "<group>"; };
 		CD415C7721EFFF1B00CA0656 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CD432E0A21F2AC8C00FBAEB3 /* ImageArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageArticleViewController.swift; sourceTree = "<group>"; };
 		CD432E0C21F357C000FBAEB3 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		CD432E0E21F3CF9C00FBAEB3 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		CD5AFE2E2155391200362B74 /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 		CD5AFE302155541D00362B74 /* ArticleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewController.swift; sourceTree = "<group>"; };
-		CD5AFE322157794D00362B74 /* AppStoreViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreViewController1.swift; sourceTree = "<group>"; };
 		CD5BEA3221F49D190099C5D2 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		CD71A10021407E13000CDE4F /* MoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTableViewController.swift; sourceTree = "<group>"; };
 		CD92B60C2143F0340088F1D3 /* CategoriesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +67,7 @@
 		CDD281EC2147DD0B00018C93 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		CDD281EE2147F78100018C93 /* AlbumsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsCollectionViewController.swift; sourceTree = "<group>"; };
 		CDD281F02148009000018C93 /* VideosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosCollectionViewController.swift; sourceTree = "<group>"; };
+		CDD98AA621F8EA4200D6938C /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		CDC47F01213E438C001716FC = {
 			isa = PBXGroup;
 			children = (
+				CD409DC621F7CCDD00726B29 /* CachingPlayerItem.swift */,
 				CDC47F0C213E438C001716FC /* NasaInArabic */,
 				CDC47F0B213E438C001716FC /* Products */,
 				2CAA2E6DC6F1E6720F4E00B6 /* Pods */,
@@ -129,12 +132,12 @@
 				CD2A8517214C285C00F77C5F /* Contributor.swift */,
 				CD5AFE2E2155391200362B74 /* ArticleViewController.swift */,
 				CD5AFE302155541D00362B74 /* ArticleTableViewController.swift */,
-				CD5AFE322157794D00362B74 /* AppStoreViewController1.swift */,
 				CD415C7721EFFF1B00CA0656 /* ProfileViewController.swift */,
 				CD432E0A21F2AC8C00FBAEB3 /* ImageArticleViewController.swift */,
 				CD432E0C21F357C000FBAEB3 /* VideoViewController.swift */,
 				CD432E0E21F3CF9C00FBAEB3 /* CategoriesViewController.swift */,
 				CD5BEA3221F49D190099C5D2 /* Global.swift */,
+				CDD98AA621F8EA4200D6938C /* WebViewController.swift */,
 			);
 			path = NasaInArabic;
 			sourceTree = "<group>";
@@ -159,7 +162,6 @@
 				CDC47F07213E438C001716FC /* Frameworks */,
 				CDC47F08213E438C001716FC /* Resources */,
 				250EA748CEA4B7860D21AB45 /* [CP] Embed Pods Frameworks */,
-				35A562F39AC8A67DFD39CB24 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,6 +184,11 @@
 				TargetAttributes = {
 					CDC47F09213E438C001716FC = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -192,6 +199,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = CDC47F01213E438C001716FC;
 			productRefGroup = CDC47F0B213E438C001716FC /* Products */;
@@ -225,15 +233,18 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NasaInArabic-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		250EA748CEA4B7860D21AB45 /* [CP] Embed Pods Frameworks */ = {
@@ -242,36 +253,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NasaInArabic/Pods-NasaInArabic-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NasaInArabic/Pods-NasaInArabic-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		35A562F39AC8A67DFD39CB24 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NasaInArabic/Pods-NasaInArabic-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NasaInArabic/Pods-NasaInArabic-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NasaInArabic/Pods-NasaInArabic-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -288,12 +278,13 @@
 				CD2A8518214C285C00F77C5F /* Contributor.swift in Sources */,
 				CD432E0D21F357C000FBAEB3 /* VideoViewController.swift in Sources */,
 				CD2A8514214C269700F77C5F /* Source.swift in Sources */,
-				CD5AFE332157794D00362B74 /* AppStoreViewController1.swift in Sources */,
 				CD415C7821EFFF1B00CA0656 /* ProfileViewController.swift in Sources */,
 				CDC47F0E213E438C001716FC /* AppDelegate.swift in Sources */,
 				CD71A10121407E13000CDE4F /* MoreTableViewController.swift in Sources */,
+				CD409DC721F7CCDD00726B29 /* CachingPlayerItem.swift in Sources */,
 				CD2A8516214C275E00F77C5F /* Contributors.swift in Sources */,
 				CD5AFE2F2155391200362B74 /* ArticleViewController.swift in Sources */,
+				CDD98AA721F8EA4200D6938C /* WebViewController.swift in Sources */,
 				CD5AFE312155541D00362B74 /* ArticleTableViewController.swift in Sources */,
 				CD432E0F21F3CF9C00FBAEB3 /* CategoriesViewController.swift in Sources */,
 				CDD281F12148009000018C93 /* VideosCollectionViewController.swift in Sources */,
@@ -464,7 +455,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -485,7 +476,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

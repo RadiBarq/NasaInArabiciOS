@@ -1,0 +1,5 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "251ae9a70644903c6dd738525b20ac52"
+build_time: [1548793225, 139659000]
+inputs:
+  "/Users/radibarq/developer/NasaInArabic/Pods/YouTubePlayer/YouTubePlayer/YouTubePlayer/YouTubePlayer.swift": [1548353507, 0]

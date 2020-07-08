@@ -15,7 +15,7 @@ import SDWebImage
 
 class ImageArticleViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, WKNavigationDelegate, WKUIDelegate {
     
-    
+
     var bottomView = UIView()
     var typeLableValue = UILabel()
     var viewsCountLabel = UILabel()
@@ -30,6 +30,8 @@ class ImageArticleViewController: UIViewController, UITableViewDataSource, UITab
     public var article: BrowsingImage?
     var webViewTop : NSLayoutConstraint?
     var webView:WKWebView!
+    var numberOfSections = 0
+    
     
     var articleTableView:UITableView = IntrinsicTableView(frame: CGRect.zero)
     
@@ -95,7 +97,7 @@ class ImageArticleViewController: UIViewController, UITableViewDataSource, UITab
         var label = UILabel()
         label.textAlignment = .right
         label.textColor = UIColor.darkGray
-        label.text = "٣ دقيقة، ٧ ثانيه قراءة"
+       // label.text = "٣ دقيقة، ٧ ثانيه قراءة"
         return label
     }()
     
@@ -155,12 +157,12 @@ class ImageArticleViewController: UIViewController, UITableViewDataSource, UITab
         
         if (indexPath.section == 2)
         {
-            
             if (article != nil)
             {
                 let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "profileNavigationController") as! UINavigationController
                 var profileViewController = vc.viewControllers[0] as! ProfileViewController
                 profileViewController.userId = contributors![indexPath.row].user_id
+                
                 self.present(vc, animated: true, completion: nil)
             }
                 
@@ -169,7 +171,6 @@ class ImageArticleViewController: UIViewController, UITableViewDataSource, UITab
                 let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "profileViewController") as! ProfileViewController
                 vc.userId = contributors![indexPath.row].user_id
                 self.navigationController?.pushViewController(vc, animated: true)
-                
             }
         }
             
@@ -179,7 +180,16 @@ class ImageArticleViewController: UIViewController, UITableViewDataSource, UITab
             var urlString   = "https://nasainarabic.net/r/s/" + sourceId
             var url = URL(string: urlString)!
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
-            
+        }
+        
+        else if (indexPath.section == 1)
+        {
+            let tagName = tags![indexPath.row].tag
+            Global.imagesTagName = tagName
+            Global.imagesTagSelected = true
+            Global.tagTitle = tagName
+            Global.categoryId = nil
+            self.dismiss(animated: true, completion: nil)
         }
         
     }
@@ -193,23 +203,21 @@ class ImageArticleViewController: UIViewController, UITableViewDataSource, UITab
         
         var section = indexPath.section
         
-        if (section == 0)
+        if (section == 0 && sources?.count != 0)
         {
             cell.textLabel?.text = sources![indexPath.row].title
         }
             
-        else if (section == 1)
+        else if (section == 1 && tags?.count != 0)
         {
             cell.textLabel?.text = "#" +  tags![indexPath.row].tag
         }
             
-        else if (section == 2)
+        else if (section == 2 && contributors?.count != 0)
         {
             cell.textLabel?.text = contributorsTitle![indexPath.row]
             cell.detailTextLabel!.text =  contributors![indexPath.row].full_name
-            
         }
-        
         return cell
     }
     
@@ -217,17 +225,17 @@ class ImageArticleViewController: UIViewController, UITableViewDataSource, UITab
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         
-        if (section == 0)
+        if (section == 0 && sources?.count != 0)
         {
             return "المصادر"
         }
             
-        else if (section == 1)
+        else if (section == 1 && tags?.count != 0)
         {
             return "وسوم المقال"
         }
             
-        else if (section == 2)
+        else if (section == 2 && contributors?.count != 0)
         {
             return "المساهمون"
         }
@@ -241,7 +249,9 @@ class ImageArticleViewController: UIViewController, UITableViewDataSource, UITab
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        
+        return numberOfSections
+        
     }
     
     @objc func handlePan(gr: UIPanGestureRecognizer) {
@@ -281,9 +291,7 @@ class ImageArticleViewController: UIViewController, UITableViewDataSource, UITab
     
     override func viewDidLoad() {
         
-        
         super.viewDidLoad()
-        
          articleTableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
         let webConfiguration = WKWebViewConfiguration()
         webView = WKWebView(frame: .zero, configuration: webConfiguration)
@@ -310,7 +318,7 @@ class ImageArticleViewController: UIViewController, UITableViewDataSource, UITab
         // webView.navigationDelegate = self
         
         getData()
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -391,9 +399,20 @@ class ImageArticleViewController: UIViewController, UITableViewDataSource, UITab
                     print(onePageArticle.data?.views)
                     self.viewsCountLabel.text = onePageArticle.data?.views
                     
-                    
                     self.sources = onePageArticle.data?.sources
+
+                    if (self.sources?.count != 0)
+                    {
+                        self.numberOfSections = self.numberOfSections + 1
+                    }
+                    
                     self.tags = onePageArticle.data?.tags
+                    
+                    if (self.tags?.count != 0)
+                    {
+                        self.numberOfSections = self.numberOfSections + 1
+                        
+                    }
                     //contributors = onePageArticle.data?.contributors
                     
                     //
@@ -412,6 +431,13 @@ class ImageArticleViewController: UIViewController, UITableViewDataSource, UITab
                     self.contributors = []
                     self.contributorsTitle = []
                     var contributorsDic = onePageArticle.data?.contributors
+                    
+                    if (contributorsDic?.count != 0)
+                    {
+                        self.numberOfSections = self.numberOfSections + 1
+                    }
+                    
+                    
                     for (key, value) in contributorsDic!
                     {
                         
@@ -573,6 +599,15 @@ class ImageArticleViewController: UIViewController, UITableViewDataSource, UITab
         self.navigationController?.isNavigationBarHidden = true
         
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        //UIApplication.shared.isStatusBarHidden = false
+        self.navigationController?.isNavigationBarHidden = false
+        // articleTitle.text = ""
+        // imageView.image = nil
+    }
+    
     
     
     override var prefersStatusBarHidden: Bool {
@@ -824,9 +859,6 @@ class ImageArticleViewController: UIViewController, UITableViewDataSource, UITab
         
     }
 }
-
-
-
 
 
 public struct CurrentImageArticleData: Decodable

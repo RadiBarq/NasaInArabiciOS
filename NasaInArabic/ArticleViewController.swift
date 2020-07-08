@@ -11,7 +11,8 @@ import WebKit
 import Hero
 import WebKit
 import SDWebImage
-
+import AVFoundation
+import MediaPlayer
 
 class ArticleViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, WKNavigationDelegate, WKUIDelegate
 {
@@ -24,7 +25,21 @@ class ArticleViewController: UIViewController, UITableViewDataSource, UITableVie
     public var articleId: String?
     public var article: BrowsingArticle?
     var webViewTop : NSLayoutConstraint?
+    var scrollViewBottom: NSLayoutConstraint?
     var webView:WKWebView!
+    var playbackSlider:UISlider!
+    var audioPlayerMainView = UIView()
+    var repeatButton = UIButton()
+    var bottomHeight: CGFloat = 50.0
+    var numberOfRows = 0
+    var numberOfSections = 0
+    var audio:String?
+    var observer: NSKeyValueObservation?
+    
+    
+    var player:AVPlayer?
+    var playerItem: AVPlayerItem!
+    var playButton:UIButton?
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -39,17 +54,15 @@ class ArticleViewController: UIViewController, UITableViewDataSource, UITableVie
             return 0
 
         }
-        
+            
         else if (section == 1)
         {
-            
             if let array = tags {
                 
                 return array.count
             }
             
             return 0
-            
         }
             
             
@@ -78,16 +91,17 @@ class ArticleViewController: UIViewController, UITableViewDataSource, UITableVie
             {
                 let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "profileNavigationController") as! UINavigationController
                 var profileViewController = vc.viewControllers[0] as! ProfileViewController
+                vc.modalPresentationStyle = .fullScreen
                 profileViewController.userId = contributors![indexPath.row].user_id
                 self.present(vc, animated: true, completion: nil)
             }
-            
+    
             else
             {
                  let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "profileViewController") as! ProfileViewController
                  vc.userId = contributors![indexPath.row].user_id
-                self.navigationController?.pushViewController(vc, animated: true)
-                
+                 vc.modalPresentationStyle = .fullScreen
+                 self.navigationController?.pushViewController(vc, animated: true)
             }
         }
             
@@ -97,12 +111,20 @@ class ArticleViewController: UIViewController, UITableViewDataSource, UITableVie
             var urlString   = "https://nasainarabic.net/r/s/" + sourceId
             var url = URL(string: urlString)!
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
 
-         }
 
+        else if (indexPath.section == 1)
+        {
+            let tagName = tags![indexPath.row].tag
+            Global.articlesTagName = tagName
+            Global.articlesTagSelected = true
+            Global.tagTitle = tagName
+            Global.categoryId = nil
+            self.dismiss(animated: true, completion: nil)
+        }
     }
-
-
+    
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         
 //            guard let header = view as? UITableViewHeaderFooterView else { return }
@@ -121,17 +143,17 @@ class ArticleViewController: UIViewController, UITableViewDataSource, UITableVie
         
          var section = indexPath.section
         
-        if (section == 0)
+        if (section == 0 && sources?.count != 0)
         {
             cell.textLabel?.text = sources![indexPath.row].title
         }
         
-        else if (section == 1)
+        else if (section == 1 && tags?.count != 0)
         {
             cell.textLabel?.text = "#" +  tags![indexPath.row].tag
         }
         
-        else if (section == 2)
+        else if (section == 2 && contributors?.count != 0)
         {
             cell.textLabel?.text = contributorsTitle![indexPath.row]
             cell.detailTextLabel!.text =  contributors![indexPath.row].full_name
@@ -144,17 +166,17 @@ class ArticleViewController: UIViewController, UITableViewDataSource, UITableVie
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         
-        if (section == 0)
+        if (section == 0 && sources?.count != 0)
         {
             return "المصادر"
         }
             
-        else if (section == 1)
+        else if (section == 1 && tags?.count != 0)
         {
             return "وسوم المقال"
         }
             
-        else if (section == 2)
+        else if (section == 2 && contributors?.count != 0)
         {
             return "المساهمون"
         }
@@ -167,7 +189,9 @@ class ArticleViewController: UIViewController, UITableViewDataSource, UITableVie
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
+        
         return 3
+        
     }
     
      var bottomView = UIView()
@@ -198,7 +222,6 @@ class ArticleViewController: UIViewController, UITableViewDataSource, UITableVie
         view.layer.cornerRadius = 17.5
         return view
         
-
     }()
     
     var imageView: UIImageView = {
@@ -225,7 +248,7 @@ class ArticleViewController: UIViewController, UITableViewDataSource, UITableVie
         var label = UILabel()
         label.textAlignment = .right
         label.textColor = UIColor.darkGray
-        label.text = "٣ دقيقة، ٧ ثانيه قراءة"
+       // label.text = "٣ دقيقة، ٧ ثانيه قراءة"
         return label
     }()
     
@@ -233,10 +256,11 @@ class ArticleViewController: UIViewController, UITableViewDataSource, UITableVie
         
        var scrollView = UIScrollView()
        return scrollView
-    
+        
     }()
     
     @objc func handlePan(gr: UIPanGestureRecognizer) {
+        
         
         let translation = gr.translation(in: view)
         switch gr.state {
@@ -254,7 +278,7 @@ class ArticleViewController: UIViewController, UITableViewDataSource, UITableVie
         }
     }
     
-    
+   
    public var descriptionLabel: UILabel = {
     
         var label = UILabel()
@@ -268,10 +292,11 @@ class ArticleViewController: UIViewController, UITableViewDataSource, UITableVie
     }()
     
     override func viewDidLoad() {
-        
             super.viewDidLoad()
           //  view.addSubview(visualEffec
-  
+            NotificationCenter.default.addObserver(self, selector: #selector(willResignActive), name: UIApplication.willResignActiveNotification, object: nil)
+            NotificationCenter.default.addObserver(self, selector: #selector(willBeActive), name: UIApplication.willEnterForegroundNotification, object: nil)
+    
 //        let myURL = URL(string:"https://nasainarabic.net/main/articles/view/dino-chicken-gets-one-step-closer")
 //        let myRequest = URLRequest(url: myURL!)
 //        webView.load(myRequest)
@@ -298,15 +323,76 @@ class ArticleViewController: UIViewController, UITableViewDataSource, UITableVie
             {
                 populateItems()
             }
-
-           // webView.navigationDelegate = self
         
+           // webView.navigationDelegate = self
             getData()
+        
+//        do {
+//            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: [.mixWithOthers, .allowAirPlay])
+//            print("Playback OK")
+//            try AVAudioSession.sharedInstance().setActive(true)
+//            print("Session is Active")
+//        } catch {
+//            print(error)
+//        }
+        
+       // setupAVAudioSession()
+    // // setupCommandCenter()
+        
+    }
+    
+    private func setupAVAudioSession() {
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: [])
+            try AVAudioSession.sharedInstance().setActive(true)
+            debugPrint("AVAudioSession is Active and Category Playback is set")
+            UIApplication.shared.beginReceivingRemoteControlEvents()
+            setupCommandCenter()
+        } catch {
+            debugPrint("Error: \(error)")
+        }
+    }
+    
+    @objc func willResignActive(_ notification: Notification) {
+        // code to execute
+        
+//        if (self.player?.rate != 0)
+//        {
+//            self.player!.pause()
+//            playButton!.setImage(UIImage(named: "start_button"), for: .normal)
+//        }
+    
+    }
+    
+
+    
+    @objc func willBeActive(_ notification: Notification) {
+        // code to execute
+//        self.player!.play()
+//        playButton!.setImage(UIImage(named: "pause_button"), for: .normal)
+    }
+    
+    
+    private func setupCommandCenter() {
+        
+        MPNowPlayingInfoCenter.default().nowPlayingInfo = [MPMediaItemPropertyTitle: "ناسا بالعربي"]
+        
+        let commandCenter = MPRemoteCommandCenter.shared()
+        commandCenter.playCommand.isEnabled = true
+        commandCenter.pauseCommand.isEnabled = true
+        commandCenter.playCommand.addTarget { [weak self] (event) -> MPRemoteCommandHandlerStatus in
+            self?.player!.play()
+            return .success
+        }
+        commandCenter.pauseCommand.addTarget { [weak self] (event) -> MPRemoteCommandHandlerStatus in
+            self?.player!.pause()
+            return .success
+        }
     }
     
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        
+    
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { // Change `2.0` to the desired number of seconds.
             // Code you want to be delayed
              webView.frame.size.height = 1
@@ -316,7 +402,6 @@ class ArticleViewController: UIViewController, UITableViewDataSource, UITableVie
             self.webViewTop?.constant = test
             webView.updateConstraints()
             //print(test)
-            
         }
     
 
@@ -331,15 +416,13 @@ class ArticleViewController: UIViewController, UITableViewDataSource, UITableVie
 //            })
         }
 
-    
-    
     func initializeTableView()
     {
         
+
         let screenSize = UIScreen.main.bounds
         let screenWidth = screenSize.width
         let screenHeight = screenSize.height
-
         
         articleTableView.translatesAutoresizingMaskIntoConstraints = false
        // self.scrollView.addSubview(articleTableView)
@@ -368,155 +451,71 @@ class ArticleViewController: UIViewController, UITableViewDataSource, UITableVie
             
         }
         
-        
       
         guard let url = URL(string: urlString) else
         {
             return
         }
-        
-    
+
         URLSession.shared.dataTask(with: url){ (data, repnose, error) in
             DispatchQueue.main.async {
-                
+        
                 guard let data = data else {return}
                 
                 do {
                     
+                    
                     let decoder = JSONDecoder()
                     let onePageArticle = try decoder.decode(CurrentArticleData.self, from: data)
+                    self.audio = onePageArticle.data?.audio
                     print(onePageArticle.data?.views)
                     self.viewsCountLabel.text = onePageArticle.data?.views
-                    
-                    
                     self.sources = onePageArticle.data?.sources
+                    
+                    if (self.sources?.count != 0)
+                    {
+                        self.numberOfSections = self.numberOfSections + 1
+                        
+                    }
+                    
+                    
                     self.tags = onePageArticle.data?.tags
-                    //contributors = onePageArticle.data?.contributors
                     
-//
-//                    var ترجمة: [Translation]
-//                    var مُراجعة: [Translation]
-//                    var تحرير: [Translation]
-//                    var تصميم: [Translation]
-//                    var نشر: [Translation]
+                    if (self.tags?.count != 0)
+                    {
+                        self.numberOfSections = self.numberOfSections + 1
+                    }
                     
-//                    var translation = onePageArticle.data?.contributors.ترجمة
-//                    var revision = onePageArticle.data?.contributors.مُراجعة
-//                    var editing = onePageArticle.data?.contributors.تحرير
-//                    var designing = onePageArticle.data?.contributors.تصميم
-//                    var publishing = onePageArticle.data?.contributors.نشر
-        
+                    
+                    
+                    if (onePageArticle.data?.audio != nil)
+                    {
+                        self.addAudioPlayer()
+                
+                     }
+            
                     self.contributors = []
                     self.contributorsTitle = []
                     var contributorsDic = onePageArticle.data?.contributors
+                    
+                    if (contributorsDic?.count != 0)
+                    {
+                        self.numberOfSections = self.numberOfSections + 1
+                    }
+                    
                     for (key, value) in contributorsDic!
                     {
-                        
                         for j in value!
                         {
 
 
                             self.contributorsTitle?.append(key)
                             self.contributors?.append(j)
-                            
                         }
-                        
+
                     }
-                    
-                  
-                    
-                    
-//                    for var i in 0...4
-//                    {
-//
-//                        if (i == 0)
-//                        {
-//
-//                            if (translation == nil)
-//                            {
-//                                continue
-//                            }
-//
-//                            for j in translation!
-//                            {
-//                                self.contributors?.append(j)
-//                                self.contributorsTitle?.append("ترجمة")
-//                            }
-//
-//                        }
-//
-//                        else if (i == 1)
-//                        {
-//
-//                            if (revision == nil)
-//                            {
-//                                continue
-//                            }
-//
-//
-//                            for j in revision!
-//                            {
-//
-//                                self.contributors?.append(j)
-//                                self.contributorsTitle?.append("مراجعة")
-//
-//                            }
-//
-//                        }
-//
-//                        else if (i==2)
-//                        {
-//
-//                            if (editing == nil)
-//                            {
-//                                continue
-//                            }
-//
-//
-//                            for j in editing!
-//                            {
-//
-//                                self.contributors?.append(j)
-//                                self.contributorsTitle?.append("تحرير")
-//
-//                            }
-//
-//                        }
-//
-//                        else if(i==3)
-//                        {
-//                            if (designing == nil)
-//                            {
-//                                continue
-//                            }
-//
-//
-//                            for j in designing!
-//                            {
-//                                self.contributors?.append(j)
-//                                self.contributorsTitle?.append("تصميم")
-//                            }
-//
-//                        }
-//
-//                        else if (i == 4)
-//                        {
-//
-//                            if (publishing == nil)
-//                            {
-//                                continue
-//                            }
-//
-//                            for j in publishing!
-//                            {
-//                                self.contributors?.append(j)
-//                                self.contributorsTitle?.append("نشر")
-//                            }
-//
-//                        }
-//
-//                    }
-                    
+            
+
                     //if coming from user profile
                     if (self.article == nil)
                     {
@@ -550,7 +549,7 @@ class ArticleViewController: UIViewController, UITableViewDataSource, UITableVie
                     //self.numberOfRows = self.numberOfRows + onePageArticle.data.count - 1
                    // self.collectionView.reloadData()
                 }
-                    
+            
 
                 catch let jsonError {
                     
@@ -566,13 +565,11 @@ class ArticleViewController: UIViewController, UITableViewDataSource, UITableVie
         super.viewDidLayoutSubviews()
         let bounds = view.bounds
         visualEffectView.frame  = bounds
-        
     }
     
     private func populateItems()
     {
         
-       
        //descriptionLabel.text = article!.description.htmlToString
     
         let index = article!.publish_date.index(article!.publish_date.startIndex, offsetBy: 10)
@@ -596,35 +593,161 @@ class ArticleViewController: UIViewController, UITableViewDataSource, UITableVie
          }
         
          webView.loadHTMLString( "<html><body><p><font size=12>" + article!.description + "</font></p></body></html>", baseURL: nil)
+        
+//        var string = "<audio preload = 'none' controls> <source src =  'https://nasainarabic.net/uploads/audio_articles/d4e6f95f7f15bb87c0fd973a659d1983.mp3' type = 'audio/mp3'  Your browser does not support the audio element. </audio> "
+//
+//        webView.loadHTMLString("<html><body>" + "<div style='margin: 20px;'>" + string + "</div>" + "<p><font size=12>" + article!.description + "</font></p></body></html>", baseURL: nil)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
-
         super.viewWillAppear(animated)
-       // UIApplication.shared.isStatusBarHidden = true
         self.navigationController?.isNavigationBarHidden = true
-        
     }
-    
-     override var prefersStatusBarHidden: Bool {
-        
-        return true
-    }
+
     
     override func viewWillDisappear(_ animated: Bool) {
+        
         super.viewWillDisappear(animated)
         //UIApplication.shared.isStatusBarHidden = false
         self.navigationController?.isNavigationBarHidden = false
-       // articleTitle.text = ""
-       // imageView.image = nil
+        // articleTitle.text = ""
+        // imageView.image = nil
+        
+        if (self.player != nil)
+        {
+            if (self.player?.rate != 0)
+            {
+                self.player!.pause()
+                playButton!.setImage(UIImage(named: "start_button"), for: .normal)
+            }
+        }
+        
     }
     
     
-    func setupComponents()
+    func addAudioPlayer()
     {
         
+        var test = 25.0
+        if #available(iOS 11.0, *) {
+            if let window = UIApplication.shared.keyWindow {
+                if (window.safeAreaInsets.bottom != 0)
+                {
+                    test = 30.0
+                }
+                
+
+            //test =  test - Double(window.safeAreaInsets.bottom)
+              
+            }
+        }
+        
+        
+        self.view.addSubview(audioPlayerMainView)
+        audioPlayerMainView.translatesAutoresizingMaskIntoConstraints = false
+        audioPlayerMainView.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
+        audioPlayerMainView.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive = true
+        audioPlayerMainView.heightAnchor.constraint(equalToConstant: CGFloat(test)).isActive = true
+        audioPlayerMainView.backgroundColor = UIColor.white
+        audioPlayerMainView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        audioPlayerMainView.bottomAnchor.constraint(equalTo: self.bottomView.topAnchor).isActive = true
     
+        self.scrollViewBottom!.constant = CGFloat(test * -1 - 10)
+        let url = URL(string: audio!)
+        // Create asset to be played
+        // Create a new AVPlayerItem with the asset and an
+        // array of asset keys to be automatically loaded
+         playerItem = AVPlayerItem(url: url!)
+         player = AVPlayer(playerItem: playerItem)
+         //player?.seek(to: .zero)
+        
+         NotificationCenter.default.addObserver(self, selector: #selector(onPlayerFinished), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: nil)
+        
+//        let playerLayer=AVPlayerLayer(player: self.player!)
+//        playerLayer.frame=CGRect(x:0, y:0, width:10, height:50)
+//        self.view.layer.addSublayer(playerLayer)
+//
+        
+
+        self.playButton = UIButton()
+        self.playButton?.translatesAutoresizingMaskIntoConstraints = false
+            audioPlayerMainView.addSubview(self.playButton!)
+        self.playButton?.leftAnchor.constraint(equalTo: audioPlayerMainView.leftAnchor, constant: 30).isActive = true
+        self.playButton?.centerYAnchor.constraint(equalTo: audioPlayerMainView.centerYAnchor, constant: 0).isActive = true
+            self.playButton?.setImage(UIImage(named: "start_button"), for: .normal)
+        self.playButton?.addTarget(self, action: #selector(self.onClickPlay), for: .touchUpInside)
+            self.playButton?.widthAnchor.constraint(equalToConstant: 25).isActive = true
+        self.playButton?.heightAnchor.constraint(equalToConstant: 25).isActive = true
+      //  playButton?.bottomAnchor.constraint(equalTo: audioPlayerMainView.bottomAnchor, constant: -10).isActive = true
+        
+        repeatButton.translatesAutoresizingMaskIntoConstraints = false
+        repeatButton.setImage(UIImage(named: "repeat_icon"), for: .normal)
+        self.audioPlayerMainView.addSubview(repeatButton)
+        repeatButton.leftAnchor.constraint(equalTo: playButton!.rightAnchor, constant: 15).isActive = true
+        repeatButton.centerYAnchor.constraint(equalTo: audioPlayerMainView.centerYAnchor, constant: 0).isActive = true
+        //repeatButton.bottomAnchor.constraint(equalTo: audioPlayerMainView.bottomAnchor, constant: -10).isActive = true
+        repeatButton.addTarget(self, action: #selector(onClickRepeat), for: .touchUpInside)
+        repeatButton.widthAnchor.constraint(equalToConstant: 25).isActive = true
+        repeatButton.heightAnchor.constraint(equalToConstant: 25).isActive = true
+        
+        var audioLabel = UILabel()
+        audioLabel.text = "المقالة الصوتية"
+        audioPlayerMainView.addSubview(audioLabel)
+        audioLabel.textColor = UIColor.black
+        audioLabel.font = UIFont.systemFont(ofSize: 20)
+        audioLabel.translatesAutoresizingMaskIntoConstraints = false
+        audioLabel.rightAnchor.constraint(equalTo: audioPlayerMainView.rightAnchor, constant:-30).isActive = true
+        audioLabel.centerYAnchor.constraint(equalTo: audioPlayerMainView.centerYAnchor, constant: 0).isActive = true
+        //audioLabel.bottomAnchor.constraint(equalTo: audioPlayerMainView.bottomAnchor, constant: -10).isActive = true
+//
+        // Create a new AVPlayerItem with the asset and an
+        // array of asset keys to be automatically loaded
+        // Register as an observer of the player item's status property
+    
+    }
+    
+    @objc func onClickRepeat()
+    {
+        let url = URL(string: audio!)
+        // Create asset to be played
+        // Create a new AVPlayerItem with the asset and an
+        // array of asset keys to be automatically loaded
+        playerItem = AVPlayerItem(url: url!)
+        player = AVPlayer(playerItem: playerItem)
+        //player?.seek(to: .zero)
+        player?.play()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(onPlayerFinished), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: nil)
+        
+       
+    }
+
+    
+    @objc func onPlayerFinished()
+    {
+         playButton!.setImage(UIImage(named: "start_button"), for: .normal)
+    }
+    
+
+    @objc
+    func onClickPlay(_ sender:UIButton)
+    {
+        if player?.rate == 0
+        {
+            player!.play()
+            //playButton!.setImage(UIImage(named: "player_control_pause_50px.png"), forState: UIControlState.Normal)
+            playButton!.setImage(UIImage(named: "pause_button"), for: .normal)
+        } else {
+            
+            player!.pause()
+            //playButton!.setImage(UIImage(named: "player_control_play_50px.png"), forState: UIControlState.Normal)
+            playButton!.setImage(UIImage(named: "start_button"), for: .normal)
+        }
+    }
+    
+    func setupComponents()
+    {
         setupBottomView()
         self.view.addSubview(scrollView)
         let safeViewMargins = self.view.safeAreaLayoutGuide
@@ -632,7 +755,8 @@ class ArticleViewController: UIViewController, UITableViewDataSource, UITableVie
         scrollView.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive =  true
         scrollView.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
         scrollView.topAnchor.constraint(equalTo:  self.view.topAnchor).isActive = true
-        scrollView.bottomAnchor.constraint(equalTo: self.bottomView.topAnchor, constant: 10).isActive = true
+        scrollViewBottom = scrollView.bottomAnchor.constraint(equalTo: self.bottomView.topAnchor, constant:0)
+        scrollViewBottom?.isActive = true
         scrollView.backgroundColor = UIColor.white
     
         self.scrollView.addSubview(imageView)
@@ -668,8 +792,9 @@ class ArticleViewController: UIViewController, UITableViewDataSource, UITableVie
 //        descriptionLabel.topAnchor.constraint(equalTo: articleTitle.bottomAnchor, constant: 20).isActive = true
 //        descriptionLabel.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 10).isActive = true
         
+        
         self.scrollView.addSubview(webView)
-          self.scrollView.addSubview(seperationBar)
+        self.scrollView.addSubview(seperationBar)
         webView.translatesAutoresizingMaskIntoConstraints = false
         webViewTop =  webView.heightAnchor.constraint(equalToConstant: 300)
         webViewTop!.isActive = true
@@ -687,12 +812,11 @@ class ArticleViewController: UIViewController, UITableViewDataSource, UITableVie
         //descriptionLabel.heightAnchor.constraint(equalToConstant: self.view.bounds.height).isActive = true
         
             //webView.heightAnchor.constraint(equalToConstant: self.view.bounds.height).isActive = true
-      
-        
+
         
         self.view.addSubview(dismissButton)
         dismissButton.translatesAutoresizingMaskIntoConstraints = false
-        dismissButton.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 20).isActive = true
+        dismissButton.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 40).isActive = true
         dismissButton.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -20).isActive = true
         dismissButton.heightAnchor.constraint(equalToConstant: 35).isActive = true
         dismissButton.widthAnchor.constraint(equalToConstant: 35).isActive = true
@@ -738,7 +862,6 @@ class ArticleViewController: UIViewController, UITableViewDataSource, UITableVie
         setupBottomView()
         initializeTableView()
         
-    
         //descriptionLabel.bottomAnchor.constraint(equalTo: seperationBar.topAnchor, constant: -10).isActive = true
        //  descriptionLabel.bottomAnchor.constraint(equalTo: , constant: -5).isActive = true
         
@@ -751,23 +874,32 @@ class ArticleViewController: UIViewController, UITableViewDataSource, UITableVie
         self.view.addSubview(bottomView)
         bottomView.translatesAutoresizingMaskIntoConstraints = false
         bottomView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: 5).isActive = true
-        
-        var height: CGFloat = 50.0
-        
-        
+        bottomView.backgroundColor = UIColor.white
+        bottomHeight = 50.0
+        var centerConstant = -5
+    
         if #available(iOS 11.0, *) {
             if let window = UIApplication.shared.keyWindow {
                 
-                height = window.safeAreaInsets.bottom + height - 10
+             if (window.safeAreaInsets.bottom !=  0)
+             {
+                centerConstant = -10
+                bottomHeight = window.safeAreaInsets.bottom + bottomHeight - 10
                 
+            }
+            else
+             {
+                bottomHeight = 60.0
+             }
+            
             }
         }
         
-        
         bottomView.backgroundColor = UIColor.white
+        self.view.backgroundColor = UIColor.white
         bottomView.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive = true
         bottomView.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
-        bottomView.heightAnchor.constraint(equalToConstant: height).isActive = true
+        bottomView.heightAnchor.constraint(equalToConstant: bottomHeight).isActive = true
         
         var typeLabel = UILabel()
         bottomView.addSubview(typeLabel)
@@ -775,7 +907,7 @@ class ArticleViewController: UIViewController, UITableViewDataSource, UITableVie
         typeLabel.textColor = UIColor.black
         typeLabel.font = UIFont.systemFont(ofSize: 18)
         typeLabel.translatesAutoresizingMaskIntoConstraints = false
-        typeLabel.centerYAnchor.constraint(equalTo: bottomView.centerYAnchor, constant: -5).isActive = true
+        typeLabel.centerYAnchor.constraint(equalTo: bottomView.centerYAnchor, constant: CGFloat(centerConstant)).isActive = true
         typeLabel.rightAnchor.constraint(equalTo: bottomView.rightAnchor, constant: -30).isActive = true
     
         bottomView.addSubview(typeLableValue)
@@ -783,7 +915,7 @@ class ArticleViewController: UIViewController, UITableViewDataSource, UITableVie
         typeLableValue.textColor = UIColor.gray
         typeLableValue.font = UIFont.systemFont(ofSize: 18)
         typeLableValue.translatesAutoresizingMaskIntoConstraints = false
-        typeLableValue.centerYAnchor.constraint(equalTo: bottomView.centerYAnchor, constant: -5).isActive = true
+        typeLableValue.centerYAnchor.constraint(equalTo: bottomView.centerYAnchor, constant: CGFloat(centerConstant)).isActive = true
         typeLableValue.rightAnchor.constraint(equalTo: typeLabel.leftAnchor, constant: -5).isActive = true
         
         var shareImage = UIButton()
@@ -791,7 +923,7 @@ class ArticleViewController: UIViewController, UITableViewDataSource, UITableVie
         
         shareImage.translatesAutoresizingMaskIntoConstraints = false
         shareImage.leftAnchor.constraint(equalTo: bottomView.leftAnchor, constant: 30).isActive = true
-        shareImage.centerYAnchor.constraint(equalTo: bottomView.centerYAnchor, constant: -5).isActive = true
+        shareImage.centerYAnchor.constraint(equalTo: bottomView.centerYAnchor, constant: CGFloat(centerConstant)).isActive = true
         shareImage.widthAnchor.constraint(equalToConstant: 20).isActive = true
         shareImage.heightAnchor.constraint(equalToConstant: 25).isActive = true
         shareImage.setImage(UIImage(named: "share_icon"), for: .normal)
@@ -802,7 +934,7 @@ class ArticleViewController: UIViewController, UITableViewDataSource, UITableVie
         viewsCountLabel.textColor = UIColor.gray
         viewsCountLabel.font = UIFont.systemFont(ofSize: 16)
         viewsCountLabel.translatesAutoresizingMaskIntoConstraints = false
-        viewsCountLabel.centerYAnchor.constraint(equalTo: bottomView.centerYAnchor, constant: -5).isActive = true
+        viewsCountLabel.centerYAnchor.constraint(equalTo: bottomView.centerYAnchor, constant: CGFloat(centerConstant)).isActive = true
         viewsCountLabel.leftAnchor.constraint(equalTo: shareImage.rightAnchor, constant: 15).isActive = true
         
         //setup
@@ -810,21 +942,17 @@ class ArticleViewController: UIViewController, UITableViewDataSource, UITableVie
         bottomView.addSubview(viewsCountImageView)
         viewsCountImageView.image = UIImage(named: "eye_icon")
         viewsCountImageView.translatesAutoresizingMaskIntoConstraints = false
-        viewsCountImageView.centerYAnchor.constraint(equalTo: bottomView.centerYAnchor, constant: -5).isActive = true
+        viewsCountImageView.centerYAnchor.constraint(equalTo: bottomView.centerYAnchor, constant: CGFloat(centerConstant)).isActive = true
         viewsCountImageView.leftAnchor.constraint(equalTo: viewsCountLabel.rightAnchor, constant: 7).isActive = true
         viewsCountImageView.widthAnchor.constraint(equalToConstant: 32.5).isActive = true
         viewsCountImageView.heightAnchor.constraint(equalToConstant: 20).isActive = true
     }
     
-    
     @objc
     func onClickShare()
     {
-        
         var articleUrl =  "https://nasainarabic.net/r/a/" + (article?.id)!
         articleUrl.share()
-        
-        
     }
     
     
@@ -864,6 +992,7 @@ public struct CurrentArticle: Decodable {
     var sources: [ArticleSource]?
     var tags: [ArticleTag]
     var contributors: [String: [Translation]?]
+    var audio:String?
 }
 
 public struct ArticleSource:Decodable
@@ -935,3 +1064,6 @@ extension String {
     }
     
 }
+
+
+

@@ -111,7 +111,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
         getUserData()
-        
+                
     }
     
     
@@ -189,14 +189,10 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
                 print(id)
                 
             }
-       
-        
         }
-        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         
          if indexPath.row == 0
          {
@@ -204,6 +200,15 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
             cell.textLabel?.text = tableViewData[indexPath.section].title
             cell.textLabel?.textColor = UIColor.black
             cell.textLabel?.font = UIFont.systemFont(ofSize: 16)
+            cell.textLabel?.textAlignment = .right
+            
+            cell.imageView?.image = UIImage(named: "down_arrow_icon")
+            let itemSize = CGSize.init(width: 15,  height: 12)
+            UIGraphicsBeginImageContextWithOptions(itemSize, false, UIScreen.main.scale);
+            let imageRect = CGRect.init(origin: CGPoint.zero, size: itemSize)
+            cell.imageView?.image!.draw(in: imageRect)
+            cell.imageView?.image! = UIGraphicsGetImageFromCurrentImageContext()!;
+            UIGraphicsEndImageContext();
             return cell
         }
         
@@ -211,8 +216,10 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
          {
             // change that for different cell
             guard let cell = tableView.dequeueReusableCell(withIdentifier: cellId) else{return UITableViewCell()}
+            cell.imageView?.image = UIImage()
             cell.textLabel?.text = tableViewData[indexPath.section].sectionData[indexPath.row  - 1].headline
             cell.textLabel?.textColor = UIColor.gray
+            cell.textLabel?.textAlignment = .right
             cell.textLabel?.font = UIFont.systemFont(ofSize: 14)
             return cell
         }
@@ -341,7 +348,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         self.scrollView.addSubview(profilePicture)
         profilePicture.centerXAnchor.constraint(equalTo: self.scrollView.centerXAnchor).isActive = true
-        profilePicture.topAnchor.constraint(equalTo: self.scrollView.topAnchor, constant: 20).isActive = true
+        profilePicture.topAnchor.constraint(equalTo: self.scrollView.topAnchor, constant: 100).isActive = true
         profilePicture.widthAnchor.constraint(equalToConstant: 150).isActive = true
         profilePicture.heightAnchor.constraint(equalToConstant: 150).isActive = true
         profilePicture.layer.masksToBounds = true
@@ -443,9 +450,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         label.sizeToFit()
         return label.frame.height
     }
-    
 }
-
 
 extension UILabel {
     

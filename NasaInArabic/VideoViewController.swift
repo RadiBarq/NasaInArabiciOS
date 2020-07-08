@@ -10,6 +10,8 @@ import UIKit
 import WebKit
 import Hero
 import SDWebImage
+import YouTubePlayer
+import YoutubeKit
 
 class VideoViewController: UIViewController , UITableViewDataSource, UITableViewDelegate, WKNavigationDelegate, WKUIDelegate  {
     
@@ -20,7 +22,8 @@ class VideoViewController: UIViewController , UITableViewDataSource, UITableView
     var seperationBar = UIView()
     var videoWebView:WKWebView!
     
-    
+    var videoPlayer = YTSwiftyPlayer()
+    var onePageArticle: CurrentVideoArticleData?
     var cellId  = "articleImageCell"
     var sources: [ArticleSource]?
     var tags: [VideoTag]?
@@ -29,10 +32,10 @@ class VideoViewController: UIViewController , UITableViewDataSource, UITableView
     public var articleId: String?
     public var article: BrowsingVideo?
     var webViewTop : NSLayoutConstraint?
+    var numberOfSections = 0
     var webView:WKWebView!
     var articleTableView:UITableView = IntrinsicTableView(frame: CGRect.zero)
     let visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
-    
     
     public var articleTitle: UILabel = {
         
@@ -98,7 +101,7 @@ class VideoViewController: UIViewController , UITableViewDataSource, UITableView
         var label = UILabel()
         label.textAlignment = .right
         label.textColor = UIColor.darkGray
-        label.text = "٣ دقيقة، ٧ ثانيه قراءة"
+        //label.text = "٣ دقيقة، ٧ ثانيه قراءة"
         return label
     }()
     
@@ -153,10 +156,8 @@ class VideoViewController: UIViewController , UITableViewDataSource, UITableView
         {
             return 0
         }
-        
     }
     
-
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if (indexPath.section == 2)
@@ -179,6 +180,17 @@ class VideoViewController: UIViewController , UITableViewDataSource, UITableView
             }
         }
             
+            
+        else if (indexPath.section == 1)
+        {
+            let tagName = tags![indexPath.row].tag
+            Global.videosTagName = tagName
+            Global.videosTagSelected = true
+            Global.tagTitle = tagName
+            Global.categoryId = nil
+            self.dismiss(animated: true, completion: nil)
+        }
+            
         else if (indexPath.section == 0)
         {
             let sourceId = sources![indexPath.row].id
@@ -192,26 +204,25 @@ class VideoViewController: UIViewController , UITableViewDataSource, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         var cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
-        
         cell = UITableViewCell(style: .subtitle, reuseIdentifier:cellId)
         
+
         var section = indexPath.section
         
-        if (section == 0)
+        if (section == 0 && sources?.count != 0)
         {
             cell.textLabel?.text = sources![indexPath.row].title
         }
             
-        else if (section == 1)
+        else if (section == 1 && tags?.count != 0)
         {
             cell.textLabel?.text = "#" +  tags![indexPath.row].tag
         }
             
-        else if (section == 2)
+        else if (section == 2 && contributors!.count != 0)
         {
             cell.textLabel?.text = contributorsTitle![indexPath.row]
             cell.detailTextLabel!.text =  contributors![indexPath.row].full_name
-            
         }
         
         return cell
@@ -220,17 +231,17 @@ class VideoViewController: UIViewController , UITableViewDataSource, UITableView
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         
-        if (section == 0)
+        if (section == 0 && sources?.count != 0)
         {
             return "المصادر"
         }
             
-        else if (section == 1)
+        else if (section == 1 && tags?.count != 0)
         {
             return "وسوم المقال"
         }
             
-        else if (section == 2)
+        else if (section == 2 && contributors?.count != 0)
         {
             return "المساهمون"
         }
@@ -283,69 +294,62 @@ class VideoViewController: UIViewController , UITableViewDataSource, UITableView
     
     }
     
-
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
-           articleTableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
-        
-        
+            articleTableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
             let webConfiguration = WKWebViewConfiguration()
             webView = WKWebView(frame: .zero, configuration: webConfiguration)
             webView.uiDelegate = self
             webView.navigationDelegate = self
-        
+            self.view.backgroundColor = UIColor.white
+            self.scrollView.backgroundColor = UIColor.white
         
             videoWebView = WKWebView(frame:.zero, configuration: WKWebViewConfiguration())
             videoWebView.uiDelegate = self
             videoWebView.navigationDelegate = self
         
-            let myURL = URL(string:"https://nasainarabic.net/main/videos/view/minute-neuroscience-pain-and-the-anterolateral-system-2")
-            let myRequest = URLRequest(url: myURL!)
-            videoWebView.load(myRequest)
-        
+//            let myURL = URL(string:"https://nasainarabic.net/main/videos/view/minute-neuroscience-pain-and-the-anterolateral-system-2")
+//            let myRequest = URLRequest(url: myURL!)
+//            videoWebView.load(myRequest)
         
             scrollView.bounces = false
-    
             articleTableView.dataSource = self
             articleTableView.delegate = self
             articleTableView.bounces = false
         
-        
             scrollView.contentInsetAdjustmentBehavior = .never
-        
-        
             view.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(handlePan(gr:))))
-        
-        
-        setupComponents()
-        
-        if (article != nil)
-        {
-            populateItems()
-        }
-        
-        // webView.navigationDelegate = self
-        
-        getData()
-
-        // Do any additional setup after loading the view.
+    
+            if (article != nil)
+            {
+                //setupComponents()
+                populateItems()
+                getData()
+            }
+            
+                
+            else
+            {
+                getData()
+            }
+    
     }
   
     private func populateItems()
     {
         
         //descriptionLabel.text = article!.description.htmlToString
-        
         let index = article!.publish_date.index(article!.publish_date.startIndex, offsetBy: 10)
         let mySubstring = article!.publish_date.prefix(upTo: index)
         dateLabel.text =   " . " + mySubstring
         articleTitle.text = article!.headline
-        
         // typeLableValue.text = article!.category
-        
+
         if let url = URL(string: article!.image)
         {
+            
             imageView.sd_setShowActivityIndicatorView(true)
             imageView.sd_setIndicatorStyle(.gray)
             imageView.sd_addActivityIndicator()
@@ -369,20 +373,17 @@ class VideoViewController: UIViewController , UITableViewDataSource, UITableView
         if (article != nil)
         {
             urlString = "https://api.nasainarabic.net/video/" + article!.id
-            
         }
             
         else
         {
             urlString = "https://api.nasainarabic.net/video/" + articleId!
-            
         }
         
         guard let url = URL(string: urlString) else
         {
             return
         }
-        
         
         URLSession.shared.dataTask(with: url){ (data, repnose, error) in
             DispatchQueue.main.async {
@@ -392,13 +393,25 @@ class VideoViewController: UIViewController , UITableViewDataSource, UITableView
                 do {
                     
                     let decoder = JSONDecoder()
-                    let onePageArticle = try decoder.decode(CurrentVideoArticleData.self, from: data)
-                    print(onePageArticle.data?.views)
-                    self.viewsCountLabel.text = onePageArticle.data?.views
-                    self.sources = onePageArticle.data?.sources
-                    self.tags = onePageArticle.data?.tags
+                    self.onePageArticle = try decoder.decode(CurrentVideoArticleData.self, from: data)
+                    self.setupComponents()
+                   // print(onePageArticle.data?.views)
+                    self.viewsCountLabel.text = self.onePageArticle!.data?.views
+                    self.sources = self.onePageArticle!.data?.sources
                     
-                
+                    
+                    if (self.sources?.count != 0)
+                    {
+                        self.numberOfSections = self.numberOfSections + 1
+                    }
+                    
+                    self.tags = self.onePageArticle!.data?.tags
+                    
+                    if (self.tags?.count != 0)
+                    {
+                        self.numberOfSections =  self.numberOfSections + 1
+                    }
+                    
                     //contributors = onePageArticle.data?.contributors
                     
                     //
@@ -416,33 +429,37 @@ class VideoViewController: UIViewController , UITableViewDataSource, UITableView
                     
                     self.contributors = []
                     self.contributorsTitle = []
-                    var contributorsDic = onePageArticle.data?.contributors
-                    for (key, value) in contributorsDic!
+                    var contributorsDic = self.onePageArticle!.data?.contributors
+                    
+                    if (contributorsDic!.count != 0)
                     {
-                        
-                        for j in value!
-                        {
-                            
-                            
-                            self.contributorsTitle?.append(key)
-                            self.contributors?.append(j)
-                            
-                        }
+                        self.numberOfSections = self.numberOfSections + 1
                         
                     }
                     
-            
+                    for (key, value) in contributorsDic!
+                    {
+                        for j in value!
+                        {
+                            
+                            self.contributorsTitle?.append(key)
+                            self.contributors?.append(j)
+                
+                        }
+                    }
+                
                     if (self.article == nil)
                     {
-                        
-                        self.webView.loadHTMLString( "<html><body><p><font size=12>" + (onePageArticle.data?.description)! + "</font></p></body></html>", baseURL: nil)
-                        let index = onePageArticle.data?.publish_date.index((onePageArticle.data?.publish_date.startIndex)!, offsetBy: 10)
-                        let mySubstring = onePageArticle.data?.publish_date.prefix(upTo: index!)
+                        self.webView.loadHTMLString( "<html><body><p><font size=12>" + (self.onePageArticle!.data?.description)! + "</font></p></body></html>", baseURL: nil)
+                        let index = self.onePageArticle!.data?.publish_date.index((self.onePageArticle!.data?.publish_date.startIndex)!, offsetBy: 10)
+                        let mySubstring = self.onePageArticle!.data?.publish_date.prefix(upTo: index!)
                         self.dateLabel.text = " . " + mySubstring!
-                        self.articleTitle.text = onePageArticle.data?.headline
+                        self.articleTitle.text = self.onePageArticle!.data?.headline
                         //self.typeLableValue.text = onePageArticle.data?.category
                         
-                        if let url = URL(string: (onePageArticle.data?.image)!)
+        
+                        
+                        if let url = URL(string: (self.onePageArticle!.data?.image)!)
                         {
                             self.imageView.sd_setShowActivityIndicatorView(true)
                             self.imageView.sd_setIndicatorStyle(.gray)
@@ -473,17 +490,13 @@ class VideoViewController: UIViewController , UITableViewDataSource, UITableView
             }.resume()
         
     }
-
-    
     
     
     override func viewWillAppear(_ animated: Bool) {
-        
-        
+    
         super.viewWillAppear(animated)
         // UIApplication.shared.isStatusBarHidden = true
         self.navigationController?.isNavigationBarHidden = true
-        
     }
     
     
@@ -497,7 +510,6 @@ class VideoViewController: UIViewController , UITableViewDataSource, UITableView
     func setupComponents()
     {
         
-        
         setupBottomView()
         self.view.addSubview(scrollView)
         let safeViewMargins = self.view.safeAreaLayoutGuide
@@ -508,17 +520,81 @@ class VideoViewController: UIViewController , UITableViewDataSource, UITableView
         scrollView.bottomAnchor.constraint(equalTo: self.bottomView.topAnchor, constant: 10).isActive = true
         scrollView.backgroundColor = UIColor.white
         
-        self.scrollView.addSubview(imageView)
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.topAnchor.constraint(equalTo: self.scrollView.topAnchor, constant: 0).isActive = true
-        imageView.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 0).isActive = true
-        imageView.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: 0).isActive = true
-        imageView.heightAnchor.constraint(equalToConstant: 425).isActive = true
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
-        imageView.isUserInteractionEnabled = true
-        imageView.addGestureRecognizer(tapGestureRecognizer)
+        
+//        self.scrollView.addSubview(imageView)
+//        imageView.translatesAutoresizingMaskIntoConstraints = false
+//        imageView.topAnchor.constraint(equalTo: self.scrollView.topAnchor, constant: 0).isActive = true
+//        imageView.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 0).isActive = true
+//        imageView.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: 0).isActive = true
+//        imageView.heightAnchor.constraint(equalToConstant: 425).isActive = true
+//        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
+//        imageView.isUserInteractionEnabled = true
+//        imageView.addGestureRecognizer(tapGestureRecognizer)
+    
+    
+        self.scrollView.backgroundColor = UIColor.white
+        self.view.backgroundColor = UIColor.white
+        videoPlayer.backgroundColor = UIColor.white
+      
+        if (self.article != nil)
+        {
+                var videoId = article?.url.youtubeID
+                videoPlayer = YTSwiftyPlayer(
+                playerVars: [.videoID(videoId!)])
+                videoPlayer.autoplay = true
+                videoPlayer.loadPlayer()
+        }
+        
+        else
+        {
+            var videoId = onePageArticle!.data?.url.youtubeID
+            self.videoPlayer = YTSwiftyPlayer(
+                playerVars: [.videoID(videoId!)])
+            self.videoPlayer.autoplay = true
+            self.videoPlayer.loadPlayer()
+        }
+        
+         self.scrollView.addSubview(videoPlayer)
+         videoPlayer.translatesAutoresizingMaskIntoConstraints = false
+         videoPlayer.topAnchor.constraint(equalTo: self.scrollView.topAnchor, constant: 0).isActive = true
+         videoPlayer.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 0).isActive = true
+         videoPlayer.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: 0).isActive = true
+         videoPlayer.heightAnchor.constraint(equalToConstant: 425).isActive = true
+    
+        var translateButton = UIButton()
+    
+        
+
+        translateButton.setTitle("الفيديو مترجم", for: .normal)
+        //translateButton.titleLabel?.textColor = UIColor.blue
+       // translateButton.tintColor = UIColor.blue
+        translateButton.setTitleColor(UIColor.white, for: .normal)
+        translateButton.backgroundColor = UIColor.lightGray.withAlphaComponent(0.8)
+     //   translateButton.setTitleColor(UIColor.white, for: .normal)
+        self.videoPlayer.addSubview(translateButton)
+        translateButton.translatesAutoresizingMaskIntoConstraints = false
+        translateButton.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 30).isActive = true
+        translateButton.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 10).isActive = true
+        translateButton.heightAnchor.constraint(equalToConstant: 35).isActive = true
+        translateButton.widthAnchor.constraint(equalToConstant: 75).isActive = true
+        translateButton.titleLabel?.font = UIFont.systemFont(ofSize: 12)
+        translateButton.addTarget(self, action: #selector(onClickTranslateVideo), for: .touchUpInside)
+        
+        translateButton.layer.masksToBounds = true
+        translateButton.layer.cornerRadius = 15
         
         
+      //  let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
+//    /    videoPlayer.isUserInteractionEnabled = true
+//        videoPlayer.addGestureRecognizer(tapGestureRecognizer)
+        //let myVideoURL = URL(string: )
+        //videoPlayer.loadVideoURL(myVideoURL! as URL)
+       
+ 
+       // videoPlayer.load
+       // videoPlayer.loadVideo(videoID: "xPVVcxSZPGI")
+      
+       // videoPlayer.playVideo()
 //
 //        self.scrollView.addSubview(videoWebView)
 //        videoWebView.translatesAutoresizingMaskIntoConstraints = false
@@ -531,13 +607,13 @@ class VideoViewController: UIViewController , UITableViewDataSource, UITableView
         self.scrollView.addSubview(dateLabel)
         dateLabel.translatesAutoresizingMaskIntoConstraints = false
         dateLabel.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -15).isActive = true
-        dateLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 20).isActive = true
+        dateLabel.topAnchor.constraint(equalTo: videoPlayer.bottomAnchor, constant: 20).isActive = true
         // dateLabel.heightAnchor.constraint(equalToConstant: 25).isActive = true
         
         self.scrollView.addSubview(readingTimeLabel)
         readingTimeLabel.translatesAutoresizingMaskIntoConstraints = false
         readingTimeLabel.rightAnchor.constraint(equalTo: self.dateLabel.leftAnchor, constant: -2).isActive = true
-        readingTimeLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 20).isActive = true
+        readingTimeLabel.topAnchor.constraint(equalTo: videoPlayer.bottomAnchor, constant: 20).isActive = true
         
         
         self.scrollView.addSubview(articleTitle)
@@ -574,7 +650,7 @@ class VideoViewController: UIViewController , UITableViewDataSource, UITableView
         
         self.view.addSubview(dismissButton)
         dismissButton.translatesAutoresizingMaskIntoConstraints = false
-        dismissButton.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 20).isActive = true
+        dismissButton.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 30).isActive = true
         dismissButton.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -20).isActive = true
         dismissButton.heightAnchor.constraint(equalToConstant: 35).isActive = true
         dismissButton.widthAnchor.constraint(equalToConstant: 35).isActive = true
@@ -625,6 +701,30 @@ class VideoViewController: UIViewController , UITableViewDataSource, UITableView
     }
     
     
+    @objc func onClickTranslateVideo()
+    {
+        if (self.article != nil)
+        {
+            var webViewController = WebViewController()
+            webViewController.url = "https://nasainarabic.net/r/v/" + (article?.id)!
+            var navigationController = UINavigationController()
+            navigationController.addChild(webViewController)
+            self.present(navigationController, animated: true, completion: nil)
+        
+        }
+        
+        else
+        {
+            var webViewController = WebViewController()
+            webViewController.url = "https://nasainarabic.net/r/v/" + (onePageArticle?.data!.id)!
+            var navigationController = UINavigationController()
+            navigationController.addChild(webViewController)
+            self.present(navigationController, animated: true, completion: nil)
+        }
+        
+    }
+    
+
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
     {
     
@@ -635,8 +735,15 @@ class VideoViewController: UIViewController , UITableViewDataSource, UITableView
     
     // Your action
     }
+
     
-    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        //UIApplication.shared.isStatusBarHidden = false
+        self.navigationController?.isNavigationBarHidden = false
+        // articleTitle.text = ""
+        // imageView.image = nil
+    }
     
     func initializeTableView()
     {
@@ -758,12 +865,20 @@ class VideoViewController: UIViewController , UITableViewDataSource, UITableView
 }
 
 
-
-
-
-
-
-
+extension String {
+    var youtubeID: String? {
+        let pattern = "((?<=(v|V)/)|(?<=be/)|(?<=(\\?|\\&)v=)|(?<=embed/))([\\w-]++)"
+        
+        let regex = try? NSRegularExpression(pattern: pattern, options: .caseInsensitive)
+        let range = NSRange(location: 0, length: count)
+        
+        guard let result = regex?.firstMatch(in: self, range: range) else {
+            return nil
+        }
+        
+        return (self as NSString).substring(with: result.range)
+    }
+}
 
 
 

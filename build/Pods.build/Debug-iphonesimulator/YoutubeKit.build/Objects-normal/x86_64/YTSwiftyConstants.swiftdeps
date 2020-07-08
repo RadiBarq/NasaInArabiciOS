@@ -1,0 +1,354 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "YTSwiftyPlayerState"
+- "YTSwiftyPlayerEvent"
+- "YTSwiftyVideoQuality"
+- "YTSwiftyPlayerError"
+- "VideoProgressBarColor"
+- "VideoControlAppearance"
+- "VideoListType"
+- "VideoEmbedParameter"
+provides-nominal:
+- "10YoutubeKit19YTSwiftyPlayerStateO"
+- "10YoutubeKit19YTSwiftyPlayerEventO"
+- "10YoutubeKit20YTSwiftyVideoQualityO"
+- "10YoutubeKit19YTSwiftyPlayerErrorO"
+- "10YoutubeKit21VideoProgressBarColorO"
+- "10YoutubeKit22VideoControlAppearanceO"
+- "10YoutubeKit13VideoListTypeO"
+- "10YoutubeKit19VideoEmbedParameterO"
+provides-member:
+- ["10YoutubeKit19YTSwiftyPlayerStateO", ""]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", ""]
+- ["10YoutubeKit20YTSwiftyVideoQualityO", ""]
+- ["10YoutubeKit19YTSwiftyPlayerErrorO", ""]
+- ["10YoutubeKit21VideoProgressBarColorO", ""]
+- ["10YoutubeKit22VideoControlAppearanceO", ""]
+- ["10YoutubeKit13VideoListTypeO", ""]
+- ["10YoutubeKit19VideoEmbedParameterO", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- "AnyObject"
+- !private "Array"
+- "Bool"
+- "CastingPrecedence"
+- "FloatLiteralType"
+- "Int"
+- "IntegerLiteralType"
+- "String"
+- "StringLiteralType"
+- "VideoControlAppearance"
+- "VideoEmbedParameter"
+- "VideoListType"
+- "VideoProgressBarColor"
+- "YTSwiftyPlayerError"
+- "YTSwiftyPlayerEvent"
+- "YTSwiftyPlayerState"
+- "YTSwiftyVideoQuality"
+- !private "_findStringSwitchCase"
+- !private "~="
+depends-member:
+- ["SK", "init"]
+- ["SK", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "jsValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "jsValue"]
+- ["Sl", "init"]
+- ["Sl", "init"]
+- ["SL", "init"]
+- ["SL", "init"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "jsValue"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- ["s17CustomReflectableP", "init"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "jsValue"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "jsValue"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- ["Se", "init"]
+- ["Se", "init"]
+- !private ["Se", "jsValue"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- ["SE", "init"]
+- ["SE", "init"]
+- !private ["SE", "jsValue"]
+- ["SQ", "RawValue"]
+- ["SQ", ""]
+- ["SQ", "_Default_RawValue"]
+- !private ["SQ", "_findStringSwitchCase"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- ["SQ", "init"]
+- ["SQ", "init"]
+- !private ["SQ", "jsValue"]
+- ["SQ", "rawValue"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s27ExpressibleByBooleanLiteralP", "jsValue"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["SH", "RawValue"]
+- ["SH", ""]
+- ["SH", "_Default_RawValue"]
+- !private ["SH", "_findStringSwitchCase"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- ["SH", "init"]
+- ["SH", "init"]
+- !private ["SH", "jsValue"]
+- ["SH", "rawValue"]
+- !private ["s6HasherV", "combine"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "jsValue"]
+- ["s10MirrorPathP", "init"]
+- ["s10MirrorPathP", "init"]
+- ["Sm", "init"]
+- ["Sm", "init"]
+- ["SY", "RawValue"]
+- ["SY", ""]
+- ["SY", "_Default_RawValue"]
+- !private ["SY", "_findStringSwitchCase"]
+- ["SY", "hash"]
+- ["SY", "hashValue"]
+- ["SY", "init"]
+- ["SY", "rawValue"]
+- ["ST", "init"]
+- ["ST", "init"]
+- !private ["s12StaticStringV", "init"]
+- !private ["s12StaticStringV", "init"]
+- ["SS", "init"]
+- ["SS", "init"]
+- ["Sy", "init"]
+- ["Sy", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- ["10YoutubeKit22VideoControlAppearanceO", "RawValue"]
+- ["10YoutubeKit22VideoControlAppearanceO", "_Default_RawValue"]
+- ["10YoutubeKit22VideoControlAppearanceO", "deinit"]
+- ["10YoutubeKit22VideoControlAppearanceO", "hash"]
+- ["10YoutubeKit22VideoControlAppearanceO", "hashValue"]
+- ["10YoutubeKit22VideoControlAppearanceO", "hidden"]
+- ["10YoutubeKit22VideoControlAppearanceO", "init"]
+- ["10YoutubeKit22VideoControlAppearanceO", "rawValue"]
+- ["10YoutubeKit22VideoControlAppearanceO", "show"]
+- ["10YoutubeKit22VideoControlAppearanceO", "showAfterPlaying"]
+- ["10YoutubeKit19VideoEmbedParameterO", "AnyObject"]
+- ["10YoutubeKit19VideoEmbedParameterO", "Bool"]
+- ["10YoutubeKit19VideoEmbedParameterO", "Int"]
+- ["10YoutubeKit19VideoEmbedParameterO", "String"]
+- ["10YoutubeKit19VideoEmbedParameterO", "VideoControlAppearance"]
+- ["10YoutubeKit19VideoEmbedParameterO", "VideoListType"]
+- ["10YoutubeKit19VideoEmbedParameterO", "VideoProgressBarColor"]
+- ["10YoutubeKit19VideoEmbedParameterO", "alwaysShowCaption"]
+- ["10YoutubeKit19VideoEmbedParameterO", "autoplay"]
+- ["10YoutubeKit19VideoEmbedParameterO", "disableKeyboardControl"]
+- ["10YoutubeKit19VideoEmbedParameterO", "enableJavaScriptAPI"]
+- ["10YoutubeKit19VideoEmbedParameterO", "list"]
+- ["10YoutubeKit19VideoEmbedParameterO", "listType"]
+- ["10YoutubeKit19VideoEmbedParameterO", "loopVideo"]
+- ["10YoutubeKit19VideoEmbedParameterO", "origin"]
+- ["10YoutubeKit19VideoEmbedParameterO", "playerLanguage"]
+- ["10YoutubeKit19VideoEmbedParameterO", "playlist"]
+- ["10YoutubeKit19VideoEmbedParameterO", "playsInline"]
+- ["10YoutubeKit19VideoEmbedParameterO", "progressBarColor"]
+- ["10YoutubeKit19VideoEmbedParameterO", "property"]
+- ["10YoutubeKit19VideoEmbedParameterO", "registerEndTimeAt"]
+- ["10YoutubeKit19VideoEmbedParameterO", "registerStartTimeAt"]
+- ["10YoutubeKit19VideoEmbedParameterO", "showControls"]
+- ["10YoutubeKit19VideoEmbedParameterO", "showFullScreenButton"]
+- ["10YoutubeKit19VideoEmbedParameterO", "showInfo"]
+- ["10YoutubeKit19VideoEmbedParameterO", "showLoadPolicy"]
+- ["10YoutubeKit19VideoEmbedParameterO", "showModestbranding"]
+- ["10YoutubeKit19VideoEmbedParameterO", "showRelatedVideo"]
+- ["10YoutubeKit19VideoEmbedParameterO", "videoID"]
+- ["10YoutubeKit13VideoListTypeO", "RawValue"]
+- ["10YoutubeKit13VideoListTypeO", "_Default_RawValue"]
+- !private ["10YoutubeKit13VideoListTypeO", "_findStringSwitchCase"]
+- ["10YoutubeKit13VideoListTypeO", "deinit"]
+- ["10YoutubeKit13VideoListTypeO", "hash"]
+- ["10YoutubeKit13VideoListTypeO", "hashValue"]
+- ["10YoutubeKit13VideoListTypeO", "init"]
+- ["10YoutubeKit13VideoListTypeO", "playlist"]
+- ["10YoutubeKit13VideoListTypeO", "rawValue"]
+- ["10YoutubeKit13VideoListTypeO", "search"]
+- ["10YoutubeKit13VideoListTypeO", "userUploads"]
+- ["10YoutubeKit21VideoProgressBarColorO", "RawValue"]
+- ["10YoutubeKit21VideoProgressBarColorO", "_Default_RawValue"]
+- !private ["10YoutubeKit21VideoProgressBarColorO", "_findStringSwitchCase"]
+- ["10YoutubeKit21VideoProgressBarColorO", "deinit"]
+- ["10YoutubeKit21VideoProgressBarColorO", "hash"]
+- ["10YoutubeKit21VideoProgressBarColorO", "hashValue"]
+- ["10YoutubeKit21VideoProgressBarColorO", "init"]
+- ["10YoutubeKit21VideoProgressBarColorO", "rawValue"]
+- ["10YoutubeKit21VideoProgressBarColorO", "red"]
+- ["10YoutubeKit21VideoProgressBarColorO", "white"]
+- ["10YoutubeKit19YTSwiftyPlayerErrorO", "RawValue"]
+- ["10YoutubeKit19YTSwiftyPlayerErrorO", "_Default_RawValue"]
+- ["10YoutubeKit19YTSwiftyPlayerErrorO", "deinit"]
+- ["10YoutubeKit19YTSwiftyPlayerErrorO", "hash"]
+- ["10YoutubeKit19YTSwiftyPlayerErrorO", "hashValue"]
+- ["10YoutubeKit19YTSwiftyPlayerErrorO", "html5PlayerError"]
+- ["10YoutubeKit19YTSwiftyPlayerErrorO", "init"]
+- ["10YoutubeKit19YTSwiftyPlayerErrorO", "invalidURLRequest"]
+- ["10YoutubeKit19YTSwiftyPlayerErrorO", "rawValue"]
+- ["10YoutubeKit19YTSwiftyPlayerErrorO", "videoLicenseError"]
+- ["10YoutubeKit19YTSwiftyPlayerErrorO", "videoNotFound"]
+- ["10YoutubeKit19YTSwiftyPlayerErrorO", "videoNotPermited"]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", "RawValue"]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", "_Default_RawValue"]
+- !private ["10YoutubeKit19YTSwiftyPlayerEventO", "_findStringSwitchCase"]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", "deinit"]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", "hash"]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", "hashValue"]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", "init"]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", "onApiChange"]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", "onError"]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", "onPlaybackRateChange"]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", "onQualityChange"]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", "onReady"]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", "onStateChange"]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", "onUpdateCurrentTime"]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", "onYouTubeIframeAPIFailedToLoad"]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", "onYoutubeIframeAPIReady"]
+- ["10YoutubeKit19YTSwiftyPlayerEventO", "rawValue"]
+- ["10YoutubeKit19YTSwiftyPlayerStateO", "RawValue"]
+- ["10YoutubeKit19YTSwiftyPlayerStateO", "_Default_RawValue"]
+- ["10YoutubeKit19YTSwiftyPlayerStateO", "buffering"]
+- ["10YoutubeKit19YTSwiftyPlayerStateO", "cued"]
+- ["10YoutubeKit19YTSwiftyPlayerStateO", "deinit"]
+- ["10YoutubeKit19YTSwiftyPlayerStateO", "ended"]
+- ["10YoutubeKit19YTSwiftyPlayerStateO", "hash"]
+- ["10YoutubeKit19YTSwiftyPlayerStateO", "hashValue"]
+- ["10YoutubeKit19YTSwiftyPlayerStateO", "init"]
+- ["10YoutubeKit19YTSwiftyPlayerStateO", "paused"]
+- ["10YoutubeKit19YTSwiftyPlayerStateO", "playing"]
+- ["10YoutubeKit19YTSwiftyPlayerStateO", "rawValue"]
+- ["10YoutubeKit19YTSwiftyPlayerStateO", "unstarted"]
+- ["10YoutubeKit20YTSwiftyVideoQualityO", "RawValue"]
+- ["10YoutubeKit20YTSwiftyVideoQualityO", "_Default_RawValue"]
+- !private ["10YoutubeKit20YTSwiftyVideoQualityO", "_findStringSwitchCase"]
+- ["10YoutubeKit20YTSwiftyVideoQualityO", "deinit"]
+- ["10YoutubeKit20YTSwiftyVideoQualityO", "hash"]
+- ["10YoutubeKit20YTSwiftyVideoQualityO", "hashValue"]
+- ["10YoutubeKit20YTSwiftyVideoQualityO", "hd1080"]
+- ["10YoutubeKit20YTSwiftyVideoQualityO", "hd720"]
+- ["10YoutubeKit20YTSwiftyVideoQualityO", "highres"]
+- ["10YoutubeKit20YTSwiftyVideoQualityO", "init"]
+- ["10YoutubeKit20YTSwiftyVideoQualityO", "large"]
+- ["10YoutubeKit20YTSwiftyVideoQualityO", "medium"]
+- ["10YoutubeKit20YTSwiftyVideoQualityO", "rawValue"]
+- ["10YoutubeKit20YTSwiftyVideoQualityO", "small"]
+- ["10YoutubeKit20YTSwiftyVideoQualityO", "unknown"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "jsValue"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "jsValue"]
+- ["s16_SwiftStringViewP", "init"]
+- ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- "SK"
+- !private "Sb"
+- "s7CVarArgP"
+- "Sl"
+- "SL"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "Se"
+- "SE"
+- "SQ"
+- !private "s27ExpressibleByBooleanLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "SH"
+- !private "s6HasherV"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- "Sm"
+- "SY"
+- "ST"
+- !private "s12StaticStringV"
+- "SS"
+- "Sy"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- "10YoutubeKit22VideoControlAppearanceO"
+- "10YoutubeKit19VideoEmbedParameterO"
+- "10YoutubeKit13VideoListTypeO"
+- "10YoutubeKit21VideoProgressBarColorO"
+- "10YoutubeKit19YTSwiftyPlayerErrorO"
+- "10YoutubeKit19YTSwiftyPlayerEventO"
+- "10YoutubeKit19YTSwiftyPlayerStateO"
+- "10YoutubeKit20YTSwiftyVideoQualityO"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- "s21_ObjectiveCBridgeableP"
+- "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/radibarq/developer/NasaInArabic/Pods/Target Support Files/YoutubeKit/YoutubeKit-umbrella.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Pods.build/Debug-iphonesimulator/YoutubeKit.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "c32d65bbdb778d9bbb5cca1bdc05dd95"

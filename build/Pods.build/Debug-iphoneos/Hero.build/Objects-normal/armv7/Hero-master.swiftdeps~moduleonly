@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
 options: "aa114dbc363f358d0a23c92d745b2ce9"
-build_time: [1547803993, 365874000]
+build_time: [1553979204, 603970000]
 inputs:
   "/Users/radibarq/developer/NasaInArabic/Pods/Hero/Sources/Extensions/Array+HeroModifier.swift": [1547655806, 0]
   "/Users/radibarq/developer/NasaInArabic/Pods/Hero/Sources/Preprocessors/BasePreprocessor.swift": [1547655806, 0]

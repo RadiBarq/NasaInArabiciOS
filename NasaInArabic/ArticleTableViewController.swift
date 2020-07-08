@@ -11,28 +11,21 @@ import Cards
 
 class ArticleTableViewController: UITableViewController {
 
-    
     private let titleCellReuseIdentifier = "titleCell"
     private let normalCellReuseIdentifier = "normalCell"
     var articles = [Articles]()
     var articlesImageViews = [UIImageView?]()
     var numberOfRows = 0
     var currentPageNumber = 1
-    
-    
-    
+        
     struct Articles: Decodable{
-        
         public var data = [BrowsingArticle]()
-        
     }
     
-    struct BrowsingArticle: Decodable
-    {
+    struct BrowsingArticle: Decodable {
         var headline:String
         var excerpt:String
         var image: String
-        
     }
 
     override func viewDidLoad() {

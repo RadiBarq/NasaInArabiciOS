@@ -8,7 +8,8 @@ target 'NasaInArabic' do
   pod 'SDWebImage', '~> 4.0'
   pod 'CollectionKit' , :git => 'https://github.com/SoySauceLab/CollectionKit.git'
   pod 'Hero' , :git => 'https://github.com/HeroTransitions/Hero.git'
+  pod 'YouTubePlayer'
   # Pods for NasaInArabic
-
+  pod 'YoutubeKit'
 
 end

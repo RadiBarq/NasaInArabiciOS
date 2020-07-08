@@ -17,7 +17,7 @@ depends-top-level:
 - !private "!="
 - !private "=="
 - "Bool"
-- "BooleanLiteralType"
+- !private "BooleanLiteralType"
 - !private "FloatLiteralType"
 - "HeroAnimator"
 - "HeroContext"

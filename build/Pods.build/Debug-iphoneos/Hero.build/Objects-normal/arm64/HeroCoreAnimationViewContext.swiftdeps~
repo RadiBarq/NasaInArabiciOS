@@ -42,7 +42,6 @@ depends-top-level:
 - "CGSize"
 - "CastingPrecedence"
 - !private "Float"
-- !private "FloatLiteralType"
 - "HeroAnimatorViewContext"
 - "HeroCoreAnimationViewContext"
 - "HeroTargetState"

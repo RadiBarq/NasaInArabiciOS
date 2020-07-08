@@ -84,8 +84,10 @@ import Player
             player.url = videoSource
         }
     }
-    
-    
+
+    /**
+     Required. View controller that should display the player.
+     */
     public func shouldDisplayPlayer( from vc: UIViewController ) {
         vc.addChild(player)
     }
@@ -110,7 +112,7 @@ import Player
         initialize()
     }
     
-    override  func initialize() {
+    override open func initialize() {
         super.initialize()
         self.delegate = self
         
@@ -122,7 +124,7 @@ import Player
         // Player Init
         player.playerDelegate = self
         player.playbackDelegate = self
-        player.fillMode = PlayerFillMode.resizeAspectFill.avFoundationType
+        player.fillMode = PlayerFillMode.resizeAspectFill
         if let url = videoSource { player.url = url }
         else { print("CARDS: Something wrong with the video source URL") }
        
@@ -192,7 +194,7 @@ import Player
         self.layout()
     }
     
-    override func layout(animating: Bool = true) {
+    override open func layout(animating: Bool = true) {
         super.layout(animating: animating)
         
         let gimme = LayoutHelper(rect: backgroundIV.bounds)
@@ -202,7 +204,12 @@ import Player
         let move = ( aspect1016 - aspect921 ) * 2
         
         subtitleLbl.transform = isPresenting ? CGAffineTransform(translationX: 0, y: move) : CGAffineTransform.identity
+        let currentHeight = backgroundIV.frame.size.height
         backgroundIV.frame.size.height = originalFrame.height + ( isPresenting ? move/2 : 0 )
+        
+        if backgroundIV.frame.size.height <= 0 {
+            backgroundIV.frame.size.height = currentHeight
+        }
         
         player.view.frame.origin = CGPoint.zero
         player.view.frame.size = CGSize(width: backgroundIV.bounds.width, height: isPresenting ? aspect1016 : aspect921 )
@@ -282,6 +289,12 @@ import Player
 
 // Player Delegates
 extension CardPlayer: PlayerDelegate {
+    public func player(_ player: Player, didFailWithError error: Error?) {
+        if let errorMessage = error {
+            print(errorMessage.localizedDescription)
+        }
+    }
+
     public func playerReady(_ player: Player) {
         
         player.view.addSubview(playPauseV)

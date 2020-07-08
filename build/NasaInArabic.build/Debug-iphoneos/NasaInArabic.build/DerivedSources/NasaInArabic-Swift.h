@@ -163,8 +163,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # define SWIFT_DEPRECATED_OBJC(Msg) SWIFT_DEPRECATED_MSG(Msg)
 #endif
 #if __has_feature(modules)
+@import AVFoundation;
 @import CoreGraphics;
 @import Foundation;
+@import MessageUI;
 @import UIKit;
 @import WebKit;
 #endif
@@ -200,8 +202,11 @@ SWIFT_CLASS("_TtC12NasaInArabic21AboutUsViewController")
 
 SWIFT_CLASS("_TtC12NasaInArabic30AlbumsCollectionViewController")
 @interface AlbumsCollectionViewController : UICollectionViewController
+- (void)viewWillAppear:(BOOL)animated;
+- (void)onClickChangeLocation;
 - (void)viewDidLoad;
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)resetButtonClicked;
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView willDisplayCell:(UICollectionViewCell * _Nonnull)cell forItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
@@ -282,6 +287,7 @@ SWIFT_CLASS("_TtC12NasaInArabic26ArticleTableViewController")
 @class UIView;
 @class WKWebView;
 @class WKNavigation;
+@class UIButton;
 @class UITapGestureRecognizer;
 
 SWIFT_CLASS("_TtC12NasaInArabic21ArticleViewController")
@@ -294,11 +300,16 @@ SWIFT_CLASS("_TtC12NasaInArabic21ArticleViewController")
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (void)handlePanWithGr:(UIPanGestureRecognizer * _Nonnull)gr;
 - (void)viewDidLoad;
+- (void)willResignActive:(NSNotification * _Nonnull)notification;
+- (void)willBeActive:(NSNotification * _Nonnull)notification;
 - (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
 - (void)viewDidLayoutSubviews;
 - (void)viewWillAppear:(BOOL)animated;
 @property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 - (void)viewWillDisappear:(BOOL)animated;
+- (void)onClickRepeat;
+- (void)onPlayerFinished;
+- (void)onClickPlay:(UIButton * _Nonnull)sender;
 - (void)onClickShare;
 - (void)onCloseClickedWithSender:(UITapGestureRecognizer * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -341,6 +352,35 @@ SWIFT_CLASS("_TtC12NasaInArabic17ArticlesTitleCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class AVAsset;
+
+SWIFT_CLASS("_TtC12NasaInArabic17CachingPlayerItem")
+@interface CachingPlayerItem : AVPlayerItem
+/// Is used for playing remote files.
+- (nonnull instancetype)initWithURL:(NSURL * _Nonnull)url;
+- (void)observeValueForKeyPath:(NSString * _Nullable)keyPath ofObject:(id _Nullable)object change:(NSDictionary<NSKeyValueChangeKey, id> * _Nullable)change context:(void * _Nullable)context;
+- (void)playbackStalledHandler;
+- (nonnull instancetype)initWithAsset:(AVAsset * _Nonnull)asset automaticallyLoadedAssetKeys:(NSArray<NSString *> * _Nullable)automaticallyLoadedAssetKeys OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_PROTOCOL("_TtP12NasaInArabic25CachingPlayerItemDelegate_")
+@protocol CachingPlayerItemDelegate
+@optional
+/// Is called when the media file is fully downloaded.
+- (void)playerItem:(CachingPlayerItem * _Nonnull)playerItem didFinishDownloadingData:(NSData * _Nonnull)data;
+/// Is called every time a new portion of data is received.
+- (void)playerItem:(CachingPlayerItem * _Nonnull)playerItem didDownloadBytesSoFar:(NSInteger)bytesDownloaded outOf:(NSInteger)bytesExpected;
+/// Is called after initial prebuffering is finished, means
+/// we are ready to play.
+- (void)playerItemReadyToPlay:(CachingPlayerItem * _Nonnull)playerItem;
+/// Is called when the data being downloaded did not arrive in time to
+/// continue playback.
+- (void)playerItemPlaybackStalled:(CachingPlayerItem * _Nonnull)playerItem;
+/// Is called on downloading error.
+- (void)playerItem:(CachingPlayerItem * _Nonnull)playerItem downloadingFailedWith:(NSError * _Nonnull)error;
+@end
+
 
 SWIFT_CLASS("_TtC12NasaInArabic8CardView")
 @interface CardView : UIView
@@ -360,6 +400,8 @@ SWIFT_CLASS("_TtC12NasaInArabic28CategoriesCollectionViewCell")
 SWIFT_CLASS("_TtC12NasaInArabic34CategoriesCollectionViewController")
 @interface CategoriesCollectionViewController : UICollectionViewController
 - (void)viewDidLoad;
+- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)viewWillAppear:(BOOL)animated;
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
@@ -380,6 +422,7 @@ SWIFT_CLASS("_TtC12NasaInArabic24CategoriesViewController")
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)viewWillAppear:(BOOL)animated;
+- (void)onClickAll;
 - (void)onClickClose;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (void)viewDidLoad;
@@ -400,6 +443,7 @@ SWIFT_CLASS("_TtC12NasaInArabic26ImageArticleViewController")
 - (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
 @property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 - (void)onCloseClickedWithSender:(UITapGestureRecognizer * _Nonnull)sender;
 - (void)onClickShare;
@@ -428,6 +472,7 @@ SWIFT_CLASS("_TtC12NasaInArabic23MoreTableViewController")
 @interface MoreTableViewController : UITableViewController
 - (void)viewDidLoad;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)onClickClose;
 - (void)viewWillAppear:(BOOL)animated;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
@@ -436,6 +481,12 @@ SWIFT_CLASS("_TtC12NasaInArabic23MoreTableViewController")
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class MFMailComposeViewController;
+
+@interface MoreTableViewController (SWIFT_EXTENSION(NasaInArabic)) <MFMailComposeViewControllerDelegate>
+- (void)mailComposeController:(MFMailComposeViewController * _Nonnull)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError * _Nullable)error;
 @end
 
 
@@ -502,7 +553,9 @@ SWIFT_CLASS("_TtC12NasaInArabic19VideoViewController")
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 @property (nonatomic, readonly) BOOL prefersStatusBarHidden;
+- (void)onClickTranslateVideo;
 - (void)imageTappedWithTapGestureRecognizer:(UITapGestureRecognizer * _Nonnull)tapGestureRecognizer;
+- (void)viewWillDisappear:(BOOL)animated;
 - (void)onCloseClickedWithSender:(UITapGestureRecognizer * _Nonnull)sender;
 - (void)onClickShare;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -514,10 +567,13 @@ SWIFT_CLASS("_TtC12NasaInArabic30VideosCollectionViewController")
 @interface VideosCollectionViewController : UICollectionViewController
 - (void)viewDidLoad;
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView willDisplayCell:(UICollectionViewCell * _Nonnull)cell forItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)onClickChangeLocation;
+- (void)viewWillAppear:(BOOL)animated;
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView SWIFT_WARN_UNUSED_RESULT;
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (void)resetButtonClicked;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithCollectionViewLayout:(UICollectionViewLayout * _Nonnull)layout OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -527,6 +583,16 @@ SWIFT_CLASS("_TtC12NasaInArabic30VideosCollectionViewController")
 
 @interface VideosCollectionViewController (SWIFT_EXTENSION(NasaInArabic)) <UICollectionViewDelegateFlowLayout>
 - (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC12NasaInArabic17WebViewController")
+@interface WebViewController : UIViewController <WKUIDelegate>
+- (void)loadView;
+- (void)viewDidLoad;
+- (void)onClickClose;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #if __has_attribute(external_source_symbol)

@@ -23,9 +23,11 @@ provides-dynamic-lookup:
 - "tableView"
 - "viewDidLoad"
 - "viewWillAppear"
+- "viewWillDisappear"
 - "webView"
 depends-top-level:
 - !private "!="
+- !private "&&"
 - !private "+"
 - !private "-"
 - !private "/"
@@ -47,6 +49,7 @@ depends-top-level:
 - !private "Dictionary"
 - !private "DispatchQueue"
 - "FloatLiteralType"
+- !private "Global"
 - !private "Hero"
 - "ImageArticleViewController"
 - "ImageTag"
@@ -58,7 +61,7 @@ depends-top-level:
 - "NSLayoutConstraint"
 - !private "ProfileViewController"
 - "String"
-- "StringLiteralType"
+- !private "StringLiteralType"
 - "Translation"
 - !private "UIApplication"
 - "UIBlurEffect"
@@ -180,7 +183,7 @@ depends-member:
 - !private ["So15CALayerDelegateP", "sd_setShowActivityIndicatorView"]
 - !private ["So15CALayerDelegateP", "setImage"]
 - ["So15CALayerDelegateP", "sizeToFit"]
-- ["So15CALayerDelegateP", "text"]
+- !private ["So15CALayerDelegateP", "text"]
 - ["So15CALayerDelegateP", "textAlignment"]
 - ["So15CALayerDelegateP", "textColor"]
 - !private ["So15CALayerDelegateP", "textLabel"]
@@ -201,6 +204,7 @@ depends-member:
 - ["s7CVarArgP", "CGRect"]
 - !private ["s7CVarArgP", "CurrentImageArticleData"]
 - !private ["s7CVarArgP", "DispatchQueue"]
+- !private ["s7CVarArgP", "Global"]
 - !private ["s7CVarArgP", "Hero"]
 - ["s7CVarArgP", "IntrinsicTableView"]
 - !private ["s7CVarArgP", "JSONDecoder"]
@@ -349,7 +353,7 @@ depends-member:
 - !private ["s7CVarArgP", "systemFont"]
 - ["s7CVarArgP", "tableView"]
 - !private ["s7CVarArgP", "tags"]
-- ["s7CVarArgP", "text"]
+- !private ["s7CVarArgP", "text"]
 - ["s7CVarArgP", "textAlignment"]
 - ["s7CVarArgP", "textColor"]
 - !private ["s7CVarArgP", "textLabel"]
@@ -368,6 +372,7 @@ depends-member:
 - ["s7CVarArgP", "viewForZooming"]
 - ["s7CVarArgP", "viewForZoomingInScrollView"]
 - !private ["s7CVarArgP", "viewWillAppear"]
+- !private ["s7CVarArgP", "viewWillDisappear"]
 - !private ["s7CVarArgP", "viewsCountLabel"]
 - ["s7CVarArgP", "webView"]
 - ["s7CVarArgP", "webViewDidClose"]
@@ -436,6 +441,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "CGRect"]
 - !private ["s28CustomDebugStringConvertibleP", "CurrentImageArticleData"]
 - !private ["s28CustomDebugStringConvertibleP", "DispatchQueue"]
+- !private ["s28CustomDebugStringConvertibleP", "Global"]
 - !private ["s28CustomDebugStringConvertibleP", "Hero"]
 - ["s28CustomDebugStringConvertibleP", "IntrinsicTableView"]
 - !private ["s28CustomDebugStringConvertibleP", "JSONDecoder"]
@@ -596,7 +602,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "tableView"]
 - !private ["s28CustomDebugStringConvertibleP", "tag"]
 - !private ["s28CustomDebugStringConvertibleP", "tags"]
-- ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
 - ["s28CustomDebugStringConvertibleP", "textAlignment"]
 - ["s28CustomDebugStringConvertibleP", "textColor"]
 - !private ["s28CustomDebugStringConvertibleP", "textLabel"]
@@ -617,6 +623,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "viewForZooming"]
 - ["s28CustomDebugStringConvertibleP", "viewForZoomingInScrollView"]
 - !private ["s28CustomDebugStringConvertibleP", "viewWillAppear"]
+- !private ["s28CustomDebugStringConvertibleP", "viewWillDisappear"]
 - !private ["s28CustomDebugStringConvertibleP", "viewsCountLabel"]
 - ["s28CustomDebugStringConvertibleP", "webView"]
 - ["s28CustomDebugStringConvertibleP", "webViewDidClose"]
@@ -679,6 +686,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "CGRect"]
 - !private ["s23CustomStringConvertibleP", "CurrentImageArticleData"]
 - !private ["s23CustomStringConvertibleP", "DispatchQueue"]
+- !private ["s23CustomStringConvertibleP", "Global"]
 - !private ["s23CustomStringConvertibleP", "Hero"]
 - ["s23CustomStringConvertibleP", "IntrinsicTableView"]
 - !private ["s23CustomStringConvertibleP", "JSONDecoder"]
@@ -838,7 +846,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "tableView"]
 - !private ["s23CustomStringConvertibleP", "tag"]
 - !private ["s23CustomStringConvertibleP", "tags"]
-- ["s23CustomStringConvertibleP", "text"]
+- !private ["s23CustomStringConvertibleP", "text"]
 - ["s23CustomStringConvertibleP", "textAlignment"]
 - ["s23CustomStringConvertibleP", "textColor"]
 - !private ["s23CustomStringConvertibleP", "textLabel"]
@@ -859,6 +867,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "viewForZooming"]
 - ["s23CustomStringConvertibleP", "viewForZoomingInScrollView"]
 - !private ["s23CustomStringConvertibleP", "viewWillAppear"]
+- !private ["s23CustomStringConvertibleP", "viewWillDisappear"]
 - !private ["s23CustomStringConvertibleP", "viewsCountLabel"]
 - ["s23CustomStringConvertibleP", "webView"]
 - ["s23CustomStringConvertibleP", "webViewDidClose"]
@@ -918,6 +927,7 @@ depends-member:
 - !private ["Se", "y"]
 - ["Se", "zero"]
 - !private ["s7DecoderP", "container"]
+- !private ["SD", "count"]
 - !private ["So18OS_dispatch_objectC", "async"]
 - !private ["So18OS_dispatch_objectC", "asyncAfter"]
 - !private ["So18OS_dispatch_objectC", "main"]
@@ -960,6 +970,7 @@ depends-member:
 - ["SQ", "CGRect"]
 - !private ["SQ", "CurrentImageArticleData"]
 - !private ["SQ", "DispatchQueue"]
+- !private ["SQ", "Global"]
 - !private ["SQ", "Hero"]
 - ["SQ", "IntrinsicTableView"]
 - !private ["SQ", "JSONDecoder"]
@@ -1133,7 +1144,7 @@ depends-member:
 - ["SQ", "tableView"]
 - !private ["SQ", "tag"]
 - !private ["SQ", "tags"]
-- ["SQ", "text"]
+- !private ["SQ", "text"]
 - ["SQ", "textAlignment"]
 - ["SQ", "textColor"]
 - !private ["SQ", "textLabel"]
@@ -1155,6 +1166,7 @@ depends-member:
 - ["SQ", "viewForZooming"]
 - ["SQ", "viewForZoomingInScrollView"]
 - !private ["SQ", "viewWillAppear"]
+- !private ["SQ", "viewWillDisappear"]
 - !private ["SQ", "viewsCountLabel"]
 - ["SQ", "webView"]
 - ["SQ", "webViewDidClose"]
@@ -1181,6 +1193,7 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "touchUpInside"]
 - !private ["s25ExpressibleByArrayLiteralP", "user_id"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "count"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "index"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
@@ -1213,10 +1226,15 @@ depends-member:
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "prefix"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "share"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "startIndex"]
+- !private ["12NasaInArabic6GlobalV", "categoryId"]
+- !private ["12NasaInArabic6GlobalV", "imagesTagName"]
+- !private ["12NasaInArabic6GlobalV", "imagesTagSelected"]
+- !private ["12NasaInArabic6GlobalV", "tagTitle"]
 - !private ["SH", "Bundle"]
 - ["SH", "CGRect"]
 - !private ["SH", "CurrentImageArticleData"]
 - !private ["SH", "DispatchQueue"]
+- !private ["SH", "Global"]
 - !private ["SH", "Hero"]
 - ["SH", "IntrinsicTableView"]
 - !private ["SH", "JSONDecoder"]
@@ -1383,7 +1401,7 @@ depends-member:
 - ["SH", "tableView"]
 - !private ["SH", "tag"]
 - !private ["SH", "tags"]
-- ["SH", "text"]
+- !private ["SH", "text"]
 - ["SH", "textAlignment"]
 - ["SH", "textColor"]
 - !private ["SH", "textLabel"]
@@ -1404,6 +1422,7 @@ depends-member:
 - ["SH", "viewForZooming"]
 - ["SH", "viewForZoomingInScrollView"]
 - !private ["SH", "viewWillAppear"]
+- !private ["SH", "viewWillDisappear"]
 - !private ["SH", "viewsCountLabel"]
 - ["SH", "webView"]
 - ["SH", "webViewDidClose"]
@@ -1417,6 +1436,7 @@ depends-member:
 - ["4Hero0A10CompatibleP", "CGRect"]
 - !private ["4Hero0A10CompatibleP", "CurrentImageArticleData"]
 - !private ["4Hero0A10CompatibleP", "DispatchQueue"]
+- !private ["4Hero0A10CompatibleP", "Global"]
 - !private ["4Hero0A10CompatibleP", "Hero"]
 - ["4Hero0A10CompatibleP", "IntrinsicTableView"]
 - !private ["4Hero0A10CompatibleP", "JSONDecoder"]
@@ -1534,7 +1554,7 @@ depends-member:
 - !private ["4Hero0A10CompatibleP", "sources"]
 - ["4Hero0A10CompatibleP", "tableView"]
 - !private ["4Hero0A10CompatibleP", "tags"]
-- ["4Hero0A10CompatibleP", "text"]
+- !private ["4Hero0A10CompatibleP", "text"]
 - ["4Hero0A10CompatibleP", "textAlignment"]
 - ["4Hero0A10CompatibleP", "textColor"]
 - !private ["4Hero0A10CompatibleP", "textLabel"]
@@ -1550,6 +1570,7 @@ depends-member:
 - ["4Hero0A10CompatibleP", "viewForZooming"]
 - ["4Hero0A10CompatibleP", "viewForZoomingInScrollView"]
 - !private ["4Hero0A10CompatibleP", "viewWillAppear"]
+- !private ["4Hero0A10CompatibleP", "viewWillDisappear"]
 - !private ["4Hero0A10CompatibleP", "viewsCountLabel"]
 - ["4Hero0A10CompatibleP", "webView"]
 - ["4Hero0A10CompatibleP", "webViewDidClose"]
@@ -1570,6 +1591,7 @@ depends-member:
 - ["12NasaInArabic26ImageArticleViewControllerC", "CGRect"]
 - !private ["12NasaInArabic26ImageArticleViewControllerC", "CurrentImageArticleData"]
 - !private ["12NasaInArabic26ImageArticleViewControllerC", "DispatchQueue"]
+- !private ["12NasaInArabic26ImageArticleViewControllerC", "Global"]
 - !private ["12NasaInArabic26ImageArticleViewControllerC", "Hero"]
 - ["12NasaInArabic26ImageArticleViewControllerC", "ImageTag"]
 - ["12NasaInArabic26ImageArticleViewControllerC", "IndexPath"]
@@ -1661,6 +1683,7 @@ depends-member:
 - ["12NasaInArabic26ImageArticleViewControllerC", "viewForZooming"]
 - ["12NasaInArabic26ImageArticleViewControllerC", "viewForZoomingInScrollView"]
 - ["12NasaInArabic26ImageArticleViewControllerC", "viewWillAppear"]
+- ["12NasaInArabic26ImageArticleViewControllerC", "viewWillDisappear"]
 - ["12NasaInArabic26ImageArticleViewControllerC", "viewsCountLabel"]
 - ["12NasaInArabic26ImageArticleViewControllerC", "visualEffectView"]
 - ["12NasaInArabic26ImageArticleViewControllerC", "webView"]
@@ -1711,6 +1734,7 @@ depends-member:
 - ["So8NSCodingP", "CGRect"]
 - !private ["So8NSCodingP", "CurrentImageArticleData"]
 - !private ["So8NSCodingP", "DispatchQueue"]
+- !private ["So8NSCodingP", "Global"]
 - !private ["So8NSCodingP", "Hero"]
 - ["So8NSCodingP", "IntrinsicTableView"]
 - !private ["So8NSCodingP", "JSONDecoder"]
@@ -1838,7 +1862,7 @@ depends-member:
 - !private ["So8NSCodingP", "startIndex"]
 - ["So8NSCodingP", "tableView"]
 - !private ["So8NSCodingP", "tags"]
-- ["So8NSCodingP", "text"]
+- !private ["So8NSCodingP", "text"]
 - ["So8NSCodingP", "textAlignment"]
 - ["So8NSCodingP", "textColor"]
 - !private ["So8NSCodingP", "textLabel"]
@@ -1854,6 +1878,7 @@ depends-member:
 - ["So8NSCodingP", "viewForZooming"]
 - ["So8NSCodingP", "viewForZoomingInScrollView"]
 - !private ["So8NSCodingP", "viewWillAppear"]
+- !private ["So8NSCodingP", "viewWillDisappear"]
 - !private ["So8NSCodingP", "viewsCountLabel"]
 - ["So8NSCodingP", "webView"]
 - ["So8NSCodingP", "webViewDidClose"]
@@ -1878,6 +1903,7 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "CGRect"]
 - !private ["So26NSExtensionRequestHandlingP", "CurrentImageArticleData"]
 - !private ["So26NSExtensionRequestHandlingP", "DispatchQueue"]
+- !private ["So26NSExtensionRequestHandlingP", "Global"]
 - !private ["So26NSExtensionRequestHandlingP", "Hero"]
 - ["So26NSExtensionRequestHandlingP", "IntrinsicTableView"]
 - !private ["So26NSExtensionRequestHandlingP", "JSONDecoder"]
@@ -1963,6 +1989,7 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "viewForZooming"]
 - ["So26NSExtensionRequestHandlingP", "viewForZoomingInScrollView"]
 - !private ["So26NSExtensionRequestHandlingP", "viewWillAppear"]
+- !private ["So26NSExtensionRequestHandlingP", "viewWillDisappear"]
 - !private ["So26NSExtensionRequestHandlingP", "viewsCountLabel"]
 - ["So26NSExtensionRequestHandlingP", "webView"]
 - ["So26NSExtensionRequestHandlingP", "webViewDidClose"]
@@ -2005,6 +2032,7 @@ depends-member:
 - ["So8NSObjectC", "CGRect"]
 - !private ["So8NSObjectC", "CurrentImageArticleData"]
 - !private ["So8NSObjectC", "DispatchQueue"]
+- !private ["So8NSObjectC", "Global"]
 - !private ["So8NSObjectC", "Hero"]
 - ["So8NSObjectC", "ImageTag"]
 - ["So8NSObjectC", "IndexPath"]
@@ -2160,7 +2188,7 @@ depends-member:
 - !private ["So8NSObjectC", "systemFont"]
 - ["So8NSObjectC", "tableView"]
 - ["So8NSObjectC", "tags"]
-- ["So8NSObjectC", "text"]
+- !private ["So8NSObjectC", "text"]
 - ["So8NSObjectC", "textAlignment"]
 - ["So8NSObjectC", "textColor"]
 - !private ["So8NSObjectC", "textLabel"]
@@ -2179,6 +2207,7 @@ depends-member:
 - ["So8NSObjectC", "viewForZooming"]
 - ["So8NSObjectC", "viewForZoomingInScrollView"]
 - ["So8NSObjectC", "viewWillAppear"]
+- ["So8NSObjectC", "viewWillDisappear"]
 - ["So8NSObjectC", "viewsCountLabel"]
 - ["So8NSObjectC", "visualEffectView"]
 - ["So8NSObjectC", "webView"]
@@ -2191,6 +2220,7 @@ depends-member:
 - ["So8NSObjectP", "CGRect"]
 - !private ["So8NSObjectP", "CurrentImageArticleData"]
 - !private ["So8NSObjectP", "DispatchQueue"]
+- !private ["So8NSObjectP", "Global"]
 - !private ["So8NSObjectP", "Hero"]
 - ["So8NSObjectP", "IntrinsicTableView"]
 - !private ["So8NSObjectP", "JSONDecoder"]
@@ -2335,7 +2365,7 @@ depends-member:
 - !private ["So8NSObjectP", "systemFont"]
 - ["So8NSObjectP", "tableView"]
 - !private ["So8NSObjectP", "tags"]
-- ["So8NSObjectP", "text"]
+- !private ["So8NSObjectP", "text"]
 - ["So8NSObjectP", "textAlignment"]
 - ["So8NSObjectP", "textColor"]
 - !private ["So8NSObjectP", "textLabel"]
@@ -2354,6 +2384,7 @@ depends-member:
 - ["So8NSObjectP", "viewForZooming"]
 - ["So8NSObjectP", "viewForZoomingInScrollView"]
 - !private ["So8NSObjectP", "viewWillAppear"]
+- !private ["So8NSObjectP", "viewWillDisappear"]
 - !private ["So8NSObjectP", "viewsCountLabel"]
 - ["So8NSObjectP", "webView"]
 - ["So8NSObjectP", "webViewDidClose"]
@@ -2555,7 +2586,7 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "sd_setShowActivityIndicatorView"]
 - !private ["So29UIAccessibilityIdentificationP", "setImage"]
 - ["So29UIAccessibilityIdentificationP", "sizeToFit"]
-- ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
 - ["So29UIAccessibilityIdentificationP", "textAlignment"]
 - ["So29UIAccessibilityIdentificationP", "textColor"]
 - !private ["So29UIAccessibilityIdentificationP", "textLabel"]
@@ -2606,7 +2637,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "sd_setShowActivityIndicatorView"]
 - !private ["So12UIAppearanceP", "setImage"]
 - ["So12UIAppearanceP", "sizeToFit"]
-- ["So12UIAppearanceP", "text"]
+- !private ["So12UIAppearanceP", "text"]
 - ["So12UIAppearanceP", "textAlignment"]
 - ["So12UIAppearanceP", "textColor"]
 - !private ["So12UIAppearanceP", "textLabel"]
@@ -2619,6 +2650,7 @@ depends-member:
 - ["So21UIAppearanceContainerP", "CGRect"]
 - !private ["So21UIAppearanceContainerP", "CurrentImageArticleData"]
 - !private ["So21UIAppearanceContainerP", "DispatchQueue"]
+- !private ["So21UIAppearanceContainerP", "Global"]
 - !private ["So21UIAppearanceContainerP", "Hero"]
 - ["So21UIAppearanceContainerP", "IntrinsicTableView"]
 - !private ["So21UIAppearanceContainerP", "JSONDecoder"]
@@ -2736,7 +2768,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "sources"]
 - ["So21UIAppearanceContainerP", "tableView"]
 - !private ["So21UIAppearanceContainerP", "tags"]
-- ["So21UIAppearanceContainerP", "text"]
+- !private ["So21UIAppearanceContainerP", "text"]
 - ["So21UIAppearanceContainerP", "textAlignment"]
 - ["So21UIAppearanceContainerP", "textColor"]
 - !private ["So21UIAppearanceContainerP", "textLabel"]
@@ -2752,6 +2784,7 @@ depends-member:
 - ["So21UIAppearanceContainerP", "viewForZooming"]
 - ["So21UIAppearanceContainerP", "viewForZoomingInScrollView"]
 - !private ["So21UIAppearanceContainerP", "viewWillAppear"]
+- !private ["So21UIAppearanceContainerP", "viewWillDisappear"]
 - !private ["So21UIAppearanceContainerP", "viewsCountLabel"]
 - ["So21UIAppearanceContainerP", "webView"]
 - ["So21UIAppearanceContainerP", "webViewDidClose"]
@@ -2781,6 +2814,7 @@ depends-member:
 - ["So18UIContentContainerP", "CGRect"]
 - !private ["So18UIContentContainerP", "CurrentImageArticleData"]
 - !private ["So18UIContentContainerP", "DispatchQueue"]
+- !private ["So18UIContentContainerP", "Global"]
 - !private ["So18UIContentContainerP", "Hero"]
 - ["So18UIContentContainerP", "IntrinsicTableView"]
 - !private ["So18UIContentContainerP", "JSONDecoder"]
@@ -2866,6 +2900,7 @@ depends-member:
 - ["So18UIContentContainerP", "viewForZooming"]
 - ["So18UIContentContainerP", "viewForZoomingInScrollView"]
 - !private ["So18UIContentContainerP", "viewWillAppear"]
+- !private ["So18UIContentContainerP", "viewWillDisappear"]
 - !private ["So18UIContentContainerP", "viewsCountLabel"]
 - ["So18UIContentContainerP", "webView"]
 - ["So18UIContentContainerP", "webViewDidClose"]
@@ -2881,7 +2916,7 @@ depends-member:
 - ["So30UIContentSizeCategoryAdjustingP", "numberOfLines"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "rightAnchor"]
 - ["So30UIContentSizeCategoryAdjustingP", "sizeToFit"]
-- ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
 - ["So30UIContentSizeCategoryAdjustingP", "textAlignment"]
 - ["So30UIContentSizeCategoryAdjustingP", "textColor"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "topAnchor"]
@@ -2937,7 +2972,7 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "sd_setShowActivityIndicatorView"]
 - !private ["So17UICoordinateSpaceP", "setImage"]
 - ["So17UICoordinateSpaceP", "sizeToFit"]
-- ["So17UICoordinateSpaceP", "text"]
+- !private ["So17UICoordinateSpaceP", "text"]
 - ["So17UICoordinateSpaceP", "textAlignment"]
 - ["So17UICoordinateSpaceP", "textColor"]
 - !private ["So17UICoordinateSpaceP", "textLabel"]
@@ -3001,7 +3036,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "sd_setShowActivityIndicatorView"]
 - !private ["So13UIDynamicItemP", "setImage"]
 - ["So13UIDynamicItemP", "sizeToFit"]
-- ["So13UIDynamicItemP", "text"]
+- !private ["So13UIDynamicItemP", "text"]
 - ["So13UIDynamicItemP", "textAlignment"]
 - ["So13UIDynamicItemP", "textColor"]
 - !private ["So13UIDynamicItemP", "textLabel"]
@@ -3015,6 +3050,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "CGRect"]
 - !private ["So18UIFocusEnvironmentP", "CurrentImageArticleData"]
 - !private ["So18UIFocusEnvironmentP", "DispatchQueue"]
+- !private ["So18UIFocusEnvironmentP", "Global"]
 - !private ["So18UIFocusEnvironmentP", "Hero"]
 - ["So18UIFocusEnvironmentP", "IntrinsicTableView"]
 - !private ["So18UIFocusEnvironmentP", "JSONDecoder"]
@@ -3132,7 +3168,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "sources"]
 - ["So18UIFocusEnvironmentP", "tableView"]
 - !private ["So18UIFocusEnvironmentP", "tags"]
-- ["So18UIFocusEnvironmentP", "text"]
+- !private ["So18UIFocusEnvironmentP", "text"]
 - ["So18UIFocusEnvironmentP", "textAlignment"]
 - ["So18UIFocusEnvironmentP", "textColor"]
 - !private ["So18UIFocusEnvironmentP", "textLabel"]
@@ -3148,6 +3184,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "viewForZooming"]
 - ["So18UIFocusEnvironmentP", "viewForZoomingInScrollView"]
 - !private ["So18UIFocusEnvironmentP", "viewWillAppear"]
+- !private ["So18UIFocusEnvironmentP", "viewWillDisappear"]
 - !private ["So18UIFocusEnvironmentP", "viewsCountLabel"]
 - ["So18UIFocusEnvironmentP", "webView"]
 - ["So18UIFocusEnvironmentP", "webViewDidClose"]
@@ -3196,7 +3233,7 @@ depends-member:
 - !private ["So11UIFocusItemP", "sd_setShowActivityIndicatorView"]
 - !private ["So11UIFocusItemP", "setImage"]
 - ["So11UIFocusItemP", "sizeToFit"]
-- ["So11UIFocusItemP", "text"]
+- !private ["So11UIFocusItemP", "text"]
 - ["So11UIFocusItemP", "textAlignment"]
 - ["So11UIFocusItemP", "textColor"]
 - !private ["So11UIFocusItemP", "textLabel"]
@@ -3247,7 +3284,7 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "sd_setShowActivityIndicatorView"]
 - !private ["So20UIFocusItemContainerP", "setImage"]
 - ["So20UIFocusItemContainerP", "sizeToFit"]
-- ["So20UIFocusItemContainerP", "text"]
+- !private ["So20UIFocusItemContainerP", "text"]
 - ["So20UIFocusItemContainerP", "textAlignment"]
 - ["So20UIFocusItemContainerP", "textColor"]
 - !private ["So20UIFocusItemContainerP", "textLabel"]
@@ -3311,7 +3348,7 @@ depends-member:
 - ["So7UILabelC", "numberOfLines"]
 - !private ["So7UILabelC", "rightAnchor"]
 - ["So7UILabelC", "sizeToFit"]
-- ["So7UILabelC", "text"]
+- !private ["So7UILabelC", "text"]
 - ["So7UILabelC", "textAlignment"]
 - ["So7UILabelC", "textColor"]
 - !private ["So7UILabelC", "topAnchor"]
@@ -3331,6 +3368,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "CGRect"]
 - !private ["So30UIPasteConfigurationSupportingP", "CurrentImageArticleData"]
 - !private ["So30UIPasteConfigurationSupportingP", "DispatchQueue"]
+- !private ["So30UIPasteConfigurationSupportingP", "Global"]
 - !private ["So30UIPasteConfigurationSupportingP", "Hero"]
 - ["So30UIPasteConfigurationSupportingP", "IntrinsicTableView"]
 - !private ["So30UIPasteConfigurationSupportingP", "JSONDecoder"]
@@ -3451,7 +3489,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "sources"]
 - ["So30UIPasteConfigurationSupportingP", "tableView"]
 - !private ["So30UIPasteConfigurationSupportingP", "tags"]
-- ["So30UIPasteConfigurationSupportingP", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
 - ["So30UIPasteConfigurationSupportingP", "textAlignment"]
 - ["So30UIPasteConfigurationSupportingP", "textColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "textLabel"]
@@ -3467,6 +3505,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "viewForZooming"]
 - ["So30UIPasteConfigurationSupportingP", "viewForZoomingInScrollView"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewWillAppear"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewWillDisappear"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewsCountLabel"]
 - ["So30UIPasteConfigurationSupportingP", "webView"]
 - ["So30UIPasteConfigurationSupportingP", "webViewDidClose"]
@@ -3481,6 +3520,7 @@ depends-member:
 - ["So11UIResponderC", "CGRect"]
 - !private ["So11UIResponderC", "CurrentImageArticleData"]
 - !private ["So11UIResponderC", "DispatchQueue"]
+- !private ["So11UIResponderC", "Global"]
 - !private ["So11UIResponderC", "Hero"]
 - ["So11UIResponderC", "ImageTag"]
 - ["So11UIResponderC", "IndexPath"]
@@ -3612,7 +3652,7 @@ depends-member:
 - ["So11UIResponderC", "sources"]
 - ["So11UIResponderC", "tableView"]
 - ["So11UIResponderC", "tags"]
-- ["So11UIResponderC", "text"]
+- !private ["So11UIResponderC", "text"]
 - ["So11UIResponderC", "textAlignment"]
 - ["So11UIResponderC", "textColor"]
 - !private ["So11UIResponderC", "textLabel"]
@@ -3628,6 +3668,7 @@ depends-member:
 - ["So11UIResponderC", "viewForZooming"]
 - ["So11UIResponderC", "viewForZoomingInScrollView"]
 - ["So11UIResponderC", "viewWillAppear"]
+- ["So11UIResponderC", "viewWillDisappear"]
 - ["So11UIResponderC", "viewsCountLabel"]
 - ["So11UIResponderC", "visualEffectView"]
 - ["So11UIResponderC", "webView"]
@@ -3639,6 +3680,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "CGRect"]
 - !private ["So30UIResponderStandardEditActionsP", "CurrentImageArticleData"]
 - !private ["So30UIResponderStandardEditActionsP", "DispatchQueue"]
+- !private ["So30UIResponderStandardEditActionsP", "Global"]
 - !private ["So30UIResponderStandardEditActionsP", "Hero"]
 - ["So30UIResponderStandardEditActionsP", "IntrinsicTableView"]
 - !private ["So30UIResponderStandardEditActionsP", "JSONDecoder"]
@@ -3759,7 +3801,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "sources"]
 - ["So30UIResponderStandardEditActionsP", "tableView"]
 - !private ["So30UIResponderStandardEditActionsP", "tags"]
-- ["So30UIResponderStandardEditActionsP", "text"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
 - ["So30UIResponderStandardEditActionsP", "textAlignment"]
 - ["So30UIResponderStandardEditActionsP", "textColor"]
 - !private ["So30UIResponderStandardEditActionsP", "textLabel"]
@@ -3775,6 +3817,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "viewForZooming"]
 - ["So30UIResponderStandardEditActionsP", "viewForZoomingInScrollView"]
 - !private ["So30UIResponderStandardEditActionsP", "viewWillAppear"]
+- !private ["So30UIResponderStandardEditActionsP", "viewWillDisappear"]
 - !private ["So30UIResponderStandardEditActionsP", "viewsCountLabel"]
 - ["So30UIResponderStandardEditActionsP", "webView"]
 - ["So30UIResponderStandardEditActionsP", "webViewDidClose"]
@@ -3805,6 +3848,7 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "CGRect"]
 - !private ["So20UIScrollViewDelegateP", "CurrentImageArticleData"]
 - !private ["So20UIScrollViewDelegateP", "DispatchQueue"]
+- !private ["So20UIScrollViewDelegateP", "Global"]
 - !private ["So20UIScrollViewDelegateP", "Hero"]
 - ["So20UIScrollViewDelegateP", "IntrinsicTableView"]
 - !private ["So20UIScrollViewDelegateP", "JSONDecoder"]
@@ -3908,6 +3952,7 @@ depends-member:
 - ["So16UIStateRestoringP", "CGRect"]
 - !private ["So16UIStateRestoringP", "CurrentImageArticleData"]
 - !private ["So16UIStateRestoringP", "DispatchQueue"]
+- !private ["So16UIStateRestoringP", "Global"]
 - !private ["So16UIStateRestoringP", "Hero"]
 - ["So16UIStateRestoringP", "IntrinsicTableView"]
 - !private ["So16UIStateRestoringP", "JSONDecoder"]
@@ -3993,6 +4038,7 @@ depends-member:
 - ["So16UIStateRestoringP", "viewForZooming"]
 - ["So16UIStateRestoringP", "viewForZoomingInScrollView"]
 - !private ["So16UIStateRestoringP", "viewWillAppear"]
+- !private ["So16UIStateRestoringP", "viewWillDisappear"]
 - !private ["So16UIStateRestoringP", "viewsCountLabel"]
 - ["So16UIStateRestoringP", "webView"]
 - ["So16UIStateRestoringP", "webViewDidClose"]
@@ -4024,6 +4070,7 @@ depends-member:
 - ["So21UITableViewDataSourceP", "CGRect"]
 - !private ["So21UITableViewDataSourceP", "CurrentImageArticleData"]
 - !private ["So21UITableViewDataSourceP", "DispatchQueue"]
+- !private ["So21UITableViewDataSourceP", "Global"]
 - !private ["So21UITableViewDataSourceP", "Hero"]
 - ["So21UITableViewDataSourceP", "IntrinsicTableView"]
 - !private ["So21UITableViewDataSourceP", "JSONDecoder"]
@@ -4110,6 +4157,7 @@ depends-member:
 - ["So19UITableViewDelegateP", "CGRect"]
 - !private ["So19UITableViewDelegateP", "CurrentImageArticleData"]
 - !private ["So19UITableViewDelegateP", "DispatchQueue"]
+- !private ["So19UITableViewDelegateP", "Global"]
 - !private ["So19UITableViewDelegateP", "Hero"]
 - ["So19UITableViewDelegateP", "IntrinsicTableView"]
 - !private ["So19UITableViewDelegateP", "JSONDecoder"]
@@ -4197,6 +4245,7 @@ depends-member:
 - ["So18UITraitEnvironmentP", "CGRect"]
 - !private ["So18UITraitEnvironmentP", "CurrentImageArticleData"]
 - !private ["So18UITraitEnvironmentP", "DispatchQueue"]
+- !private ["So18UITraitEnvironmentP", "Global"]
 - !private ["So18UITraitEnvironmentP", "Hero"]
 - ["So18UITraitEnvironmentP", "IntrinsicTableView"]
 - !private ["So18UITraitEnvironmentP", "JSONDecoder"]
@@ -4315,7 +4364,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "sources"]
 - ["So18UITraitEnvironmentP", "tableView"]
 - !private ["So18UITraitEnvironmentP", "tags"]
-- ["So18UITraitEnvironmentP", "text"]
+- !private ["So18UITraitEnvironmentP", "text"]
 - ["So18UITraitEnvironmentP", "textAlignment"]
 - ["So18UITraitEnvironmentP", "textColor"]
 - !private ["So18UITraitEnvironmentP", "textLabel"]
@@ -4331,6 +4380,7 @@ depends-member:
 - ["So18UITraitEnvironmentP", "viewForZooming"]
 - ["So18UITraitEnvironmentP", "viewForZoomingInScrollView"]
 - !private ["So18UITraitEnvironmentP", "viewWillAppear"]
+- !private ["So18UITraitEnvironmentP", "viewWillDisappear"]
 - !private ["So18UITraitEnvironmentP", "viewsCountLabel"]
 - ["So18UITraitEnvironmentP", "webView"]
 - ["So18UITraitEnvironmentP", "webViewDidClose"]
@@ -4341,6 +4391,7 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "CGRect"]
 - !private ["So23UIUserActivityRestoringP", "CurrentImageArticleData"]
 - !private ["So23UIUserActivityRestoringP", "DispatchQueue"]
+- !private ["So23UIUserActivityRestoringP", "Global"]
 - !private ["So23UIUserActivityRestoringP", "Hero"]
 - ["So23UIUserActivityRestoringP", "IntrinsicTableView"]
 - !private ["So23UIUserActivityRestoringP", "JSONDecoder"]
@@ -4461,7 +4512,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "sources"]
 - ["So23UIUserActivityRestoringP", "tableView"]
 - !private ["So23UIUserActivityRestoringP", "tags"]
-- ["So23UIUserActivityRestoringP", "text"]
+- !private ["So23UIUserActivityRestoringP", "text"]
 - ["So23UIUserActivityRestoringP", "textAlignment"]
 - ["So23UIUserActivityRestoringP", "textColor"]
 - !private ["So23UIUserActivityRestoringP", "textLabel"]
@@ -4477,6 +4528,7 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "viewForZooming"]
 - ["So23UIUserActivityRestoringP", "viewForZoomingInScrollView"]
 - !private ["So23UIUserActivityRestoringP", "viewWillAppear"]
+- !private ["So23UIUserActivityRestoringP", "viewWillDisappear"]
 - !private ["So23UIUserActivityRestoringP", "viewsCountLabel"]
 - ["So23UIUserActivityRestoringP", "webView"]
 - ["So23UIUserActivityRestoringP", "webViewDidClose"]
@@ -4525,7 +4577,7 @@ depends-member:
 - !private ["So6UIViewC", "sd_setShowActivityIndicatorView"]
 - !private ["So6UIViewC", "setImage"]
 - ["So6UIViewC", "sizeToFit"]
-- ["So6UIViewC", "text"]
+- !private ["So6UIViewC", "text"]
 - ["So6UIViewC", "textAlignment"]
 - ["So6UIViewC", "textColor"]
 - !private ["So6UIViewC", "textLabel"]
@@ -4542,6 +4594,7 @@ depends-member:
 - ["So16UIViewControllerC", "CGRect"]
 - !private ["So16UIViewControllerC", "CurrentImageArticleData"]
 - !private ["So16UIViewControllerC", "DispatchQueue"]
+- !private ["So16UIViewControllerC", "Global"]
 - !private ["So16UIViewControllerC", "Hero"]
 - ["So16UIViewControllerC", "ImageTag"]
 - ["So16UIViewControllerC", "IndexPath"]
@@ -4639,6 +4692,7 @@ depends-member:
 - ["So16UIViewControllerC", "viewForZooming"]
 - ["So16UIViewControllerC", "viewForZoomingInScrollView"]
 - ["So16UIViewControllerC", "viewWillAppear"]
+- ["So16UIViewControllerC", "viewWillDisappear"]
 - ["So16UIViewControllerC", "viewsCountLabel"]
 - ["So16UIViewControllerC", "visualEffectView"]
 - ["So16UIViewControllerC", "webView"]
@@ -4670,6 +4724,7 @@ depends-member:
 - ["So20WKNavigationDelegateP", "CGRect"]
 - !private ["So20WKNavigationDelegateP", "CurrentImageArticleData"]
 - !private ["So20WKNavigationDelegateP", "DispatchQueue"]
+- !private ["So20WKNavigationDelegateP", "Global"]
 - !private ["So20WKNavigationDelegateP", "Hero"]
 - ["So20WKNavigationDelegateP", "IntrinsicTableView"]
 - !private ["So20WKNavigationDelegateP", "JSONDecoder"]
@@ -4755,6 +4810,7 @@ depends-member:
 - ["So12WKUIDelegateP", "CGRect"]
 - !private ["So12WKUIDelegateP", "CurrentImageArticleData"]
 - !private ["So12WKUIDelegateP", "DispatchQueue"]
+- !private ["So12WKUIDelegateP", "Global"]
 - !private ["So12WKUIDelegateP", "Hero"]
 - ["So12WKUIDelegateP", "IntrinsicTableView"]
 - !private ["So12WKUIDelegateP", "JSONDecoder"]
@@ -4893,7 +4949,7 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "sd_setShowActivityIndicatorView"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setImage"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "sizeToFit"]
-- ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "textAlignment"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "textColor"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "textLabel"]
@@ -4959,6 +5015,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "CGRect"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CurrentImageArticleData"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DispatchQueue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Global"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Hero"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "IntrinsicTableView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "JSONDecoder"]
@@ -5103,7 +5160,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "systemFont"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "tableView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "tags"]
-- ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "textAlignment"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "textColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "textLabel"]
@@ -5122,6 +5179,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZooming"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZoomingInScrollView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWillAppear"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWillDisappear"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewsCountLabel"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "webView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "webViewDidClose"]
@@ -5197,6 +5255,7 @@ depends-nominal:
 - "s23CustomStringConvertibleP"
 - "Se"
 - !private "s7DecoderP"
+- !private "SD"
 - !private "So18OS_dispatch_objectC"
 - !private "So17OS_dispatch_queueC"
 - !private "8Dispatch0A4TimeV"
@@ -5205,10 +5264,12 @@ depends-nominal:
 - !private "So15UIControlEventsV"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "12NasaInArabic6GlobalV"
 - "SH"
 - !private "s6HasherV"
 - !private "4HeroAAC"
@@ -5344,7 +5405,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/Hero/Hero.framework/Modules/Hero.swiftmodule/x86_64.swiftmodule"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/Player/Player.framework/Modules/Player.swiftmodule/x86_64.swiftmodule"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/YouTubePlayer/YouTubePlayer.framework/Modules/YouTubePlayer.swiftmodule/x86_64.swiftmodule"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/Cards/Cards.framework/Modules/Cards.swiftmodule/x86_64.swiftmodule"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/YoutubeKit/YoutubeKit.framework/Modules/YoutubeKit.swiftmodule/x86_64.swiftmodule"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/CollectionKit/CollectionKit.framework/Modules/CollectionKit.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
@@ -5359,6 +5422,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MediaPlayer.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
@@ -5368,7 +5432,9 @@ depends-external:
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/Hero/Hero.framework/Headers/Hero-umbrella.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/Player/Player.framework/Headers/Player-umbrella.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/YouTubePlayer/YouTubePlayer.framework/Headers/YouTubePlayer-umbrella.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/Cards/Cards.framework/Headers/Cards-umbrella.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/YoutubeKit/YoutubeKit.framework/Headers/YoutubeKit-umbrella.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/CollectionKit/CollectionKit.framework/Headers/CollectionKit-umbrella.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+ForceDecode.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/NSImage+WebCache.h"
@@ -5398,14 +5464,19 @@ depends-external:
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageCompat.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/Hero/Hero.framework/Headers/Hero-Swift.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/Player/Player.framework/Headers/Player-Swift.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/YouTubePlayer/YouTubePlayer.framework/Headers/YouTubePlayer-Swift.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/Cards/Cards.framework/Headers/Cards-Swift.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/YoutubeKit/YoutubeKit.framework/Headers/YoutubeKit-Swift.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/CollectionKit/CollectionKit.framework/Headers/CollectionKit-Swift.h"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/Hero/Hero.framework/Modules/module.modulemap"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/Player/Player.framework/Modules/module.modulemap"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/YouTubePlayer/YouTubePlayer.framework/Modules/module.modulemap"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/Cards/Cards.framework/Modules/module.modulemap"
+- "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/YoutubeKit/YoutubeKit.framework/Modules/module.modulemap"
 - "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/CollectionKit/CollectionKit.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MessageUI.framework/Headers/MessageUI.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
@@ -5415,6 +5486,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MediaPlayer.framework/Headers/MediaPlayer.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.apinotes"
@@ -5423,4 +5495,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "a9e7799a3a05c676ad455ccaf2d5acbe"
+interface-hash: "2b89eacccc431ea9c339add871065efc"

@@ -1,0 +1,462 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SimpleViewProvider"
+provides-nominal:
+- "13CollectionKit18SimpleViewProviderC"
+- "13CollectionKit18SimpleViewProviderC0D12SizeStrategyO"
+- "13CollectionKit18SimpleViewProviderC0cD13LayoutContextV"
+provides-member:
+- ["13CollectionKit18SimpleViewProviderC", ""]
+- ["13CollectionKit18SimpleViewProviderC0D12SizeStrategyO", ""]
+- ["13CollectionKit18SimpleViewProviderC0cD13LayoutContextV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "??"
+- "Animator"
+- "AssignmentPrecedence"
+- "CGFloat"
+- "CGRect"
+- "CGSize"
+- "CollectionReloadable"
+- !private "FlowLayout"
+- "Int"
+- "ItemProvider"
+- "Layout"
+- "LayoutContext"
+- "SimpleViewProvider"
+- "String"
+- "StringLiteralType"
+- "UIView"
+- "Void"
+depends-member:
+- !private ["Sa", "count"]
+- !private ["Sa", "subscript"]
+- !private ["s13ArrayProtocolP", "count"]
+- !private ["s13ArrayProtocolP", "hash"]
+- !private ["s13ArrayProtocolP", "subscript"]
+- !private ["s10ArraySliceV", "hash"]
+- !private ["SK", "count"]
+- !private ["SK", "hash"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
+- !private ["SK", "subscript"]
+- !private ["So15CALayerDelegateP", "hash"]
+- !private ["So15CALayerDelegateP", "sizeThatFits"]
+- !private ["So6CGSizeV", "height"]
+- !private ["So6CGSizeV", "init"]
+- !private ["So6CGSizeV", "width"]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "hash"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "sizeThatFits"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["Sl", "count"]
+- !private ["Sl", "hash"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["Sl", "subscript"]
+- !private ["13CollectionKit0A10ReloadableP", "CGSize"]
+- !private ["13CollectionKit0A10ReloadableP", "FlowLayout"]
+- !private ["13CollectionKit0A10ReloadableP", "SimpleViewLayoutContext"]
+- ["13CollectionKit0A10ReloadableP", ""]
+- ["13CollectionKit0A10ReloadableP", "animator"]
+- ["13CollectionKit0A10ReloadableP", "collectionView"]
+- ["13CollectionKit0A10ReloadableP", "contentSize"]
+- ["13CollectionKit0A10ReloadableP", "didReload"]
+- ["13CollectionKit0A10ReloadableP", "didTap"]
+- ["13CollectionKit0A10ReloadableP", "flattenedProvider"]
+- ["13CollectionKit0A10ReloadableP", "frame"]
+- ["13CollectionKit0A10ReloadableP", "hasReloadable"]
+- ["13CollectionKit0A10ReloadableP", "identifier"]
+- !private ["13CollectionKit0A10ReloadableP", "identifierMapper"]
+- ["13CollectionKit0A10ReloadableP", "layout"]
+- ["13CollectionKit0A10ReloadableP", "numberOfItems"]
+- ["13CollectionKit0A10ReloadableP", "reloadData"]
+- ["13CollectionKit0A10ReloadableP", "setNeedsReload"]
+- !private ["13CollectionKit0A10ReloadableP", "sizeStrategy"]
+- !private ["13CollectionKit0A10ReloadableP", "sizeStrategyOverride"]
+- !private ["13CollectionKit0A10ReloadableP", "tapHandler"]
+- ["13CollectionKit0A10ReloadableP", "update"]
+- ["13CollectionKit0A10ReloadableP", "view"]
+- !private ["13CollectionKit0A10ReloadableP", "views"]
+- ["13CollectionKit0A10ReloadableP", "visibleIndexes"]
+- ["13CollectionKit0A10ReloadableP", "willReload"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "hash"]
+- !private ["s28CustomDebugStringConvertibleP", "height"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "sizeThatFits"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "width"]
+- !private ["s29CustomPlaygroundQuickLookableP", "height"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "width"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "hash"]
+- !private ["s17CustomReflectableP", "height"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "width"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "hash"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "sizeThatFits"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["Se", "count"]
+- !private ["Se", "height"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "subscript"]
+- !private ["Se", "width"]
+- !private ["SD", "subscript"]
+- !private ["SE", "count"]
+- !private ["SE", "height"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "subscript"]
+- !private ["SE", "width"]
+- !private ["SQ", "count"]
+- !private ["SQ", "hash"]
+- !private ["SQ", "height"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "sizeThatFits"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "width"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "hash"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["13CollectionKit10FlowLayoutC", "init"]
+- !private ["SH", "count"]
+- !private ["SH", "hash"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "sizeThatFits"]
+- !private ["SH", "subscript"]
+- !private ["13CollectionKit12ItemProviderP", "CGSize"]
+- !private ["13CollectionKit12ItemProviderP", "FlowLayout"]
+- !private ["13CollectionKit12ItemProviderP", "SimpleViewLayoutContext"]
+- ["13CollectionKit12ItemProviderP", ""]
+- ["13CollectionKit12ItemProviderP", "animator"]
+- ["13CollectionKit12ItemProviderP", "collectionView"]
+- ["13CollectionKit12ItemProviderP", "contentSize"]
+- ["13CollectionKit12ItemProviderP", "didReload"]
+- ["13CollectionKit12ItemProviderP", "didTap"]
+- ["13CollectionKit12ItemProviderP", "flattenedProvider"]
+- ["13CollectionKit12ItemProviderP", "frame"]
+- ["13CollectionKit12ItemProviderP", "hasReloadable"]
+- ["13CollectionKit12ItemProviderP", "identifier"]
+- !private ["13CollectionKit12ItemProviderP", "identifierMapper"]
+- ["13CollectionKit12ItemProviderP", "layout"]
+- ["13CollectionKit12ItemProviderP", "numberOfItems"]
+- ["13CollectionKit12ItemProviderP", "reloadData"]
+- ["13CollectionKit12ItemProviderP", "setNeedsReload"]
+- !private ["13CollectionKit12ItemProviderP", "sizeStrategy"]
+- !private ["13CollectionKit12ItemProviderP", "sizeStrategyOverride"]
+- !private ["13CollectionKit12ItemProviderP", "tapHandler"]
+- ["13CollectionKit12ItemProviderP", "update"]
+- ["13CollectionKit12ItemProviderP", "view"]
+- !private ["13CollectionKit12ItemProviderP", "views"]
+- ["13CollectionKit12ItemProviderP", "visibleIndexes"]
+- ["13CollectionKit12ItemProviderP", "willReload"]
+- !private ["13CollectionKit6LayoutC", "contentSize"]
+- !private ["13CollectionKit6LayoutC", "frame"]
+- !private ["13CollectionKit6LayoutC", "layout"]
+- !private ["13CollectionKit6LayoutC", "visibleIndexes"]
+- !private ["13CollectionKit13LayoutContextP", "CGSize"]
+- ["13CollectionKit13LayoutContextP", ""]
+- ["13CollectionKit13LayoutContextP", "collectionSize"]
+- ["13CollectionKit13LayoutContextP", "data"]
+- ["13CollectionKit13LayoutContextP", "identifier"]
+- !private ["13CollectionKit13LayoutContextP", "init"]
+- ["13CollectionKit13LayoutContextP", "numberOfItems"]
+- ["13CollectionKit13LayoutContextP", "size"]
+- !private ["13CollectionKit13LayoutContextP", "sizeStrategy"]
+- !private ["13CollectionKit13LayoutContextP", "sizeStrategyOverride"]
+- !private ["13CollectionKit13LayoutContextP", "views"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["SM", "count"]
+- !private ["SM", "hash"]
+- !private ["SM", "subscript"]
+- !private ["So8NSCodingP", "hash"]
+- !private ["So8NSCodingP", "sizeThatFits"]
+- !private ["So8NSObjectC", "hash"]
+- !private ["So8NSObjectC", "sizeThatFits"]
+- !private ["So8NSObjectP", "hash"]
+- !private ["So8NSObjectP", "sizeThatFits"]
+- !private ["13CollectionKit8ProviderP", "CGSize"]
+- !private ["13CollectionKit8ProviderP", "FlowLayout"]
+- !private ["13CollectionKit8ProviderP", "SimpleViewLayoutContext"]
+- ["13CollectionKit8ProviderP", ""]
+- ["13CollectionKit8ProviderP", "animator"]
+- ["13CollectionKit8ProviderP", "collectionView"]
+- ["13CollectionKit8ProviderP", "contentSize"]
+- ["13CollectionKit8ProviderP", "didReload"]
+- ["13CollectionKit8ProviderP", "didTap"]
+- ["13CollectionKit8ProviderP", "flattenedProvider"]
+- ["13CollectionKit8ProviderP", "frame"]
+- ["13CollectionKit8ProviderP", "hasReloadable"]
+- ["13CollectionKit8ProviderP", "identifier"]
+- !private ["13CollectionKit8ProviderP", "identifierMapper"]
+- ["13CollectionKit8ProviderP", "layout"]
+- ["13CollectionKit8ProviderP", "numberOfItems"]
+- ["13CollectionKit8ProviderP", "reloadData"]
+- ["13CollectionKit8ProviderP", "setNeedsReload"]
+- !private ["13CollectionKit8ProviderP", "sizeStrategy"]
+- !private ["13CollectionKit8ProviderP", "sizeStrategyOverride"]
+- !private ["13CollectionKit8ProviderP", "tapHandler"]
+- ["13CollectionKit8ProviderP", "update"]
+- ["13CollectionKit8ProviderP", "view"]
+- !private ["13CollectionKit8ProviderP", "views"]
+- ["13CollectionKit8ProviderP", "visibleIndexes"]
+- ["13CollectionKit8ProviderP", "willReload"]
+- !private ["Sk", "count"]
+- !private ["Sk", "hash"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "count"]
+- !private ["Sm", "hash"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["Sm", "subscript"]
+- !private ["ST", "count"]
+- !private ["ST", "hash"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["ST", "subscript"]
+- !private ["13CollectionKit18SimpleViewProviderC0cD13LayoutContextV", "CGFloat"]
+- ["13CollectionKit18SimpleViewProviderC0cD13LayoutContextV", "CGSize"]
+- ["13CollectionKit18SimpleViewProviderC0cD13LayoutContextV", "Int"]
+- ["13CollectionKit18SimpleViewProviderC0cD13LayoutContextV", "String"]
+- ["13CollectionKit18SimpleViewProviderC0cD13LayoutContextV", "UIView"]
+- ["13CollectionKit18SimpleViewProviderC0cD13LayoutContextV", "ViewSizeStrategy"]
+- ["13CollectionKit18SimpleViewProviderC0cD13LayoutContextV", "collectionSize"]
+- ["13CollectionKit18SimpleViewProviderC0cD13LayoutContextV", "data"]
+- ["13CollectionKit18SimpleViewProviderC0cD13LayoutContextV", "deinit"]
+- ["13CollectionKit18SimpleViewProviderC0cD13LayoutContextV", "identifier"]
+- ["13CollectionKit18SimpleViewProviderC0cD13LayoutContextV", "init"]
+- ["13CollectionKit18SimpleViewProviderC0cD13LayoutContextV", "numberOfItems"]
+- ["13CollectionKit18SimpleViewProviderC0cD13LayoutContextV", "size"]
+- ["13CollectionKit18SimpleViewProviderC0cD13LayoutContextV", "sizeStrategy"]
+- ["13CollectionKit18SimpleViewProviderC0cD13LayoutContextV", "sizeStrategyOverride"]
+- ["13CollectionKit18SimpleViewProviderC0cD13LayoutContextV", "views"]
+- ["13CollectionKit18SimpleViewProviderC", "Animator"]
+- ["13CollectionKit18SimpleViewProviderC", "CGFloat"]
+- ["13CollectionKit18SimpleViewProviderC", "CGRect"]
+- ["13CollectionKit18SimpleViewProviderC", "CGSize"]
+- !private ["13CollectionKit18SimpleViewProviderC", "FlowLayout"]
+- ["13CollectionKit18SimpleViewProviderC", "Int"]
+- ["13CollectionKit18SimpleViewProviderC", "Layout"]
+- ["13CollectionKit18SimpleViewProviderC", "LayoutContext"]
+- ["13CollectionKit18SimpleViewProviderC", "SimpleViewLayoutContext"]
+- ["13CollectionKit18SimpleViewProviderC", "String"]
+- ["13CollectionKit18SimpleViewProviderC", "UIView"]
+- ["13CollectionKit18SimpleViewProviderC", "ViewSizeStrategy"]
+- ["13CollectionKit18SimpleViewProviderC", "Void"]
+- ["13CollectionKit18SimpleViewProviderC", "animator"]
+- ["13CollectionKit18SimpleViewProviderC", "collectionView"]
+- ["13CollectionKit18SimpleViewProviderC", "contentSize"]
+- ["13CollectionKit18SimpleViewProviderC", "deinit"]
+- ["13CollectionKit18SimpleViewProviderC", "didReload"]
+- ["13CollectionKit18SimpleViewProviderC", "didTap"]
+- ["13CollectionKit18SimpleViewProviderC", "flattenedProvider"]
+- ["13CollectionKit18SimpleViewProviderC", "frame"]
+- ["13CollectionKit18SimpleViewProviderC", "hasReloadable"]
+- ["13CollectionKit18SimpleViewProviderC", "identifier"]
+- ["13CollectionKit18SimpleViewProviderC", "identifierMapper"]
+- ["13CollectionKit18SimpleViewProviderC", "init"]
+- ["13CollectionKit18SimpleViewProviderC", "layout"]
+- ["13CollectionKit18SimpleViewProviderC", "numberOfItems"]
+- ["13CollectionKit18SimpleViewProviderC", "reloadData"]
+- ["13CollectionKit18SimpleViewProviderC", "setNeedsReload"]
+- ["13CollectionKit18SimpleViewProviderC", "sizeStrategy"]
+- ["13CollectionKit18SimpleViewProviderC", "sizeStrategyOverride"]
+- ["13CollectionKit18SimpleViewProviderC", "tapHandler"]
+- ["13CollectionKit18SimpleViewProviderC", "update"]
+- ["13CollectionKit18SimpleViewProviderC", "view"]
+- ["13CollectionKit18SimpleViewProviderC", "views"]
+- ["13CollectionKit18SimpleViewProviderC", "visibleIndexes"]
+- ["13CollectionKit18SimpleViewProviderC", "willReload"]
+- !private ["SS", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "hash"]
+- !private ["So29UIAccessibilityIdentificationP", "sizeThatFits"]
+- !private ["So12UIAppearanceP", "hash"]
+- !private ["So12UIAppearanceP", "sizeThatFits"]
+- !private ["So21UIAppearanceContainerP", "hash"]
+- !private ["So21UIAppearanceContainerP", "sizeThatFits"]
+- !private ["So17UICoordinateSpaceP", "hash"]
+- !private ["So17UICoordinateSpaceP", "sizeThatFits"]
+- !private ["So13UIDynamicItemP", "hash"]
+- !private ["So13UIDynamicItemP", "sizeThatFits"]
+- !private ["So18UIFocusEnvironmentP", "hash"]
+- !private ["So18UIFocusEnvironmentP", "sizeThatFits"]
+- !private ["So11UIFocusItemP", "hash"]
+- !private ["So11UIFocusItemP", "sizeThatFits"]
+- !private ["So20UIFocusItemContainerP", "hash"]
+- !private ["So20UIFocusItemContainerP", "sizeThatFits"]
+- !private ["So30UIPasteConfigurationSupportingP", "hash"]
+- !private ["So30UIPasteConfigurationSupportingP", "sizeThatFits"]
+- !private ["So11UIResponderC", "hash"]
+- !private ["So11UIResponderC", "sizeThatFits"]
+- !private ["So30UIResponderStandardEditActionsP", "hash"]
+- !private ["So30UIResponderStandardEditActionsP", "sizeThatFits"]
+- !private ["So18UITraitEnvironmentP", "hash"]
+- !private ["So18UITraitEnvironmentP", "sizeThatFits"]
+- !private ["So23UIUserActivityRestoringP", "hash"]
+- !private ["So23UIUserActivityRestoringP", "sizeThatFits"]
+- !private ["So6UIViewC", "hash"]
+- !private ["So6UIViewC", "sizeThatFits"]
+- ["13CollectionKit18SimpleViewProviderC0D12SizeStrategyO", "CGFloat"]
+- ["13CollectionKit18SimpleViewProviderC0D12SizeStrategyO", "absolute"]
+- ["13CollectionKit18SimpleViewProviderC0D12SizeStrategyO", "fill"]
+- ["13CollectionKit18SimpleViewProviderC0D12SizeStrategyO", "fit"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "hash"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "sizeThatFits"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "hash"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "hash"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sizeThatFits"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "height"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "width"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "Sa"
+- !private "s13ArrayProtocolP"
+- !private "s10ArraySliceV"
+- !private "SK"
+- !private "So15CALayerDelegateP"
+- !private "So6CGSizeV"
+- !private "s7CVarArgP"
+- !private "Sl"
+- "13CollectionKit0A10ReloadableP"
+- !private "SL"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SD"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "13CollectionKit10FlowLayoutC"
+- !private "SH"
+- "13CollectionKit12ItemProviderP"
+- !private "13CollectionKit6LayoutC"
+- "13CollectionKit13LayoutContextP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "SM"
+- !private "So8NSCodingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- "13CollectionKit8ProviderP"
+- !private "Sk"
+- !private "Sm"
+- !private "ST"
+- "13CollectionKit18SimpleViewProviderC0cD13LayoutContextV"
+- "13CollectionKit18SimpleViewProviderC"
+- !private "SS"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So18UITraitEnvironmentP"
+- !private "So23UIUserActivityRestoringP"
+- !private "So6UIViewC"
+- "13CollectionKit18SimpleViewProviderC0D12SizeStrategyO"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/radibarq/developer/NasaInArabic/Pods/Target Support Files/CollectionKit/CollectionKit-umbrella.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Pods.build/Debug-iphoneos/CollectionKit.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "0bbfd420c6163dad9d3bd159a8c0cde2"

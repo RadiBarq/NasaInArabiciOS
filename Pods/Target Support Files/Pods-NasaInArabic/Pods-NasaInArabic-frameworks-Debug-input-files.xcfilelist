@@ -1,0 +1,8 @@
+${PODS_ROOT}/Target Support Files/Pods-NasaInArabic/Pods-NasaInArabic-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Cards/Cards.framework
+${BUILT_PRODUCTS_DIR}/CollectionKit/CollectionKit.framework
+${BUILT_PRODUCTS_DIR}/Hero/Hero.framework
+${BUILT_PRODUCTS_DIR}/Player/Player.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/YouTubePlayer/YouTubePlayer.framework
+${BUILT_PRODUCTS_DIR}/YoutubeKit/YoutubeKit.framework

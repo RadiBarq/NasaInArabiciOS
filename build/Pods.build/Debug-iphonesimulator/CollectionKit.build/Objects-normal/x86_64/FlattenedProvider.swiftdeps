@@ -1,0 +1,418 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "FlattenedProvider"
+provides-nominal:
+- "13CollectionKit17FlattenedProviderV"
+provides-member:
+- ["13CollectionKit17FlattenedProviderV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "+"
+- !private "+="
+- !private "-"
+- !private "..<"
+- !private "<="
+- !private "??"
+- "Animator"
+- "AssignmentPrecedence"
+- "Bool"
+- "CGRect"
+- "CGSize"
+- "CastingPrecedence"
+- "CollectionReloadable"
+- "FlattenedProvider"
+- !private "FloatLiteralType"
+- "Int"
+- !private "IntegerLiteralType"
+- "ItemProvider"
+- "SectionProvider"
+- "String"
+- !private "StringLiteralType"
+- "UIView"
+- !private "assert"
+depends-member:
+- !private ["Sa", "append"]
+- !private ["Sa", "binarySearch"]
+- !private ["Sa", "init"]
+- !private ["Sa", "last"]
+- !private ["Sa", "reserveCapacity"]
+- !private ["Sa", "subscript"]
+- !private ["s13ArrayProtocolP", "append"]
+- !private ["s13ArrayProtocolP", "beginIndex"]
+- !private ["s13ArrayProtocolP", "binarySearch"]
+- !private ["s13ArrayProtocolP", "init"]
+- !private ["s13ArrayProtocolP", "last"]
+- !private ["s13ArrayProtocolP", "reserveCapacity"]
+- !private ["s13ArrayProtocolP", "sectionData"]
+- !private ["s13ArrayProtocolP", "subscript"]
+- !private ["s10ArraySliceV", "beginIndex"]
+- !private ["s10ArraySliceV", "sectionData"]
+- !private ["SK", "append"]
+- !private ["SK", "beginIndex"]
+- !private ["SK", "binarySearch"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
+- !private ["SK", "last"]
+- !private ["SK", "reserveCapacity"]
+- !private ["SK", "sectionData"]
+- !private ["SK", "subscript"]
+- !private ["So6CGRectV", "init"]
+- !private ["So6CGRectV", "intersection"]
+- !private ["So6CGRectV", "origin"]
+- !private ["So6CGRectV", "size"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "binarySearch"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "last"]
+- !private ["s7CVarArgP", "reserveCapacity"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["Sl", "append"]
+- !private ["Sl", "beginIndex"]
+- !private ["Sl", "binarySearch"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["Sl", "last"]
+- !private ["Sl", "reserveCapacity"]
+- !private ["Sl", "sectionData"]
+- !private ["Sl", "subscript"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "beginIndex"]
+- !private ["s28CustomDebugStringConvertibleP", "binarySearch"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "intersection"]
+- !private ["s28CustomDebugStringConvertibleP", "last"]
+- !private ["s28CustomDebugStringConvertibleP", "origin"]
+- !private ["s28CustomDebugStringConvertibleP", "reserveCapacity"]
+- !private ["s28CustomDebugStringConvertibleP", "sectionData"]
+- !private ["s28CustomDebugStringConvertibleP", "size"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "intersection"]
+- !private ["s29CustomPlaygroundQuickLookableP", "origin"]
+- !private ["s29CustomPlaygroundQuickLookableP", "size"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "beginIndex"]
+- !private ["s17CustomReflectableP", "binarySearch"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "intersection"]
+- !private ["s17CustomReflectableP", "last"]
+- !private ["s17CustomReflectableP", "origin"]
+- !private ["s17CustomReflectableP", "reserveCapacity"]
+- !private ["s17CustomReflectableP", "sectionData"]
+- !private ["s17CustomReflectableP", "size"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "beginIndex"]
+- !private ["s23CustomStringConvertibleP", "binarySearch"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "last"]
+- !private ["s23CustomStringConvertibleP", "reserveCapacity"]
+- !private ["s23CustomStringConvertibleP", "sectionData"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["Se", "append"]
+- !private ["Se", "binarySearch"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "intersection"]
+- !private ["Se", "last"]
+- !private ["Se", "origin"]
+- !private ["Se", "reserveCapacity"]
+- !private ["Se", "size"]
+- !private ["Se", "subscript"]
+- !private ["SE", "append"]
+- !private ["SE", "binarySearch"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "intersection"]
+- !private ["SE", "last"]
+- !private ["SE", "origin"]
+- !private ["SE", "reserveCapacity"]
+- !private ["SE", "size"]
+- !private ["SE", "subscript"]
+- !private ["SQ", "append"]
+- !private ["SQ", "beginIndex"]
+- !private ["SQ", "binarySearch"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "intersection"]
+- !private ["SQ", "last"]
+- !private ["SQ", "origin"]
+- !private ["SQ", "reserveCapacity"]
+- !private ["SQ", "sectionData"]
+- !private ["SQ", "size"]
+- !private ["SQ", "subscript"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "beginIndex"]
+- !private ["s25ExpressibleByArrayLiteralP", "binarySearch"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "last"]
+- !private ["s25ExpressibleByArrayLiteralP", "reserveCapacity"]
+- !private ["s25ExpressibleByArrayLiteralP", "sectionData"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["13CollectionKit17FlattenedProviderV", "Animator"]
+- ["13CollectionKit17FlattenedProviderV", "Bool"]
+- ["13CollectionKit17FlattenedProviderV", "CGRect"]
+- ["13CollectionKit17FlattenedProviderV", "CGSize"]
+- ["13CollectionKit17FlattenedProviderV", "CollectionReloadable"]
+- ["13CollectionKit17FlattenedProviderV", "Int"]
+- ["13CollectionKit17FlattenedProviderV", "ItemProvider"]
+- ["13CollectionKit17FlattenedProviderV", "SectionProvider"]
+- ["13CollectionKit17FlattenedProviderV", "String"]
+- ["13CollectionKit17FlattenedProviderV", "UIView"]
+- ["13CollectionKit17FlattenedProviderV", "animator"]
+- ["13CollectionKit17FlattenedProviderV", "apply"]
+- !private ["13CollectionKit17FlattenedProviderV", "assert"]
+- !private ["13CollectionKit17FlattenedProviderV", "childSections"]
+- ["13CollectionKit17FlattenedProviderV", "contentSize"]
+- ["13CollectionKit17FlattenedProviderV", "deinit"]
+- ["13CollectionKit17FlattenedProviderV", "didReload"]
+- ["13CollectionKit17FlattenedProviderV", "didTap"]
+- ["13CollectionKit17FlattenedProviderV", "flattenedProvider"]
+- ["13CollectionKit17FlattenedProviderV", "frame"]
+- ["13CollectionKit17FlattenedProviderV", "hasReloadable"]
+- ["13CollectionKit17FlattenedProviderV", "identifier"]
+- ["13CollectionKit17FlattenedProviderV", "indexPath"]
+- ["13CollectionKit17FlattenedProviderV", "init"]
+- ["13CollectionKit17FlattenedProviderV", "layout"]
+- ["13CollectionKit17FlattenedProviderV", "numberOfItems"]
+- ["13CollectionKit17FlattenedProviderV", "provider"]
+- ["13CollectionKit17FlattenedProviderV", "update"]
+- ["13CollectionKit17FlattenedProviderV", "view"]
+- ["13CollectionKit17FlattenedProviderV", "visibleIndexes"]
+- ["13CollectionKit17FlattenedProviderV", "willReload"]
+- !private ["SH", "append"]
+- !private ["SH", "beginIndex"]
+- !private ["SH", "binarySearch"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "last"]
+- !private ["SH", "reserveCapacity"]
+- !private ["SH", "sectionData"]
+- !private ["SH", "subscript"]
+- !private ["13CollectionKit12ItemProviderP", "CGRect"]
+- !private ["13CollectionKit12ItemProviderP", "Int"]
+- ["13CollectionKit12ItemProviderP", ""]
+- ["13CollectionKit12ItemProviderP", "animator"]
+- !private ["13CollectionKit12ItemProviderP", "apply"]
+- !private ["13CollectionKit12ItemProviderP", "assert"]
+- !private ["13CollectionKit12ItemProviderP", "childSections"]
+- ["13CollectionKit12ItemProviderP", "contentSize"]
+- ["13CollectionKit12ItemProviderP", "didReload"]
+- ["13CollectionKit12ItemProviderP", "didTap"]
+- ["13CollectionKit12ItemProviderP", "flattenedProvider"]
+- ["13CollectionKit12ItemProviderP", "frame"]
+- ["13CollectionKit12ItemProviderP", "hasReloadable"]
+- ["13CollectionKit12ItemProviderP", "identifier"]
+- !private ["13CollectionKit12ItemProviderP", "indexPath"]
+- ["13CollectionKit12ItemProviderP", "layout"]
+- ["13CollectionKit12ItemProviderP", "numberOfItems"]
+- !private ["13CollectionKit12ItemProviderP", "provider"]
+- ["13CollectionKit12ItemProviderP", "update"]
+- ["13CollectionKit12ItemProviderP", "view"]
+- ["13CollectionKit12ItemProviderP", "visibleIndexes"]
+- ["13CollectionKit12ItemProviderP", "willReload"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["SM", "append"]
+- !private ["SM", "beginIndex"]
+- !private ["SM", "binarySearch"]
+- !private ["SM", "init"]
+- !private ["SM", "last"]
+- !private ["SM", "reserveCapacity"]
+- !private ["SM", "sectionData"]
+- !private ["SM", "subscript"]
+- !private ["13CollectionKit8ProviderP", "CGRect"]
+- !private ["13CollectionKit8ProviderP", "Int"]
+- ["13CollectionKit8ProviderP", ""]
+- ["13CollectionKit8ProviderP", "animator"]
+- !private ["13CollectionKit8ProviderP", "apply"]
+- !private ["13CollectionKit8ProviderP", "assert"]
+- !private ["13CollectionKit8ProviderP", "childSections"]
+- ["13CollectionKit8ProviderP", "contentSize"]
+- ["13CollectionKit8ProviderP", "didReload"]
+- ["13CollectionKit8ProviderP", "didTap"]
+- ["13CollectionKit8ProviderP", "flattenedProvider"]
+- ["13CollectionKit8ProviderP", "frame"]
+- ["13CollectionKit8ProviderP", "hasReloadable"]
+- ["13CollectionKit8ProviderP", "identifier"]
+- !private ["13CollectionKit8ProviderP", "indexPath"]
+- ["13CollectionKit8ProviderP", "layout"]
+- ["13CollectionKit8ProviderP", "numberOfItems"]
+- !private ["13CollectionKit8ProviderP", "provider"]
+- !private ["13CollectionKit8ProviderP", "section"]
+- ["13CollectionKit8ProviderP", "update"]
+- ["13CollectionKit8ProviderP", "view"]
+- ["13CollectionKit8ProviderP", "visibleIndexes"]
+- ["13CollectionKit8ProviderP", "willReload"]
+- !private ["Sk", "append"]
+- !private ["Sk", "beginIndex"]
+- !private ["Sk", "binarySearch"]
+- !private ["Sk", "init"]
+- !private ["Sk", "last"]
+- !private ["Sk", "reserveCapacity"]
+- !private ["Sk", "sectionData"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "append"]
+- !private ["Sm", "beginIndex"]
+- !private ["Sm", "binarySearch"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["Sm", "last"]
+- !private ["Sm", "reserveCapacity"]
+- !private ["Sm", "sectionData"]
+- !private ["Sm", "subscript"]
+- !private ["13CollectionKit15SectionProviderP", "animator"]
+- !private ["13CollectionKit15SectionProviderP", "contentSize"]
+- !private ["13CollectionKit15SectionProviderP", "didReload"]
+- !private ["13CollectionKit15SectionProviderP", "frame"]
+- !private ["13CollectionKit15SectionProviderP", "hasReloadable"]
+- !private ["13CollectionKit15SectionProviderP", "identifier"]
+- !private ["13CollectionKit15SectionProviderP", "layout"]
+- !private ["13CollectionKit15SectionProviderP", "numberOfItems"]
+- !private ["13CollectionKit15SectionProviderP", "section"]
+- !private ["13CollectionKit15SectionProviderP", "visibleIndexes"]
+- !private ["13CollectionKit15SectionProviderP", "willReload"]
+- !private ["ST", "append"]
+- !private ["ST", "beginIndex"]
+- !private ["ST", "binarySearch"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["ST", "last"]
+- !private ["ST", "reserveCapacity"]
+- !private ["ST", "sectionData"]
+- !private ["ST", "subscript"]
+- !private ["s12StaticStringV", "init"]
+- !private ["s12StaticStringV", "init"]
+- !private ["SS", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "beginIndex"]
+- !private ["s24_DestructorSafeContainerP", "binarySearch"]
+- !private ["s24_DestructorSafeContainerP", "init"]
+- !private ["s24_DestructorSafeContainerP", "last"]
+- !private ["s24_DestructorSafeContainerP", "reserveCapacity"]
+- !private ["s24_DestructorSafeContainerP", "sectionData"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "binarySearch"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "last"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "reserveCapacity"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "binarySearch"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "intersection"]
+- !private ["s21_ObjectiveCBridgeableP", "last"]
+- !private ["s21_ObjectiveCBridgeableP", "origin"]
+- !private ["s21_ObjectiveCBridgeableP", "reserveCapacity"]
+- !private ["s21_ObjectiveCBridgeableP", "size"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "Sa"
+- !private "s13ArrayProtocolP"
+- !private "s10ArraySliceV"
+- !private "SK"
+- !private "So6CGRectV"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "13CollectionKit17FlattenedProviderV"
+- !private "SH"
+- "13CollectionKit12ItemProviderP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "SM"
+- "13CollectionKit8ProviderP"
+- !private "Sk"
+- !private "Sm"
+- !private "13CollectionKit15SectionProviderP"
+- !private "ST"
+- !private "s12StaticStringV"
+- !private "SS"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/radibarq/developer/NasaInArabic/Pods/Target Support Files/CollectionKit/CollectionKit-umbrella.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Pods.build/Debug-iphonesimulator/CollectionKit.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "d6f7886777197271a368c5095e64cbd4"

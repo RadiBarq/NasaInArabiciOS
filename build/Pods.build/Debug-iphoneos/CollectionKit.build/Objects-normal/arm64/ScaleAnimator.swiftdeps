@@ -1,0 +1,147 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ScaleAnimator"
+provides-nominal:
+- "13CollectionKit13ScaleAnimatorC"
+provides-member:
+- ["13CollectionKit13ScaleAnimatorC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "AssignmentPrecedence"
+- !private "CGAffineTransform"
+- "CGFloat"
+- "FadeAnimator"
+- "FloatLiteralType"
+- "ScaleAnimator"
+- "UIView"
+depends-member:
+- !private ["13CollectionKit8AnimatorC", "CGAffineTransform"]
+- ["13CollectionKit8AnimatorC", "CGFloat"]
+- ["13CollectionKit8AnimatorC", "UIView"]
+- ["13CollectionKit8AnimatorC", "hide"]
+- ["13CollectionKit8AnimatorC", "init"]
+- !private ["13CollectionKit8AnimatorC", "init"]
+- ["13CollectionKit8AnimatorC", "scale"]
+- ["13CollectionKit8AnimatorC", "show"]
+- !private ["So15CALayerDelegateP", "transform"]
+- !private ["So17CGAffineTransformV", "identity"]
+- !private ["So17CGAffineTransformV", "scaledBy"]
+- !private ["s7CVarArgP", "transform"]
+- !private ["s28CustomDebugStringConvertibleP", "transform"]
+- !private ["s23CustomStringConvertibleP", "transform"]
+- !private ["Se", "identity"]
+- !private ["Se", "scaledBy"]
+- !private ["SE", "identity"]
+- !private ["SE", "scaledBy"]
+- !private ["SQ", "identity"]
+- !private ["SQ", "scaledBy"]
+- !private ["SQ", "transform"]
+- !private ["13CollectionKit12FadeAnimatorC", "CGAffineTransform"]
+- ["13CollectionKit12FadeAnimatorC", "CGFloat"]
+- ["13CollectionKit12FadeAnimatorC", "UIView"]
+- ["13CollectionKit12FadeAnimatorC", ""]
+- ["13CollectionKit12FadeAnimatorC", "hide"]
+- ["13CollectionKit12FadeAnimatorC", "init"]
+- !private ["13CollectionKit12FadeAnimatorC", "init"]
+- ["13CollectionKit12FadeAnimatorC", "scale"]
+- ["13CollectionKit12FadeAnimatorC", "show"]
+- !private ["SH", "transform"]
+- !private ["So8NSCodingP", "transform"]
+- !private ["So8NSObjectC", "transform"]
+- !private ["So8NSObjectP", "transform"]
+- !private ["13CollectionKit13ScaleAnimatorC", "CGAffineTransform"]
+- ["13CollectionKit13ScaleAnimatorC", "CGFloat"]
+- ["13CollectionKit13ScaleAnimatorC", "UIView"]
+- ["13CollectionKit13ScaleAnimatorC", "hide"]
+- ["13CollectionKit13ScaleAnimatorC", "init"]
+- ["13CollectionKit13ScaleAnimatorC", "scale"]
+- ["13CollectionKit13ScaleAnimatorC", "show"]
+- !private ["13CollectionKit14SimpleAnimatorC", "CGAffineTransform"]
+- ["13CollectionKit14SimpleAnimatorC", "CGFloat"]
+- ["13CollectionKit14SimpleAnimatorC", "UIView"]
+- ["13CollectionKit14SimpleAnimatorC", "hide"]
+- ["13CollectionKit14SimpleAnimatorC", "init"]
+- !private ["13CollectionKit14SimpleAnimatorC", "init"]
+- ["13CollectionKit14SimpleAnimatorC", "scale"]
+- ["13CollectionKit14SimpleAnimatorC", "show"]
+- !private ["So29UIAccessibilityIdentificationP", "transform"]
+- !private ["So12UIAppearanceP", "transform"]
+- !private ["So21UIAppearanceContainerP", "transform"]
+- !private ["So17UICoordinateSpaceP", "transform"]
+- !private ["So13UIDynamicItemP", "transform"]
+- !private ["So18UIFocusEnvironmentP", "transform"]
+- !private ["So11UIFocusItemP", "transform"]
+- !private ["So20UIFocusItemContainerP", "transform"]
+- !private ["So30UIPasteConfigurationSupportingP", "transform"]
+- !private ["So11UIResponderC", "transform"]
+- !private ["So30UIResponderStandardEditActionsP", "transform"]
+- !private ["So18UITraitEnvironmentP", "transform"]
+- !private ["So23UIUserActivityRestoringP", "transform"]
+- !private ["So6UIViewC", "transform"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "transform"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "transform"]
+- !private ["s21_ObjectiveCBridgeableP", "identity"]
+- !private ["s21_ObjectiveCBridgeableP", "scaledBy"]
+depends-nominal:
+- "13CollectionKit8AnimatorC"
+- !private "So15CALayerDelegateP"
+- !private "So17CGAffineTransformV"
+- !private "s7CVarArgP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
+- "13CollectionKit12FadeAnimatorC"
+- !private "SH"
+- !private "So8NSCodingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- "13CollectionKit13ScaleAnimatorC"
+- "13CollectionKit14SimpleAnimatorC"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So18UITraitEnvironmentP"
+- !private "So23UIUserActivityRestoringP"
+- !private "So6UIViewC"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/radibarq/developer/NasaInArabic/Pods/Target Support Files/CollectionKit/CollectionKit-umbrella.h"
+- "/Users/radibarq/developer/NasaInArabic/build/Pods.build/Debug-iphoneos/CollectionKit.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "3d3e77ed666cd528204e4c379b4ee666"

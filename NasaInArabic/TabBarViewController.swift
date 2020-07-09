@@ -12,12 +12,15 @@ class TabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//
+//        let statusBar: UIView = UIApplication.shared.value(forKey: "statusBar") as! UIView
+//        if statusBar.responds(to:#selector(setter: UIView.backgroundColor)) {
+//            statusBar.backgroundColor = UIColor.white
+//            statusBar.tintColor = UIColor.black
+//        }
         
-        let statusBar: UIView = UIApplication.shared.value(forKey: "statusBar") as! UIView
-        if statusBar.responds(to:#selector(setter: UIView.backgroundColor)) {
-            statusBar.backgroundColor = UIColor.white
-            statusBar.tintColor = UIColor.black
-        }
+        let sitesItem =  self.tabBar.items![3]
+        sitesItem.title = "المواقع"
 
     }
     

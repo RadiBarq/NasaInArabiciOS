@@ -7,29 +7,23 @@
 //
 
 import UIKit
-
+import MessageUI
 
 class MoreTableViewController: UITableViewController {
 
     let normalCellReuseIdentifier = "normalCell"
     let titleCellReuseIdentifier = "titleCell"
     
-    var titleText = ["من نحن", "المرصد الاوروبي الجتوبي", "تعليم", "تفاعلي", "الاخبار", "في مثل هاذا اليوم"]
+    var titleText = [ "من نحن", "تطوع في ناسا بالعربي", "تعليم", "تفاعلي", "الاخبار", "في مثل هاذا اليوم",  "تلفزيون ناسا بالعربي" , "تواصل معنا", "بلغ عن خطأ في التطبيق"]
     
     override func viewDidLoad() {
         
-        super.viewDidLoad()
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        
+            super.viewDidLoad()
             tableView.register(MoreTableViewCell.self, forCellReuseIdentifier: normalCellReuseIdentifier)
             tableView.register(MoreTableViewTitleCell.self, forCellReuseIdentifier: titleCellReuseIdentifier)
-        
             tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        
+            tableView.showsVerticalScrollIndicator = true
+            tableView.bounces = true
             self.navigationController?.navigationBar.shadowImage = UIImage()
             self.navigationController?.navigationBar.backIndicatorImage = UIImage()
         
@@ -39,12 +33,101 @@ class MoreTableViewController: UITableViewController {
         
         if(indexPath.row == 0)
         {
-
-            let mainStroyBoard = UIStoryboard(name: "Main", bundle: nil)
-            let aboutUsViewController = mainStroyBoard.instantiateViewController(withIdentifier: "aboutUsViewController") as! AboutUsViewController
-            self.navigationController?.pushViewController(aboutUsViewController, animated: true)
+            let webViewController = WebViewController()
+            webViewController.url = "https://nasainarabic.net/main/portal/page/about"
+            let navigationController = UINavigationController()
+            navigationController.addChild(webViewController)
+           // webViewController.modalPresentationStyle = .fullScreen
+            self.navigationController?.present(navigationController, animated: true, completion: nil)
         }
         
+        if (indexPath.row == 1)
+        {
+            let webViewController = WebViewController()
+            webViewController.url = "https://nasainarabic.net/main/portal/page/be-a-volunteer"
+            let navigationController = UINavigationController()
+            navigationController.addChild(webViewController)
+           // navigationController.modalPresentationStyle = .fullScreen
+            self.navigationController?.present(navigationController, animated: true, completion: nil)
+        }
+        
+        if (indexPath.row == 2)
+        {
+            let webViewController = WebViewController()
+            webViewController.url = "https://nasainarabic.net/education"
+            let navigationController = UINavigationController()
+            navigationController.addChild(webViewController)
+            //navigationController.modalPresentationStyle = .fullScreen
+            self.navigationController?.present(navigationController, animated: true, completion: nil)
+        
+        }
+        
+        if (indexPath.row == 3)
+        {
+            let webViewController = WebViewController()
+            webViewController.url = "https://nasainarabic.net/main/interactive"
+            let navigationController = UINavigationController()
+            navigationController.addChild(webViewController)
+           // navigationController.modalPresentationStyle = .fullScreen
+            self.navigationController?.present(navigationController, animated: true, completion: nil)
+            
+        }
+        
+        if (indexPath.row == 4)
+        {
+            
+            let webViewController = WebViewController()
+            webViewController.url = "https://nasainarabic.net/main/albums/view/news"
+            let navigationController = UINavigationController()
+            navigationController.addChild(webViewController)
+           // navigationController.modalPresentationStyle = .fullScreen
+            self.navigationController?.present(navigationController, animated: true, completion: nil)
+        }
+        
+        if (indexPath.row == 5)
+        {
+            let webViewController = WebViewController()
+            webViewController.url = "https://nasainarabic.net/main/events/"
+            let navigationController = UINavigationController()
+            navigationController.addChild(webViewController)
+           // navigationController.modalPresentationStyle = .fullScreen
+            self.navigationController?.present(navigationController, animated: true, completion: nil)
+        }
+        
+        if (indexPath.row == 6)
+        {
+            
+            let webViewController = WebViewController()
+            webViewController.url = "https://nasainarabic.net/main/portal/tv"
+            let navigationController = UINavigationController()
+            navigationController.addChild(webViewController)
+           // navigationController.modalPresentationStyle = .fullScreen
+            self.navigationController?.present(navigationController, animated: true, completion: nil)
+            
+        }
+        
+        if (indexPath.row == 7)
+        {
+            
+            let webViewController = WebViewController()
+            webViewController.url = "https://nasainarabic.net/main/portal/form/contact"
+            let navigationController = UINavigationController()
+            navigationController.addChild(webViewController)
+          //  navigationController.modalPresentationStyle = .fullScreen
+            self.navigationController?.present(navigationController, animated: true, completion: nil)
+        }
+        
+        if (indexPath.row == 8)
+        {
+            showMailComposer()
+        }
+    }
+    
+     @objc func onClickClose()
+    {
+    
+    
+    
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -89,6 +172,30 @@ class MoreTableViewController: UITableViewController {
 
     }
     
+    
+    func showMailComposer()
+    {
+        guard MFMailComposeViewController.canSendMail() else
+        {
+            // Show alert informing the user
+            print("cannot send an email")
+            let alertEmailController = UIAlertController(title: "لا يمكنك ارسال الرسائل", message: "الرجاء تفعيل خدمة البريد الالكتروني خاصتك!", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "موافق", style: .default, handler: nil)
+            alertEmailController.addAction(defaultAction)
+            // self.dismiss(animated: true, completion: nil)
+            self.present(alertEmailController, animated: true, completion: nil)
+            return
+        }
+    
+        let composer = MFMailComposeViewController()
+        composer.mailComposeDelegate = self
+        composer.setSubject("NasaInArabic  iOS Issue")
+        composer.setToRecipients(["radibaraq@gmail.com"])
+        self.present(composer, animated: true)
+        
+    }
+    
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -96,6 +203,7 @@ class MoreTableViewController: UITableViewController {
         return true
     }
     */
+    
 
     /*
     // Override to support editing the table view.
@@ -167,6 +275,8 @@ class MoreTableViewCell: UITableViewCell{
         title.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
         
     }
+    
+  
 }
 
 
@@ -205,3 +315,45 @@ class MoreTableViewTitleCell: UITableViewCell
     
 }
 
+
+
+
+extension MoreTableViewController: MFMailComposeViewControllerDelegate{
+
+    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        
+        if let _ = error {
+            
+            let alertEmailController = UIAlertController(title: "حدث خطأ ما!", message: "لم نتمكن من ارسال الرسالة الرجاء المحاولة لاحقا", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "موافق", style: .default, handler: nil)
+            alertEmailController.addAction(defaultAction)
+            // self.dismiss(animated: true, completion: nil)
+            self.navigationController?.present(alertEmailController, animated: true, completion: nil)
+            controller.dismiss(animated: true)
+            return
+        }
+        
+        switch result{
+            
+        case .cancelled:
+            print("Cancelled")
+            
+        case .failed:
+            print("Failed to send")
+            
+        case .saved:
+            print("Saved")
+            
+        case .sent:
+            print("Email Sent")
+            
+        }
+        
+        controller.dismiss(animated: true, completion: nil)
+    }
+    
+    
+
+
+}

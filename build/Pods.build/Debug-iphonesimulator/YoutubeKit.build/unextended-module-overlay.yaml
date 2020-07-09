@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/radibarq/developer/NasaInArabic/build/Debug-iphonesimulator/YoutubeKit/YoutubeKit.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/radibarq/developer/NasaInArabic/build/Pods.build/Debug-iphonesimulator/YoutubeKit.build/unextended-module.modulemap",
+    }]
+  }]
+}

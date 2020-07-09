@@ -1,5 +1,5 @@
-version: "Apple Swift version 4.2 (swiftlang-1000.0.36 clang-1000.10.44)"
-options: "dfce6fe4d03c41bffa82c544dbf3e573"
-build_time: [1536621386, 356378000]
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "06d3ec985329af24f6ed2cd39301f3cb"
+build_time: [1548793221, 375165000]
 inputs:
   "/Users/radibarq/developer/NasaInArabic/Pods/Player/Sources/Player.swift": [1536621381, 0]

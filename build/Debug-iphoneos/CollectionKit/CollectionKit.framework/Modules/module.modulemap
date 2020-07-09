@@ -1,0 +1,11 @@
+framework module CollectionKit {
+  umbrella header "CollectionKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module CollectionKit.Swift {
+    header "CollectionKit-Swift.h"
+    requires objc
+}
